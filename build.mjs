@@ -37,7 +37,7 @@ await Promise.all([
   esbuild.build({
     ...shared,
     format: 'iife',
-    globalName: 'TEMPLATE_NAME', // change this to the global name you want exposed
+    globalName: 'polyFP', // change this to the global name you want exposed
     outfile: 'dist/index.iife.js',
     platform: 'browser',
     external: [],

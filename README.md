@@ -1,9 +1,9 @@
-# TEMPLATE_PRETTY_NAME
+# Polyfp
 
-![Publish Status](https://github.com/TEMPLATE_OWNER/TEMPLATE_NAME/actions/workflows/publish.yml/badge.svg)
-![Test Status](https://github.com/TEMPLATE_OWNER/TEMPLATE_NAME/actions/workflows/test.yml/badge.svg)
+![Publish Status](https://github.com/FriquetLuca/polyFP/actions/workflows/publish.yml/badge.svg)
+![Test Status](https://github.com/FriquetLuca/polyFP/actions/workflows/test.yml/badge.svg)
 
-TEMPLATE_DESCRIPTION
+A functional programming polyfill for typescript.
 
 ## ✨ Features
 

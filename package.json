@@ -1,10 +1,10 @@
 {
-  "name": "TEMPLATE_NAME",
+  "name": "polyFP",
   "version": "0.0.0",
   "type": "module",
-  "description": "TEMPLATE_DESCRIPTION",
+  "description": "A functional programming polyfill for typescript.",
   "license": "MIT",
-  "author": "TEMPLATE_OWNER",
+  "author": "FriquetLuca",
   "sideEffects": false,
   "keywords": [],
   "files": [
@@ -23,12 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TEMPLATE_OWNER/TEMPLATE_NAME.git"
+    "url": "git+https://github.com/FriquetLuca/polyFP.git"
   },
   "bugs": {
-    "url": "https://github.com/TEMPLATE_OWNER/TEMPLATE_NAME/issues"
+    "url": "https://github.com/FriquetLuca/polyFP/issues"
   },
-  "homepage": "https://github.com/TEMPLATE_OWNER/TEMPLATE_NAME",
+  "homepage": "https://github.com/FriquetLuca/polyFP",
   "scripts": {
     "build": "(rm -rf dist) && node build.mjs && tsc --emitDeclarationOnly",
     "test": "vitest run",
