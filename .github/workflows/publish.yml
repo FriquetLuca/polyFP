@@ -1,0 +1,48 @@
+name: Tag Changelog Update
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  update-tag:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.base.ref || github.event.repository.default_branch }}
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Update Changelog
+        id: append_version
+        run: |
+          DATE=$(date +'%Y-%m-%d')
+          VERSION=${GITHUB_REF#refs/tags/}
+          echo "version=$VERSION" >> $GITHUB_ENV
+          NEW_LINE="## [$VERSION] - $DATE"
+          
+          # Insert after line 7
+          sed -i "7a \\$NEW_LINE" CHANGELOG.md
+      
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
+      - run: npm test
+      - run: npm publish
+
+      - name: Commit Changelog
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          branch: ${{ github.event.repository.default_branch }}
+          commit_message: "docs: release ${{ env.VERSION }} [skip ci]"
+          file_pattern: 'CHANGELOG.md'

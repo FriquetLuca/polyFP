@@ -1,0 +1,56 @@
+{
+  "name": "TEMPLATE_NAME",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "TEMPLATE_DESCRIPTION",
+  "license": "MIT",
+  "author": "TEMPLATE_OWNER",
+  "sideEffects": false,
+  "keywords": [],
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js",
+      "default": "./dist/index.esm.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TEMPLATE_OWNER/TEMPLATE_NAME.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TEMPLATE_OWNER/TEMPLATE_NAME/issues"
+  },
+  "homepage": "https://github.com/TEMPLATE_OWNER/TEMPLATE_NAME",
+  "scripts": {
+    "build": "(rm -rf dist) && node build.mjs && tsc --emitDeclarationOnly",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "prepare": "husky",
+    "format": "prettier --write \"**/*.{js,ts,mjs,mts,json}\" --log-level silent"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "esbuild": "0.27.4",
+    "eslint": "^9.39.4",
+    "globals": "^17.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "3.8.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.57.0",
+    "vitest": "^4.1.0"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,mjs,mts,json}": [
+      "prettier --write"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+name: Merged Pull Request (Closed)
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  update-pr:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.base.ref || github.event.repository.default_branch }}
+          fetch-depth: 0
+
+      - name: Append PR to Changelog
+        run: |
+          PR_TITLE="${{ github.event.pull_request.title }}"
+          PR_URL="${{ github.event.pull_request.html_url }}"
+          PR_NUM="${{ github.event.pull_request.number }}"
+          AUTHOR="${{ github.event.pull_request.user.login }}"
+          AUTHOR_URL="https://github.com/$AUTHOR"
+          
+          NEW_LINE="- $PR_TITLE [@$AUTHOR]($AUTHOR_URL) [#$PR_NUM]($PR_URL)"
+          
+          # Insert after line 7
+          sed -i "7a \\$NEW_LINE" CHANGELOG.md
+
+      - name: Commit Change
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          branch: main
+          commit_message: "docs: update changelog for PR #${{ github.event.pull_request.number }} [skip ci]"
+          file_pattern: 'CHANGELAY.md'
