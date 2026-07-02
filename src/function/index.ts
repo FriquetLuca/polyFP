@@ -1,5 +1,10 @@
 export { compose } from './compose';
 export { curry } from './curry';
+export { flip } from './flip';
 export { isFunction } from './isFunction';
+export { memoize } from './memoize';
+export { partial } from './partial';
 export { pipe } from './pipe';
+export { tap } from './tap';
+export { traverse } from './traverse';
 export { uncurry } from './uncurry';

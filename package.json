@@ -73,6 +73,21 @@
       "import": "./dist/esm/function/pipe/install.js",
       "require": "./dist/cjs/function/pipe/install.js"
     },
+    "./polyfill/function/sequence": {
+      "types": "./dist/types/function/sequence/install.d.ts",
+      "import": "./dist/esm/function/sequence/install.js",
+      "require": "./dist/cjs/function/sequence/install.js"
+    },
+    "./polyfill/function/tap": {
+      "types": "./dist/types/function/tap/install.d.ts",
+      "import": "./dist/esm/function/tap/install.js",
+      "require": "./dist/cjs/function/tap/install.js"
+    },
+    "./polyfill/function/traverse": {
+      "types": "./dist/types/function/traverse/install.d.ts",
+      "import": "./dist/esm/function/traverse/install.js",
+      "require": "./dist/cjs/function/traverse/install.js"
+    },
     "./polyfill/function/uncurry": {
       "types": "./dist/types/function/uncurry/install.d.ts",
       "import": "./dist/esm/function/uncurry/install.js",
