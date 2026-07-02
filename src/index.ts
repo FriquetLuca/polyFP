@@ -1,4 +1,33 @@
-export { compose, curry, isFunction, pipe, uncurry } from './function';
+export {
+  difference,
+  groupBy,
+  intersection,
+  partition,
+  pluck,
+  unique,
+  zip,
+} from './array';
+export {
+  all,
+  and,
+  atLeastOne,
+  atMostOne,
+  compose,
+  curry,
+  exactlyN,
+  exactlyOne,
+  flip,
+  isFunction,
+  memoize,
+  not,
+  or,
+  partial,
+  pipe,
+  sequence,
+  tap,
+  traverse,
+  uncurry,
+} from './function';
 export {
   chain,
   deepFreeze,

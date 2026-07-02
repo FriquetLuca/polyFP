@@ -1,7 +1,9 @@
+import { installArrayExtensions } from './array/install';
 import { installFunctionExtensions } from './function/install';
 import { installObjectExtensions } from './object/install';
 
 export function installAllExtensions() {
-  installObjectExtensions();
+  installArrayExtensions();
   installFunctionExtensions();
+  installObjectExtensions();
 }
