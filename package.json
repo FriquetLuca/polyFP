@@ -33,6 +33,11 @@
       "import": "./dist/esm/array/install.js",
       "require": "./dist/cjs/array/install.js"
     },
+    "./polyfill/array/chunk": {
+      "types": "./dist/types/array/chunk/install.d.ts",
+      "import": "./dist/esm/array/chunk/install.js",
+      "require": "./dist/cjs/array/chunk/install.js"
+    },
     "./polyfill/array/difference": {
       "types": "./dist/types/array/difference/install.d.ts",
       "import": "./dist/esm/array/difference/install.js",
