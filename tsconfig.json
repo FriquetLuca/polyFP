@@ -1,37 +1,37 @@
 {
   "compilerOptions": {
-    // Modern output for esbuild to consume
     "target": "ES2023",
     "lib": ["ES2023"],
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "skipLibCheck": true,
 
-    // Enable declaration files (run tsc manually with overrides)
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+
+    "strict": true,
+
     "declaration": true,
     "emitDeclarationOnly": true,
-    "declarationDir": "./dist",
+    "declarationMap": true,
+    "declarationDir": "./dist/types",
 
-    // Pathing & resolution
-    "outDir": "./dist",
     "rootDir": "./src",
-    "baseUrl": ".",
+
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
 
-    // Strict typing
-    "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
+    "erasableSyntaxOnly": true,
 
-    // Useful for debugging
-    "sourceMap": true
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true
   },
+
   "include": ["src/**/*.ts"],
+
   "exclude": [
     "node_modules",
     "dist",

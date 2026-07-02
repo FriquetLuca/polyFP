@@ -5,20 +5,123 @@
   "description": "A functional programming polyfill for typescript.",
   "license": "MIT",
   "author": "FriquetLuca",
-  "sideEffects": false,
   "keywords": [],
   "files": [
     "dist"
   ],
-  "main": "./dist/index.cjs.js",
-  "module": "./dist/index.esm.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.esm.js",
-      "require": "./dist/index.cjs.js",
-      "default": "./dist/index.esm.js"
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./polyfill": {
+      "types": "./dist/types/polyfill.d.ts",
+      "import": "./dist/esm/polyfill.js",
+      "require": "./dist/cjs/polyfill.js"
+    },
+    "./polyfill/all": {
+      "types": "./dist/types/install.d.ts",
+      "import": "./dist/esm/install.js",
+      "require": "./dist/cjs/install.js"
+    },
+    "./polyfill/array": {
+      "types": "./dist/types/array/install.d.ts",
+      "import": "./dist/esm/array/install.js",
+      "require": "./dist/cjs/array/install.js"
+    },
+    "./polyfill/function": {
+      "types": "./dist/types/function/install.d.ts",
+      "import": "./dist/esm/function/install.js",
+      "require": "./dist/cjs/function/install.js"
+    },
+    "./polyfill/function/compose": {
+      "types": "./dist/types/function/compose/install.d.ts",
+      "import": "./dist/esm/function/compose/install.js",
+      "require": "./dist/cjs/function/compose/install.js"
+    },
+    "./polyfill/function/curry": {
+      "types": "./dist/types/function/curry/install.d.ts",
+      "import": "./dist/esm/function/curry/install.js",
+      "require": "./dist/cjs/function/curry/install.js"
+    },
+    "./polyfill/function/isFunction": {
+      "types": "./dist/types/function/isFunction/install.d.ts",
+      "import": "./dist/esm/function/isFunction/install.js",
+      "require": "./dist/cjs/function/isFunction/install.js"
+    },
+    "./polyfill/function/pipe": {
+      "types": "./dist/types/function/pipe/install.d.ts",
+      "import": "./dist/esm/function/pipe/install.js",
+      "require": "./dist/cjs/function/pipe/install.js"
+    },
+    "./polyfill/function/uncurry": {
+      "types": "./dist/types/function/uncurry/install.d.ts",
+      "import": "./dist/esm/function/uncurry/install.js",
+      "require": "./dist/cjs/function/uncurry/install.js"
+    },
+    "./polyfill/object": {
+      "types": "./dist/types/object/install.d.ts",
+      "import": "./dist/esm/object/install.js",
+      "require": "./dist/cjs/object/install.js"
+    },
+    "./polyfill/object/chain": {
+      "types": "./dist/types/object/chain/install.d.ts",
+      "import": "./dist/esm/object/chain/install.js",
+      "require": "./dist/cjs/object/chain/install.js"
+    },
+    "./polyfill/object/deepFreeze": {
+      "types": "./dist/types/object/deepFreeze/install.d.ts",
+      "import": "./dist/esm/object/deepFreeze/install.js",
+      "require": "./dist/cjs/object/deepFreeze/install.js"
+    },
+    "./polyfill/object/deepMerge": {
+      "types": "./dist/types/object/deepMerge/install.d.ts",
+      "import": "./dist/esm/object/deepMerge/install.js",
+      "require": "./dist/cjs/object/deepMerge/install.js"
+    },
+    "./polyfill/object/deepUnfreeze": {
+      "types": "./dist/types/object/deepUnfreeze/install.d.ts",
+      "import": "./dist/esm/object/deepUnfreeze/install.js",
+      "require": "./dist/cjs/object/deepUnfreeze/install.js"
+    },
+    "./polyfill/object/getHash": {
+      "types": "./dist/types/object/getHash/install.d.ts",
+      "import": "./dist/esm/object/getHash/install.js",
+      "require": "./dist/cjs/object/getHash/install.js"
+    },
+    "./polyfill/object/isClass": {
+      "types": "./dist/types/object/isClass/install.d.ts",
+      "import": "./dist/esm/object/isClass/install.js",
+      "require": "./dist/cjs/object/isClass/install.js"
+    },
+    "./polyfill/object/isEqual": {
+      "types": "./dist/types/object/isEqual/install.d.ts",
+      "import": "./dist/esm/object/isEqual/install.js",
+      "require": "./dist/cjs/object/isEqual/install.js"
+    },
+    "./polyfill/object/isPlainObject": {
+      "types": "./dist/types/object/isPlainObject/install.d.ts",
+      "import": "./dist/esm/object/isPlainObject/install.js",
+      "require": "./dist/cjs/object/isPlainObject/install.js"
+    },
+    "./polyfill/object/omit": {
+      "types": "./dist/types/object/omit/install.d.ts",
+      "import": "./dist/esm/object/omit/install.js",
+      "require": "./dist/cjs/object/omit/install.js"
+    },
+    "./polyfill/object/pick": {
+      "types": "./dist/types/object/pick/install.d.ts",
+      "import": "./dist/esm/object/pick/install.js",
+      "require": "./dist/cjs/object/pick/install.js"
+    },
+    "./polyfill/object/select": {
+      "types": "./dist/types/object/select/install.d.ts",
+      "import": "./dist/esm/object/select/install.js",
+      "require": "./dist/cjs/object/select/install.js"
     }
   },
   "repository": {
@@ -37,16 +140,17 @@
     "format": "prettier --write \"**/*.{js,ts,mjs,mts,json}\" --log-level silent"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.4",
-    "esbuild": "0.27.4",
-    "eslint": "^9.39.4",
-    "globals": "^17.4.0",
+    "@eslint/js": "^10.0.1",
+    "esbuild": "0.28.1",
+    "eslint": "^10.6.0",
+    "fast-glob": "^3.3.3",
+    "globals": "^17.7.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.4.0",
-    "prettier": "3.8.1",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.57.0",
-    "vitest": "^4.1.0"
+    "lint-staged": "^17.0.8",
+    "prettier": "3.9.4",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.1",
+    "vitest": "^4.1.9"
   },
   "lint-staged": {
     "**/*.{js,ts,mjs,mts,json}": [
