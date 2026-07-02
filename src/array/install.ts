@@ -5,6 +5,8 @@ export * from './intersection/install';
 export * from './partition/install';
 export * from './pluck/install';
 export * from './unique/install';
+export * from './unzip/install';
+export * from './window/install';
 export * from './zip/install';
 
 import { installChunk } from './chunk/install';
@@ -14,6 +16,8 @@ import { installIntersection } from './intersection/install';
 import { installPartition } from './partition/install';
 import { installPluck } from './pluck/install';
 import { installUnique } from './unique/install';
+import { installUnzip } from './unzip/install';
+import { installWindow } from './window/install';
 import { installZip } from './zip/install';
 
 export function installArrayExtensions() {
@@ -24,5 +28,7 @@ export function installArrayExtensions() {
   installPartition();
   installPluck();
   installUnique();
+  installUnzip();
+  installWindow();
   installZip();
 }

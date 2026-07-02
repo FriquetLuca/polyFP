@@ -5,4 +5,6 @@ export { intersection } from './intersection';
 export { partition } from './partition';
 export { pluck } from './pluck';
 export { unique } from './unique';
+export { unzip } from './unzip';
+export { window } from './window';
 export { zip } from './zip';

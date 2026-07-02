@@ -68,6 +68,16 @@
       "import": "./dist/esm/array/unique/install.js",
       "require": "./dist/cjs/array/unique/install.js"
     },
+    "./polyfill/array/unzip": {
+      "types": "./dist/types/array/unzip/install.d.ts",
+      "import": "./dist/esm/array/unzip/install.js",
+      "require": "./dist/cjs/array/unzip/install.js"
+    },
+    "./polyfill/array/window": {
+      "types": "./dist/types/array/window/install.d.ts",
+      "import": "./dist/esm/array/window/install.js",
+      "require": "./dist/cjs/array/window/install.js"
+    },
     "./polyfill/array/zip": {
       "types": "./dist/types/array/zip/install.d.ts",
       "import": "./dist/esm/array/zip/install.js",
@@ -143,6 +153,11 @@
       "import": "./dist/esm/function/or/install.js",
       "require": "./dist/cjs/function/or/install.js"
     },
+    "./polyfill/function/parallel": {
+      "types": "./dist/types/function/parallel/install.d.ts",
+      "import": "./dist/esm/function/parallel/install.js",
+      "require": "./dist/cjs/function/parallel/install.js"
+    },
     "./polyfill/function/partial": {
       "types": "./dist/types/function/partial/install.d.ts",
       "import": "./dist/esm/function/partial/install.js",
@@ -152,6 +167,11 @@
       "types": "./dist/types/function/pipe/install.d.ts",
       "import": "./dist/esm/function/pipe/install.js",
       "require": "./dist/cjs/function/pipe/install.js"
+    },
+    "./polyfill/function/retry": {
+      "types": "./dist/types/function/retry/install.d.ts",
+      "import": "./dist/esm/function/retry/install.js",
+      "require": "./dist/cjs/function/retry/install.js"
     },
     "./polyfill/function/sequence": {
       "types": "./dist/types/function/sequence/install.d.ts",
