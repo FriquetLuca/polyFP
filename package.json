@@ -48,10 +48,25 @@
       "import": "./dist/esm/function/curry/install.js",
       "require": "./dist/cjs/function/curry/install.js"
     },
+    "./polyfill/function/flip": {
+      "types": "./dist/types/function/flip/install.d.ts",
+      "import": "./dist/esm/function/flip/install.js",
+      "require": "./dist/cjs/function/flip/install.js"
+    },
     "./polyfill/function/isFunction": {
       "types": "./dist/types/function/isFunction/install.d.ts",
       "import": "./dist/esm/function/isFunction/install.js",
       "require": "./dist/cjs/function/isFunction/install.js"
+    },
+    "./polyfill/function/memoize": {
+      "types": "./dist/types/function/memoize/install.d.ts",
+      "import": "./dist/esm/function/memoize/install.js",
+      "require": "./dist/cjs/function/memoize/install.js"
+    },
+    "./polyfill/function/partial": {
+      "types": "./dist/types/function/partial/install.d.ts",
+      "import": "./dist/esm/function/partial/install.js",
+      "require": "./dist/cjs/function/partial/install.js"
     },
     "./polyfill/function/pipe": {
       "types": "./dist/types/function/pipe/install.d.ts",
