@@ -1,10 +1,12 @@
-import { intersection } from './index';
 export * from './types';
 
 export function installIntersection() {
-  if (!Array.intersection) {
-    Object.defineProperty(Array, 'intersection', {
-      value: intersection,
+  if (!Array.prototype.intersection) {
+    Object.defineProperty(Array.prototype, 'intersection', {
+      value<T>(this: T[], b: readonly T[]) {
+        const setB = new Set(b);
+        return this.filter((x) => setB.has(x));
+      },
       writable: true,
       configurable: true,
     });

@@ -1,7 +1,10 @@
 export {};
 
 declare global {
-  interface ArrayConstructor {
-    unique<T>(arr: readonly T[]): T[];
+  interface Array<T> {
+    unique(this: T[]): T[];
+  }
+  interface ReadonlyArray<T> {
+    unique(this: T[]): T[];
   }
 }

@@ -1,7 +1,10 @@
 export {};
 
 declare global {
-  interface ArrayConstructor {
-    pluck<T, K extends keyof T>(key: K): (arr: readonly T[]) => T[K][];
+  interface Array<T> {
+    pluck<K extends keyof T>(this: T[], key: K): T[K][];
+  }
+  interface ReadonlyArray<T> {
+    pluck<K extends keyof T>(this: T[], key: K): T[K][];
   }
 }

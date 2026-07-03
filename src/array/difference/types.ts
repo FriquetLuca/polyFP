@@ -1,7 +1,10 @@
 export {};
 
 declare global {
-  interface ArrayConstructor {
-    difference<T>(a: readonly T[], b: readonly T[]): T[];
+  interface Array<T> {
+    difference(this: T[], b: readonly T[]): T[];
+  }
+  interface ReadonlyArray<T> {
+    difference(this: T[], b: readonly T[]): T[];
   }
 }

@@ -1,7 +1,10 @@
 export {};
 
 declare global {
-  interface ArrayConstructor {
-    zip<A, B>(as: readonly A[], bs: readonly B[]): [A, B][];
+  interface Array<T> {
+    zip<B>(this: T[], bs: B[]): [T, B][];
+  }
+  interface ReadonlyArray<T> {
+    zip<B>(this: T[], bs: B[]): [T, B][];
   }
 }

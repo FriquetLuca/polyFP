@@ -2,6 +2,6 @@ export {};
 
 declare global {
   interface ArrayConstructor {
-    unzip<A, B>(arr: readonly (readonly [A, B])[]): [A[], B[]];
+    unzip<A, B>(arr: [A, B][]): [A[], B[]];
   }
 }

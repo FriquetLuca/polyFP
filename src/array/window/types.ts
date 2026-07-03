@@ -1,7 +1,10 @@
 export {};
 
 declare global {
-  interface ArrayConstructor {
-    window(size: number): <T>(arr: readonly T[]) => T[][];
+  interface Array<T> {
+    window(this: T[], size: number): T[][];
+  }
+  interface ReadonlyArray<T> {
+    window(this: T[], size: number): T[][];
   }
 }

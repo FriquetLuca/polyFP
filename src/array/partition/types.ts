@@ -1,7 +1,10 @@
 export {};
 
 declare global {
-  interface ArrayConstructor {
-    partition<T>(pred: (x: T) => boolean): (arr: readonly T[]) => [T[], T[]];
+  interface Array<T> {
+    partition(this: T[], pred: (x: T) => boolean): [T[], T[]];
+  }
+  interface ReadonlyArray<T> {
+    partition(this: T[], pred: (x: T) => boolean): [T[], T[]];
   }
 }

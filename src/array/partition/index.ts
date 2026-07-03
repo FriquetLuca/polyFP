@@ -1,12 +1,10 @@
-export const partition =
-  <T>(pred: (x: T) => boolean) =>
-  (arr: readonly T[]): [T[], T[]] => {
-    const yes: T[] = [];
-    const no: T[] = [];
+export function partition<T>(arr: T[], pred: (x: T) => boolean): [T[], T[]] {
+  const yes: T[] = [];
+  const no: T[] = [];
 
-    for (const x of arr) {
-      (pred(x) ? yes : no).push(x);
-    }
+  for (const x of arr) {
+    (pred(x) ? yes : no).push(x);
+  }
 
-    return [yes, no];
-  };
+  return [yes, no];
+}

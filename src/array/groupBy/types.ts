@@ -1,9 +1,16 @@
 export {};
 
 declare global {
-  interface ArrayConstructor {
-    groupBy<T, K extends string | number | symbol>(
+  interface Array<T> {
+    groupBy<K extends string | number | symbol>(
+      this: T[],
       fn: (x: T) => K
-    ): (arr: readonly T[]) => Record<K, T[]>;
+    ): Record<K, T[]>;
+  }
+  interface ReadonlyArray<T> {
+    groupBy<K extends string | number | symbol>(
+      this: T[],
+      fn: (x: T) => K
+    ): Record<K, T[]>;
   }
 }

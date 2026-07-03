@@ -1,4 +1,4 @@
-export function unzip<A, B>(arr: readonly (readonly [A, B])[]): [A[], B[]] {
+export function unzip<A, B>(arr: [A, B][]): [A[], B[]] {
   const as: A[] = [];
   const bs: B[] = [];
 
