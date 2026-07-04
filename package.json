@@ -280,11 +280,15 @@
     "prettier": "3.9.4",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.62.1",
-    "vitest": "^4.1.9"
+    "vitest": "^4.1.9",
+    "zod": "^4.4.3"
   },
   "lint-staged": {
     "**/*.{js,ts,mjs,mts,json}": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "@standard-schema/spec": "^1.1.0"
   }
 }
