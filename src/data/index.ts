@@ -5,6 +5,7 @@ export {
   type ADTValues,
   type SchemaADTValues,
 } from './adt';
+export { comparePrimitive } from './comparePrimitive';
 export {
   none,
   some,

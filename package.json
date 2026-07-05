@@ -135,6 +135,11 @@
       "import": "./dist/esm/array/pluck/install.js",
       "require": "./dist/cjs/array/pluck/install.js"
     },
+    "./polyfill/array/query": {
+      "types": "./dist/types/array/query/install.d.ts",
+      "import": "./dist/esm/array/query/install.js",
+      "require": "./dist/cjs/array/query/install.js"
+    },
     "./polyfill/array/unique": {
       "types": "./dist/types/array/unique/install.d.ts",
       "import": "./dist/esm/array/unique/install.js",

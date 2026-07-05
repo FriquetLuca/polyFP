@@ -7,12 +7,14 @@ export {
   intersection,
   partition,
   pluck,
+  query,
   unique,
   unzip,
   window,
   zip,
 } from './array';
 export {
+  comparePrimitive,
   createADT,
   schemaADT,
   none,

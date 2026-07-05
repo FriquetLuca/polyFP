@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type RecordType = Record<string | number | symbol, any>;
 export type DeepReadonly<T> = { readonly [K in keyof T]: DeepReadonly<T[K]> };
 export type DeepMutable<T> = { -readonly [K in keyof T]: DeepMutable<T[K]> };
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
@@ -113,3 +115,31 @@ export type Uncurry<F extends AnyFn> =
       ? (...args: A) => CurriedReturn<F>
       : never
     : never;
+type OrderByItem<T, K extends keyof T> = T[K] extends string | number | Date
+  ? {
+      key: K;
+      desc?: boolean;
+    }
+  : {
+      key: K;
+      compare: (left: T[K], right: T[K]) => number;
+    };
+export type OrderBy<T, K extends keyof T = keyof T> = K extends keyof T
+  ? OrderByItem<T, K>
+  : never;
+export type QueryResult<
+  T extends object,
+  Select extends { key: keyof T; as?: string },
+> = Collapse<{
+  [K in keyof TransformKeys<T, Select>]: TransformKeys<T, Select>[K];
+}>;
+export type QueryParameters<
+  T extends RecordType,
+  Select extends { key: keyof T; as?: string },
+> = {
+  select: Select[];
+  where?: (record: T, index: number, array: T[]) => boolean;
+  orderBy?: OrderBy<T>[];
+  limit?: number;
+  offset?: number;
+};
