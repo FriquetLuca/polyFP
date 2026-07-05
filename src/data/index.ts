@@ -5,7 +5,24 @@ export {
   type ADTValues,
   type SchemaADTValues,
 } from './adt';
+export { CircularQueue } from './circularQueue';
 export { comparePrimitive } from './comparePrimitive';
+export { Deque } from './deque';
+export { DoublyLinkedList } from './doublyLinkedList';
+export {
+  StackUnderflowError,
+  StackOverflowError,
+  QueueUnderflowError,
+  QueueOverflowError,
+} from './errors';
+export {
+  IterableSource,
+  type IterableInput,
+  type IterableOutput,
+} from './iterableSource';
+export { LinkedList } from './linkedList';
+export { MaxPriorityQueue } from './maxPriorityQueue';
+export { MinPriorityQueue } from './minPriorityQueue';
 export {
   none,
   some,
@@ -14,6 +31,7 @@ export {
   type Some,
   type Option,
 } from './option';
+export { Queue } from './queue';
 export {
   ok,
   err,
@@ -25,3 +43,4 @@ export {
   type Err,
   type Result,
 } from './result';
+export { Stack } from './stack';
