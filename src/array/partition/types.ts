@@ -5,6 +5,6 @@ declare global {
     partition(this: T[], pred: (x: T) => boolean): [T[], T[]];
   }
   interface ReadonlyArray<T> {
-    partition(this: T[], pred: (x: T) => boolean): [T[], T[]];
+    partition(this: readonly T[], pred: (x: T) => boolean): [T[], T[]];
   }
 }

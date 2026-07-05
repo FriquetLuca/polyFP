@@ -5,6 +5,6 @@ declare global {
     chunk(this: T[], size: number): T[][];
   }
   interface ReadonlyArray<T> {
-    chunk(this: T[], size: number): T[][];
+    chunk(this: readonly T[], size: number): T[][];
   }
 }

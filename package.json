@@ -5,7 +5,64 @@
   "description": "A functional programming polyfill for typescript.",
   "license": "MIT",
   "author": "FriquetLuca",
-  "keywords": [],
+  "keywords": [
+    "functional",
+    "programming",
+    "fp",
+    "polyfill",
+    "typescript",
+    "polyFP",
+    "array",
+    "function",
+    "object",
+    "adt",
+    "option",
+    "result",
+    "chain",
+    "deepFreeze",
+    "deepMerge",
+    "deepUnfreeze",
+    "getHash",
+    "isClass",
+    "isEqual",
+    "isPlainObject",
+    "omit",
+    "pick",
+    "select",
+    "all",
+    "and",
+    "atLeastOne",
+    "atMostOne",
+    "compose",
+    "curry",
+    "exactlyN",
+    "exactlyOne",
+    "flip",
+    "isFunction",
+    "memoize",
+    "not",
+    "or",
+    "parallel",
+    "partial",
+    "pipe",
+    "retry",
+    "sequence",
+    "tap",
+    "traverse",
+    "uncurry",
+    "chunk",
+    "difference",
+    "forItems",
+    "forItemsReverse",
+    "groupBy",
+    "intersection",
+    "partition",
+    "pluck",
+    "unique",
+    "unzip",
+    "window",
+    "zip"
+  ],
   "files": [
     "dist"
   ],
@@ -17,6 +74,11 @@
       "types": "./dist/types/index.d.ts",
       "import": "./dist/esm/index.js",
       "require": "./dist/cjs/index.js"
+    },
+    "./data": {
+      "types": "./dist/types/data/index.d.ts",
+      "import": "./dist/esm/data/index.js",
+      "require": "./dist/cjs/data/index.js"
     },
     "./polyfill": {
       "types": "./dist/types/polyfill.d.ts",
@@ -42,6 +104,16 @@
       "types": "./dist/types/array/difference/install.d.ts",
       "import": "./dist/esm/array/difference/install.js",
       "require": "./dist/cjs/array/difference/install.js"
+    },
+    "./polyfill/array/forItems": {
+      "types": "./dist/types/array/forItems/install.d.ts",
+      "import": "./dist/esm/array/forItems/install.js",
+      "require": "./dist/cjs/array/forItems/install.js"
+    },
+    "./polyfill/array/forItemsReverse": {
+      "types": "./dist/types/array/forItemsReverse/install.d.ts",
+      "import": "./dist/esm/array/forItemsReverse/install.js",
+      "require": "./dist/cjs/array/forItemsReverse/install.js"
     },
     "./polyfill/array/groupBy": {
       "types": "./dist/types/array/groupBy/install.d.ts",
@@ -270,6 +342,7 @@
     "format": "prettier --write \"**/*.{js,ts,mjs,mts,json}\" --log-level silent"
   },
   "devDependencies": {
+    "@standard-schema/spec": "^1.1.0",
     "@eslint/js": "^10.0.1",
     "esbuild": "0.28.1",
     "eslint": "^10.6.0",
@@ -287,8 +360,5 @@
     "**/*.{js,ts,mjs,mts,json}": [
       "prettier --write"
     ]
-  },
-  "dependencies": {
-    "@standard-schema/spec": "^1.1.0"
   }
 }

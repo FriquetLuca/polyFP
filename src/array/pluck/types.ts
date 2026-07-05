@@ -5,6 +5,6 @@ declare global {
     pluck<K extends keyof T>(this: T[], key: K): T[K][];
   }
   interface ReadonlyArray<T> {
-    pluck<K extends keyof T>(this: T[], key: K): T[K][];
+    pluck<K extends keyof T>(this: readonly T[], key: K): T[K][];
   }
 }

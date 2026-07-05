@@ -5,6 +5,6 @@ declare global {
     unique(this: T[]): T[];
   }
   interface ReadonlyArray<T> {
-    unique(this: T[]): T[];
+    unique(this: readonly T[]): T[];
   }
 }

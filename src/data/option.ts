@@ -9,7 +9,7 @@ export interface Some<T> {
   value: T;
 }
 
-export interface Maybe<T> {
+interface Maybe<T> {
   isSome(): this is Some<T>;
   isNone(): this is None;
   map<U>(fn: (value: T) => U): Option<U>;

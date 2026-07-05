@@ -5,6 +5,6 @@ declare global {
     zip<B>(this: T[], bs: B[]): [T, B][];
   }
   interface ReadonlyArray<T> {
-    zip<B>(this: T[], bs: B[]): [T, B][];
+    zip<B>(this: readonly T[], bs: B[]): [T, B][];
   }
 }

@@ -1,5 +1,7 @@
 export { chunk } from './chunk';
 export { difference } from './difference';
+export { forItems } from './forItem';
+export { forItemsReverse } from './forItemReverse';
 export { groupBy } from './groupBy';
 export { intersection } from './intersection';
 export { partition } from './partition';

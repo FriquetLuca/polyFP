@@ -5,6 +5,6 @@ declare global {
     window(this: T[], size: number): T[][];
   }
   interface ReadonlyArray<T> {
-    window(this: T[], size: number): T[][];
+    window(this: readonly T[], size: number): T[][];
   }
 }

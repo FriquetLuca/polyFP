@@ -2,9 +2,9 @@ export {};
 
 declare global {
   interface Array<T> {
-    intersection(this: T[], b: readonly T[]): T[];
+    intersection(this: T[], b: T[]): T[];
   }
   interface ReadonlyArray<T> {
-    intersection(this: T[], b: readonly T[]): T[];
+    intersection(this: readonly T[], b: T[]): T[];
   }
 }
