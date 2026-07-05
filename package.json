@@ -51,17 +51,25 @@
     "traverse",
     "uncurry",
     "chunk",
+    "crossJoin",
     "difference",
     "forItems",
     "forItemsReverse",
+    "fullJoin",
     "groupBy",
+    "innerJoin",
     "intersection",
+    "leftJoin",
+    "orderBy",
     "partition",
     "pluck",
+    "query",
+    "rightJoin",
     "unique",
     "unzip",
     "window",
-    "zip"
+    "zip",
+    "comparePrimitive"
   ],
   "files": [
     "dist"
@@ -100,6 +108,11 @@
       "import": "./dist/esm/array/chunk/install.js",
       "require": "./dist/cjs/array/chunk/install.js"
     },
+    "./polyfill/array/crossJoin": {
+      "types": "./dist/types/array/crossJoin/install.d.ts",
+      "import": "./dist/esm/array/crossJoin/install.js",
+      "require": "./dist/cjs/array/crossJoin/install.js"
+    },
     "./polyfill/array/difference": {
       "types": "./dist/types/array/difference/install.d.ts",
       "import": "./dist/esm/array/difference/install.js",
@@ -115,15 +128,30 @@
       "import": "./dist/esm/array/forItemsReverse/install.js",
       "require": "./dist/cjs/array/forItemsReverse/install.js"
     },
+    "./polyfill/array/fullJoin": {
+      "types": "./dist/types/array/fullJoin/install.d.ts",
+      "import": "./dist/esm/array/fullJoin/install.js",
+      "require": "./dist/cjs/array/fullJoin/install.js"
+    },
     "./polyfill/array/groupBy": {
       "types": "./dist/types/array/groupBy/install.d.ts",
       "import": "./dist/esm/array/groupBy/install.js",
       "require": "./dist/cjs/array/groupBy/install.js"
     },
+    "./polyfill/array/innerJoin": {
+      "types": "./dist/types/array/innerJoin/install.d.ts",
+      "import": "./dist/esm/array/innerJoin/install.js",
+      "require": "./dist/cjs/array/innerJoin/install.js"
+    },
     "./polyfill/array/intersection": {
       "types": "./dist/types/array/intersection/install.d.ts",
       "import": "./dist/esm/array/intersection/install.js",
       "require": "./dist/cjs/array/intersection/install.js"
+    },
+    "./polyfill/array/leftJoin": {
+      "types": "./dist/types/array/leftJoin/install.d.ts",
+      "import": "./dist/esm/array/leftJoin/install.js",
+      "require": "./dist/cjs/array/leftJoin/install.js"
     },
     "./polyfill/array/orderBy": {
       "types": "./dist/types/array/orderBy/install.d.ts",
@@ -144,6 +172,11 @@
       "types": "./dist/types/array/query/install.d.ts",
       "import": "./dist/esm/array/query/install.js",
       "require": "./dist/cjs/array/query/install.js"
+    },
+    "./polyfill/array/rightJoin": {
+      "types": "./dist/types/array/rightJoin/install.d.ts",
+      "import": "./dist/esm/array/rightJoin/install.js",
+      "require": "./dist/cjs/array/rightJoin/install.js"
     },
     "./polyfill/array/unique": {
       "types": "./dist/types/array/unique/install.d.ts",
