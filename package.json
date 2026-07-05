@@ -125,6 +125,11 @@
       "import": "./dist/esm/array/intersection/install.js",
       "require": "./dist/cjs/array/intersection/install.js"
     },
+    "./polyfill/array/orderBy": {
+      "types": "./dist/types/array/orderBy/install.d.ts",
+      "import": "./dist/esm/array/orderBy/install.js",
+      "require": "./dist/cjs/array/orderBy/install.js"
+    },
     "./polyfill/array/partition": {
       "types": "./dist/types/array/partition/install.d.ts",
       "import": "./dist/esm/array/partition/install.js",

@@ -4,6 +4,7 @@ export { forItems } from './forItem';
 export { forItemsReverse } from './forItemReverse';
 export { groupBy } from './groupBy';
 export { intersection } from './intersection';
+export { orderBy } from './orderBy';
 export { partition } from './partition';
 export { pluck } from './pluck';
 export { query } from './query';
