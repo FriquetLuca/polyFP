@@ -45,4 +45,5 @@ export {
   Result,
   type TransposeResultOption,
 } from './result';
+export { Semaphore } from './semaphore';
 export { Stack } from './stack';
