@@ -1,98 +1,132 @@
-import { none, some, type Option } from './option';
+import { None, none, Some, some, type Option } from './option';
 
-export interface Ok<T, E> {
-  kind: 'ok';
-  value: T;
-  isOk(): this is Ok<T, E>;
-  isError(): this is Err<T, E>;
-  map<U>(fn: (value: T) => U): Result<U, E>;
-  mapError<F>(ErrFn: (err: E) => F): Result<T, F>;
-  unwrap(): T;
-  unwrapErr(): never;
-  unwrapOr(value: T): T;
-  unwrapOrElse(fn: () => T): T;
-  toOption(): Option<T>;
+export abstract class Result<T, E> {
+  abstract isOk(): this is Ok<T, E>;
+  abstract isError(): this is Err<T, E>;
+
+  abstract map<U>(fn: (value: T) => U): Result<U, E>;
+  abstract mapError<F>(fn: (error: E) => F): Result<T, F>;
+
+  abstract unwrap(): T;
+  abstract unwrapErr(): E;
+
+  abstract unwrapOr(value: T): T;
+  abstract unwrapOrElse(fn: () => T): T;
+
+  abstract toOption(): Option<T>;
+
+  abstract transpose(): T extends Option<infer U>
+    ? Option<Result<U, E>>
+    : Result<T, E>;
 }
 
-export interface Err<T, E> {
-  kind: 'err';
-  error: E;
-  isOk(): this is Ok<T, E>;
-  isError(): this is Err<T, E>;
-  map<U>(fn: (value: T) => U): Result<U, E>;
-  mapError<F>(ErrFn: (err: E) => F): Result<T, F>;
-  unwrap(): never;
-  unwrapErr(): E;
-  unwrapOr(value: T): T;
-  unwrapOrElse(fn: () => T): T;
-  toOption(): Option<T>;
-}
+export class Ok<T, E> extends Result<T, E> {
+  private readonly value: T;
+  constructor(value: T) {
+    super();
+    this.value = value;
+  }
 
-export type Result<T, E> = Ok<T, E> | Err<T, E>;
-
-export const ok = <T, E = never>(value: T): Result<T, E> => ({
-  kind: 'ok',
-  value,
   isOk(): this is Ok<T, E> {
     return true;
-  },
+  }
+
   isError(): this is Err<T, E> {
     return false;
-  },
-  map(fn) {
-    return ok(fn(value));
-  },
-  mapError() {
-    return ok(value);
-  },
-  unwrap() {
-    return value;
-  },
-  unwrapErr() {
+  }
+
+  map<U>(fn: (value: T) => U): Result<U, E> {
+    return ok(fn(this.value));
+  }
+
+  mapError<F>(): Result<T, F> {
+    return ok(this.value);
+  }
+
+  unwrap(): T {
+    return this.value;
+  }
+
+  unwrapErr(): E {
     throw new Error('Called unwrapErr() on Ok');
-  },
-  unwrapOr() {
-    return value;
-  },
-  unwrapOrElse() {
-    return value;
-  },
-  toOption() {
-    return some(value);
-  },
-});
+  }
 
-export const err = <E, T = never>(error: E): Result<T, E> => ({
-  kind: 'err',
-  error,
+  unwrapOr(): T {
+    return this.value;
+  }
+
+  unwrapOrElse(): T {
+    return this.value;
+  }
+
+  toOption(): Option<T> {
+    return some(this.value);
+  }
+
+  transpose(): any {
+    if (this.value instanceof Some) {
+      return some(ok(this.value.unwrap()));
+    }
+    if (this.value instanceof None) {
+      return none();
+    }
+
+    return this;
+  }
+}
+
+export class Err<T, E> extends Result<T, E> {
+  private readonly error: E;
+  constructor(error: E) {
+    super();
+    this.error = error;
+  }
+
   isOk(): this is Ok<T, E> {
     return false;
-  },
+  }
+
   isError(): this is Err<T, E> {
     return true;
-  },
-  map() {
-    return err(error);
-  },
-  mapError(fn) {
-    return err(fn(error));
-  },
-  unwrap() {
-    throw new Error(`Called unwrap() on Err: ${String(error)}`);
-  },
-  unwrapErr() {
-    return error;
-  },
-  unwrapOr(value) {
+  }
+
+  map<U>(): Result<U, E> {
+    return err(this.error);
+  }
+
+  mapError<F>(fn: (error: E) => F): Result<T, F> {
+    return err(fn(this.error));
+  }
+
+  unwrap(): T {
+    throw new Error(`Called unwrap() on Err: ${String(this.error)}`);
+  }
+
+  unwrapErr(): E {
+    return this.error;
+  }
+
+  unwrapOr(value: T): T {
     return value;
-  },
-  unwrapOrElse(fn) {
+  }
+
+  unwrapOrElse(fn: () => T): T {
     return fn();
-  },
-  toOption() {
+  }
+
+  toOption(): Option<T> {
     return none();
-  },
-});
+  }
+
+  transpose(): any {
+    return this;
+  }
+}
+
+export const ok = <T, E = never>(value: T): Result<T, E> => new Ok<T, E>(value);
+
+export const err = <E, T = never>(error: E): Result<T, E> =>
+  new Err<T, E>(error);
 
 export function attempt<Args extends unknown[], R, Err = unknown>(
   fn: (...args: Args) => R,

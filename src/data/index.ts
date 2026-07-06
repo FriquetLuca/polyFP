@@ -23,14 +23,7 @@ export {
 export { LinkedList } from './linkedList';
 export { MaxPriorityQueue } from './maxPriorityQueue';
 export { MinPriorityQueue } from './minPriorityQueue';
-export {
-  none,
-  some,
-  fromNullable,
-  type None,
-  type Some,
-  type Option,
-} from './option';
+export { none, some, fromNullable, None, Some, Option } from './option';
 export { Queue } from './queue';
 export {
   ok,
@@ -39,8 +32,8 @@ export {
   attemptAsync,
   safe,
   safeAsync,
-  type Ok,
-  type Err,
-  type Result,
+  Ok,
+  Err,
+  Result,
 } from './result';
 export { Stack } from './stack';
