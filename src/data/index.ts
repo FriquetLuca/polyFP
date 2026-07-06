@@ -23,7 +23,15 @@ export {
 export { LinkedList } from './linkedList';
 export { MaxPriorityQueue } from './maxPriorityQueue';
 export { MinPriorityQueue } from './minPriorityQueue';
-export { none, some, fromNullable, None, Some, Option } from './option';
+export {
+  none,
+  some,
+  fromNullable,
+  None,
+  Some,
+  Option,
+  type TransposeOptionResult,
+} from './option';
 export { Queue } from './queue';
 export {
   ok,
@@ -35,5 +43,6 @@ export {
   Ok,
   Err,
   Result,
+  type TransposeResultOption,
 } from './result';
 export { Stack } from './stack';

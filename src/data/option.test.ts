@@ -1,7 +1,5 @@
 import { describe, expect, it } from 'vitest';
-
 import { some, none } from './option';
-
 import { ok, err, Result } from './result';
 
 describe('Option', () => {

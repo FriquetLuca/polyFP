@@ -1,5 +1,8 @@
 import { None, none, Some, some, type Option } from './option';
 
+export type TransposeResultOption<T, E> =
+  T extends Option<infer U> ? Option<Result<U, E>> : Result<T, E>;
+
 export abstract class Result<T, E> {
   abstract isOk(): this is Ok<T, E>;
   abstract isError(): this is Err<T, E>;
@@ -15,9 +18,7 @@ export abstract class Result<T, E> {
 
   abstract toOption(): Option<T>;
 
-  abstract transpose(): T extends Option<infer U>
-    ? Option<Result<U, E>>
-    : Result<T, E>;
+  abstract transpose(): TransposeResultOption<T, E>;
 }
 
 export class Ok<T, E> extends Result<T, E> {
@@ -63,15 +64,18 @@ export class Ok<T, E> extends Result<T, E> {
     return some(this.value);
   }
 
-  transpose(): any {
+  transpose(): TransposeResultOption<T, E> {
     if (this.value instanceof Some) {
-      return some(ok(this.value.unwrap()));
+      return some(ok(this.value.unwrap())) as unknown as TransposeResultOption<
+        T,
+        E
+      >;
     }
     if (this.value instanceof None) {
-      return none();
+      return none() as unknown as TransposeResultOption<T, E>;
     }
 
-    return this;
+    return this as unknown as TransposeResultOption<T, E>;
   }
 }
 
@@ -118,15 +122,14 @@ export class Err<T, E> extends Result<T, E> {
     return none();
   }
 
-  transpose(): any {
-    return this;
+  transpose(): TransposeResultOption<T, E> {
+    throw new Error('Cannot transpose Err');
   }
 }
 
 export const ok = <T, E = never>(value: T): Result<T, E> => new Ok<T, E>(value);
 
-export const err = <E, T = never>(error: E): Result<T, E> =>
-  new Err<T, E>(error);
+export const err = <T, E>(error: E): Result<T, E> => new Err<T, E>(error);
 
 export function attempt<Args extends unknown[], R, Err = unknown>(
   fn: (...args: Args) => R,
@@ -135,7 +138,7 @@ export function attempt<Args extends unknown[], R, Err = unknown>(
   try {
     return ok(fn(...args));
   } catch (e) {
-    return err<Err>(e as Err);
+    return err<R, Err>(e as Err);
   }
 }
 
@@ -146,7 +149,7 @@ export async function attemptAsync<Args extends unknown[], R, Err = unknown>(
   try {
     return ok(await fn(...args));
   } catch (e) {
-    return err<Err>(e as Err);
+    return err<R, Err>(e as Err);
   }
 }
 
