@@ -19,7 +19,12 @@ export * from './unzip/install';
 export * from './window/install';
 export * from './zip/install';
 
+import { installAvg } from './avg/install';
+import { installBatch } from './batch/install';
+import { installCartesianProduct } from './cartesianProduct/install';
 import { installChunk } from './chunk/install';
+import { installChunkWhile } from './chunkWhile/install';
+import { installCountBy } from './countBy/install';
 import { installCrossJoin } from './crossJoin/install';
 import { installDifference } from './difference/install';
 import { installForItems } from './forItem/install';
@@ -40,7 +45,12 @@ import { installWindow } from './window/install';
 import { installZip } from './zip/install';
 
 export function installArrayExtensions() {
+  installAvg();
+  installBatch();
+  installCartesianProduct();
   installChunk();
+  installChunkWhile();
+  installCountBy();
   installCrossJoin();
   installDifference();
   installForItems();

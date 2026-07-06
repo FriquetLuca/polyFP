@@ -103,10 +103,35 @@
       "import": "./dist/esm/array/install.js",
       "require": "./dist/cjs/array/install.js"
     },
+    "./polyfill/array/avg": {
+      "types": "./dist/types/array/avg/install.d.ts",
+      "import": "./dist/esm/array/avg/install.js",
+      "require": "./dist/cjs/array/avg/install.js"
+    },
+    "./polyfill/array/batch": {
+      "types": "./dist/types/array/batch/install.d.ts",
+      "import": "./dist/esm/array/batch/install.js",
+      "require": "./dist/cjs/array/batch/install.js"
+    },
+    "./polyfill/array/cartesianProduct": {
+      "types": "./dist/types/array/cartesianProduct/install.d.ts",
+      "import": "./dist/esm/array/cartesianProduct/install.js",
+      "require": "./dist/cjs/array/cartesianProduct/install.js"
+    },
     "./polyfill/array/chunk": {
       "types": "./dist/types/array/chunk/install.d.ts",
       "import": "./dist/esm/array/chunk/install.js",
       "require": "./dist/cjs/array/chunk/install.js"
+    },
+    "./polyfill/array/chunkWhile": {
+      "types": "./dist/types/array/chunkWhile/install.d.ts",
+      "import": "./dist/esm/array/chunkWhile/install.js",
+      "require": "./dist/cjs/array/chunkWhile/install.js"
+    },
+    "./polyfill/array/countBy": {
+      "types": "./dist/types/array/countBy/install.d.ts",
+      "import": "./dist/esm/array/countBy/install.js",
+      "require": "./dist/cjs/array/countBy/install.js"
     },
     "./polyfill/array/crossJoin": {
       "types": "./dist/types/array/crossJoin/install.d.ts",
@@ -153,6 +178,16 @@
       "import": "./dist/esm/array/leftJoin/install.js",
       "require": "./dist/cjs/array/leftJoin/install.js"
     },
+    "./polyfill/array/max": {
+      "types": "./dist/types/array/max/install.d.ts",
+      "import": "./dist/esm/array/max/install.js",
+      "require": "./dist/cjs/array/max/install.js"
+    },
+    "./polyfill/array/min": {
+      "types": "./dist/types/array/min/install.d.ts",
+      "import": "./dist/esm/array/min/install.js",
+      "require": "./dist/cjs/array/min/install.js"
+    },
     "./polyfill/array/orderBy": {
       "types": "./dist/types/array/orderBy/install.d.ts",
       "import": "./dist/esm/array/orderBy/install.js",
@@ -168,6 +203,11 @@
       "import": "./dist/esm/array/pluck/install.js",
       "require": "./dist/cjs/array/pluck/install.js"
     },
+    "./polyfill/array/product": {
+      "types": "./dist/types/array/product/install.d.ts",
+      "import": "./dist/esm/array/product/install.js",
+      "require": "./dist/cjs/array/product/install.js"
+    },
     "./polyfill/array/query": {
       "types": "./dist/types/array/query/install.d.ts",
       "import": "./dist/esm/array/query/install.js",
@@ -177,6 +217,26 @@
       "types": "./dist/types/array/rightJoin/install.d.ts",
       "import": "./dist/esm/array/rightJoin/install.js",
       "require": "./dist/cjs/array/rightJoin/install.js"
+    },
+    "./polyfill/array/sample": {
+      "types": "./dist/types/array/sample/install.d.ts",
+      "import": "./dist/esm/array/sample/install.js",
+      "require": "./dist/cjs/array/sample/install.js"
+    },
+    "./polyfill/array/sampleSize": {
+      "types": "./dist/types/array/sampleSize/install.d.ts",
+      "import": "./dist/esm/array/sampleSize/install.js",
+      "require": "./dist/cjs/array/sampleSize/install.js"
+    },
+    "./polyfill/array/shuffle": {
+      "types": "./dist/types/array/shuffle/install.d.ts",
+      "import": "./dist/esm/array/shuffle/install.js",
+      "require": "./dist/cjs/array/shuffle/install.js"
+    },
+    "./polyfill/array/sum": {
+      "types": "./dist/types/array/sum/install.d.ts",
+      "import": "./dist/esm/array/sum/install.js",
+      "require": "./dist/cjs/array/sum/install.js"
     },
     "./polyfill/array/unique": {
       "types": "./dist/types/array/unique/install.d.ts",
@@ -197,6 +257,11 @@
       "types": "./dist/types/array/zip/install.d.ts",
       "import": "./dist/esm/array/zip/install.js",
       "require": "./dist/cjs/array/zip/install.js"
+    },
+    "./polyfill/array/zipWith": {
+      "types": "./dist/types/array/zipWith/install.d.ts",
+      "import": "./dist/esm/array/zipWith/install.js",
+      "require": "./dist/cjs/array/zipWith/install.js"
     },
     "./polyfill/function": {
       "types": "./dist/types/function/install.d.ts",
