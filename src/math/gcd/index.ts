@@ -1,13 +1,8 @@
-export function gcd(a: number, b: number) {
+export function gcd(a: number, b: number): number {
   if (!Number.isInteger(a) || !Number.isInteger(b))
     throw new Error('The CDG can only be computed for integers');
-  let remainder;
-  let tempA = a;
-  let tempB = b;
-  while (tempB != 0) {
-    remainder = tempA % tempB;
-    tempA = tempB;
-    tempB = remainder;
+  while (b !== 0) {
+    [a, b] = [b, a % b];
   }
-  return tempA < 0 ? -tempA : tempA;
+  return Math.abs(a);
 }

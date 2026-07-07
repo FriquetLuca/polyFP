@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "type": "module",
   "description": "A functional programming polyfill for typescript.",
-  "license": "MIT",
+  "license": "GPL",
   "author": "FriquetLuca",
   "keywords": [
     "functional",
@@ -467,15 +467,45 @@
       "import": "./dist/esm/math/deltaAngle/install.js",
       "require": "./dist/cjs/math/deltaAngle/install.js"
     },
+    "./polyfill/math/erf": {
+      "types": "./dist/types/math/erf/install.d.ts",
+      "import": "./dist/esm/math/erf/install.js",
+      "require": "./dist/cjs/math/erf/install.js"
+    },
+    "./polyfill/math/erfc": {
+      "types": "./dist/types/math/erfc/install.d.ts",
+      "import": "./dist/esm/math/erfc/install.js",
+      "require": "./dist/cjs/math/erfc/install.js"
+    },
+    "./polyfill/math/erfcx": {
+      "types": "./dist/types/math/erfcx/install.d.ts",
+      "import": "./dist/esm/math/erfcx/install.js",
+      "require": "./dist/cjs/math/erfcx/install.js"
+    },
     "./polyfill/math/frac": {
       "types": "./dist/types/math/frac/install.d.ts",
       "import": "./dist/esm/math/frac/install.js",
       "require": "./dist/cjs/math/frac/install.js"
     },
+    "./polyfill/math/gamma": {
+      "types": "./dist/types/math/gamma/install.d.ts",
+      "import": "./dist/esm/math/gamma/install.js",
+      "require": "./dist/cjs/math/gamma/install.js"
+    },
     "./polyfill/math/gcd": {
       "types": "./dist/types/math/gcd/install.d.ts",
       "import": "./dist/esm/math/gcd/install.js",
       "require": "./dist/cjs/math/gcd/install.js"
+    },
+    "./polyfill/math/invmod": {
+      "types": "./dist/types/math/invmod/install.d.ts",
+      "import": "./dist/esm/math/invmod/install.js",
+      "require": "./dist/cjs/math/invmod/install.js"
+    },
+    "./polyfill/math/isPrime": {
+      "types": "./dist/types/math/isPrime/install.d.ts",
+      "import": "./dist/esm/math/isPrime/install.js",
+      "require": "./dist/cjs/math/isPrime/install.js"
     },
     "./polyfill/math/lcm": {
       "types": "./dist/types/math/lcm/install.d.ts",
@@ -546,6 +576,11 @@
       "types": "./dist/types/math/unlerp/install.d.ts",
       "import": "./dist/esm/math/unlerp/install.js",
       "require": "./dist/cjs/math/unlerp/install.js"
+    },
+    "./polyfill/math/xgcd": {
+      "types": "./dist/types/math/xgcd/install.d.ts",
+      "import": "./dist/esm/math/xgcd/install.js",
+      "require": "./dist/cjs/math/xgcd/install.js"
     },
     "./polyfill/object": {
       "types": "./dist/types/object/install.d.ts",

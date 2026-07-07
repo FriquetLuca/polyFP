@@ -13,5 +13,8 @@ export default defineConfig([
       sourceType: 'module',
       globals: globals.browser,
     },
+    rules: {
+      'no-loss-of-precision': 'off',
+    },
   },
 ]);
