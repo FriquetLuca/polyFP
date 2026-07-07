@@ -4,7 +4,7 @@ export function weightedArithmeticMean(
   values: number[],
   weights: number[]
 ): number {
-  let weightSum = validateWeighted(values, weights);
+  const weightSum = validateWeighted(values, weights);
   if (weightSum === 0) return 0;
   let weightedSum = 0;
 

@@ -442,6 +442,111 @@
       "import": "./dist/esm/function/uncurry/install.js",
       "require": "./dist/cjs/function/uncurry/install.js"
     },
+    "./polyfill/math": {
+      "types": "./dist/types/math/install.d.ts",
+      "import": "./dist/esm/math/install.js",
+      "require": "./dist/cjs/math/install.js"
+    },
+    "./polyfill/math/approximately": {
+      "types": "./dist/types/math/approximately/install.d.ts",
+      "import": "./dist/esm/math/approximately/install.js",
+      "require": "./dist/cjs/math/approximately/install.js"
+    },
+    "./polyfill/math/clamp": {
+      "types": "./dist/types/math/clamp/install.d.ts",
+      "import": "./dist/esm/math/clamp/install.js",
+      "require": "./dist/cjs/math/clamp/install.js"
+    },
+    "./polyfill/math/clerp180": {
+      "types": "./dist/types/math/clerp180/install.d.ts",
+      "import": "./dist/esm/math/clerp180/install.js",
+      "require": "./dist/cjs/math/clerp180/install.js"
+    },
+    "./polyfill/math/deltaAngle": {
+      "types": "./dist/types/math/deltaAngle/install.d.ts",
+      "import": "./dist/esm/math/deltaAngle/install.js",
+      "require": "./dist/cjs/math/deltaAngle/install.js"
+    },
+    "./polyfill/math/frac": {
+      "types": "./dist/types/math/frac/install.d.ts",
+      "import": "./dist/esm/math/frac/install.js",
+      "require": "./dist/cjs/math/frac/install.js"
+    },
+    "./polyfill/math/gcd": {
+      "types": "./dist/types/math/gcd/install.d.ts",
+      "import": "./dist/esm/math/gcd/install.js",
+      "require": "./dist/cjs/math/gcd/install.js"
+    },
+    "./polyfill/math/lcm": {
+      "types": "./dist/types/math/lcm/install.d.ts",
+      "import": "./dist/esm/math/lcm/install.js",
+      "require": "./dist/cjs/math/lcm/install.js"
+    },
+    "./polyfill/math/lerp": {
+      "types": "./dist/types/math/lerp/install.d.ts",
+      "import": "./dist/esm/math/lerp/install.js",
+      "require": "./dist/cjs/math/lerp/install.js"
+    },
+    "./polyfill/math/lerpAngle": {
+      "types": "./dist/types/math/lerpAngle/install.d.ts",
+      "import": "./dist/esm/math/lerpAngle/install.js",
+      "require": "./dist/cjs/math/lerpAngle/install.js"
+    },
+    "./polyfill/math/mod": {
+      "types": "./dist/types/math/mod/install.d.ts",
+      "import": "./dist/esm/math/mod/install.js",
+      "require": "./dist/cjs/math/mod/install.js"
+    },
+    "./polyfill/math/moveTowards": {
+      "types": "./dist/types/math/moveTowards/install.d.ts",
+      "import": "./dist/esm/math/moveTowards/install.js",
+      "require": "./dist/cjs/math/moveTowards/install.js"
+    },
+    "./polyfill/math/moveTowardsAngle": {
+      "types": "./dist/types/math/moveTowardsAngle/install.d.ts",
+      "import": "./dist/esm/math/moveTowardsAngle/install.js",
+      "require": "./dist/cjs/math/moveTowardsAngle/install.js"
+    },
+    "./polyfill/math/pascalTriangle": {
+      "types": "./dist/types/math/pascalTriangle/install.d.ts",
+      "import": "./dist/esm/math/pascalTriangle/install.js",
+      "require": "./dist/cjs/math/pascalTriangle/install.js"
+    },
+    "./polyfill/math/remap": {
+      "types": "./dist/types/math/remap/install.d.ts",
+      "import": "./dist/esm/math/remap/install.js",
+      "require": "./dist/cjs/math/remap/install.js"
+    },
+    "./polyfill/math/repeat": {
+      "types": "./dist/types/math/repeat/install.d.ts",
+      "import": "./dist/esm/math/repeat/install.js",
+      "require": "./dist/cjs/math/repeat/install.js"
+    },
+    "./polyfill/math/roundToPointFive": {
+      "types": "./dist/types/math/roundToPointFive/install.d.ts",
+      "import": "./dist/esm/math/roundToPointFive/install.js",
+      "require": "./dist/cjs/math/roundToPointFive/install.js"
+    },
+    "./polyfill/math/saturate": {
+      "types": "./dist/types/math/saturate/install.d.ts",
+      "import": "./dist/esm/math/saturate/install.js",
+      "require": "./dist/cjs/math/saturate/install.js"
+    },
+    "./polyfill/math/toDegrees": {
+      "types": "./dist/types/math/toDegrees/install.d.ts",
+      "import": "./dist/esm/math/toDegrees/install.js",
+      "require": "./dist/cjs/math/toDegrees/install.js"
+    },
+    "./polyfill/math/toRadians": {
+      "types": "./dist/types/math/toRadians/install.d.ts",
+      "import": "./dist/esm/math/toRadians/install.js",
+      "require": "./dist/cjs/math/toRadians/install.js"
+    },
+    "./polyfill/math/unlerp": {
+      "types": "./dist/types/math/unlerp/install.d.ts",
+      "import": "./dist/esm/math/unlerp/install.js",
+      "require": "./dist/cjs/math/unlerp/install.js"
+    },
     "./polyfill/object": {
       "types": "./dist/types/object/install.d.ts",
       "import": "./dist/esm/object/install.js",
