@@ -15,61 +15,10 @@
     "array",
     "function",
     "object",
-    "adt",
-    "option",
-    "result",
-    "chain",
-    "deepFreeze",
-    "deepMerge",
-    "deepUnfreeze",
-    "getHash",
-    "isClass",
-    "isEqual",
-    "isPlainObject",
-    "omit",
-    "pick",
-    "select",
-    "all",
-    "and",
-    "atLeastOne",
-    "atMostOne",
-    "compose",
-    "curry",
-    "exactlyN",
-    "exactlyOne",
-    "flip",
-    "isFunction",
-    "memoize",
-    "not",
-    "or",
-    "parallel",
-    "partial",
-    "pipe",
-    "retry",
-    "sequence",
-    "tap",
-    "traverse",
-    "uncurry",
-    "chunk",
-    "crossJoin",
-    "difference",
-    "forItems",
-    "forItemsReverse",
-    "fullJoin",
-    "groupBy",
-    "innerJoin",
-    "intersection",
-    "leftJoin",
-    "orderBy",
-    "partition",
-    "pluck",
-    "query",
-    "rightJoin",
-    "unique",
-    "unzip",
-    "window",
-    "zip",
-    "comparePrimitive"
+    "math",
+    "statistics",
+    "helpers",
+    "helper"
   ],
   "files": [
     "dist"
@@ -108,6 +57,11 @@
       "import": "./dist/esm/array/avg/install.js",
       "require": "./dist/cjs/array/avg/install.js"
     },
+    "./polyfill/array/avgAbsDevAroundMedian": {
+      "types": "./dist/types/array/avgAbsDevAroundMedian/install.d.ts",
+      "import": "./dist/esm/array/avgAbsDevAroundMedian/install.js",
+      "require": "./dist/cjs/array/avgAbsDevAroundMedian/install.js"
+    },
     "./polyfill/array/batch": {
       "types": "./dist/types/array/batch/install.d.ts",
       "import": "./dist/esm/array/batch/install.js",
@@ -138,10 +92,20 @@
       "import": "./dist/esm/array/crossJoin/install.js",
       "require": "./dist/cjs/array/crossJoin/install.js"
     },
+    "./polyfill/array/cumulativeAverage": {
+      "types": "./dist/types/array/cumulativeAverage/install.d.ts",
+      "import": "./dist/esm/array/cumulativeAverage/install.js",
+      "require": "./dist/cjs/array/cumulativeAverage/install.js"
+    },
     "./polyfill/array/difference": {
       "types": "./dist/types/array/difference/install.d.ts",
       "import": "./dist/esm/array/difference/install.js",
       "require": "./dist/cjs/array/difference/install.js"
+    },
+    "./polyfill/array/exponentialMovingAverage": {
+      "types": "./dist/types/array/exponentialMovingAverage/install.d.ts",
+      "import": "./dist/esm/array/exponentialMovingAverage/install.js",
+      "require": "./dist/cjs/array/exponentialMovingAverage/install.js"
     },
     "./polyfill/array/forItems": {
       "types": "./dist/types/array/forItems/install.d.ts",
@@ -158,10 +122,25 @@
       "import": "./dist/esm/array/fullJoin/install.js",
       "require": "./dist/cjs/array/fullJoin/install.js"
     },
+    "./polyfill/array/generalizedMean": {
+      "types": "./dist/types/array/generalizedMean/install.d.ts",
+      "import": "./dist/esm/array/generalizedMean/install.js",
+      "require": "./dist/cjs/array/generalizedMean/install.js"
+    },
+    "./polyfill/array/geometricMean": {
+      "types": "./dist/types/array/geometricMean/install.d.ts",
+      "import": "./dist/esm/array/geometricMean/install.js",
+      "require": "./dist/cjs/array/geometricMean/install.js"
+    },
     "./polyfill/array/groupBy": {
       "types": "./dist/types/array/groupBy/install.d.ts",
       "import": "./dist/esm/array/groupBy/install.js",
       "require": "./dist/cjs/array/groupBy/install.js"
+    },
+    "./polyfill/array/harmonicMean": {
+      "types": "./dist/types/array/harmonicMean/install.d.ts",
+      "import": "./dist/esm/array/harmonicMean/install.js",
+      "require": "./dist/cjs/array/harmonicMean/install.js"
     },
     "./polyfill/array/innerJoin": {
       "types": "./dist/types/array/innerJoin/install.d.ts",
@@ -183,10 +162,35 @@
       "import": "./dist/esm/array/max/install.js",
       "require": "./dist/cjs/array/max/install.js"
     },
+    "./polyfill/array/meanAbsoluteDeviation": {
+      "types": "./dist/types/array/meanAbsoluteDeviation/install.d.ts",
+      "import": "./dist/esm/array/meanAbsoluteDeviation/install.js",
+      "require": "./dist/cjs/array/meanAbsoluteDeviation/install.js"
+    },
+    "./polyfill/array/median": {
+      "types": "./dist/types/array/median/install.d.ts",
+      "import": "./dist/esm/array/median/install.js",
+      "require": "./dist/cjs/array/median/install.js"
+    },
+    "./polyfill/array/medianAbsoluteDeviation": {
+      "types": "./dist/types/array/medianAbsoluteDeviation/install.d.ts",
+      "import": "./dist/esm/array/medianAbsoluteDeviation/install.js",
+      "require": "./dist/cjs/array/medianAbsoluteDeviation/install.js"
+    },
+    "./polyfill/array/medianAbsoluteDeviationNormalized": {
+      "types": "./dist/types/array/medianAbsoluteDeviationNormalized/install.d.ts",
+      "import": "./dist/esm/array/medianAbsoluteDeviationNormalized/install.js",
+      "require": "./dist/cjs/array/medianAbsoluteDeviationNormalized/install.js"
+    },
     "./polyfill/array/min": {
       "types": "./dist/types/array/min/install.d.ts",
       "import": "./dist/esm/array/min/install.js",
       "require": "./dist/cjs/array/min/install.js"
+    },
+    "./polyfill/array/move": {
+      "types": "./dist/types/array/move/install.d.ts",
+      "import": "./dist/esm/array/move/install.js",
+      "require": "./dist/cjs/array/move/install.js"
     },
     "./polyfill/array/orderBy": {
       "types": "./dist/types/array/orderBy/install.d.ts",
@@ -218,6 +222,11 @@
       "import": "./dist/esm/array/rightJoin/install.js",
       "require": "./dist/cjs/array/rightJoin/install.js"
     },
+    "./polyfill/array/rootMeanSquare": {
+      "types": "./dist/types/array/rootMeanSquare/install.d.ts",
+      "import": "./dist/esm/array/rootMeanSquare/install.js",
+      "require": "./dist/cjs/array/rootMeanSquare/install.js"
+    },
     "./polyfill/array/sample": {
       "types": "./dist/types/array/sample/install.d.ts",
       "import": "./dist/esm/array/sample/install.js",
@@ -233,10 +242,25 @@
       "import": "./dist/esm/array/shuffle/install.js",
       "require": "./dist/cjs/array/shuffle/install.js"
     },
+    "./polyfill/array/simpleMovingAverage": {
+      "types": "./dist/types/array/simpleMovingAverage/install.d.ts",
+      "import": "./dist/esm/array/simpleMovingAverage/install.js",
+      "require": "./dist/cjs/array/simpleMovingAverage/install.js"
+    },
+    "./polyfill/array/standardDeviation": {
+      "types": "./dist/types/array/standardDeviation/install.d.ts",
+      "import": "./dist/esm/array/standardDeviation/install.js",
+      "require": "./dist/cjs/array/standardDeviation/install.js"
+    },
     "./polyfill/array/sum": {
       "types": "./dist/types/array/sum/install.d.ts",
       "import": "./dist/esm/array/sum/install.js",
       "require": "./dist/cjs/array/sum/install.js"
+    },
+    "./polyfill/array/swap": {
+      "types": "./dist/types/array/swap/install.d.ts",
+      "import": "./dist/esm/array/swap/install.js",
+      "require": "./dist/cjs/array/swap/install.js"
     },
     "./polyfill/array/unique": {
       "types": "./dist/types/array/unique/install.d.ts",
@@ -247,6 +271,51 @@
       "types": "./dist/types/array/unzip/install.d.ts",
       "import": "./dist/esm/array/unzip/install.js",
       "require": "./dist/cjs/array/unzip/install.js"
+    },
+    "./polyfill/array/variance": {
+      "types": "./dist/types/array/variance/install.d.ts",
+      "import": "./dist/esm/array/variance/install.js",
+      "require": "./dist/cjs/array/variance/install.js"
+    },
+    "./polyfill/array/weightedArithmeticMean": {
+      "types": "./dist/types/array/weightedArithmeticMean/install.d.ts",
+      "import": "./dist/esm/array/weightedArithmeticMean/install.js",
+      "require": "./dist/cjs/array/weightedArithmeticMean/install.js"
+    },
+    "./polyfill/array/weightedExponentialMovingAverage": {
+      "types": "./dist/types/array/weightedExponentialMovingAverage/install.d.ts",
+      "import": "./dist/esm/array/weightedExponentialMovingAverage/install.js",
+      "require": "./dist/cjs/array/weightedExponentialMovingAverage/install.js"
+    },
+    "./polyfill/array/weightedGeneralizedMean": {
+      "types": "./dist/types/array/weightedGeneralizedMean/install.d.ts",
+      "import": "./dist/esm/array/weightedGeneralizedMean/install.js",
+      "require": "./dist/cjs/array/weightedGeneralizedMean/install.js"
+    },
+    "./polyfill/array/weightedGeometricMean": {
+      "types": "./dist/types/array/weightedGeometricMean/install.d.ts",
+      "import": "./dist/esm/array/weightedGeometricMean/install.js",
+      "require": "./dist/cjs/array/weightedGeometricMean/install.js"
+    },
+    "./polyfill/array/weightedHarmonicMean": {
+      "types": "./dist/types/array/weightedHarmonicMean/install.d.ts",
+      "import": "./dist/esm/array/weightedHarmonicMean/install.js",
+      "require": "./dist/cjs/array/weightedHarmonicMean/install.js"
+    },
+    "./polyfill/array/weightedMovingAverage": {
+      "types": "./dist/types/array/weightedMovingAverage/install.d.ts",
+      "import": "./dist/esm/array/weightedMovingAverage/install.js",
+      "require": "./dist/cjs/array/weightedMovingAverage/install.js"
+    },
+    "./polyfill/array/weightedNormalizedMean": {
+      "types": "./dist/types/array/weightedNormalizedMean/install.d.ts",
+      "import": "./dist/esm/array/weightedNormalizedMean/install.js",
+      "require": "./dist/cjs/array/weightedNormalizedMean/install.js"
+    },
+    "./polyfill/array/weightedRootMeanSquare": {
+      "types": "./dist/types/array/weightedRootMeanSquare/install.d.ts",
+      "import": "./dist/esm/array/weightedRootMeanSquare/install.js",
+      "require": "./dist/cjs/array/weightedRootMeanSquare/install.js"
     },
     "./polyfill/array/window": {
       "types": "./dist/types/array/window/install.d.ts",

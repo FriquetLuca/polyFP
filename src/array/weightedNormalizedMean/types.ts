@@ -1,0 +1,14 @@
+export {};
+
+declare global {
+  interface Array<T> {
+    weightedNormalizedMean: T extends number
+      ? (this: T[], weights: number[]) => number
+      : never;
+  }
+  interface ReadonlyArray<T> {
+    weightedNormalizedMean: T extends number
+      ? (this: readonly T[], weights: number[]) => number
+      : never;
+  }
+}
