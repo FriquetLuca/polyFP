@@ -8,6 +8,7 @@ export { exactlyN } from './exactlyN';
 export { exactlyOne } from './exactlyOne';
 export { flip } from './flip';
 export { isFunction } from './isFunction';
+export { match } from './match';
 export { memoize } from './memoize';
 export { not } from './not';
 export { or } from './or';

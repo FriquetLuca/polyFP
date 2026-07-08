@@ -387,6 +387,11 @@
       "import": "./dist/esm/function/isFunction/install.js",
       "require": "./dist/cjs/function/isFunction/install.js"
     },
+    "./polyfill/function/match": {
+      "types": "./dist/types/function/match/install.d.ts",
+      "import": "./dist/esm/function/match/install.js",
+      "require": "./dist/cjs/function/match/install.js"
+    },
     "./polyfill/function/memoize": {
       "types": "./dist/types/function/memoize/install.d.ts",
       "import": "./dist/esm/function/memoize/install.js",

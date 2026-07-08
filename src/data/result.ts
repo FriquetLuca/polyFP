@@ -164,3 +164,28 @@ export const safeAsync =
   ) =>
   async (...args: Args): Promise<Result<R, unknown>> =>
     await attemptAsync<Args, R, Err>(fn, ...args);
+
+export function sequence<T, E>(results: Result<T, E>[]): Result<T[], E> {
+  const values: T[] = [];
+
+  for (const result of results) {
+    if (!result.isOk()) {
+      return result as Result<T[], E>;
+    }
+    values.push(result.unwrap());
+  }
+
+  return ok(values);
+}
+
+export function collectErrors<T, E>(results: Result<T, E>[]): E[] {
+  const values: E[] = [];
+
+  for (const result of results) {
+    if (!result.isOk()) {
+      values.push(result.unwrapErr());
+    }
+  }
+
+  return values;
+}
