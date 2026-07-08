@@ -50,4 +50,5 @@ export {
   type TransposeResultOption,
 } from './result';
 export { Semaphore } from './semaphore';
+export { slugger, Slugger } from './slugger';
 export { Stack } from './stack';

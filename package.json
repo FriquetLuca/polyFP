@@ -671,6 +671,16 @@
       "types": "./dist/types/object/select/install.d.ts",
       "import": "./dist/esm/object/select/install.js",
       "require": "./dist/cjs/object/select/install.js"
+    },
+    "./polyfill/string": {
+      "types": "./dist/types/string/install.d.ts",
+      "import": "./dist/esm/string/install.js",
+      "require": "./dist/cjs/string/install.js"
+    },
+    "./polyfill/string/slugify": {
+      "types": "./dist/types/string/slugify/install.d.ts",
+      "import": "./dist/esm/string/slugify/install.js",
+      "require": "./dist/cjs/string/slugify/install.js"
     }
   },
   "repository": {
