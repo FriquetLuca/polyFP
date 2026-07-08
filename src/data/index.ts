@@ -15,6 +15,7 @@ export {
   QueueUnderflowError,
   QueueOverflowError,
 } from './errors';
+export { emitter, Emitter } from './emitter';
 export {
   IterableSource,
   type IterableInput,
@@ -23,6 +24,7 @@ export {
 export { LinkedList } from './linkedList';
 export { MaxPriorityQueue } from './maxPriorityQueue';
 export { MinPriorityQueue } from './minPriorityQueue';
+export { observer, Observer, type Listener } from './observer';
 export {
   none,
   some,
