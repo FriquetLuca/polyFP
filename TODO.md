@@ -84,10 +84,6 @@ memoizeWeak(fn)
 memoizeLRU(fn)
 cached(fn)
 
-functional:
-once
-constant
-
 Statistics:
 covariance
 correlation

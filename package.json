@@ -362,6 +362,11 @@
       "import": "./dist/esm/function/compose/install.js",
       "require": "./dist/cjs/function/compose/install.js"
     },
+    "./polyfill/function/constant": {
+      "types": "./dist/types/function/constant/install.d.ts",
+      "import": "./dist/esm/function/constant/install.js",
+      "require": "./dist/cjs/function/constant/install.js"
+    },
     "./polyfill/function/curry": {
       "types": "./dist/types/function/curry/install.d.ts",
       "import": "./dist/esm/function/curry/install.js",
@@ -401,6 +406,11 @@
       "types": "./dist/types/function/not/install.d.ts",
       "import": "./dist/esm/function/not/install.js",
       "require": "./dist/cjs/function/not/install.js"
+    },
+    "./polyfill/function/once": {
+      "types": "./dist/types/function/once/install.d.ts",
+      "import": "./dist/esm/function/once/install.js",
+      "require": "./dist/cjs/function/once/install.js"
     },
     "./polyfill/function/or": {
       "types": "./dist/types/function/or/install.d.ts",
