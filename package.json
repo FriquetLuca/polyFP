@@ -597,6 +597,11 @@
       "import": "./dist/esm/object/chain/install.js",
       "require": "./dist/cjs/object/chain/install.js"
     },
+    "./polyfill/object/clone": {
+      "types": "./dist/types/object/clone/install.d.ts",
+      "import": "./dist/esm/object/clone/install.js",
+      "require": "./dist/cjs/object/clone/install.js"
+    },
     "./polyfill/object/deepFreeze": {
       "types": "./dist/types/object/deepFreeze/install.d.ts",
       "import": "./dist/esm/object/deepFreeze/install.js",
@@ -616,6 +621,11 @@
       "types": "./dist/types/object/getHash/install.d.ts",
       "import": "./dist/esm/object/getHash/install.js",
       "require": "./dist/cjs/object/getHash/install.js"
+    },
+    "./polyfill/object/invert": {
+      "types": "./dist/types/object/invert/install.d.ts",
+      "import": "./dist/esm/object/invert/install.js",
+      "require": "./dist/cjs/object/invert/install.js"
     },
     "./polyfill/object/isClass": {
       "types": "./dist/types/object/isClass/install.d.ts",
@@ -641,6 +651,11 @@
       "types": "./dist/types/object/pick/install.d.ts",
       "import": "./dist/esm/object/pick/install.js",
       "require": "./dist/cjs/object/pick/install.js"
+    },
+    "./polyfill/object/renameKeys": {
+      "types": "./dist/types/object/renameKeys/install.d.ts",
+      "import": "./dist/esm/object/renameKeys/install.js",
+      "require": "./dist/cjs/object/renameKeys/install.js"
     },
     "./polyfill/object/select": {
       "types": "./dist/types/object/select/install.d.ts",
