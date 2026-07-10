@@ -48,3 +48,5 @@ export class Semaphore {
     return this.queue.length;
   }
 }
+
+export const mutex = () => new Semaphore(1);

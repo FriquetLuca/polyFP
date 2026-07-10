@@ -49,6 +49,7 @@ export {
   Result,
   type TransposeResultOption,
 } from './result';
-export { Semaphore } from './semaphore';
+export { mutex, Semaphore } from './semaphore';
+export { Sexagesimal } from './sexagesimal';
 export { slugger, Slugger } from './slugger';
 export { Stack } from './stack';
