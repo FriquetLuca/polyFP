@@ -143,3 +143,11 @@ export type QueryParameters<
   limit?: number;
   offset?: number;
 };
+export interface AggregateBuilder<T, R> {
+  select<K extends string, A>(
+    as: K,
+    initial: A,
+    reduce: (prev: A, current: T) => A
+  ): AggregateBuilder<T, R & Record<K, A>>;
+  take(): Collapse<R>;
+}

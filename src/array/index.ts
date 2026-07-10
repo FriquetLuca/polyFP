@@ -1,3 +1,4 @@
+export { aggregate } from './aggregate';
 export { avg } from './avg';
 export { avgAbsDevAroundMedian } from './avgAbsDevAroundMedian';
 export { batch } from './batch';

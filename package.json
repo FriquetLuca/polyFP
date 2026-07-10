@@ -52,6 +52,11 @@
       "import": "./dist/esm/array/install.js",
       "require": "./dist/cjs/array/install.js"
     },
+    "./polyfill/array/aggregate": {
+      "types": "./dist/types/array/aggregate/install.d.ts",
+      "import": "./dist/esm/array/aggregate/install.js",
+      "require": "./dist/cjs/array/aggregate/install.js"
+    },
     "./polyfill/array/avg": {
       "types": "./dist/types/array/avg/install.d.ts",
       "import": "./dist/esm/array/avg/install.js",

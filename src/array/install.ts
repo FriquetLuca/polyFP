@@ -1,3 +1,4 @@
+export * from './aggregate/install';
 export * from './avg/install';
 export * from './avgAbsDevAroundMedian/install';
 export * from './batch/install';
@@ -55,6 +56,7 @@ export * from './window/install';
 export * from './zip/install';
 export * from './zipWith/install';
 
+import { installAggregate } from './aggregate/install';
 import { installAvg } from './avg/install';
 import { installAvgAbsDevAroundMedian } from './avgAbsDevAroundMedian/install';
 import { installBatch } from './batch/install';
@@ -113,6 +115,7 @@ import { installZip } from './zip/install';
 import { installZipWith } from './zipWith/install';
 
 export function installArrayExtensions() {
+  installAggregate();
   installAvg();
   installAvgAbsDevAroundMedian();
   installBatch();
