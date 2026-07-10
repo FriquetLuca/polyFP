@@ -9,7 +9,7 @@ describe('Sexagesimal Class', () => {
       expect(result.totalDegrees).toBeCloseTo(10.341805555, 6);
     });
 
-    it('should parse partial format "10°30\""', () => {
+    it('should parse partial format "10°30""', () => {
       const result = Sexagesimal.parse('10° 30"')!;
       // 10 + 30/3600 = 10.008333...
       expect(result.totalDegrees).toBeCloseTo(10.008333, 6);
