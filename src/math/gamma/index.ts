@@ -1,3 +1,5 @@
+// Source: https://www.netlib.org/specfun/gamma
+
 const SQRTPI = 0.9189385332046727417803297; // ln(sqrt(2π))
 const PI = Math.PI;
 const XBIG = 171.624;

@@ -1,3 +1,4 @@
+// Source: https://www.netlib.org/specfun/erf
 const SQRPI = 0.56418958354775628695;
 
 const A = [
