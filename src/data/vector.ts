@@ -1,9 +1,9 @@
 import { clamp } from '../math';
 
 export class Vector {
-  private items: number[];
+  private items: Float32Array;
   constructor(...args: number[]) {
-    this.items = args;
+    this.items = new Float32Array(args);
   }
   get x(): number {
     return this.element(0);
@@ -45,6 +45,7 @@ export class Vector {
     return this.items.length;
   }
   resize(dimensions: number) {
+    if (dimensions === this.items.length) return this;
     const items = [...this.items];
     while (this.items.length < dimensions) {
       items.push(0);
@@ -54,11 +55,35 @@ export class Vector {
     }
     return new Vector(...items);
   }
+  resizeThis(dimensions: number) {
+    if (dimensions === this.items.length) return;
+    const items = [...this.items];
+    while (this.items.length < dimensions) {
+      items.push(0);
+    }
+    while (this.items.length > dimensions) {
+      items.pop();
+    }
+    this.items = new Float32Array(items);
+  }
   add(amount: Vector | number) {
     if (typeof amount === 'number') {
       return new Vector(...this.items.map((i) => i + amount));
     }
     return this.mapWith(amount, (a, b) => a + b);
+  }
+  addThis(amount: Vector | number) {
+    if (typeof amount === 'number') {
+      for (let i = 0; i < this.items.length; i++) {
+        this.items[i] += amount;
+      }
+    } else {
+      const length = Math.max(this.items.length, amount.items.length);
+      this.resizeThis(length);
+      for (let i = 0; i < length; i++) {
+        this.items[i] += amount.element(i);
+      }
+    }
   }
   sub(amount: Vector | number) {
     if (typeof amount === 'number') {
@@ -66,8 +91,26 @@ export class Vector {
     }
     return this.mapWith(amount, (a, b) => a - b);
   }
+  subThis(amount: Vector | number) {
+    if (typeof amount === 'number') {
+      for (let i = 0; i < this.items.length; i++) {
+        this.items[i] -= amount;
+      }
+    } else {
+      const length = Math.max(this.items.length, amount.items.length);
+      this.resizeThis(length);
+      for (let i = 0; i < length; i++) {
+        this.items[i] -= amount.element(i);
+      }
+    }
+  }
   scale(value: number) {
     return new Vector(...this.items.map((i) => i * value));
+  }
+  scaleThis(value: number) {
+    for (let i = 0; i < this.items.length; i++) {
+      this.items[i] *= value;
+    }
   }
   sqrLength() {
     return this.items.reduce((p, c) => p + c * c, 0);
@@ -77,26 +120,34 @@ export class Vector {
   }
   normalize() {
     const length = this.length();
-    if (length <= Number.MIN_VALUE) {
+    if (length <= Number.EPSILON) {
       return Vector.full(0, this.items.length);
     }
-    return new Vector(...this.items.map((i) => i / length));
+    const oneOverL = 1 / length;
+    return new Vector(...this.items.map((i) => i * oneOverL));
+  }
+  normalizeThis() {
+    const length = this.length();
+    if (length <= Number.EPSILON) {
+      return Vector.full(0, this.items.length);
+    }
+    const oneOverL = 1 / length;
+    for (let i = 0; i < this.items.length; i++) {
+      this.items[i] *= oneOverL;
+    }
   }
   dot(vec: Vector) {
-    const dimensions = Math.min(vec.items.length, this.items.length);
-    let sum = 0;
-    for (let i = 0; i < dimensions; i++) {
-      sum += this.element(i) * vec.element(i);
-    }
-    return sum;
+    return this.reduceWith(vec, (prev, a, b) => prev + a * b, 0);
   }
   sqrDistance(vec: Vector) {
-    const dimensions = Math.max(vec.items.length, this.items.length);
-    const newVec = [];
-    for (let i = 0; i < dimensions; i++) {
-      newVec.push(this.element(i) - vec.element(i));
-    }
-    return newVec.reduce((p, c) => p + c * c, 0);
+    return this.reduceWith(
+      vec,
+      (prev, a, b) => {
+        const ab = a - b;
+        return prev + ab * ab;
+      },
+      0
+    );
   }
   distance(vec: Vector) {
     return Math.sqrt(this.sqrDistance(vec));
@@ -106,7 +157,7 @@ export class Vector {
   }
   angle(vec: Vector) {
     const denominator = Math.sqrt(this.sqrLength() * vec.sqrLength());
-    if (denominator <= Number.MIN_VALUE) {
+    if (denominator <= Number.EPSILON) {
       return 0;
     }
     const theta = clamp(this.dot(vec) / denominator, -1, 1);
@@ -118,7 +169,7 @@ export class Vector {
         ? normal.resize(this.items.length)
         : this.resize(normal.items.length);
     const sqrNormalLength = newNormal.sqrLength();
-    if (sqrNormalLength <= Number.MIN_VALUE)
+    if (sqrNormalLength <= Number.EPSILON)
       return Vector.full(0, newNormal.items.length);
     const d = this.dot(newNormal);
     return newNormal.scale(d / sqrNormalLength);
@@ -157,12 +208,10 @@ export class Vector {
   moveTowards(target: Vector, maxDistanceDelta: number) {
     const toVector = target.sub(this);
     const dist = toVector.length();
-    if (dist <= maxDistanceDelta || dist <= Number.MIN_VALUE) {
+    if (dist <= maxDistanceDelta || dist <= Number.EPSILON) {
       return target;
     }
-    return this.add(toVector)
-      .scale(1 / dist)
-      .scale(maxDistanceDelta);
+    return this.add(toVector.scale(maxDistanceDelta / dist));
   }
   lerp(to: Vector, t: number) {
     return this.add(to.sub(this).scale(t));
@@ -181,12 +230,12 @@ export class Vector {
   slerp(target: Vector, t: number) {
     const thisLength = this.length();
     const actualVector =
-      thisLength > Number.MIN_VALUE
+      thisLength > Number.EPSILON
         ? this.scale(1 / thisLength)
         : Vector.full(0, this.items.length);
     const targetLength = target.length();
     const targetVector =
-      targetLength > Number.MIN_VALUE
+      targetLength > Number.EPSILON
         ? target.scale(1 / targetLength)
         : Vector.full(0, target.items.length);
     const magnitude = thisLength + (targetLength - thisLength) * t;
@@ -276,11 +325,38 @@ export class Vector {
     }
     return new Vector(...result);
   }
+  reduceWith<T>(
+    vec: Vector,
+    fn: (prev: T, a: number, b: number) => T,
+    defaultValue: T
+  ): T {
+    const length = Math.max(this.items.length, vec.items.length);
+    let result = defaultValue;
+    for (let i = 0; i < length; i++) {
+      result = fn(result, this.element(i), vec.element(i));
+    }
+    return result;
+  }
   hadamard(vec: Vector) {
     return this.mapWith(vec, (a, b) => a * b);
   }
+  hadamardThis(vec: Vector) {
+    const length = Math.max(this.items.length, vec.items.length);
+    this.resizeThis(length);
+    for (let i = 0; i < length; i++) {
+      this.items[i] *= vec.element(i);
+    }
+  }
   divideElements(vec: Vector) {
     return this.mapWith(vec, (a, b) => (b === 0 ? 0 : a / b));
+  }
+  divideElementsThis(vec: Vector) {
+    const length = Math.max(this.items.length, vec.items.length);
+    this.resizeThis(length);
+    for (let i = 0; i < length; i++) {
+      const e = vec.element(i);
+      this.items[i] = e === 0 ? 0 : this.items[i] / e;
+    }
   }
   min(vec: Vector) {
     return this.mapWith(vec, (a, b) => Math.min(a, b));
@@ -290,5 +366,8 @@ export class Vector {
   }
   pow(vec: Vector) {
     return this.mapWith(vec, (a, b) => Math.pow(a, b));
+  }
+  manhattanDistance(target: Vector) {
+    return this.reduceWith(target, (prev, a, b) => prev + Math.abs(a - b), 0);
   }
 }

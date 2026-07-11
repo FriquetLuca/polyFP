@@ -15,6 +15,7 @@ export {
   QueueUnderflowError,
   QueueOverflowError,
 } from './errors';
+export { IndexedPool } from './indexedPool';
 export { emitter, Emitter } from './emitter';
 export {
   IterableSource,
