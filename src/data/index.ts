@@ -42,7 +42,7 @@ export {
   attemptAsync,
   safe,
   safeAsync,
-  sequence,
+  combine,
   collectErrors,
   Ok,
   Err,

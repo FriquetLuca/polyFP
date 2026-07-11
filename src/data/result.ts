@@ -165,7 +165,7 @@ export const safeAsync =
   async (...args: Args): Promise<Result<R, unknown>> =>
     await attemptAsync<Args, R, Err>(fn, ...args);
 
-export function sequence<T, E>(results: Result<T, E>[]): Result<T[], E> {
+export function combine<T, E>(results: Result<T, E>[]): Result<T[], E> {
   const values: T[] = [];
 
   for (const result of results) {

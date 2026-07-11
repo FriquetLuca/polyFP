@@ -337,6 +337,21 @@
       "import": "./dist/esm/array/zipWith/install.js",
       "require": "./dist/cjs/array/zipWith/install.js"
     },
+    "./polyfill/date": {
+      "types": "./dist/types/date/install.d.ts",
+      "import": "./dist/esm/date/install.js",
+      "require": "./dist/cjs/date/install.js"
+    },
+    "./polyfill/date/isDate": {
+      "types": "./dist/types/date/isDate/install.d.ts",
+      "import": "./dist/esm/date/isDate/install.js",
+      "require": "./dist/cjs/date/isDate/install.js"
+    },
+    "./polyfill/date/isLeapYear": {
+      "types": "./dist/types/date/isLeapYear/install.d.ts",
+      "import": "./dist/esm/date/isLeapYear/install.js",
+      "require": "./dist/cjs/date/isLeapYear/install.js"
+    },
     "./polyfill/function": {
       "types": "./dist/types/function/install.d.ts",
       "import": "./dist/esm/function/install.js",

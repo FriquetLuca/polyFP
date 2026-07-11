@@ -1,7 +1,6 @@
 import type { AggregateBuilder } from '../../types';
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
-export function aggregate<T>(items: T[]): AggregateBuilder<T, {}> {
+export function aggregate<T>(items: T[]): AggregateBuilder<T> {
   const mappers: {
     as: string;
     initial: unknown;
@@ -32,6 +31,5 @@ export function aggregate<T>(items: T[]): AggregateBuilder<T, {}> {
       return result;
     },
   };
-  // eslint-disable-next-line @typescript-eslint/no-empty-object-type
-  return builder as AggregateBuilder<T, {}>;
+  return builder as AggregateBuilder<T>;
 }

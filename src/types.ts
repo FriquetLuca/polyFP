@@ -143,7 +143,8 @@ export type QueryParameters<
   limit?: number;
   offset?: number;
 };
-export interface AggregateBuilder<T, R> {
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
+export interface AggregateBuilder<T, R = {}> {
   select<K extends string, A>(
     as: K,
     initial: A,
