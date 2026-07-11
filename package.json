@@ -702,10 +702,165 @@
       "import": "./dist/esm/string/install.js",
       "require": "./dist/cjs/string/install.js"
     },
+    "./polyfill/string/abbreviate": {
+      "types": "./dist/types/string/abbreviate/install.d.ts",
+      "import": "./dist/esm/string/abbreviate/install.js",
+      "require": "./dist/cjs/string/abbreviate/install.js"
+    },
+    "./polyfill/string/camelCase": {
+      "types": "./dist/types/string/camelCase/install.d.ts",
+      "import": "./dist/esm/string/camelCase/install.js",
+      "require": "./dist/cjs/string/camelCase/install.js"
+    },
+    "./polyfill/string/constantCase": {
+      "types": "./dist/types/string/constantCase/install.d.ts",
+      "import": "./dist/esm/string/constantCase/install.js",
+      "require": "./dist/cjs/string/constantCase/install.js"
+    },
+    "./polyfill/string/dotCase": {
+      "types": "./dist/types/string/dotCase/install.d.ts",
+      "import": "./dist/esm/string/dotCase/install.js",
+      "require": "./dist/cjs/string/dotCase/install.js"
+    },
+    "./polyfill/string/hamming": {
+      "types": "./dist/types/string/hamming/install.d.ts",
+      "import": "./dist/esm/string/hamming/install.js",
+      "require": "./dist/cjs/string/hamming/install.js"
+    },
+    "./polyfill/string/initials": {
+      "types": "./dist/types/string/initials/install.d.ts",
+      "import": "./dist/esm/string/initials/install.js",
+      "require": "./dist/cjs/string/initials/install.js"
+    },
+    "./polyfill/string/isDateFormat": {
+      "types": "./dist/types/string/isDateFormat/install.d.ts",
+      "import": "./dist/esm/string/isDateFormat/install.js",
+      "require": "./dist/cjs/string/isDateFormat/install.js"
+    },
+    "./polyfill/string/isDuration": {
+      "types": "./dist/types/string/isDuration/install.d.ts",
+      "import": "./dist/esm/string/isDuration/install.js",
+      "require": "./dist/cjs/string/isDuration/install.js"
+    },
+    "./polyfill/string/isEmail": {
+      "types": "./dist/types/string/isEmail/install.d.ts",
+      "import": "./dist/esm/string/isEmail/install.js",
+      "require": "./dist/cjs/string/isEmail/install.js"
+    },
+    "./polyfill/string/isIPv4": {
+      "types": "./dist/types/string/isIPv4/install.d.ts",
+      "import": "./dist/esm/string/isIPv4/install.js",
+      "require": "./dist/cjs/string/isIPv4/install.js"
+    },
+    "./polyfill/string/isIPv6": {
+      "types": "./dist/types/string/isIPv6/install.d.ts",
+      "import": "./dist/esm/string/isIPv6/install.js",
+      "require": "./dist/cjs/string/isIPv6/install.js"
+    },
+    "./polyfill/string/isTime": {
+      "types": "./dist/types/string/isTime/install.d.ts",
+      "import": "./dist/esm/string/isTime/install.js",
+      "require": "./dist/cjs/string/isTime/install.js"
+    },
+    "./polyfill/string/isURL": {
+      "types": "./dist/types/string/isURL/install.d.ts",
+      "import": "./dist/esm/string/isURL/install.js",
+      "require": "./dist/cjs/string/isURL/install.js"
+    },
+    "./polyfill/string/isUUID": {
+      "types": "./dist/types/string/isUUID/install.d.ts",
+      "import": "./dist/esm/string/isUUID/install.js",
+      "require": "./dist/cjs/string/isUUID/install.js"
+    },
+    "./polyfill/string/jaro": {
+      "types": "./dist/types/string/jaro/install.d.ts",
+      "import": "./dist/esm/string/jaro/install.js",
+      "require": "./dist/cjs/string/jaro/install.js"
+    },
+    "./polyfill/string/jaroWinkler": {
+      "types": "./dist/types/string/jaroWinkler/install.d.ts",
+      "import": "./dist/esm/string/jaroWinkler/install.js",
+      "require": "./dist/cjs/string/jaroWinkler/install.js"
+    },
+    "./polyfill/string/kebabCase": {
+      "types": "./dist/types/string/kebabCase/install.d.ts",
+      "import": "./dist/esm/string/kebabCase/install.js",
+      "require": "./dist/cjs/string/kebabCase/install.js"
+    },
+    "./polyfill/string/levenshtein": {
+      "types": "./dist/types/string/levenshtein/install.d.ts",
+      "import": "./dist/esm/string/levenshtein/install.js",
+      "require": "./dist/cjs/string/levenshtein/install.js"
+    },
+    "./polyfill/string/lowerFirst": {
+      "types": "./dist/types/string/lowerFirst/install.d.ts",
+      "import": "./dist/esm/string/lowerFirst/install.js",
+      "require": "./dist/cjs/string/lowerFirst/install.js"
+    },
+    "./polyfill/string/moduleCase": {
+      "types": "./dist/types/string/moduleCase/install.d.ts",
+      "import": "./dist/esm/string/moduleCase/install.js",
+      "require": "./dist/cjs/string/moduleCase/install.js"
+    },
+    "./polyfill/string/noCase": {
+      "types": "./dist/types/string/noCase/install.d.ts",
+      "import": "./dist/esm/string/noCase/install.js",
+      "require": "./dist/cjs/string/noCase/install.js"
+    },
+    "./polyfill/string/pascalCase": {
+      "types": "./dist/types/string/pascalCase/install.d.ts",
+      "import": "./dist/esm/string/pascalCase/install.js",
+      "require": "./dist/cjs/string/pascalCase/install.js"
+    },
+    "./polyfill/string/randomStr": {
+      "types": "./dist/types/string/randomStr/install.d.ts",
+      "import": "./dist/esm/string/randomStr/install.js",
+      "require": "./dist/cjs/string/randomStr/install.js"
+    },
+    "./polyfill/string/sentenceCase": {
+      "types": "./dist/types/string/sentenceCase/install.d.ts",
+      "import": "./dist/esm/string/sentenceCase/install.js",
+      "require": "./dist/cjs/string/sentenceCase/install.js"
+    },
     "./polyfill/string/slugify": {
       "types": "./dist/types/string/slugify/install.d.ts",
       "import": "./dist/esm/string/slugify/install.js",
       "require": "./dist/cjs/string/slugify/install.js"
+    },
+    "./polyfill/string/snakeCase": {
+      "types": "./dist/types/string/snakeCase/install.d.ts",
+      "import": "./dist/esm/string/snakeCase/install.js",
+      "require": "./dist/cjs/string/snakeCase/install.js"
+    },
+    "./polyfill/string/swapCase": {
+      "types": "./dist/types/string/swapCase/install.d.ts",
+      "import": "./dist/esm/string/swapCase/install.js",
+      "require": "./dist/cjs/string/swapCase/install.js"
+    },
+    "./polyfill/string/textPosition": {
+      "types": "./dist/types/string/textPosition/install.d.ts",
+      "import": "./dist/esm/string/textPosition/install.js",
+      "require": "./dist/cjs/string/textPosition/install.js"
+    },
+    "./polyfill/string/titleCase": {
+      "types": "./dist/types/string/titleCase/install.d.ts",
+      "import": "./dist/esm/string/titleCase/install.js",
+      "require": "./dist/cjs/string/titleCase/install.js"
+    },
+    "./polyfill/string/trainCase": {
+      "types": "./dist/types/string/trainCase/install.d.ts",
+      "import": "./dist/esm/string/trainCase/install.js",
+      "require": "./dist/cjs/string/trainCase/install.js"
+    },
+    "./polyfill/string/upperFirst": {
+      "types": "./dist/types/string/upperFirst/install.d.ts",
+      "import": "./dist/esm/string/upperFirst/install.js",
+      "require": "./dist/cjs/string/upperFirst/install.js"
+    },
+    "./polyfill/string/words": {
+      "types": "./dist/types/string/words/install.d.ts",
+      "import": "./dist/esm/string/words/install.js",
+      "require": "./dist/cjs/string/words/install.js"
     }
   },
   "repository": {

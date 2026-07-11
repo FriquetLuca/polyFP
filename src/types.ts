@@ -152,3 +152,7 @@ export interface AggregateBuilder<T, R = {}> {
   ): AggregateBuilder<T, R & Record<K, A>>;
   take(): Collapse<R>;
 }
+export interface TextPosition {
+  line: number;
+  char: number;
+}

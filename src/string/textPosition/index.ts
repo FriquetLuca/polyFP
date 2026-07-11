@@ -1,7 +1,4 @@
-export interface TextPosition {
-  line: number;
-  char: number;
-}
+import type { TextPosition } from '../../types';
 
 export function textPosition(
   content: string,
