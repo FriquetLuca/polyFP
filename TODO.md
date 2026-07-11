@@ -215,13 +215,6 @@ window
 You already have or planned:
 
 Array extensions
-partition
-splitAt
-take / drop
-takeWhile / dropWhile
-window
-unzip
-joins (left, right, inner, full, cross)
 query DSL
 aggregate engine
 

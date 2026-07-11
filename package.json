@@ -412,6 +412,16 @@
       "import": "./dist/esm/function/isFunction/install.js",
       "require": "./dist/cjs/function/isFunction/install.js"
     },
+    "./polyfill/function/isPromise": {
+      "types": "./dist/types/function/isPromise/install.d.ts",
+      "import": "./dist/esm/function/isPromise/install.js",
+      "require": "./dist/cjs/function/isPromise/install.js"
+    },
+    "./polyfill/function/isPromiseLike": {
+      "types": "./dist/types/function/isPromiseLike/install.d.ts",
+      "import": "./dist/esm/function/isPromiseLike/install.js",
+      "require": "./dist/cjs/function/isPromiseLike/install.js"
+    },
     "./polyfill/function/match": {
       "types": "./dist/types/function/match/install.d.ts",
       "import": "./dist/esm/function/match/install.js",

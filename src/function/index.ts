@@ -9,6 +9,8 @@ export { exactlyN } from './exactlyN';
 export { exactlyOne } from './exactlyOne';
 export { flip } from './flip';
 export { isFunction } from './isFunction';
+export { isPromise } from './isPromise';
+export { isPromiseLike } from './isPromiseLike';
 export { match } from './match';
 export { memoize } from './memoize';
 export { not } from './not';
