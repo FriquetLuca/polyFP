@@ -12,6 +12,7 @@ export * from './omit/install';
 export * from './pick/install';
 export * from './renameKeys/install';
 export * from './select/install';
+export * from './shallowClone/install';
 
 import { installChain } from './chain/install';
 import { installClone } from './clone/install';
@@ -27,6 +28,7 @@ import { installOmit } from './omit/install';
 import { installPick } from './pick/install';
 import { installRenameKeys } from './renameKeys/install';
 import { installSelect } from './select/install';
+import { installShallowClone } from './shallowClone/install';
 
 export function installObjectExtensions() {
   installChain();
@@ -43,4 +45,5 @@ export function installObjectExtensions() {
   installPick();
   installRenameKeys();
   installSelect();
+  installShallowClone();
 }

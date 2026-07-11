@@ -12,3 +12,4 @@ export { omit } from './omit';
 export { pick } from './pick';
 export { renameKeys } from './renameKeys';
 export { select } from './select';
+export { shallowClone } from './shallowClone';

@@ -692,6 +692,11 @@
       "import": "./dist/esm/object/select/install.js",
       "require": "./dist/cjs/object/select/install.js"
     },
+    "./polyfill/object/shallowClone": {
+      "types": "./dist/types/object/shallowClone/install.d.ts",
+      "import": "./dist/esm/object/shallowClone/install.js",
+      "require": "./dist/cjs/object/shallowClone/install.js"
+    },
     "./polyfill/string": {
       "types": "./dist/types/string/install.d.ts",
       "import": "./dist/esm/string/install.js",
