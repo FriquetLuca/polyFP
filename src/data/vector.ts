@@ -17,23 +17,29 @@ export class Vector {
   get w(): number {
     return this.element(3);
   }
-  static forward() {
+  static get zero() {
+    return new Vector(0, 0, 0);
+  }
+  static get one() {
+    return new Vector(1, 1, 1);
+  }
+  static get forward() {
     return new Vector(0, 0, 1);
   }
-  static back() {
+  static get back() {
     return new Vector(0, 0, -1);
   }
-  static up() {
-    return new Vector(0, 1);
+  static get up() {
+    return new Vector(0, 1, 0);
   }
-  static down() {
-    return new Vector(0, -1);
+  static get down() {
+    return new Vector(0, -1, 0);
   }
-  static left() {
-    return new Vector(-1, 0);
+  static get left() {
+    return new Vector(-1, 0, 0);
   }
-  static right() {
-    return new Vector(1, 0);
+  static get right() {
+    return new Vector(1, 0, 0);
   }
   static full(value: number, dimensions: number) {
     return new Vector(...new Array(dimensions).fill(value));
