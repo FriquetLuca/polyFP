@@ -1,17 +1,13 @@
-import { none, some, type Option } from '../../data/option';
-
+import type { Option } from '../../data/option';
+import { sample } from './index';
 export * from './types';
 
-export function installSample() {
-  if (!Array.prototype.sample) {
-    Object.defineProperty(Array.prototype, 'sample', {
-      value<T>(this: T[]): Option<T> {
-        return this.length === 0
-          ? none()
-          : some(this[(Math.random() * this.length) | 0]);
-      },
-      writable: true,
-      configurable: true,
-    });
-  }
+if (!Array.prototype.sample) {
+  Object.defineProperty(Array.prototype, 'sample', {
+    value<T>(this: T[]): Option<T> {
+      return sample(this);
+    },
+    writable: true,
+    configurable: true,
+  });
 }

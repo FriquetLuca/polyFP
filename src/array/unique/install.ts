@@ -1,13 +1,12 @@
+import { unique } from './index';
 export * from './types';
 
-export function installUnique() {
-  if (!Array.prototype.unique) {
-    Object.defineProperty(Array.prototype, 'unique', {
-      value<T>(this: T[]): T[] {
-        return [...new Set(this)];
-      },
-      writable: true,
-      configurable: true,
-    });
-  }
+if (!Array.prototype.unique) {
+  Object.defineProperty(Array.prototype, 'unique', {
+    value<T>(this: T[]): T[] {
+      return unique(this);
+    },
+    writable: true,
+    configurable: true,
+  });
 }
