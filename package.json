@@ -577,6 +577,16 @@
       "import": "./dist/esm/math/pascalTriangle/install.js",
       "require": "./dist/cjs/math/pascalTriangle/install.js"
     },
+    "./polyfill/math/randomInt": {
+      "types": "./dist/types/math/randomInt/install.d.ts",
+      "import": "./dist/esm/math/randomInt/install.js",
+      "require": "./dist/cjs/math/randomInt/install.js"
+    },
+    "./polyfill/math/randomIntInclusive": {
+      "types": "./dist/types/math/randomIntInclusive/install.d.ts",
+      "import": "./dist/esm/math/randomIntInclusive/install.js",
+      "require": "./dist/cjs/math/randomIntInclusive/install.js"
+    },
     "./polyfill/math/remap": {
       "types": "./dist/types/math/remap/install.d.ts",
       "import": "./dist/esm/math/remap/install.js",
