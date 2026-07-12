@@ -195,8 +195,8 @@ export class QueryBuilder<TInput, TCurrent> {
     ]);
   }
 
-  select<const F extends readonly (readonly [keyof TCurrent, string?])[]>(
-    fields: F
+  select<const F extends [key: keyof TCurrent, as?: string][]>(
+    ...fields: F
   ): QueryBuilder<TInput, InferSelect<TCurrent, F>> {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return new QueryBuilder<TInput, any>(this.initialData, [

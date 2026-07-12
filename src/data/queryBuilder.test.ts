@@ -49,7 +49,7 @@ describe('QueryBuilder', () => {
   describe('select()', () => {
     it('should pluck specific fields and apply aliases correctly', () => {
       const result = queryBuilder(users)
-        .select([['name', 'username'], ['age']])
+        .select(['name', 'username'], ['age'])
         .execute();
 
       expect(result[0]).toEqual({ username: 'Alice', age: 25 });
@@ -154,10 +154,7 @@ describe('QueryBuilder', () => {
       const result = queryBuilder(orders)
         .where((o) => o.amount > 30)
         .join((j) => j.inner(users).on((o, u) => o.userId === u.id))
-        .select([
-          ['name', 'customer'],
-          ['amount', 'spent'],
-        ])
+        .select(['name', 'customer'], ['amount', 'spent'])
         .execute();
 
       expect(result).toHaveLength(3);
