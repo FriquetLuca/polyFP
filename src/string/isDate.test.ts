@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { isDate } from './isDate';
+import { isDateFormat } from './isDateFormat';
 
 describe('ISO 8601 Full Specification Coverage', () => {
   const validFormats = [
@@ -69,13 +69,13 @@ describe('ISO 8601 Full Specification Coverage', () => {
 
   validFormats.forEach((format) => {
     it(`should accept valid format: ${format}`, () => {
-      expect(isDate(format)).toBe(true);
+      expect(isDateFormat(format)).toBe(true);
     });
   });
 
   invalidFormats.forEach((format) => {
     it(`should reject invalid format: ${format}`, () => {
-      expect(isDate(format)).toBe(false);
+      expect(isDateFormat(format)).toBe(false);
     });
   });
 });

@@ -35,6 +35,7 @@ export {
   Option,
   type TransposeOptionResult,
 } from './option';
+export { queryBuilder, QueryBuilder } from './queryBuilder';
 export { Queue } from './queue';
 export {
   ok,

@@ -143,6 +143,12 @@ export type QueryParameters<
   limit?: number;
   offset?: number;
 };
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export interface Aggregator<T, TState = any, TResult = any> {
+  init: () => TState;
+  step: (state: TState, item: T) => TState;
+  result: (state: TState) => TResult;
+}
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface AggregateBuilder<T, R = {}> {
   select<K extends string, A>(
@@ -156,3 +162,15 @@ export interface TextPosition {
   line: number;
   char: number;
 }
+export type InferSelect<
+  T,
+  F extends readonly (readonly [keyof T, string?])[],
+> = Collapse<{
+  [
+    K in F[number] as K[1] extends string
+      ? K[1]
+      : K[0] extends string | number
+        ? K[0]
+        : never
+  ]: T[K[0] & keyof T];
+}>;
