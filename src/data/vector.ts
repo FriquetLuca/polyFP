@@ -347,9 +347,7 @@ export class Vector {
     return this.mapWith(vec, (a, b) => a * b);
   }
   hadamardThis(vec: Vector) {
-    const length = Math.max(this.items.length, vec.items.length);
-    this.resizeThis(length);
-    for (let i = 0; i < length; i++) {
+    for (let i = 0; i < this.items.length; i++) {
       this.items[i] *= vec.element(i);
     }
   }
@@ -357,9 +355,7 @@ export class Vector {
     return this.mapWith(vec, (a, b) => (b === 0 ? 0 : a / b));
   }
   divideElementsThis(vec: Vector) {
-    const length = Math.max(this.items.length, vec.items.length);
-    this.resizeThis(length);
-    for (let i = 0; i < length; i++) {
+    for (let i = 0; i < this.items.length; i++) {
       const e = vec.element(i);
       this.items[i] = e === 0 ? 0 : this.items[i] / e;
     }
@@ -375,5 +371,8 @@ export class Vector {
   }
   manhattanDistance(target: Vector) {
     return this.reduceWith(target, (prev, a, b) => prev + Math.abs(a - b), 0);
+  }
+  toJSON() {
+    return [...this.items];
   }
 }
