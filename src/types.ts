@@ -1,6 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type RecordType = Record<string | number | symbol, any>;
 export type DeepReadonly<T> = { readonly [K in keyof T]: DeepReadonly<T[K]> };
+export type Mutable<T> = { -readonly [K in keyof T]: T[K] };
 export type DeepMutable<T> = { -readonly [K in keyof T]: DeepMutable<T[K]> };
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export type DeepMerge<T extends object[], Rest = {}> = T extends [

@@ -1,4 +1,10 @@
-import type { Aggregator, Collapse, InferSelect, OrderBy } from '../types';
+import type {
+  Aggregator,
+  Collapse,
+  InferSelect,
+  OrderBy,
+  Mutable,
+} from '../types';
 import { comparePrimitive } from './comparePrimitive';
 
 const agg = {
@@ -230,7 +236,8 @@ export class QueryBuilder<TInput, TCurrent> {
   ): QueryBuilder<
     TInput,
     Collapse<
-      Pick<TCurrent, K[number]> & { [P in keyof A]: ReturnType<A[P]['result']> }
+      Pick<TCurrent, K[number]> &
+        Mutable<{ [P in keyof A]: ReturnType<A[P]['result']> }>
     >
   > {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
