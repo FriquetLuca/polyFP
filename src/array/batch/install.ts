@@ -1,5 +1,5 @@
-import { batch } from './index';
-export * from './types';
+import { batch } from './index.js';
+export type * from './types';
 
 if (!Array.batch) {
   Object.defineProperty(Array, 'batch', {

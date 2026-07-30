@@ -1,4 +1,4 @@
-import { jaro } from '../jaro';
+import { jaro } from '../jaro/index.js';
 
 export function jaroWinkler(a: string, b: string): number {
   const charsA = Array.from(a);

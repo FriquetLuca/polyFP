@@ -1,7 +1,7 @@
 import type { RecordType, QueryParameters, QueryResult } from '../../types';
-import { query } from './index';
+import { query } from './index.js';
 
-export * from './types';
+export type * from './types';
 
 if (!Array.prototype.query) {
   Object.defineProperty(Array.prototype, 'query', {

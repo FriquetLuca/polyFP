@@ -1,5 +1,5 @@
-import { moduleCase } from './index';
-import './types';
+import { moduleCase } from './index.js';
+export type * from './types';
 
 if (!String.prototype.moduleCase) {
   Object.defineProperty(String.prototype, 'moduleCase', {

@@ -1,5 +1,5 @@
-import { pipe } from './index';
-import './types';
+import { pipe } from './index.js';
+export type * from './types';
 
 if (!Function.pipe) {
   Object.defineProperty(Function, 'pipe', {

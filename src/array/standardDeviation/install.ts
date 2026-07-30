@@ -1,5 +1,5 @@
-import { standardDeviation } from './index';
-export * from './types';
+import { standardDeviation } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.standardDeviation) {
   Object.defineProperty(Array.prototype, 'standardDeviation', {

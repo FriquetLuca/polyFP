@@ -1,5 +1,5 @@
-import { pluck } from './index';
-export * from './types';
+import { pluck } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.pluck) {
   Object.defineProperty(Array.prototype, 'pluck', {

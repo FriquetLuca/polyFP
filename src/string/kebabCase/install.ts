@@ -1,5 +1,5 @@
-import { kebabCase } from './index';
-import './types';
+import { kebabCase } from './index.js';
+export type * from './types';
 
 if (!String.prototype.kebabCase) {
   Object.defineProperty(String.prototype, 'kebabCase', {

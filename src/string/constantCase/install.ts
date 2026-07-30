@@ -1,5 +1,5 @@
-import { constantCase } from './index';
-import './types';
+import { constantCase } from './index.js';
+export type * from './types';
 
 if (!String.prototype.constantCase) {
   Object.defineProperty(String.prototype, 'constantCase', {

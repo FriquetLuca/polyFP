@@ -1,5 +1,5 @@
-import { clerp180 } from './index';
-import './types';
+import { clerp180 } from './index.js';
+export type * from './types';
 
 if (!Math.clerp180) {
   Object.defineProperty(Math, 'clerp180', {

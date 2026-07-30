@@ -1,5 +1,5 @@
-import { levenshtein } from './index';
-import './types';
+import { levenshtein } from './index.js';
+export type * from './types';
 
 if (!String.prototype.levenshtein) {
   Object.defineProperty(String.prototype, 'levenshtein', {

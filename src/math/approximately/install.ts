@@ -1,5 +1,5 @@
-import { approximately } from './index';
-import './types';
+import { approximately } from './index.js';
+export type * from './types';
 
 if (!Math.approximately) {
   Object.defineProperty(Math, 'approximately', {

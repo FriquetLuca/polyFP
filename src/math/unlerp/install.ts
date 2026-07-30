@@ -1,5 +1,5 @@
-import { unlerp } from './index';
-import './types';
+import { unlerp } from './index.js';
+export type * from './types';
 
 if (!Math.unlerp) {
   Object.defineProperty(Math, 'unlerp', {

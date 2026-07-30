@@ -1,5 +1,5 @@
-import { jaro } from './index';
-import './types';
+import { jaro } from './index.js';
+export type * from './types';
 
 if (!String.prototype.jaro) {
   Object.defineProperty(String.prototype, 'jaro', {

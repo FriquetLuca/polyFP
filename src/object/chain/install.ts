@@ -1,5 +1,5 @@
-import { chain } from './index';
-import './types';
+import { chain } from './index.js';
+export type * from './types';
 
 if (!Object.chain) {
   Object.defineProperty(Object, 'chain', {

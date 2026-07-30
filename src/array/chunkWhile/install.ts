@@ -1,6 +1,6 @@
-import { chunkWhile } from './index';
+import { chunkWhile } from './index.js';
 
-export * from './types';
+export type * from './types';
 
 if (!Array.prototype.chunkWhile) {
   Object.defineProperty(Array.prototype, 'chunkWhile', {

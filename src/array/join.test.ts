@@ -1,9 +1,9 @@
 import { describe, it, expect } from 'vitest';
-import { leftJoin } from './leftJoin/index';
-import { rightJoin } from './rightJoin/index';
-import { innerJoin } from './innerJoin/index';
-import { fullJoin } from './fullJoin/index';
-import { crossJoin } from './crossJoin/index';
+import { leftJoin } from './leftJoin/index.js';
+import { rightJoin } from './rightJoin/index.js';
+import { innerJoin } from './innerJoin/index.js';
+import { fullJoin } from './fullJoin/index.js';
+import { crossJoin } from './crossJoin/index.js';
 
 const left: {
   id: number;

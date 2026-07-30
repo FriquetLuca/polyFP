@@ -1,5 +1,5 @@
-import { isIPv6 } from './index';
-import './types';
+import { isIPv6 } from './index.js';
+export type * from './types';
 
 if (!String.prototype.isIPv6) {
   Object.defineProperty(String.prototype, 'isIPv6', {

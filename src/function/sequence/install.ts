@@ -1,5 +1,5 @@
-import { sequence } from './index';
-import './types';
+import { sequence } from './index.js';
+export type * from './types';
 
 if (!Function.sequence) {
   Object.defineProperty(Function, 'sequence', {

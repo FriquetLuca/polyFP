@@ -1,5 +1,5 @@
-import { harmonicMean } from './index';
-export * from './types';
+import { harmonicMean } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.harmonicMean) {
   Object.defineProperty(Array.prototype, 'harmonicMean', {

@@ -1,5 +1,5 @@
-import { clone } from './index';
-import './types';
+import { clone } from './index.js';
+export type * from './types';
 
 if (!Object.clone) {
   Object.defineProperty(Object, 'clone', {

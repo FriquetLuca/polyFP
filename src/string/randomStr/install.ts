@@ -1,5 +1,5 @@
-import { randomStr } from './index';
-import './types';
+import { randomStr } from './index.js';
+export type * from './types';
 
 if (!String.randomStr) {
   Object.defineProperty(String, 'randomStr', {

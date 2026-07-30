@@ -1,5 +1,5 @@
-import { traverse } from './index';
-import './types';
+import { traverse } from './index.js';
+export type * from './types';
 
 if (!Function.traverse) {
   Object.defineProperty(Function, 'traverse', {

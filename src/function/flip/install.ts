@@ -1,5 +1,5 @@
-import { flip } from './index';
-import './types';
+import { flip } from './index.js';
+export type * from './types';
 
 if (!Function.flip) {
   Object.defineProperty(Function, 'flip', {

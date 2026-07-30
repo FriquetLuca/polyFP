@@ -1,4 +1,4 @@
-import { comparePrimitive } from '../../data';
+import { comparePrimitive } from '../../data/comparePrimitive.js';
 import type { OrderBy, RecordType } from '../../types';
 
 export const orderBy = <T extends RecordType>(

@@ -1,5 +1,5 @@
-import { deltaAngle } from './index';
-import './types';
+import { deltaAngle } from './index.js';
+export type * from './types';
 
 if (!Math.deltaAngle) {
   Object.defineProperty(Math, 'deltaAngle', {

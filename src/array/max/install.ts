@@ -1,5 +1,5 @@
-import { max } from './index';
-export * from './types';
+import { max } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.max) {
   Object.defineProperty(Array.prototype, 'max', {

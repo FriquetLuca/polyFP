@@ -1,5 +1,5 @@
-import { cartesianProduct } from './index';
-export * from './types';
+import { cartesianProduct } from './index.js';
+export type * from './types';
 
 if (!Array.cartesianProduct) {
   Object.defineProperty(Array, 'cartesianProduct', {

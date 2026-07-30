@@ -1,6 +1,6 @@
-import { avg } from './index';
+import { avg } from './index.js';
 
-export * from './types';
+export type * from './types';
 
 if (!Array.prototype.avg) {
   Object.defineProperty(Array.prototype, 'avg', {

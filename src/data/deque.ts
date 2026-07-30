@@ -1,5 +1,5 @@
-import { QueueOverflowError, QueueUnderflowError } from './errors';
-import { DualNode } from './utils';
+import { QueueOverflowError, QueueUnderflowError } from './errors.js';
+import { DualNode } from './utils.js';
 
 /**
  * A double-ended queue implemented using a doubly-linked list.

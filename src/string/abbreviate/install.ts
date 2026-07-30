@@ -1,5 +1,5 @@
-import { abbreviate } from './index';
-import './types';
+import { abbreviate } from './index.js';
+export type * from './types';
 
 if (!String.prototype.abbreviate) {
   Object.defineProperty(String.prototype, 'abbreviate', {

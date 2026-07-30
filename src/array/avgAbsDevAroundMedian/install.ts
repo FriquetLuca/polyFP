@@ -1,6 +1,6 @@
-import { avgAbsDevAroundMedian } from './index';
+import { avgAbsDevAroundMedian } from './index.js';
 
-export * from './types';
+export type * from './types';
 
 if (!Array.prototype.avgAbsDevAroundMedian) {
   Object.defineProperty(Array.prototype, 'avgAbsDevAroundMedian', {

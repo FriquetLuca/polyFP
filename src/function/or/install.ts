@@ -1,5 +1,5 @@
-import { or } from './index';
-import './types';
+import { or } from './index.js';
+export type * from './types';
 
 if (!Function.or) {
   Object.defineProperty(Function, 'or', {

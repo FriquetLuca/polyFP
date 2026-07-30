@@ -1,4 +1,4 @@
-import { shuffle } from '../shuffle';
+import { shuffle } from '../shuffle/index.js';
 
 export function sampleSize<T>(array: T[], size: number): T[] {
   const length = array.length;

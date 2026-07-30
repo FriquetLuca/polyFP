@@ -1,4 +1,4 @@
-import { medianAbsoluteDeviation } from '../medianAbsoluteDeviation';
+import { medianAbsoluteDeviation } from '../medianAbsoluteDeviation/index.js';
 
 export const medianAbsoluteDeviationNormalized = <T>(
   values: T[],

@@ -1,5 +1,5 @@
-import { window } from './index';
-export * from './types';
+import { window } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.window) {
   Object.defineProperty(Array.prototype, 'window', {

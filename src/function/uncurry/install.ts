@@ -1,5 +1,5 @@
-import { uncurry } from './index';
-import './types';
+import { uncurry } from './index.js';
+export type * from './types';
 
 if (!Function.uncurry) {
   Object.defineProperty(Function, 'uncurry', {

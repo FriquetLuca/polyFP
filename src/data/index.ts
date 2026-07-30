@@ -4,28 +4,28 @@ export {
   type ADTConstructors,
   type ADTValues,
   type SchemaADTValues,
-} from './adt';
-export { CircularQueue } from './circularQueue';
-export { comparePrimitive } from './comparePrimitive';
-export { Deque } from './deque';
-export { DoublyLinkedList } from './doublyLinkedList';
+} from './adt.js';
+export { CircularQueue } from './circularQueue.js';
+export { comparePrimitive } from './comparePrimitive.js';
+export { Deque } from './deque.js';
+export { DoublyLinkedList } from './doublyLinkedList.js';
 export {
   StackUnderflowError,
   StackOverflowError,
   QueueUnderflowError,
   QueueOverflowError,
-} from './errors';
-export { IndexedPool } from './indexedPool';
-export { emitter, Emitter } from './emitter';
+} from './errors.js';
+export { IndexedPool } from './indexedPool.js';
+export { emitter, Emitter } from './emitter.js';
 export {
   IterableSource,
   type IterableInput,
   type IterableOutput,
-} from './iterableSource';
-export { LinkedList } from './linkedList';
-export { MaxPriorityQueue } from './maxPriorityQueue';
-export { MinPriorityQueue } from './minPriorityQueue';
-export { observer, Observer, type Listener } from './observer';
+} from './iterableSource.js';
+export { LinkedList } from './linkedList.js';
+export { MaxPriorityQueue } from './maxPriorityQueue.js';
+export { MinPriorityQueue } from './minPriorityQueue.js';
+export { observer, Observer, type Listener } from './observer.js';
 export {
   none,
   some,
@@ -34,9 +34,9 @@ export {
   Some,
   Option,
   type TransposeOptionResult,
-} from './option';
-export { queryBuilder, QueryBuilder } from './queryBuilder';
-export { Queue } from './queue';
+} from './option.js';
+export { queryBuilder, QueryBuilder } from './queryBuilder.js';
+export { Queue } from './queue.js';
 export {
   ok,
   err,
@@ -50,9 +50,9 @@ export {
   Err,
   Result,
   type TransposeResultOption,
-} from './result';
-export { mutex, Semaphore } from './semaphore';
-export { Sexagesimal } from './sexagesimal';
-export { slugger, Slugger } from './slugger';
-export { Stack } from './stack';
-export { Vector } from './vector';
+} from './result.js';
+export { mutex, Semaphore } from './semaphore.js';
+export { Sexagesimal } from './sexagesimal.js';
+export { slugger, Slugger } from './slugger.js';
+export { Stack } from './stack.js';
+export { Vector } from './vector.js';

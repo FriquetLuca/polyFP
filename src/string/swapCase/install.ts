@@ -1,5 +1,5 @@
-import { swapCase } from './index';
-import './types';
+import { swapCase } from './index.js';
+export type * from './types';
 
 if (!String.prototype.swapCase) {
   Object.defineProperty(String.prototype, 'swapCase', {

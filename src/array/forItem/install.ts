@@ -1,5 +1,5 @@
-import { forItems } from './index';
-export * from './types';
+import { forItems } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.forItems) {
   Object.defineProperty(Array.prototype, 'forItems', {

@@ -1,4 +1,4 @@
-import { clamp } from '../math';
+import { clamp } from '../math/clamp/index.js';
 
 export class Vector {
   private items: Float32Array;

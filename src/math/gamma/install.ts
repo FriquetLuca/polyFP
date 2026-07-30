@@ -1,5 +1,5 @@
-import { gamma } from './index';
-import './types';
+import { gamma } from './index.js';
+export type * from './types';
 
 if (!Math.gamma) {
   Object.defineProperty(Math, 'gamma', {

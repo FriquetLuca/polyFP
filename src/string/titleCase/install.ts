@@ -1,5 +1,5 @@
-import { titleCase } from './index';
-import './types';
+import { titleCase } from './index.js';
+export type * from './types';
 
 if (!String.prototype.titleCase) {
   Object.defineProperty(String.prototype, 'titleCase', {

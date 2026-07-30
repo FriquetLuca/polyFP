@@ -1,5 +1,5 @@
-import { pascalCase } from './index';
-import './types';
+import { pascalCase } from './index.js';
+export type * from './types';
 
 if (!String.prototype.pascalCase) {
   Object.defineProperty(String.prototype, 'pascalCase', {

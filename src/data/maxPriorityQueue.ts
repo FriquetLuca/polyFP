@@ -1,4 +1,4 @@
-import { PriorityQueue } from './utils';
+import { PriorityQueue } from './utils.js';
 
 /**
  * A maximum-priority queue where higher priority values are dequeued first.

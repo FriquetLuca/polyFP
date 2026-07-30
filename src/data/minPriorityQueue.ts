@@ -1,4 +1,4 @@
-import { PriorityQueue } from './utils';
+import { PriorityQueue } from './utils.js';
 
 /**
  * A minimum-priority queue where lower priority values are dequeued first.

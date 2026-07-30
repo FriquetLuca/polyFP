@@ -1,6 +1,6 @@
 import type { Collapse } from '../types';
 import type { StandardSchemaV1 } from '@standard-schema/spec';
-import { err, ok, type Result } from './result';
+import { err, ok, type Result } from './result.js';
 
 export type ADTConstructors<T, Tag extends string | number> = {
   [K in keyof T]: (value: Partial<T[K]>) => Collapse<Record<Tag, K> & T[K]>;

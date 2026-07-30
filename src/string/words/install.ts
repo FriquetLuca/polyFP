@@ -1,5 +1,5 @@
-import { words } from './index';
-import './types';
+import { words } from './index.js';
+export type * from './types';
 
 if (!String.prototype.words) {
   Object.defineProperty(String.prototype, 'words', {

@@ -1,5 +1,5 @@
-import { hamming } from './index';
-import './types';
+import { hamming } from './index.js';
+export type * from './types';
 
 if (!String.prototype.hamming) {
   Object.defineProperty(String.prototype, 'hamming', {

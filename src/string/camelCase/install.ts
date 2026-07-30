@@ -1,5 +1,5 @@
-import { camelCase } from './index';
-import './types';
+import { camelCase } from './index.js';
+export type * from './types';
 
 if (!String.prototype.camelCase) {
   Object.defineProperty(String.prototype, 'camelCase', {

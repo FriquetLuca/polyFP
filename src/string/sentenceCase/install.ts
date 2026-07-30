@@ -1,5 +1,5 @@
-import { sentenceCase } from './index';
-import './types';
+import { sentenceCase } from './index.js';
+export type * from './types';
 
 if (!String.prototype.sentenceCase) {
   Object.defineProperty(String.prototype, 'sentenceCase', {

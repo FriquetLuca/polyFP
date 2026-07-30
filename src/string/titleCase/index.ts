@@ -1,5 +1,5 @@
-import { words } from '../words/index';
-import { upperFirst } from '../upperFirst/index';
+import { words } from '../words/index.js';
+import { upperFirst } from '../upperFirst/index.js';
 
 export const titleCase = (value: string): string =>
   words(value)

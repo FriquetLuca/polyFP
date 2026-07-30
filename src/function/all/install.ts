@@ -1,5 +1,5 @@
-import { all } from './index';
-import './types';
+import { all } from './index.js';
+export type * from './types';
 
 if (!Function.all) {
   Object.defineProperty(Function, 'all', {

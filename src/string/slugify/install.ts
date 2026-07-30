@@ -1,5 +1,5 @@
-import { slugify } from './index';
-import './types';
+import { slugify } from './index.js';
+export type * from './types';
 
 if (!String.prototype.slugify) {
   Object.defineProperty(String.prototype, 'slugify', {

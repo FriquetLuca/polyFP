@@ -1,5 +1,5 @@
-import { atMostOne } from './index';
-import './types';
+import { atMostOne } from './index.js';
+export type * from './types';
 
 if (!Function.atMostOne) {
   Object.defineProperty(Function, 'atMostOne', {

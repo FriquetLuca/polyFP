@@ -1,5 +1,5 @@
-import { constant } from './index';
-import './types';
+import { constant } from './index.js';
+export type * from './types';
 
 if (!Function.constant) {
   Object.defineProperty(Function, 'constant', {

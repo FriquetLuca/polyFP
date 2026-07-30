@@ -19,7 +19,7 @@ Designed with **type safety**, **tree-shakability**, and **developer experience*
 
 ```bash
 # npm
-npm install @your-scope/toolkit
+npm install polyfp
 ```
 
 ## 🚀 Usage Paradigms
@@ -31,7 +31,7 @@ Choose the workflow that best fits your project architecture:
     Ideal for functional pipelines, strict immutability, and optimal bundler tree-shaking.
 
     ```ts
-    import { aggregate } from '@your-scope/toolkit/array/aggregate';
+    import { aggregate } from 'polyfp';
 
     const data = [
       { category: 'tech', price: 100 },
@@ -52,7 +52,7 @@ Choose the workflow that best fits your project architecture:
 
     ```ts
     // Import the polyfill once to augment Array.prototype and global TypeScript types
-    import '@your-scope/toolkit/polyfill/array/aggregate';
+    import 'polyfp/polyfill/array/aggregate';
 
     const data = [
       { category: 'tech', price: 100 },
@@ -68,16 +68,19 @@ Choose the workflow that best fits your project architecture:
 
 ## ⚙️ TypeScript Global Augmentation
 
-When using any `./polyfill/*` import path, TypeScript automatically augments standard global interfaces (e.g., `Array<T>`, `ReadonlyArray<T>`) to provide full autocompletion and type checking for added prototype methods.
+When using any `polyfill/*` import path, TypeScript automatically augments standard global interfaces (e.g., `Array<T>`, `ReadonlyArray<T>`) to provide full autocompletion and type checking for added prototype methods.
 
 ```ts
 // types.ts auto-loads upon importing the polyfill file
-import '@your-scope/toolkit/polyfill/array/aggregate';
+import 'polyfp/polyfill/array/aggregate';
 
 const numbers = [1, 2, 3, 4, 5];
 
 // Intellisense automatically recognizes .aggregate()
-numbers.aggregate();
+numbers
+  .aggregate()
+  .select('product', 1, (prod, val) => prod * val)
+  .take();
 ```
 
 ## 🛠️ Data Structure
@@ -86,9 +89,10 @@ Data structures can't be polyfilled, they are given as is for the developers. Yo
 You can only import it like any normal packages:
 
 ```ts
-import { Vector } '@your-scope';
+import { Vector } 'polyfp';
 // Or specify data directly
-// import { Vector } '@your-scope/data';
+// import { Vector } 'polyfp/data';
 
-console.log(new Vector(2, 3).x);
+const point = new Vector(2, 3);
+console.log(`Coordinate: (${point.x}, ${point.y})`);
 ```

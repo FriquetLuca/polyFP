@@ -1,5 +1,5 @@
-import { difference } from './index';
-export * from './types';
+import { difference } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.difference) {
   Object.defineProperty(Array.prototype, 'difference', {

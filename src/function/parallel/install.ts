@@ -1,5 +1,5 @@
-import { parallel } from './index';
-import './types';
+import { parallel } from './index.js';
+export type * from './types';
 
 if (!Function.parallel) {
   Object.defineProperty(Function, 'parallel', {

@@ -1,6 +1,6 @@
-import { generalizedMean } from './index';
+import { generalizedMean } from './index.js';
 
-export * from './types';
+export type * from './types';
 
 if (!Array.prototype.generalizedMean) {
   Object.defineProperty(Array.prototype, 'generalizedMean', {

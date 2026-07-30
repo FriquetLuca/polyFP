@@ -1,5 +1,5 @@
-import { isDateFormat } from './index';
-import './types';
+import { isDateFormat } from './index.js';
+export type * from './types';
 
 if (!String.prototype.isDateFormat) {
   Object.defineProperty(String.prototype, 'isDateFormat', {

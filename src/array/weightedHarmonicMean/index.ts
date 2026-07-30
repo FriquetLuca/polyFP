@@ -1,4 +1,4 @@
-import { validateWeighted } from '../utils';
+import { validateWeighted } from '../utils.js';
 
 export function weightedHarmonicMean(
   values: number[],

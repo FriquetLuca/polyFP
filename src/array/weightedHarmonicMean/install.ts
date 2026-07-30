@@ -1,6 +1,6 @@
-import { weightedHarmonicMean } from './index';
+import { weightedHarmonicMean } from './index.js';
 
-export * from './types';
+export type * from './types';
 
 if (!Array.prototype.weightedHarmonicMean) {
   Object.defineProperty(Array.prototype, 'weightedHarmonicMean', {

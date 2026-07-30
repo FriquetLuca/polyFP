@@ -1,4 +1,4 @@
-import { isDate } from '../date/isDate';
+import { isDate } from '../date/isDate/index.js';
 
 export function comparePrimitive(
   a: unknown,

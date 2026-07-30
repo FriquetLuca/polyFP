@@ -1,5 +1,5 @@
-import { randomInt } from './index';
-import './types';
+import { randomInt } from './index.js';
+export type * from './types';
 
 if (!Math.randomInt) {
   Object.defineProperty(Math, 'randomInt', {

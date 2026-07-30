@@ -1,6 +1,6 @@
-import { meanAbsoluteDeviation } from './index';
+import { meanAbsoluteDeviation } from './index.js';
 
-export * from './types';
+export type * from './types';
 
 if (!Array.prototype.meanAbsoluteDeviation) {
   Object.defineProperty(Array.prototype, 'meanAbsoluteDeviation', {

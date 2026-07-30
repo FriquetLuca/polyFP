@@ -1,4 +1,4 @@
-import { isPlainObject } from '../isPlainObject/index';
+import { isPlainObject } from '../isPlainObject/index.js';
 
 export function shallowClone<T>(o: T): T {
   if (isPlainObject(o)) return { ...o };

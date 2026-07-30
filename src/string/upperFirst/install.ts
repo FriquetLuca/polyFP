@@ -1,5 +1,5 @@
-import { upperFirst } from './index';
-import './types';
+import { upperFirst } from './index.js';
+export type * from './types';
 
 if (!String.prototype.upperFirst) {
   Object.defineProperty(String.prototype, 'upperFirst', {

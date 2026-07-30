@@ -1,5 +1,5 @@
-import { chunk } from './index';
-export * from './types';
+import { chunk } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.chunk) {
   Object.defineProperty(Array.prototype, 'chunk', {

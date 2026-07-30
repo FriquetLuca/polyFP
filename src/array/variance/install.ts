@@ -1,5 +1,5 @@
-import { variance } from './index';
-export * from './types';
+import { variance } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.variance) {
   Object.defineProperty(Array.prototype, 'variance', {

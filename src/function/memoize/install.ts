@@ -1,5 +1,5 @@
-import { memoize } from './index';
-import './types';
+import { memoize } from './index.js';
+export type * from './types';
 
 if (!Function.memoize) {
   Object.defineProperty(Function, 'memoize', {

@@ -1,5 +1,5 @@
-import { lcm } from './index';
-import './types';
+import { lcm } from './index.js';
+export type * from './types';
 
 if (!Math.lcm) {
   Object.defineProperty(Math, 'lcm', {

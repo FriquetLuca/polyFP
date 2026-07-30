@@ -1,6 +1,6 @@
-import { weightedGeometricMean } from './index';
+import { weightedGeometricMean } from './index.js';
 
-export * from './types';
+export type * from './types';
 
 if (!Array.prototype.weightedGeometricMean) {
   Object.defineProperty(Array.prototype, 'weightedGeometricMean', {

@@ -1,5 +1,5 @@
-import { isPrime } from './index';
-import './types';
+import { isPrime } from './index.js';
+export type * from './types';
 
 if (!Math.isPrime) {
   Object.defineProperty(Math, 'isPrime', {

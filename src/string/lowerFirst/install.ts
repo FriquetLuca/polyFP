@@ -1,5 +1,5 @@
-import { lowerFirst } from './index';
-import './types';
+import { lowerFirst } from './index.js';
+export type * from './types';
 
 if (!String.prototype.lowerFirst) {
   Object.defineProperty(String.prototype, 'lowerFirst', {

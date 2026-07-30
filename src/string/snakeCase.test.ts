@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { snakeCase } from './snakeCase/index';
+import { snakeCase } from './snakeCase/index.js';
 
 describe('snakeCase', () => {
   it('handles empty string', () => {

@@ -1,5 +1,5 @@
-import { upperFirst } from '../upperFirst/index';
-import { words } from '../words/index';
+import { upperFirst } from '../upperFirst/index.js';
+import { words } from '../words/index.js';
 
 export const trainCase = (value: string): string =>
   words(value)

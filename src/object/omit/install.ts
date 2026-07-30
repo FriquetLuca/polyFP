@@ -1,5 +1,5 @@
-import { omit } from './index';
-import './types';
+import { omit } from './index.js';
+export type * from './types';
 
 if (!Object.omit) {
   Object.defineProperty(Object, 'omit', {

@@ -1,4 +1,4 @@
-import { xgcd } from '../xgcd';
+import { xgcd } from '../xgcd/index.js';
 
 export function invmod(a: number, b: number): number {
   const originalB = b;

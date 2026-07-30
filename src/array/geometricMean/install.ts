@@ -1,5 +1,5 @@
-import { geometricMean } from './index';
-export * from './types';
+import { geometricMean } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.geometricMean) {
   Object.defineProperty(Array.prototype, 'geometricMean', {

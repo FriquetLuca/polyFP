@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { hamming } from './hamming/index';
+import { hamming } from './hamming/index.js';
 
 describe('hamming()', () => {
   it('returns 0 for identical strings', () => {

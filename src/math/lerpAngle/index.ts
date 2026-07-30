@@ -1,5 +1,5 @@
-import { repeat } from '../repeat';
-import { saturate } from '../saturate';
+import { repeat } from '../repeat/index.js';
+import { saturate } from '../saturate/index.js';
 
 export function lerpAngle(value: number, end: number, time: number) {
   let delta = repeat(end - value, 360);

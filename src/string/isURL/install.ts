@@ -1,5 +1,5 @@
-import { isURL } from './index';
-import './types';
+import { isURL } from './index.js';
+export type * from './types';
 
 if (!String.prototype.isURL) {
   Object.defineProperty(String.prototype, 'isURL', {

@@ -1,6 +1,6 @@
 import type { RecordType } from '../../types';
-import { rightJoin } from './index';
-export * from './types';
+import { rightJoin } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.rightJoin) {
   Object.defineProperty(Array.prototype, 'rightJoin', {

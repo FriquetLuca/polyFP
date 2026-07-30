@@ -1,5 +1,5 @@
-import { renameKeys } from './index';
-import './types';
+import { renameKeys } from './index.js';
+export type * from './types';
 
 if (!Object.renameKeys) {
   Object.defineProperty(Object, 'renameKeys', {

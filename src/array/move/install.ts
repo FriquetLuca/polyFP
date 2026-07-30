@@ -1,6 +1,6 @@
-import { move } from './index';
+import { move } from './index.js';
 
-export * from './types';
+export type * from './types';
 
 if (!Array.prototype.move) {
   Object.defineProperty(Array.prototype, 'move', {

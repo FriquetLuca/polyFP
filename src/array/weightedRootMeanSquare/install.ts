@@ -1,6 +1,6 @@
-import { weightedRootMeanSquare } from './index';
+import { weightedRootMeanSquare } from './index.js';
 
-export * from './types';
+export type * from './types';
 
 if (!Array.prototype.weightedRootMeanSquare) {
   Object.defineProperty(Array.prototype, 'weightedRootMeanSquare', {

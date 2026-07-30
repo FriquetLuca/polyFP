@@ -1,5 +1,5 @@
-import { and } from './index';
-import './types';
+import { and } from './index.js';
+export type * from './types';
 
 if (!Function.and) {
   Object.defineProperty(Function, 'and', {

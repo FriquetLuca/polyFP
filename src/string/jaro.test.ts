@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { jaro } from './jaro/index';
+import { jaro } from './jaro/index.js';
 
 describe('jaro()', () => {
   it('returns 1 for identical strings', () => {

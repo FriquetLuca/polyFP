@@ -1,4 +1,4 @@
-import { Err, err, Ok, ok, Result } from './result';
+import { Err, err, Ok, ok, Result } from './result.js';
 
 export type TransposeOptionResult<T> =
   T extends Result<infer U, infer E>

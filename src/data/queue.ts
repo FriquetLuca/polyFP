@@ -1,5 +1,5 @@
-import { QueueOverflowError, QueueUnderflowError } from './errors';
-import { SoloNode } from './utils';
+import { QueueOverflowError, QueueUnderflowError } from './errors.js';
+import { SoloNode } from './utils.js';
 
 /**
  * A simple linked-list-based FIFO queue.

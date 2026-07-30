@@ -1,5 +1,5 @@
-import { product } from './index';
-export * from './types';
+import { product } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.product) {
   Object.defineProperty(Array.prototype, 'product', {

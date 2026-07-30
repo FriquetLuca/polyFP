@@ -1,4 +1,4 @@
-import { words } from '../words/index';
+import { words } from '../words/index.js';
 
 export function camelCase(value: string): string {
   const w = words(value);

@@ -1,5 +1,5 @@
-import { randomIntInclusive } from './index';
-import './types';
+import { randomIntInclusive } from './index.js';
+export type * from './types';
 
 if (!Math.randomIntInclusive) {
   Object.defineProperty(Math, 'randomIntInclusive', {

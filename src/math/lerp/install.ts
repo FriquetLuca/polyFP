@@ -1,5 +1,5 @@
-import { lerp } from './index';
-import './types';
+import { lerp } from './index.js';
+export type * from './types';
 
 if (!Math.lerp) {
   Object.defineProperty(Math, 'lerp', {

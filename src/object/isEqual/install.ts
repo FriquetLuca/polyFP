@@ -1,5 +1,5 @@
-import { isEqual } from './index';
-import './types';
+import { isEqual } from './index.js';
+export type * from './types';
 
 if (!Object.isEqual) {
   Object.defineProperty(Object, 'isEqual', {

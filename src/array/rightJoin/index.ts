@@ -1,5 +1,5 @@
 import type { RecordType } from '../../types';
-import { leftJoin } from '../leftJoin/index';
+import { leftJoin } from '../leftJoin/index.js';
 
 export const rightJoin = <T extends RecordType, U extends RecordType>(
   records: T[],

@@ -1,5 +1,5 @@
-import { deepFreeze } from './index';
-import './types';
+import { deepFreeze } from './index.js';
+export type * from './types';
 
 if (!Object.deepFreeze) {
   Object.defineProperty(Object, 'deepFreeze', {

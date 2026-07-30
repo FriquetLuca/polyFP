@@ -1,7 +1,7 @@
 import type { OrderBy, RecordType } from '../../types';
-import { orderBy } from './index';
+import { orderBy } from './index.js';
 
-export * from './types';
+export type * from './types';
 
 if (!Array.prototype.orderBy) {
   Object.defineProperty(Array.prototype, 'orderBy', {

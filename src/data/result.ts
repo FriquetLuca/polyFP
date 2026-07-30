@@ -1,4 +1,4 @@
-import { None, none, Some, some, type Option } from './option';
+import { None, none, Some, some, type Option } from './option.js';
 
 export type TransposeResultOption<T, E> =
   T extends Option<infer U> ? Option<Result<U, E>> : Result<T, E>;

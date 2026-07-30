@@ -1,4 +1,4 @@
-import { words } from '../words/index';
+import { words } from '../words/index.js';
 
 export const initials = (value: string): string =>
   words(value)

@@ -1,5 +1,5 @@
-import { exactlyOne } from './index';
-import './types';
+import { exactlyOne } from './index.js';
+export type * from './types';
 
 if (!Function.exactlyOne) {
   Object.defineProperty(Function, 'exactlyOne', {

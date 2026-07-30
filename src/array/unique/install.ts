@@ -1,5 +1,5 @@
-import { unique } from './index';
-export * from './types';
+import { unique } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.unique) {
   Object.defineProperty(Array.prototype, 'unique', {

@@ -1,5 +1,5 @@
-import { countBy } from './index';
-export * from './types';
+import { countBy } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.countBy) {
   Object.defineProperty(Array.prototype, 'countBy', {

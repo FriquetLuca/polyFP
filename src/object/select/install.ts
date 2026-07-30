@@ -1,5 +1,5 @@
-import { select } from './index';
-import './types';
+import { select } from './index.js';
+export type * from './types';
 
 if (!Object.select) {
   Object.defineProperty(Object, 'select', {

@@ -1,5 +1,5 @@
-import { isUUID } from './index';
-import './types';
+import { isUUID } from './index.js';
+export type * from './types';
 
 if (!String.prototype.isUUID) {
   Object.defineProperty(String.prototype, 'isUUID', {

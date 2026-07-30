@@ -1,4 +1,4 @@
-import { ipv4RegExpStr, ipv6URLRegExpStr } from '../utils';
+import { ipv4RegExpStr, ipv6URLRegExpStr } from '../utils.js';
 
 const credentials = '(?:[^\\s@/]+(?::[^\\s@/]*)?@)?';
 const standardDomain = '(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\\.)+[a-z]{2,}';

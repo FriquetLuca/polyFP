@@ -1,5 +1,5 @@
-import { toDegrees } from './index';
-import './types';
+import { toDegrees } from './index.js';
+export type * from './types';
 
 if (!Math.toDegrees) {
   Object.defineProperty(Math, 'toDegrees', {

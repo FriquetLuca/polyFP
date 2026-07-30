@@ -1,5 +1,5 @@
-import { deltaAngle } from '../deltaAngle';
-import { moveTowards } from '../moveTowards';
+import { deltaAngle } from '../deltaAngle/index.js';
+import { moveTowards } from '../moveTowards/index.js';
 
 export function moveTowardsAngle(
   value: number,

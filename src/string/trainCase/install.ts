@@ -1,5 +1,5 @@
-import { trainCase } from './index';
-import './types';
+import { trainCase } from './index.js';
+export type * from './types';
 
 if (!String.prototype.trainCase) {
   Object.defineProperty(String.prototype, 'trainCase', {

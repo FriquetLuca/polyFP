@@ -1,6 +1,6 @@
-import { sampleSize } from './index';
+import { sampleSize } from './index.js';
 
-export * from './types';
+export type * from './types';
 
 if (!Array.prototype.sampleSize) {
   Object.defineProperty(Array.prototype, 'sampleSize', {

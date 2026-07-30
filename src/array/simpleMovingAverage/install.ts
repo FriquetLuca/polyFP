@@ -1,5 +1,5 @@
-import { simpleMovingAverage } from './index';
-export * from './types';
+import { simpleMovingAverage } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.simpleMovingAverage) {
   Object.defineProperty(Array.prototype, 'simpleMovingAverage', {

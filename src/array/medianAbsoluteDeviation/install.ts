@@ -1,6 +1,6 @@
-import { medianAbsoluteDeviation } from './index';
+import { medianAbsoluteDeviation } from './index.js';
 
-export * from './types';
+export type * from './types';
 
 if (!Array.prototype.medianAbsoluteDeviation) {
   Object.defineProperty(Array.prototype, 'medianAbsoluteDeviation', {

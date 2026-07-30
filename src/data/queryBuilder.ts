@@ -5,7 +5,7 @@ import type {
   OrderBy,
   Mutable,
 } from '../types';
-import { comparePrimitive } from './comparePrimitive';
+import { comparePrimitive } from './comparePrimitive.js';
 
 const agg = {
   sum: <T>(key: keyof T): Aggregator<T, number, number> => ({

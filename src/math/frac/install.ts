@@ -1,5 +1,5 @@
-import { frac } from './index';
-import './types';
+import { frac } from './index.js';
+export type * from './types';
 
 if (!Math.frac) {
   Object.defineProperty(Math, 'frac', {

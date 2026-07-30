@@ -1,4 +1,4 @@
-import { avg } from '../avg';
+import { avg } from '../avg/index.js';
 
 export function variance<T>(values: T[], fn: (val: T) => number): number {
   if (values.length === 0) return 0;

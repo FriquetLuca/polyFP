@@ -1,6 +1,6 @@
-import { weightedGeneralizedMean } from './index';
+import { weightedGeneralizedMean } from './index.js';
 
-export * from './types';
+export type * from './types';
 
 if (!Array.prototype.weightedGeneralizedMean) {
   Object.defineProperty(Array.prototype, 'weightedGeneralizedMean', {

@@ -1,4 +1,4 @@
-import { gcd } from '../gcd';
+import { gcd } from '../gcd/index.js';
 
 export function lcm(a: number, b: number) {
   if (!Number.isInteger(a) || !Number.isInteger(b))

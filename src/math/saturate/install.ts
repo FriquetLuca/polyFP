@@ -1,5 +1,5 @@
-import { saturate } from './index';
-import './types';
+import { saturate } from './index.js';
+export type * from './types';
 
 if (!Math.saturate) {
   Object.defineProperty(Math, 'saturate', {

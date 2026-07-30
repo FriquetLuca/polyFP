@@ -1,5 +1,5 @@
-import { rootMeanSquare } from './index';
-export * from './types';
+import { rootMeanSquare } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.rootMeanSquare) {
   Object.defineProperty(Array.prototype, 'rootMeanSquare', {

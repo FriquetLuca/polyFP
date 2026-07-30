@@ -1,5 +1,5 @@
-import { exactlyN } from './index';
-import './types';
+import { exactlyN } from './index.js';
+export type * from './types';
 
 if (!Function.exactlyN) {
   Object.defineProperty(Function, 'exactlyN', {

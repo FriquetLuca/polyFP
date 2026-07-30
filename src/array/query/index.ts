@@ -1,5 +1,5 @@
-import { comparePrimitive } from '../../data/comparePrimitive';
-import { select } from '../../object/select';
+import { comparePrimitive } from '../../data/comparePrimitive.js';
+import { select } from '../../object/select/index.js';
 import type { RecordType, QueryResult, QueryParameters } from '../../types';
 
 export function query<

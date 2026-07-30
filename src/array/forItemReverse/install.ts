@@ -1,5 +1,5 @@
-import { forItemsReverse } from './index';
-export * from './types';
+import { forItemsReverse } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.forItemsReverse) {
   Object.defineProperty(Array.prototype, 'forItemsReverse', {

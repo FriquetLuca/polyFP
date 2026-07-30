@@ -1,5 +1,5 @@
-import { xgcd } from './index';
-import './types';
+import { xgcd } from './index.js';
+export type * from './types';
 
 if (!Math.xgcd) {
   Object.defineProperty(Math, 'xgcd', {

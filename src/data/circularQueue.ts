@@ -1,4 +1,4 @@
-import { QueueOverflowError, QueueUnderflowError } from './errors';
+import { QueueOverflowError, QueueUnderflowError } from './errors.js';
 
 /**
  * A fixed-size circular buffer (ring buffer) queue.

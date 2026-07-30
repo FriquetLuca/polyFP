@@ -1,6 +1,6 @@
 import type { RecordType } from '../../types';
-import { crossJoin } from './index';
-export * from './types';
+import { crossJoin } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.crossJoin) {
   Object.defineProperty(Array.prototype, 'crossJoin', {

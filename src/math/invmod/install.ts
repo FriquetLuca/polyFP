@@ -1,5 +1,5 @@
-import { invmod } from './index';
-import './types';
+import { invmod } from './index.js';
+export type * from './types';
 
 if (!Math.invmod) {
   Object.defineProperty(Math, 'invmod', {

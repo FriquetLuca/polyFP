@@ -1,5 +1,5 @@
-import { isTime } from './index';
-import './types';
+import { isTime } from './index.js';
+export type * from './types';
 
 if (!String.prototype.isTime) {
   Object.defineProperty(String.prototype, 'isTime', {

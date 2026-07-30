@@ -1,5 +1,5 @@
-import { lerpAngle } from './index';
-import './types';
+import { lerpAngle } from './index.js';
+export type * from './types';
 
 if (!Math.lerpAngle) {
   Object.defineProperty(Math, 'lerpAngle', {

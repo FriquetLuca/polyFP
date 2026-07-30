@@ -1,5 +1,5 @@
-import { compose } from './index';
-export * from './types';
+import { compose } from './index.js';
+export type * from './types';
 
 if (!Function.compose) {
   Object.defineProperty(Function, 'compose', {

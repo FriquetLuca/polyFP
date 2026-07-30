@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { isTime } from './isTime/index';
+import { isTime } from './isTime/index.js';
 
 describe('ISO 8601 Time Validator', () => {
   describe('Success Cases (Valid ISO 8601)', () => {

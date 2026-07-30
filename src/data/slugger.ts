@@ -1,4 +1,4 @@
-import { slugify } from '../string/slugify/index';
+import { slugify } from '../string/slugify/index.js';
 
 export class Slugger {
   private seen: Record<string, number> = {};

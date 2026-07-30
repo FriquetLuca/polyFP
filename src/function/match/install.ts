@@ -1,5 +1,5 @@
-import { match } from './index';
-import './types';
+import { match } from './index.js';
+export type * from './types';
 
 if (!Function.match) {
   Object.defineProperty(Function, 'match', {

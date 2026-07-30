@@ -1,5 +1,5 @@
-import { isDate } from './index';
-import './types';
+import { isDate } from './index.js';
+export type * from './types';
 
 if (!Date.isDate) {
   Object.defineProperty(Date, 'isDate', {

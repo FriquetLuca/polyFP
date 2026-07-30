@@ -1,5 +1,5 @@
-import { partition } from './index';
-export * from './types';
+import { partition } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.partition) {
   Object.defineProperty(Array.prototype, 'partition', {

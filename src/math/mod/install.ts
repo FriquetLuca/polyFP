@@ -1,5 +1,5 @@
-import { mod } from './index';
-import './types';
+import { mod } from './index.js';
+export type * from './types';
 
 if (!Math.mod) {
   Object.defineProperty(Math, 'mod', {

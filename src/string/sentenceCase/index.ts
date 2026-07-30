@@ -1,4 +1,4 @@
-import { noCase } from '../noCase/index';
+import { noCase } from '../noCase/index.js';
 
 export function sentenceCase(value: string): string {
   const text = noCase(value);

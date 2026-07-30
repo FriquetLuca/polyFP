@@ -1,5 +1,5 @@
-import { atLeastOne } from './index';
-import './types';
+import { atLeastOne } from './index.js';
+export type * from './types';
 
 if (!Function.atLeastOne) {
   Object.defineProperty(Function, 'atLeastOne', {

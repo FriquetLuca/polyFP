@@ -1,5 +1,5 @@
-import { unzip } from './index';
-export * from './types';
+import { unzip } from './index.js';
+export type * from './types';
 
 if (!Array.unzip) {
   Object.defineProperty(Array, 'unzip', {

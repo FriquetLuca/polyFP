@@ -1,5 +1,5 @@
-import { swap } from './index';
-export * from './types';
+import { swap } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.swap) {
   Object.defineProperty(Array.prototype, 'swap', {

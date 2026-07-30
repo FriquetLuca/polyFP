@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { jaroWinkler } from './jaroWinkler/index';
+import { jaroWinkler } from './jaroWinkler/index.js';
 
 describe('jaroWinkler()', () => {
   it('returns 1 for identical strings', () => {

@@ -1,5 +1,5 @@
 import type { RecordType } from '../../types';
-import { buildKey } from '../utils';
+import { buildKey } from '../utils.js';
 
 export function innerJoin<T extends RecordType, U extends RecordType>(
   records: T[],

@@ -1,5 +1,5 @@
-import { zip } from './index';
-export * from './types';
+import { zip } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.zip) {
   Object.defineProperty(Array.prototype, 'zip', {

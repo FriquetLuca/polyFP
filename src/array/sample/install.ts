@@ -1,6 +1,6 @@
 import type { Option } from '../../data/option';
-import { sample } from './index';
-export * from './types';
+import { sample } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.sample) {
   Object.defineProperty(Array.prototype, 'sample', {

@@ -1,6 +1,6 @@
-import { weightedExponentialMovingAverage } from './index';
+import { weightedExponentialMovingAverage } from './index.js';
 
-export * from './types';
+export type * from './types';
 
 if (!Array.prototype.weightedExponentialMovingAverage) {
   Object.defineProperty(Array.prototype, 'weightedExponentialMovingAverage', {

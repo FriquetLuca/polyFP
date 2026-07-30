@@ -1,5 +1,5 @@
-import { tap } from './index';
-import './types';
+import { tap } from './index.js';
+export type * from './types';
 
 if (!Function.tap) {
   Object.defineProperty(Function, 'tap', {

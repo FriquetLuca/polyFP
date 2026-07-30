@@ -1,4 +1,4 @@
-import { avg } from '../avg';
+import { avg } from '../avg/index.js';
 
 export function meanAbsoluteDeviation<T>(
   values: T[],

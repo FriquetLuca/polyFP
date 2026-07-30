@@ -1,5 +1,5 @@
-import { moveTowards } from './index';
-import './types';
+import { moveTowards } from './index.js';
+export type * from './types';
 
 if (!Math.moveTowards) {
   Object.defineProperty(Math, 'moveTowards', {

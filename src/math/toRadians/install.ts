@@ -1,5 +1,5 @@
-import { toRadians } from './index';
-import './types';
+import { toRadians } from './index.js';
+export type * from './types';
 
 if (!Math.toRadians) {
   Object.defineProperty(Math, 'toRadians', {

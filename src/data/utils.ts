@@ -1,4 +1,4 @@
-import { QueueOverflowError, QueueUnderflowError } from './errors';
+import { QueueOverflowError, QueueUnderflowError } from './errors.js';
 
 export class SoloNode<T> {
   public value: T;

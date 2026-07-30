@@ -1,5 +1,5 @@
-import { StackOverflowError, StackUnderflowError } from './errors';
-import { SoloNode } from './utils';
+import { StackOverflowError, StackUnderflowError } from './errors.js';
+import { SoloNode } from './utils.js';
 
 /**
  * A generic LIFO (Last-In-First-Out) stack implemented using a singly-linked list.

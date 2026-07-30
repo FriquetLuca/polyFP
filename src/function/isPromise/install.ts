@@ -1,5 +1,5 @@
-import { isPromise } from './index';
-import './types';
+import { isPromise } from './index.js';
+export type * from './types';
 
 if (!Function.isPromise) {
   Object.defineProperty(Function, 'isPromise', {

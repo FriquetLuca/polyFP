@@ -1,4 +1,4 @@
-import { ipv6RegExpStr } from '../utils';
+import { ipv6RegExpStr } from '../utils.js';
 
 const ip6: RegExp = new RegExp('^' + ipv6RegExpStr + '$', 'i');
 // Source: https://github.com/colinhacks/zod/blob/main/packages/zod/src/v4/core/regexes.ts

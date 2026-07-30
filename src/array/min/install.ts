@@ -1,5 +1,5 @@
-import { min } from './index';
-export * from './types';
+import { min } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.min) {
   Object.defineProperty(Array.prototype, 'min', {

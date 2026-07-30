@@ -1,5 +1,5 @@
-import { jaroWinkler } from './index';
-import './types';
+import { jaroWinkler } from './index.js';
+export type * from './types';
 
 if (!String.prototype.jaroWinkler) {
   Object.defineProperty(String.prototype, 'jaroWinkler', {

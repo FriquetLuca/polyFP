@@ -1,5 +1,5 @@
-import { dotCase } from './index';
-import './types';
+import { dotCase } from './index.js';
+export type * from './types';
 
 if (!String.prototype.dotCase) {
   Object.defineProperty(String.prototype, 'dotCase', {

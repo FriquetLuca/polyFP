@@ -1,5 +1,5 @@
-import { isIPv4 } from './index';
-import './types';
+import { isIPv4 } from './index.js';
+export type * from './types';
 
 if (!String.prototype.isIPv4) {
   Object.defineProperty(String.prototype, 'isIPv4', {

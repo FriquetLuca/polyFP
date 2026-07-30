@@ -1,5 +1,5 @@
-import { groupBy } from './index';
-export * from './types';
+import { groupBy } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.groupBy) {
   Object.defineProperty(Array.prototype, 'groupBy', {

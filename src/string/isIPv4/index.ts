@@ -1,4 +1,4 @@
-import { ipv4RegExpStr } from '../utils';
+import { ipv4RegExpStr } from '../utils.js';
 
 const ip4: RegExp = new RegExp('^' + ipv4RegExpStr + '$', 'i');
 

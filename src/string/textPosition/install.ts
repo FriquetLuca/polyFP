@@ -1,5 +1,5 @@
-import { textPosition } from './index';
-import './types';
+import { textPosition } from './index.js';
+export type * from './types';
 
 if (!String.prototype.textPosition) {
   Object.defineProperty(String.prototype, 'textPosition', {

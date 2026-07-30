@@ -1,6 +1,6 @@
 import type { RecordType } from '../../types';
-import { innerJoin } from './index';
-export * from './types';
+import { innerJoin } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.innerJoin) {
   Object.defineProperty(Array.prototype, 'innerJoin', {

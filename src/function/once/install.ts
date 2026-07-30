@@ -1,5 +1,5 @@
-import { once } from './index';
-import './types';
+import { once } from './index.js';
+export type * from './types';
 
 if (!Function.once) {
   Object.defineProperty(Function, 'once', {

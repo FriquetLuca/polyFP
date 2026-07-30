@@ -1,5 +1,5 @@
-import { shuffle } from './index';
-export * from './types';
+import { shuffle } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.shuffle) {
   Object.defineProperty(Array.prototype, 'shuffle', {

@@ -1,5 +1,5 @@
-import { moveTowardsAngle } from './index';
-import './types';
+import { moveTowardsAngle } from './index.js';
+export type * from './types';
 
 if (!Math.moveTowardsAngle) {
   Object.defineProperty(Math, 'moveTowardsAngle', {

@@ -1,5 +1,5 @@
-import { pascalTriangle } from './index';
-import './types';
+import { pascalTriangle } from './index.js';
+export type * from './types';
 
 if (!Math.pascalTriangle) {
   Object.defineProperty(Math, 'pascalTriangle', {

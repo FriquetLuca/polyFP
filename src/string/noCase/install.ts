@@ -1,5 +1,5 @@
-import { noCase } from './index';
-import './types';
+import { noCase } from './index.js';
+export type * from './types';
 
 if (!String.prototype.noCase) {
   Object.defineProperty(String.prototype, 'noCase', {

@@ -1,5 +1,5 @@
-import { partial } from './index';
-import './types';
+import { partial } from './index.js';
+export type * from './types';
 
 if (!Function.partial) {
   Object.defineProperty(Function, 'partial', {

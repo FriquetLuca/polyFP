@@ -1,6 +1,6 @@
 import type { RecordType } from '../../types';
-import { fullJoin } from './index';
-export * from './types';
+import { fullJoin } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.fullJoin) {
   Object.defineProperty(Array.prototype, 'fullJoin', {

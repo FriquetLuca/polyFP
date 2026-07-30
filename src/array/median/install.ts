@@ -1,5 +1,5 @@
-import { median } from './index';
-export * from './types';
+import { median } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.median) {
   Object.defineProperty(Array.prototype, 'median', {

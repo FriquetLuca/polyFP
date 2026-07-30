@@ -1,5 +1,5 @@
-import { intersection } from './index';
-export * from './types';
+import { intersection } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.intersection) {
   Object.defineProperty(Array.prototype, 'intersection', {

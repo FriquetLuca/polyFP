@@ -1,5 +1,5 @@
-import { erfcx } from './index';
-import './types';
+import { erfcx } from './index.js';
+export type * from './types';
 
 if (!Math.erfcx) {
   Object.defineProperty(Math, 'erfcx', {

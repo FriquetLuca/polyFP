@@ -1,5 +1,5 @@
-import { cumulativeAverage } from './index';
-export * from './types';
+import { cumulativeAverage } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.cumulativeAverage) {
   Object.defineProperty(Array.prototype, 'cumulativeAverage', {

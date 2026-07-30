@@ -1,5 +1,5 @@
-import { getHash } from './index';
-import './types';
+import { getHash } from './index.js';
+export type * from './types';
 
 if (!Object.getHash) {
   Object.defineProperty(Object, 'getHash', {

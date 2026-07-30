@@ -1,4 +1,4 @@
-import { median } from '../median';
+import { median } from '../median/index.js';
 
 export function avgAbsDevAroundMedian<T>(
   values: T[],

@@ -1,5 +1,5 @@
-import { invert } from './index';
-import './types';
+import { invert } from './index.js';
+export type * from './types';
 
 if (!Object.invert) {
   Object.defineProperty(Object, 'invert', {

@@ -1,5 +1,5 @@
-import { exponentialMovingAverage } from './index';
-export * from './types';
+import { exponentialMovingAverage } from './index.js';
+export type * from './types';
 
 if (!Array.prototype.exponentialMovingAverage) {
   Object.defineProperty(Array.prototype, 'exponentialMovingAverage', {

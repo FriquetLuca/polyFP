@@ -1,5 +1,5 @@
-import { isClass } from './index';
-import './types';
+import { isClass } from './index.js';
+export type * from './types';
 
 if (!Object.isClass) {
   Object.defineProperty(Object, 'isClass', {

@@ -1,4 +1,4 @@
-import { words } from '../words/index';
+import { words } from '../words/index.js';
 
 export const dotCase = (value: string): string =>
   words(value)
