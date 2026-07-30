@@ -23,6 +23,7 @@ import './remap/install.js';
 import './repeat/install.js';
 import './roundToPointFive/install.js';
 import './saturate/install.js';
+import './segmentRounding/install.js';
 import './toDegrees/install.js';
 import './toRadians/install.js';
 import './unlerp/install.js';

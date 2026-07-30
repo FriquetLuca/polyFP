@@ -65,6 +65,27 @@ Choose the workflow that best fits your project architecture:
       .select('total', 0, (sum, item) => sum + item.price)
       .take();
     ```
+3. **Full polyfill**
+
+    Instead of a granular polyfill, you can import everything.
+
+    ```ts
+    // Import all the polyfill
+    import 'polyfp/polyfill';
+    // Or choose only a specific set of polyfill
+    // import 'polyfp/polyfill/array';
+
+    const data = [
+      { category: 'tech', price: 100 },
+      { category: 'tech', price: 200 },
+    ];
+
+    // Call directly on the array instance
+    const result = data
+      .aggregate()
+      .select('total', 0, (sum, item) => sum + item.price)
+      .take();
+    ```
 
 ## ⚙️ TypeScript Global Augmentation
 

@@ -612,6 +612,11 @@
       "import": "./dist/esm/math/saturate/install.js",
       "require": "./dist/cjs/math/saturate/install.js"
     },
+    "./polyfill/math/segmentRounding": {
+      "types": "./dist/types/math/segmentRounding/install.d.ts",
+      "import": "./dist/esm/math/segmentRounding/install.js",
+      "require": "./dist/cjs/math/segmentRounding/install.js"
+    },
     "./polyfill/math/toDegrees": {
       "types": "./dist/types/math/toDegrees/install.d.ts",
       "import": "./dist/esm/math/toDegrees/install.js",

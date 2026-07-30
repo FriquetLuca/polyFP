@@ -21,6 +21,7 @@ export { remap } from './remap/index.js';
 export { repeat } from './repeat/index.js';
 export { roundToPointFive } from './roundToPointFive/index.js';
 export { saturate } from './saturate/index.js';
+export { segmentRounding } from './segmentRounding/index.js';
 export { toDegrees } from './toDegrees/index.js';
 export { toRadians } from './toRadians/index.js';
 export { unlerp } from './unlerp/index.js';
