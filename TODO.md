@@ -427,25 +427,9 @@ LRUCache
 RingBuffer
 ✅ Events / Reactive
 
-If you ever go that direction:
 
-EventEmitter
-Observable
-Signal
-Subject
-✅ Types
 
-Since you've written quite a bit of type-level code already, a dedicated types module could include:
-
-Collapse
-Prettify
-DeepPartial
-DeepReadonly
-DeepRequired
-Exact
-Mutable
-UnionToIntersection
-TupleToUnion
-ValueOf
-KeysMatching
-AwaitedDeep
+Function:
+before(n, fn)
+after(n, fn)
+bind()

@@ -72,4 +72,14 @@ export class Stack<T> {
   size() {
     return this._size;
   }
+  /**
+   * Iterates through the stack from last to first.
+   */
+  *[Symbol.iterator]() {
+    let current = this.head;
+    while (current) {
+      yield current.value;
+      current = current.next;
+    }
+  }
 }

@@ -379,6 +379,5 @@ export class QueryBuilder<TInput, TCurrent> {
   }
 }
 
-export function queryBuilder<T>(data: T[]): QueryBuilder<T, T> {
-  return new QueryBuilder<T, T>(data, []);
-}
+export const queryBuilder = <T>(data: T[]): QueryBuilder<T, T> =>
+  new QueryBuilder<T, T>(data, []);
