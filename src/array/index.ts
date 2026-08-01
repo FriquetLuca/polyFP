@@ -5,6 +5,7 @@ export { batch } from './batch/index.js';
 export { cartesianProduct } from './cartesianProduct/index.js';
 export { chunk } from './chunk/index.js';
 export { chunkWhile } from './chunkWhile/index.js';
+export { cn } from './cn/index.js';
 export { countBy } from './countBy/index.js';
 export { crossJoin } from './crossJoin/index.js';
 export { cumulativeAverage } from './cumulativeAverage/index.js';

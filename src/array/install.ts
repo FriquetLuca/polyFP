@@ -5,6 +5,7 @@ import './batch/install.js';
 import './cartesianProduct/install.js';
 import './chunk/install.js';
 import './chunkWhile/install.js';
+import './cn/install.js';
 import './countBy/install.js';
 import './crossJoin/install.js';
 import './cumulativeAverage/install.js';

@@ -82,6 +82,11 @@
       "import": "./dist/esm/array/chunkWhile/install.js",
       "require": "./dist/cjs/array/chunkWhile/install.js"
     },
+    "./polyfill/array/cn": {
+      "types": "./dist/types/array/cn/install.d.ts",
+      "import": "./dist/esm/array/cn/install.js",
+      "require": "./dist/cjs/array/cn/install.js"
+    },
     "./polyfill/array/countBy": {
       "types": "./dist/types/array/countBy/install.d.ts",
       "import": "./dist/esm/array/countBy/install.js",
