@@ -1,6 +1,6 @@
 {
   "name": "polyfp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "description": "A functional programming polyfill for typescript.",
   "license": "GPL",
@@ -541,6 +541,11 @@
       "types": "./dist/types/math/gcd/install.d.ts",
       "import": "./dist/esm/math/gcd/install.js",
       "require": "./dist/cjs/math/gcd/install.js"
+    },
+    "./polyfill/math/inRange": {
+      "types": "./dist/types/math/inRange/install.d.ts",
+      "import": "./dist/esm/math/inRange/install.js",
+      "require": "./dist/cjs/math/inRange/install.js"
     },
     "./polyfill/math/invmod": {
       "types": "./dist/types/math/invmod/install.d.ts",

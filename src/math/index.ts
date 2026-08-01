@@ -8,6 +8,7 @@ export { erfcx } from './erfcx/index.js';
 export { frac } from './frac/index.js';
 export { gamma } from './gamma/index.js';
 export { gcd } from './gcd/index.js';
+export { inRange } from './inRange/index.js';
 export { invmod } from './invmod/index.js';
 export { isPrime } from './isPrime/index.js';
 export { lcm } from './lcm/index.js';

@@ -8,6 +8,7 @@ import './erfcx/install.js';
 import './frac/install.js';
 import './gamma/install.js';
 import './gcd/install.js';
+import './inRange/install.js';
 import './invmod/install.js';
 import './isPrime/install.js';
 import './lcm/install.js';

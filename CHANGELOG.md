@@ -2,10 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.2] - 2026-08-01
+
+Add uuidv4, uuidv6, inRange, nanoid, cn, getRandomBytes and customAlphabetNanoId.
+
 ## [0.1.1] - 2026-07-31
 
 Add segmentRounding function for math.
-## [v0.1.1] - 2026-07-30
 
 ## [0.1.0] - 2026-07-30
 
