@@ -332,6 +332,11 @@
       "import": "./dist/esm/array/window/install.js",
       "require": "./dist/cjs/array/window/install.js"
     },
+    "./polyfill/array/xor": {
+      "types": "./dist/types/array/xor/install.d.ts",
+      "import": "./dist/esm/array/xor/install.js",
+      "require": "./dist/cjs/array/xor/install.js"
+    },
     "./polyfill/array/zip": {
       "types": "./dist/types/array/zip/install.d.ts",
       "import": "./dist/esm/array/zip/install.js",
@@ -777,6 +782,11 @@
       "import": "./dist/esm/string/dotCase/install.js",
       "require": "./dist/cjs/string/dotCase/install.js"
     },
+    "./polyfill/string/escape": {
+      "types": "./dist/types/string/escape/install.d.ts",
+      "import": "./dist/esm/string/escape/install.js",
+      "require": "./dist/cjs/string/escape/install.js"
+    },
     "./polyfill/string/hamming": {
       "types": "./dist/types/string/hamming/install.d.ts",
       "import": "./dist/esm/string/hamming/install.js",
@@ -906,6 +916,11 @@
       "types": "./dist/types/string/trainCase/install.d.ts",
       "import": "./dist/esm/string/trainCase/install.js",
       "require": "./dist/cjs/string/trainCase/install.js"
+    },
+    "./polyfill/string/unescape": {
+      "types": "./dist/types/string/unescape/install.d.ts",
+      "import": "./dist/esm/string/unescape/install.js",
+      "require": "./dist/cjs/string/unescape/install.js"
     },
     "./polyfill/string/upperFirst": {
       "types": "./dist/types/string/upperFirst/install.d.ts",

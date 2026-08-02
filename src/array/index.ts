@@ -55,5 +55,6 @@ export { weightedMovingAverage } from './weightedMovingAverage/index.js';
 export { weightedNormalizedMean } from './weightedNormalizedMean/index.js';
 export { weightedRootMeanSquare } from './weightedRootMeanSquare/index.js';
 export { window } from './window/index.js';
+export { xor } from './xor/index.js';
 export { zip } from './zip/index.js';
 export { zipWith } from './zipWith/index.js';

@@ -55,5 +55,6 @@ import './weightedMovingAverage/install.js';
 import './weightedNormalizedMean/install.js';
 import './weightedRootMeanSquare/install.js';
 import './window/install.js';
+import './xor/install.js';
 import './zip/install.js';
 import './zipWith/install.js';
