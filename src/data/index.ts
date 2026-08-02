@@ -28,6 +28,7 @@ export { LinkedList } from './linkedList.js';
 export { MaxPriorityQueue } from './maxPriorityQueue.js';
 export { MinPriorityQueue } from './minPriorityQueue.js';
 export { nanoid } from './nanoid.js';
+export { newInstance } from './newInstance.js';
 export { observer, Observer, type Listener } from './observer.js';
 export {
   none,

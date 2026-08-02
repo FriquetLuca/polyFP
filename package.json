@@ -362,6 +362,11 @@
       "import": "./dist/esm/function/install.js",
       "require": "./dist/cjs/function/install.js"
     },
+    "./polyfill/function/after": {
+      "types": "./dist/types/function/after/install.d.ts",
+      "import": "./dist/esm/function/after/install.js",
+      "require": "./dist/cjs/function/after/install.js"
+    },
     "./polyfill/function/all": {
       "types": "./dist/types/function/all/install.d.ts",
       "import": "./dist/esm/function/all/install.js",
@@ -381,6 +386,11 @@
       "types": "./dist/types/function/atMostOne/install.d.ts",
       "import": "./dist/esm/function/atMostOne/install.js",
       "require": "./dist/cjs/function/atMostOne/install.js"
+    },
+    "./polyfill/function/before": {
+      "types": "./dist/types/function/before/install.d.ts",
+      "import": "./dist/esm/function/before/install.js",
+      "require": "./dist/cjs/function/before/install.js"
     },
     "./polyfill/function/compose": {
       "types": "./dist/types/function/compose/install.d.ts",
@@ -487,10 +497,20 @@
       "import": "./dist/esm/function/traverse/install.js",
       "require": "./dist/cjs/function/traverse/install.js"
     },
+    "./polyfill/function/unary": {
+      "types": "./dist/types/function/unary/install.d.ts",
+      "import": "./dist/esm/function/unary/install.js",
+      "require": "./dist/cjs/function/unary/install.js"
+    },
     "./polyfill/function/uncurry": {
       "types": "./dist/types/function/uncurry/install.d.ts",
       "import": "./dist/esm/function/uncurry/install.js",
       "require": "./dist/cjs/function/uncurry/install.js"
+    },
+    "./polyfill/function/wrap": {
+      "types": "./dist/types/function/wrap/install.d.ts",
+      "import": "./dist/esm/function/wrap/install.js",
+      "require": "./dist/cjs/function/wrap/install.js"
     },
     "./polyfill/math": {
       "types": "./dist/types/math/install.d.ts",
