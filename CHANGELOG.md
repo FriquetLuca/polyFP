@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [0.1.2] - 2026-08-02
 
 Add escape, unescape, xor, newInstance, before, after, unary, wrap, uuidv4, uuidv6, inRange, nanoid, cn, getRandomBytes and customAlphabetNanoId.
+## [v0.1.2] - 2026-08-02
 
 ## [0.1.1] - 2026-07-31
 
