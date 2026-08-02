@@ -28,6 +28,7 @@ import './medianAbsoluteDeviation/install.js';
 import './medianAbsoluteDeviationNormalized/install.js';
 import './min/install.js';
 import './move/install.js';
+import './nth/install.js';
 import './orderBy/install.js';
 import './partition/install.js';
 import './pluck/install.js';

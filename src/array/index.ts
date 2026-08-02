@@ -28,6 +28,7 @@ export { medianAbsoluteDeviation } from './medianAbsoluteDeviation/index.js';
 export { medianAbsoluteDeviationNormalized } from './medianAbsoluteDeviationNormalized/index.js';
 export { min } from './min/index.js';
 export { move } from './move/index.js';
+export { nth } from './nth/index.js';
 export { orderBy } from './orderBy/index.js';
 export { partition } from './partition/index.js';
 export { pluck } from './pluck/index.js';

@@ -197,6 +197,11 @@
       "import": "./dist/esm/array/move/install.js",
       "require": "./dist/cjs/array/move/install.js"
     },
+    "./polyfill/array/nth": {
+      "types": "./dist/types/array/nth/install.d.ts",
+      "import": "./dist/esm/array/nth/install.js",
+      "require": "./dist/cjs/array/nth/install.js"
+    },
     "./polyfill/array/orderBy": {
       "types": "./dist/types/array/orderBy/install.d.ts",
       "import": "./dist/esm/array/orderBy/install.js",
