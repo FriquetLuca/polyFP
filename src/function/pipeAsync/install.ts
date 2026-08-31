@@ -1,4 +1,4 @@
-import type { AnyAsyncFunction } from '../../types.js';
+import type { AnyAsyncFunction } from '../../types';
 import { extendPrototype } from '../../utils.js';
 import { pipeAsync } from './index.js';
 export type * from './types';

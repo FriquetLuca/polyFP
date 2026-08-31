@@ -1,4 +1,4 @@
-import type { AnyFunction } from '../../types.js';
+import type { AnyFunction } from '../../types';
 import { extendPrototype } from '../../utils.js';
 import { uncurry } from './index.js';
 export type * from './types';

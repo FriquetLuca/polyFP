@@ -1,5 +1,5 @@
 import { pick } from '../../object/pick/index.js';
-import type { Collapse, ProjectedRow, ProjectionSpec } from '../../types.js';
+import type { Collapse, ProjectedRow, ProjectionSpec } from '../../types';
 
 export function project<T, K extends keyof T>(
   rows: T[],
