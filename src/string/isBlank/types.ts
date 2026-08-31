@@ -2,6 +2,6 @@ export {};
 
 declare global {
   interface String {
-    unescape(this: string): string;
+    isBlank(this: string): boolean;
   }
 }

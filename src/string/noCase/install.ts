@@ -1,12 +1,9 @@
+import { extendPrototype } from '../../utils.js';
 import { noCase } from './index.js';
 export type * from './types';
 
-if (!String.prototype.noCase) {
-  Object.defineProperty(String.prototype, 'noCase', {
-    value(this: string) {
-      return noCase(this);
-    },
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(String.prototype, {
+  noCase(this) {
+    return noCase(this as string);
+  },
+});

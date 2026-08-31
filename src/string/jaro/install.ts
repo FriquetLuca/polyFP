@@ -1,12 +1,9 @@
+import { extendPrototype } from '../../utils.js';
 import { jaro } from './index.js';
 export type * from './types';
 
-if (!String.prototype.jaro) {
-  Object.defineProperty(String.prototype, 'jaro', {
-    value(this: string, b: string) {
-      return jaro(this, b);
-    },
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(String.prototype, {
+  jaro(this, b: string) {
+    return jaro(this as string, b);
+  },
+});

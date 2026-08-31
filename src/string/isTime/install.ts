@@ -1,12 +1,9 @@
+import { extendPrototype } from '../../utils.js';
 import { isTime } from './index.js';
 export type * from './types';
 
-if (!String.prototype.isTime) {
-  Object.defineProperty(String.prototype, 'isTime', {
-    value(this: string) {
-      return isTime(this);
-    },
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(String.prototype, {
+  isTime(this) {
+    return isTime(this as string);
+  },
+});

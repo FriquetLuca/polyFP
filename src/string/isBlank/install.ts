@@ -1,9 +1,9 @@
 import { extendPrototype } from '../../utils.js';
-import { isDateFormat } from './index.js';
+import { isBlank } from './index.js';
 export type * from './types';
 
 extendPrototype(String.prototype, {
-  isDateFormat(this) {
-    return isDateFormat(this as string);
+  isBlank(this) {
+    return isBlank(this as string);
   },
 });

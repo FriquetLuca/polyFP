@@ -1,12 +1,9 @@
+import { extendPrototype } from '../../utils.js';
 import { constantCase } from './index.js';
 export type * from './types';
 
-if (!String.prototype.constantCase) {
-  Object.defineProperty(String.prototype, 'constantCase', {
-    value(this: string) {
-      return constantCase(this);
-    },
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(String.prototype, {
+  constantCase(this) {
+    return constantCase(this as string);
+  },
+});

@@ -2,6 +2,6 @@ export {};
 
 declare global {
   interface String {
-    escape(input: string): string;
+    escape(this: string): string;
   }
 }

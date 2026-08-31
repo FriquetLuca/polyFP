@@ -1,12 +1,9 @@
+import { extendPrototype } from '../../utils.js';
 import { lowerFirst } from './index.js';
 export type * from './types';
 
-if (!String.prototype.lowerFirst) {
-  Object.defineProperty(String.prototype, 'lowerFirst', {
-    value(this: string) {
-      return lowerFirst(this);
-    },
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(String.prototype, {
+  lowerFirst(this) {
+    return lowerFirst(this as string);
+  },
+});

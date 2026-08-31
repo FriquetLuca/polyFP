@@ -1,12 +1,9 @@
+import { extendPrototype } from '../../utils.js';
 import { isURL } from './index.js';
 export type * from './types';
 
-if (!String.prototype.isURL) {
-  Object.defineProperty(String.prototype, 'isURL', {
-    value(this: string) {
-      return isURL(this);
-    },
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(String.prototype, {
+  isURL(this) {
+    return isURL(this as string);
+  },
+});

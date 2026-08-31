@@ -1,9 +1,9 @@
 import { extendPrototype } from '../../utils.js';
-import { isDateFormat } from './index.js';
+import { reverse } from './index.js';
 export type * from './types';
 
 extendPrototype(String.prototype, {
-  isDateFormat(this) {
-    return isDateFormat(this as string);
+  reverse(this) {
+    return reverse(this as string);
   },
 });

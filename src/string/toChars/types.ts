@@ -2,6 +2,6 @@ export {};
 
 declare global {
   interface String {
-    unescape(this: string): string;
+    toChars(this: string): string[];
   }
 }
