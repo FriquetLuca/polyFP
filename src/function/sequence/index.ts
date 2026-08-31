@@ -1,6 +1,4 @@
-export type Thunks<T extends unknown[]> = {
-  [K in keyof T]: () => Promise<T[K]>;
-};
+import type { Thunks } from '../../types';
 
 export async function sequence<T extends unknown[]>(
   ...thunks: Thunks<T>

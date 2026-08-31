@@ -1,5 +1,6 @@
+import type { MemoizeOptions } from '../../types';
 import { extendPrototype } from '../../utils.js';
-import { memoize, type MemoizeOptions } from './index.js';
+import { memoize } from './index.js';
 export type * from './types';
 
 extendPrototype(Function.prototype, {

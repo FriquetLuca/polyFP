@@ -15,11 +15,8 @@ export { guardAsync } from './guardAsync/index.js';
 export { isFunction } from './isFunction/index.js';
 export { isPromise } from './isPromise/index.js';
 export { isPromiseLike } from './isPromiseLike/index.js';
-export { memoize, type MemoizeOptions } from './memoize/index.js';
-export {
-  memoizeAsync,
-  type MemoizeAsyncOptions,
-} from './memoizeAsync/index.js';
+export { memoize } from './memoize/index.js';
+export { memoizeAsync } from './memoizeAsync/index.js';
 export { noop } from './noop/index.js';
 export { not } from './not/index.js';
 export { once } from './once/index.js';
@@ -29,12 +26,8 @@ export { pipe } from './pipe/index.js';
 export { pipeAsync } from './pipeAsync/index.js';
 export { repeat } from './repeat/index.js';
 export { retry } from './retry/index.js';
-export {
-  retryUntil,
-  RetryExhaustedError,
-  type RetryUntilOptions,
-} from './retryUntil/index.js';
-export { sequence, type Thunks } from './sequence/index.js';
+export { retryUntil, RetryExhaustedError } from './retryUntil/index.js';
+export { sequence } from './sequence/index.js';
 export { tap } from './tap/index.js';
 export { throttle } from './throttle/index.js';
 export { timeout } from './timeout/index.js';

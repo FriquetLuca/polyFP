@@ -1,4 +1,4 @@
-import type { Thunks } from '.';
+import type { Thunks } from '../../types';
 
 export {};
 

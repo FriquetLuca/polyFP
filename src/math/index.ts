@@ -23,7 +23,7 @@ export { pascalTriangle } from './pascalTriangle/index.js';
 export { randomInt } from './randomInt/index.js';
 export { randomIntInclusive } from './randomIntInclusive/index.js';
 export { remap } from './remap/index.js';
-export { repeat } from './repeat/index.js';
+export { repeat as repeatValue } from './repeat/index.js';
 export { roundToPointFive } from './roundToPointFive/index.js';
 export { saturate } from './saturate/index.js';
 export { segmentRounding } from './segmentRounding/index.js';

@@ -1,7 +1,4 @@
-export interface MemoizeOptions<Args extends unknown[]> {
-  keyFn?: (...args: Args) => string;
-  ttlMs?: number; // if set, an entry expires and re-runs after this long
-}
+import type { MemoizeOptions } from '../../types';
 
 export function memoize<Args extends unknown[], R>(
   fn: (...args: Args) => R,

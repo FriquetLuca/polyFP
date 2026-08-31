@@ -1,4 +1,4 @@
-import type { MemoizeOptions } from '.';
+import type { MemoizeOptions } from '../../types';
 
 export {};
 

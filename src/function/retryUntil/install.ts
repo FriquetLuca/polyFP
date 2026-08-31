@@ -1,5 +1,6 @@
+import type { RetryUntilOptions } from '../../types';
 import { extendPrototype } from '../../utils.js';
-import { retryUntil, type RetryUntilOptions } from './index.js';
+import { retryUntil } from './index.js';
 export type * from './types';
 
 extendPrototype(Function.prototype, {

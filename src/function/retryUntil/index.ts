@@ -1,11 +1,5 @@
+import type { RetryUntilOptions } from '../../types';
 import { timeout } from '../timeout/index.js';
-
-export interface RetryUntilOptions {
-  maxAttempts?: number;
-  delayMs?: number;
-  backoffFactor?: number; // multiplies delayMs after each failed attempt
-  retryOnError?: boolean;
-}
 
 export class RetryExhaustedError extends Error {
   public readonly lastResult: unknown;

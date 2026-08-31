@@ -1,4 +1,4 @@
-import type { RetryUntilOptions } from '.';
+import type { RetryUntilOptions } from '../../types';
 
 export {};
 

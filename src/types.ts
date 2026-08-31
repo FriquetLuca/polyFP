@@ -258,3 +258,16 @@ export type PivotedRow<
 > = Pick<Row, I> & {
   [K in keyof A]: ReturnType<A[K]>;
 };
+export interface MemoizeOptions<Args extends unknown[]> {
+  keyFn?: (...args: Args) => string;
+  ttlMs?: number; // if set, an entry expires and re-runs after this long
+}
+export interface RetryUntilOptions {
+  maxAttempts?: number;
+  delayMs?: number;
+  backoffFactor?: number; // multiplies delayMs after each failed attempt
+  retryOnError?: boolean;
+}
+export type Thunks<T extends unknown[]> = {
+  [K in keyof T]: () => Promise<T[K]>;
+};

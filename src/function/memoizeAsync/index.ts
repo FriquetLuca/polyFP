@@ -1,11 +1,8 @@
-export interface MemoizeAsyncOptions<Args extends unknown[]> {
-  keyFn?: (...args: Args) => string;
-  ttlMs?: number; // if set, a resolved entry expires and re-runs after this long
-}
+import type { MemoizeOptions } from '../../types';
 
 export function memoizeAsync<Args extends unknown[], R>(
   fn: (...args: Args) => Promise<R>,
-  options: MemoizeAsyncOptions<Args> = {}
+  options: MemoizeOptions<Args> = {}
 ): ((...args: Args) => Promise<R>) & { clear: () => void } {
   const keyFn = options.keyFn ?? ((...args: Args) => JSON.stringify(args));
   const cache = new Map<string, { promise: Promise<R>; expiresAt: number }>();
