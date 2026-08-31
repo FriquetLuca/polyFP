@@ -1,14 +1,10 @@
 import { aggregate } from './index.js';
 import type { AggregateBuilder } from '../../types';
-
+import { extendPrototype } from '../../utils.js';
 export type * from './types';
 
-if (!Array.prototype.aggregate) {
-  Object.defineProperty(Array.prototype, 'aggregate', {
-    value<T>(this: T[]): AggregateBuilder<T> {
-      return aggregate(this);
-    },
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(Array.prototype, {
+  aggregate<T>(this: T[]): AggregateBuilder<T> {
+    return aggregate(this);
+  },
+});

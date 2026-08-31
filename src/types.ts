@@ -49,12 +49,29 @@ export type Chain<
 };
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type AnyFn = (...args: any[]) => any;
+export type ProjectionSpec<T> = Record<string, keyof T | ((row: T) => unknown)>;
+export type ProjectedRow<T, S extends ProjectionSpec<T>> = Collapse<{
+  [K in keyof S]: S[K] extends (row: T) => infer R
+    ? R
+    : S[K] extends keyof T
+      ? T[S[K]]
+      : never;
+}>;
+export interface Pool<T> {
+  acquire(): Promise<T>;
+  release(resource: T): void;
+  readonly available: number;
+  readonly inUse: number;
+}
 export type Collapse<T> = T extends AnyFn
   ? T
   : T extends object
     ? { [K in keyof T]: Collapse<T[K]> }
     : T;
-
+export type UnpivotedRow<T, I extends keyof T, V extends keyof T> = Pick<T, I> &
+  {
+    [K in V]: { key: K; value: T[K] };
+  }[V];
 type NewKeyName<
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   T extends Record<string | number | symbol, any>,
@@ -224,3 +241,20 @@ export type InferSelect<
         : never
   ]: T[K[0] & keyof T];
 }>;
+type KeyOf<Row> = Row extends { key: infer K extends PropertyKey } ? K : never;
+
+// Extract the `value` type correlated with one specific key literal.
+type ValueOfKey<Row, K> = Row extends { key: K; value: infer V } ? V : never;
+
+// One aggregator per possible key, each typed to that key's own value type.
+export type PivotAggregators<Row> = {
+  [K in KeyOf<Row>]: (values: ValueOfKey<Row, K>[]) => unknown;
+};
+
+export type PivotedRow<
+  Row,
+  I extends keyof Row,
+  A extends PivotAggregators<Row>,
+> = Pick<Row, I> & {
+  [K in keyof A]: ReturnType<A[K]>;
+};

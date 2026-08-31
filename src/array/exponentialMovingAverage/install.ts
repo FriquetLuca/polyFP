@@ -1,12 +1,13 @@
+import { extendPrototype } from '../../utils.js';
 import { exponentialMovingAverage } from './index.js';
 export type * from './types';
 
-if (!Array.prototype.exponentialMovingAverage) {
-  Object.defineProperty(Array.prototype, 'exponentialMovingAverage', {
-    value<T>(this: T[], fn: (val: T) => number, alpha: number): number[] {
-      return exponentialMovingAverage(this, fn, alpha);
-    },
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(Array.prototype, {
+  exponentialMovingAverage<T>(
+    this: T[],
+    fn: (val: T) => number,
+    alpha: number
+  ): number[] {
+    return exponentialMovingAverage(this, fn, alpha);
+  },
+});

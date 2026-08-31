@@ -112,6 +112,21 @@
       "import": "./dist/esm/array/exponentialMovingAverage/install.js",
       "require": "./dist/cjs/array/exponentialMovingAverage/install.js"
     },
+    "./polyfill/array/filterAsync": {
+      "types": "./dist/types/array/filterAsync/install.d.ts",
+      "import": "./dist/esm/array/filterAsync/install.js",
+      "require": "./dist/cjs/array/filterAsync/install.js"
+    },
+    "./polyfill/array/filterMap": {
+      "types": "./dist/types/array/filterMap/install.d.ts",
+      "import": "./dist/esm/array/filterMap/install.js",
+      "require": "./dist/cjs/array/filterMap/install.js"
+    },
+    "./polyfill/array/forEachAsync": {
+      "types": "./dist/types/array/forEachAsync/install.d.ts",
+      "import": "./dist/esm/array/forEachAsync/install.js",
+      "require": "./dist/cjs/array/forEachAsync/install.js"
+    },
     "./polyfill/array/forItems": {
       "types": "./dist/types/array/forItems/install.d.ts",
       "import": "./dist/esm/array/forItems/install.js",
@@ -162,6 +177,16 @@
       "import": "./dist/esm/array/leftJoin/install.js",
       "require": "./dist/cjs/array/leftJoin/install.js"
     },
+    "./polyfill/array/mapAsync": {
+      "types": "./dist/types/array/mapAsync/install.d.ts",
+      "import": "./dist/esm/array/mapAsync/install.js",
+      "require": "./dist/cjs/array/mapAsync/install.js"
+    },
+    "./polyfill/array/mapAsyncSettled": {
+      "types": "./dist/types/array/mapAsyncSettled/install.d.ts",
+      "import": "./dist/esm/array/mapAsyncSettled/install.js",
+      "require": "./dist/cjs/array/mapAsyncSettled/install.js"
+    },
     "./polyfill/array/max": {
       "types": "./dist/types/array/max/install.d.ts",
       "import": "./dist/esm/array/max/install.js",
@@ -192,6 +217,11 @@
       "import": "./dist/esm/array/min/install.js",
       "require": "./dist/cjs/array/min/install.js"
     },
+    "./polyfill/array/mode": {
+      "types": "./dist/types/array/mode/install.d.ts",
+      "import": "./dist/esm/array/mode/install.js",
+      "require": "./dist/cjs/array/mode/install.js"
+    },
     "./polyfill/array/move": {
       "types": "./dist/types/array/move/install.d.ts",
       "import": "./dist/esm/array/move/install.js",
@@ -212,20 +242,50 @@
       "import": "./dist/esm/array/partition/install.js",
       "require": "./dist/cjs/array/partition/install.js"
     },
+    "./polyfill/array/pivot": {
+      "types": "./dist/types/array/pivot/install.d.ts",
+      "import": "./dist/esm/array/pivot/install.js",
+      "require": "./dist/cjs/array/pivot/install.js"
+    },
     "./polyfill/array/pluck": {
       "types": "./dist/types/array/pluck/install.d.ts",
       "import": "./dist/esm/array/pluck/install.js",
       "require": "./dist/cjs/array/pluck/install.js"
+    },
+    "./polyfill/array/pool": {
+      "types": "./dist/types/array/pool/install.d.ts",
+      "import": "./dist/esm/array/pool/install.js",
+      "require": "./dist/cjs/array/pool/install.js"
     },
     "./polyfill/array/product": {
       "types": "./dist/types/array/product/install.d.ts",
       "import": "./dist/esm/array/product/install.js",
       "require": "./dist/cjs/array/product/install.js"
     },
+    "./polyfill/array/project": {
+      "types": "./dist/types/array/project/install.d.ts",
+      "import": "./dist/esm/array/project/install.js",
+      "require": "./dist/cjs/array/project/install.js"
+    },
+    "./polyfill/array/quantile": {
+      "types": "./dist/types/array/quantile/install.d.ts",
+      "import": "./dist/esm/array/quantile/install.js",
+      "require": "./dist/cjs/array/quantile/install.js"
+    },
     "./polyfill/array/query": {
       "types": "./dist/types/array/query/install.d.ts",
       "import": "./dist/esm/array/query/install.js",
       "require": "./dist/cjs/array/query/install.js"
+    },
+    "./polyfill/array/range": {
+      "types": "./dist/types/array/range/install.d.ts",
+      "import": "./dist/esm/array/range/install.js",
+      "require": "./dist/cjs/array/range/install.js"
+    },
+    "./polyfill/array/reduceAsync": {
+      "types": "./dist/types/array/reduceAsync/install.d.ts",
+      "import": "./dist/esm/array/reduceAsync/install.js",
+      "require": "./dist/cjs/array/reduceAsync/install.js"
     },
     "./polyfill/array/rightJoin": {
       "types": "./dist/types/array/rightJoin/install.d.ts",
@@ -276,6 +336,11 @@
       "types": "./dist/types/array/unique/install.d.ts",
       "import": "./dist/esm/array/unique/install.js",
       "require": "./dist/cjs/array/unique/install.js"
+    },
+    "./polyfill/array/unpivot": {
+      "types": "./dist/types/array/unpivot/install.d.ts",
+      "import": "./dist/esm/array/unpivot/install.js",
+      "require": "./dist/cjs/array/unpivot/install.js"
     },
     "./polyfill/array/unzip": {
       "types": "./dist/types/array/unzip/install.d.ts",

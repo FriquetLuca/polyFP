@@ -1,13 +1,9 @@
+import { extendPrototype } from '../../utils.js';
 import { weightedNormalizedMean } from './index.js';
-
 export type * from './types';
 
-if (!Array.prototype.weightedNormalizedMean) {
-  Object.defineProperty(Array.prototype, 'weightedNormalizedMean', {
-    value(this: number[], weights: number[]): number {
-      return weightedNormalizedMean(this, weights);
-    },
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(Array.prototype, {
+  weightedNormalizedMean(this: number[], weights: number[]): number {
+    return weightedNormalizedMean(this, weights);
+  },
+});

@@ -1,12 +1,9 @@
+import { extendPrototype } from '../../utils.js';
 import { product } from './index.js';
 export type * from './types';
 
-if (!Array.prototype.product) {
-  Object.defineProperty(Array.prototype, 'product', {
-    value<T>(this: T[], fn: (val: T) => number): number {
-      return product(this, fn);
-    },
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(Array.prototype, {
+  product<T>(this: T[], fn: (val: T) => number): number {
+    return product(this, fn);
+  },
+});

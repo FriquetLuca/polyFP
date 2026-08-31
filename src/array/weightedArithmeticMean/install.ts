@@ -1,13 +1,9 @@
+import { extendPrototype } from '../../utils.js';
 import { weightedArithmeticMean } from './index.js';
-
 export type * from './types';
 
-if (!Array.prototype.weightedArithmeticMean) {
-  Object.defineProperty(Array.prototype, 'weightedArithmeticMean', {
-    value(this: number[], weights: number[]): number {
-      return weightedArithmeticMean(this, weights);
-    },
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(Array.prototype, {
+  weightedArithmeticMean(this: number[], weights: number[]): number {
+    return weightedArithmeticMean(this, weights);
+  },
+});

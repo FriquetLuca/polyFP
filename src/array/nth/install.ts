@@ -1,13 +1,9 @@
+import { extendPrototype } from '../../utils.js';
 import { nth } from './index.js';
-
 export type * from './types';
 
-if (!Array.prototype.nth) {
-  Object.defineProperty(Array.prototype, 'nth', {
-    value<T>(this: T[], pos: number) {
-      return nth(this, pos);
-    },
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(Array.prototype, {
+  nth<T>(this: T[], pos: number) {
+    return nth(this, pos);
+  },
+});

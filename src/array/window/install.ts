@@ -1,12 +1,9 @@
+import { extendPrototype } from '../../utils.js';
 import { window } from './index.js';
 export type * from './types';
 
-if (!Array.prototype.window) {
-  Object.defineProperty(Array.prototype, 'window', {
-    value<T>(this: T[], size: number): T[][] {
-      return window(this, size);
-    },
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(Array.prototype, {
+  window<T>(this: T[], size: number): T[][] {
+    return window(this, size);
+  },
+});
