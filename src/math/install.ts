@@ -1,4 +1,6 @@
 import './approximately/install.js';
+import './between/install.js';
+import './betweenInclusive/install.js';
 import './clamp/install.js';
 import './clerp180/install.js';
 import './deltaAngle/install.js';

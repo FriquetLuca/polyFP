@@ -1,5 +1,5 @@
 import { extendPrototype } from '../../utils.js';
-import { gamma } from './index.js';
+import { between } from './index.js';
 export type * from './types';
 
-extendPrototype(Math, { gamma });
+extendPrototype(Math, { between });

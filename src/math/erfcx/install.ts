@@ -1,10 +1,5 @@
+import { extendPrototype } from '../../utils.js';
 import { erfcx } from './index.js';
 export type * from './types';
 
-if (!Math.erfcx) {
-  Object.defineProperty(Math, 'erfcx', {
-    value: erfcx,
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(Math, { erfcx });

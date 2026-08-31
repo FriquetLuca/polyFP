@@ -567,6 +567,16 @@
       "import": "./dist/esm/math/approximately/install.js",
       "require": "./dist/cjs/math/approximately/install.js"
     },
+    "./polyfill/math/between": {
+      "types": "./dist/types/math/between/install.d.ts",
+      "import": "./dist/esm/math/between/install.js",
+      "require": "./dist/cjs/math/between/install.js"
+    },
+    "./polyfill/math/betweenInclusive": {
+      "types": "./dist/types/math/betweenInclusive/install.d.ts",
+      "import": "./dist/esm/math/betweenInclusive/install.js",
+      "require": "./dist/cjs/math/betweenInclusive/install.js"
+    },
     "./polyfill/math/clamp": {
       "types": "./dist/types/math/clamp/install.d.ts",
       "import": "./dist/esm/math/clamp/install.js",

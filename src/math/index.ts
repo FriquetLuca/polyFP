@@ -1,4 +1,6 @@
 export { approximately } from './approximately/index.js';
+export { between } from './between/index.js';
+export { betweenInclusive } from './betweenInclusive/index.js';
 export { clamp } from './clamp/index.js';
 export { clerp180 } from './clerp180/index.js';
 export { deltaAngle } from './deltaAngle/index.js';
@@ -18,6 +20,8 @@ export { mod } from './mod/index.js';
 export { moveTowards } from './moveTowards/index.js';
 export { moveTowardsAngle } from './moveTowardsAngle/index.js';
 export { pascalTriangle } from './pascalTriangle/index.js';
+export { randomInt } from './randomInt/index.js';
+export { randomIntInclusive } from './randomIntInclusive/index.js';
 export { remap } from './remap/index.js';
 export { repeat } from './repeat/index.js';
 export { roundToPointFive } from './roundToPointFive/index.js';

@@ -1,10 +1,5 @@
+import { extendPrototype } from '../../utils.js';
 import { toRadians } from './index.js';
 export type * from './types';
 
-if (!Math.toRadians) {
-  Object.defineProperty(Math, 'toRadians', {
-    value: toRadians,
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(Math, { toRadians });
