@@ -1,5 +1,7 @@
 export const tap =
-  <T>(effect: (value: T) => void): ((value: T) => T) =>
+  <T>(
+    effect: ((value: T) => void) | ((value: T) => Promise<void>)
+  ): ((value: T) => T) =>
   (value: T): T => {
     effect(value);
     return value;

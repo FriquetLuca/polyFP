@@ -1,10 +1,10 @@
+import { extendPrototype } from '../../utils.js';
 import { curry } from './index.js';
 export type * from './types';
 
-if (!Function.curry) {
-  Object.defineProperty(Function, 'curry', {
-    value: curry,
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(Function.prototype, {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
+  curry(this: Function) {
+    return curry(this as (...args: unknown[]) => unknown);
+  },
+});

@@ -9,7 +9,7 @@ export function curry<T extends any[], R>(
 ): Currying<typeof fn> {
   if (depth < fn.length) {
     const carryOver = (item: T[typeof depth]) => {
-      return Function.curry(fn, depth + 1, ...[...rest, item]);
+      return curry(fn, depth + 1, ...[...rest, item]);
     };
     return carryOver as Currying<T>;
   }

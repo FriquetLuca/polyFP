@@ -1,10 +1,14 @@
+import type { AnyFunction } from '../../types.js';
+import { extendPrototype } from '../../utils.js';
 import { pipe } from './index.js';
 export type * from './types';
 
-if (!Function.pipe) {
-  Object.defineProperty(Function, 'pipe', {
-    value: pipe,
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(Function.prototype, {
+  pipe(
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
+    this: Function,
+    ...fns: AnyFunction[]
+  ): (arg: unknown) => unknown {
+    return pipe(this as AnyFunction, ...fns);
+  },
+});

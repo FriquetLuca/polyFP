@@ -1,17 +1,12 @@
-import type {
-  AnyFunction,
-  FunctionAsChain,
-  LastIndexOfFunctionArray,
-  Unpack,
-} from '../../types';
+import type { AnyFunction, ArgType, PipeChain, PipeReturn } from '../../types';
 
 export {};
 
 declare global {
-  interface FunctionConstructor {
-    pipe<F extends [AnyFunction, ...AnyFunction[]]>(
-      arg: Unpack<Parameters<F[0]>>,
-      ...fns: F & FunctionAsChain<F>
-    ): ReturnType<F[LastIndexOfFunctionArray<F>]>;
+  interface Function {
+    pipe<This extends AnyFunction, F extends AnyFunction[]>(
+      this: This,
+      ...fns: F & PipeChain<ReturnType<This>, F>
+    ): (arg: ArgType<This>) => PipeReturn<This, F>;
   }
 }

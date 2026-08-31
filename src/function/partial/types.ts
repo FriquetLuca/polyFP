@@ -1,10 +1,10 @@
 export {};
 
 declare global {
-  interface FunctionConstructor {
-    partial<TArgs extends unknown[], TBoundArgs extends unknown[], TResult>(
-      fn: (...args: [...TBoundArgs, ...TArgs]) => TResult,
-      ...boundArgs: TBoundArgs
+  interface Function {
+    partial<TBound extends unknown[], TArgs extends unknown[], TResult>(
+      this: (...args: [...TBound, ...TArgs]) => TResult,
+      ...boundArgs: TBound
     ): (...remainingArgs: TArgs) => TResult;
   }
 }

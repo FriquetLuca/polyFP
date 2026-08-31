@@ -1,7 +1,10 @@
 export {};
 
 declare global {
-  interface FunctionConstructor {
-    retry(attempts: number): <T>(fn: () => Promise<T>) => Promise<T>;
+  interface Function {
+    retry<T, Args extends unknown[]>(
+      this: (...args: Args) => Promise<T>,
+      attempts: number
+    ): (...args: Args) => Promise<T>;
   }
 }

@@ -1,10 +1,10 @@
+import type { AnyFunction } from '../../types.js';
+import { extendPrototype } from '../../utils.js';
 import { before } from './index.js';
 export type * from './types';
 
-if (!Function.before) {
-  Object.defineProperty(Function, 'before', {
-    value: before,
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(Function.prototype, {
+  before(this, n: number) {
+    return before(this as AnyFunction, n);
+  },
+});

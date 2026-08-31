@@ -1,7 +1,14 @@
+import type { MemoizeOptions } from '.';
+
 export {};
 
 declare global {
-  interface FunctionConstructor {
-    memoize<TArg, TResult>(fn: (arg: TArg) => TResult): (arg: TArg) => TResult;
+  interface Function {
+    memoize<Args extends unknown[], R>(
+      this: (...args: Args) => R,
+      options?: MemoizeOptions<Args>
+    ): ((...args: Args) => R) & {
+      clear: () => void;
+    };
   }
 }

@@ -103,36 +103,18 @@ Iterator:
 range()
 repeat()
 cycle()
-window()
 pairwise()
 scan()
 interleave()
 flatten()
-cartesian()
 takeWhile()
 dropWhile()
 
-Async:
-debounce()
-throttle()
-delay()
-sleep()
-race()
-timeout()
-queue()
-channel()
-barrier()
-pool()
-
 Random:
-randomInt()
-randomFloat()
 choice()
 sample()
 sampleSize()
-shuffle()
 weightedChoice()
-uuid()
 seededRandom()
 normal()
 gaussian()
@@ -140,7 +122,6 @@ poisson()
 bernoulli()
 
 validation:
-isPromise()
 isIterable()
 
 String algorithms:
@@ -164,7 +145,6 @@ bfs()
 dijkstra()
 astar()
 topologicalSort()
-unionFind()
 
 Numeric methods:
 newton()
@@ -175,14 +155,10 @@ differentiate()
 interpolate()
 
 DataFrame-like:
-aggregate
-pivot
-unpivot
 distinctBy
 rank
 denseRank
 rolling
-window
 
 
 
@@ -210,114 +186,14 @@ window
 
 
 
-✅ Collections
-
-You already have or planned:
-
-Array extensions
-query DSL
-aggregate engine
-
-I'd probably still add:
-
-groupBy
-keyBy
-indexBy
-distinct
-distinctBy
-countBy
-chunkWhile
-zip
-zipWith
-intersect
-difference
-union
-shuffle
-sample
 binarySearch
 partitionMap
-✅ Async
-
-You mentioned most already:
-
-parallel
-race
-retry
-poll
-sleep
-delay
-debounce
-throttle
-mapAsync
-filterAsync
-reduceAsync
-forEachAsync
-mapLimit
-
-I'd also consider:
-
-timeout
-withTimeout
-memoizeAsync
-queue
-semaphore
-mutex
-batch
-pipeline
-retryUntil
-repeat
-✅ Functional
-
-You have:
-
-Option
-Result
-Either
-
-Missing common combinators:
-
-map
-flatMap
-filter
-tap
-inspect
-match
-fold
-mapErr
-orElse
-andThen
-flatten
-transpose
-sequence
-✅ ADTs
-
-You now have:
-
-createADT
-schemaADT
-pattern matching
-Standard Schema integration
-
-I'd add:
-
-exhaustive matching helper
-visitor API
-serialization/deserialization
-tagged unions from enums
-nested ADTs
-✅ Objects
 
 I'd expect:
 
-pick
-omit
-renameKeys
 mapValues
 mapKeys
 invert
-merge
-deepMerge
-deepClone
 defaults
 entries
 fromEntries
@@ -326,110 +202,23 @@ paths
 get
 set
 update
-✅ Functions
 
-Usually:
-
-pipe
-compose
-identity
-constant
-noop
-once
-memoize
-curry
-uncurry
-partial
-flip
-before
-after
-tap
-guard
-✅ Strings
-
-A category I don't think we've discussed.
-
-Things like:
-
-capitalize
-uncapitalize
-camelCase
-snakeCase
-kebabCase
-pascalCase
-titleCase
-truncate
-padLeft
-padRight
-repeat
-reverse
-isBlank
-stripIndent
-✅ Numbers
-
-Useful utilities:
-
-clamp
-between
-lerp
-round
-roundTo
-sum
-average
-median
-mode
-variance
-stdDev
-randomInt
-✅ Records / Tables
-
-Given your SQL-like work, I'd expand here:
-
-groupBy
-having
 select
-project
-rename
 distinct
-union
 intersect
-except
-pivot
-unpivot
-✅ Validation
-
-Now that you've integrated the Standard Schema API:
-
-schema-backed ADTs
-parsing helpers
-validation helpers
-schema transformations
-coercion helpers
-✅ Data structures
-
-This is probably the biggest category you don't have yet.
-
-Examples include:
-
-Queue
-Deque
-Stack
-PriorityQueue
-Heap
-LinkedList
-Trie
-Graph
-Tree
-BiMap
-MultiMap
-OrderedMap
-LRUCache
-RingBuffer
-✅ Events / Reactive
 
 
 
-Function:
-before(n, fn)
-after(n, fn)
-bind()
+
+
+
+
+
+
+MATRIX
+
+Important caveats — please read before relying on this for anything precision-sensitive
+The shift strategy is simplified single-shift Wilkinson, not the full Francis double-shift algorithm that production libraries (LAPACK, etc.) use. The double-shift algorithm exists specifically to guarantee convergence in real arithmetic even when a matrix has genuine complex-conjugate eigenvalue pairs — my single-shift version can, in principle, converge slowly or stall on matrices where the "generic" real matrices in a test suite happen not to expose it, but an adversarial or ill-conditioned input could. I did not implement the full double-shift machinery (implicit bulge-chasing, the "implicit Q theorem") — that's a substantially larger undertaking, and I'd rather flag the gap honestly than claim robustness I haven't verified.
+Eigenvectors are only computed for real eigenvalues, via inverse iteration on the original matrix (not the Hessenberg/Schur form). Complex eigenvalues get null in the eigenvectors array — computing complex eigenvectors correctly needs complex arithmetic throughout, which this class doesn't support anywhere else either.
+Inverse iteration can be unreliable for defective matrices (repeated eigenvalues without a full set of independent eigenvectors — e.g. a Jordan block) — there's no detection or special-casing for that here; it'll just produce some vector, not necessarily meaningful, without warning you.
+eigen()'s eigenvalue ordering isn't guaranteed to match eigenSymmetric()'s for a symmetric input, even though the values should agree (up to numerical error) — worth normalizing/sorting before comparing the two in tests.

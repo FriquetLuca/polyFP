@@ -1,7 +1,9 @@
+import type { Thunks } from '.';
+
 export {};
 
 declare global {
   interface FunctionConstructor {
-    sequence<T>(promises: Iterable<Promise<T>>): Promise<T[]>;
+    sequence<T extends unknown[]>(...thunks: Thunks<T>): Promise<T>;
   }
 }

@@ -1,9 +1,9 @@
 export {};
 
 declare global {
-  interface FunctionConstructor {
+  interface Function {
     before<Args extends unknown[], R>(
-      fn: (...args: Args) => R,
+      this: (...args: Args) => R,
       n: number
     ): (...args: Args) => R;
   }

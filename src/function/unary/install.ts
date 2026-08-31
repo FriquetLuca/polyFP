@@ -1,10 +1,11 @@
+import type { AnyFunction } from '../../types.js';
+import { extendPrototype } from '../../utils.js';
 import { unary } from './index.js';
 export type * from './types';
 
-if (!Function.unary) {
-  Object.defineProperty(Function, 'unary', {
-    value: unary,
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(Function.prototype, {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
+  unary(this: Function) {
+    return unary(this as AnyFunction);
+  },
+});

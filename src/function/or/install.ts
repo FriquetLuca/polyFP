@@ -1,10 +1,10 @@
+import { extendPrototype } from '../../utils.js';
 import { or } from './index.js';
 export type * from './types';
 
-if (!Function.or) {
-  Object.defineProperty(Function, 'or', {
-    value: or,
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(Function.prototype, {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
+  or<T>(this: Function, ...preds: Array<(x: T) => boolean>) {
+    return or(this as (x: T) => boolean, ...preds);
+  },
+});

@@ -1,9 +1,9 @@
 export {};
 
 declare global {
-  interface FunctionConstructor {
+  interface Function {
     unary<Args extends unknown[], R>(
-      fn: (...args: Args) => R
+      this: (...args: Args) => R
     ): (args: Args) => R;
   }
 }

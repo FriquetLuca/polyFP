@@ -1,3 +1,14 @@
+export type SettledResult<R> =
+  { status: 'fulfilled'; value: R } | { status: 'rejected'; reason: unknown };
+export type IntegerArray =
+  | Int8Array
+  | Uint8Array
+  | Int16Array
+  | Uint16Array
+  | Int32Array
+  | Uint32Array
+  | BigInt64Array
+  | BigUint64Array;
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type RecordType = Record<string | number | symbol, any>;
 export type DeepReadonly<T> = { readonly [K in keyof T]: DeepReadonly<T[K]> };
@@ -55,8 +66,46 @@ export type TransformKeys<
 > = { [K in keyof T as NewKeyName<T, U & { key: K; as?: string }>]: T[K] };
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type AnyFunction = (arg: any) => any;
+export type Awaitable<T> = T | Promise<T>;
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-type Tail<T extends any[]> = ((...t: T) => void) extends (
+export type AnyAsyncFunction = (arg: any) => Awaitable<any>;
+export type PipeChain<PrevReturn, Fns extends AnyFunction[]> = Fns extends [
+  infer F1,
+  ...infer FRest,
+]
+  ? F1 extends (arg: PrevReturn) => infer R
+    ? FRest extends AnyFunction[]
+      ? [F1, ...PipeChain<R, FRest>]
+      : [F1]
+    : never
+  : [];
+
+export type PipeReturn<This extends AnyFunction, Fns extends AnyFunction[]> =
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  Fns extends [...infer _, infer Last extends AnyFunction]
+    ? ReturnType<Last>
+    : ReturnType<This>;
+export type AsyncPipeChain<
+  PrevReturn,
+  Fns extends AnyAsyncFunction[],
+> = Fns extends [
+  infer F1 extends AnyAsyncFunction,
+  ...infer FRest extends AnyAsyncFunction[],
+]
+  ? F1 extends (arg: Awaited<PrevReturn>) => infer R
+    ? [F1, ...AsyncPipeChain<R, FRest>]
+    : [(arg: Awaited<PrevReturn>) => unknown, ...FRest] // shape-preserving mismatch marker
+  : [];
+
+export type AsyncPipeReturn<
+  This extends AnyAsyncFunction,
+  Fns extends AnyAsyncFunction[],
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+> = Fns extends [...infer _, infer Last extends AnyAsyncFunction]
+  ? Promise<Awaited<ReturnType<Last>>>
+  : Promise<Awaited<ReturnType<This>>>;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type Tail<T extends any[]> = ((...t: T) => void) extends (
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   x: any,
   ...u: infer U

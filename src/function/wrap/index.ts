@@ -1,7 +1,7 @@
 export const wrap =
-  <Args extends unknown[], Res, WrapArg, Result>(
+  <Args extends unknown[], Res, WrapArgs extends unknown[], Result>(
     fn: (...args: Args) => Res,
-    wrapper: (fn: (...args: Args) => Res, arg: WrapArg) => Result
-  ): ((arg: WrapArg) => Result) =>
-  (arg: WrapArg) =>
-    wrapper(fn, arg);
+    wrapper: (fn: (...args: Args) => Res, ...wrapArgs: WrapArgs) => Result
+  ): ((...wrapArgs: WrapArgs) => Result) =>
+  (...wrapArgs: WrapArgs) =>
+    wrapper(fn, ...wrapArgs);

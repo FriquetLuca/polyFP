@@ -1,7 +1,10 @@
 export {};
 
 declare global {
-  interface FunctionConstructor {
-    or<T>(...preds: ((x: T) => boolean)[]): (x: T) => boolean;
+  interface Function {
+    or<T>(
+      this: (x: T) => boolean,
+      ...preds: ((x: T) => boolean)[]
+    ): (x: T) => boolean;
   }
 }

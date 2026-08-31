@@ -1,7 +1,7 @@
 export {};
 
 declare global {
-  interface FunctionConstructor {
-    not<T>(p: (x: T) => boolean): (x: T) => boolean;
+  interface Function {
+    not<T>(this: (x: T) => boolean): (x: T) => boolean;
   }
 }

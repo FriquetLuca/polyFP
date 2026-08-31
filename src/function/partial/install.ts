@@ -1,10 +1,10 @@
+import { extendPrototype } from '../../utils.js';
 import { partial } from './index.js';
 export type * from './types';
 
-if (!Function.partial) {
-  Object.defineProperty(Function, 'partial', {
-    value: partial,
-    writable: true,
-    configurable: true,
-  });
-}
+extendPrototype(Function.prototype, {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
+  partial(this: Function, ...boundArgs: unknown[]) {
+    return partial(this as (...args: unknown[]) => unknown, ...boundArgs);
+  },
+});

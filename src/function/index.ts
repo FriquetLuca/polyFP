@@ -1,26 +1,45 @@
+export { after } from './after/index.js';
 export { all } from './all/index.js';
-export { and } from './and/index.js';
 export { atLeastOne } from './atLeastOne/index.js';
 export { atMostOne } from './atMostOne/index.js';
-export { compose } from './compose/index.js';
+export { before } from './before/index.js';
+export { bind } from './bind/index.js';
 export { constant } from './constant/index.js';
 export { curry } from './curry/index.js';
+export { debounce } from './debounce/index.js';
 export { exactlyN } from './exactlyN/index.js';
 export { exactlyOne } from './exactlyOne/index.js';
 export { flip } from './flip/index.js';
+export { guard } from './guard/index.js';
+export { guardAsync } from './guardAsync/index.js';
 export { isFunction } from './isFunction/index.js';
 export { isPromise } from './isPromise/index.js';
 export { isPromiseLike } from './isPromiseLike/index.js';
-export { match } from './match/index.js';
-export { memoize } from './memoize/index.js';
+export { memoize, type MemoizeOptions } from './memoize/index.js';
+export {
+  memoizeAsync,
+  type MemoizeAsyncOptions,
+} from './memoizeAsync/index.js';
+export { noop } from './noop/index.js';
 export { not } from './not/index.js';
 export { once } from './once/index.js';
 export { or } from './or/index.js';
-export { parallel } from './parallel/index.js';
 export { partial } from './partial/index.js';
 export { pipe } from './pipe/index.js';
+export { pipeAsync } from './pipeAsync/index.js';
+export { repeat } from './repeat/index.js';
 export { retry } from './retry/index.js';
-export { sequence } from './sequence/index.js';
+export {
+  retryUntil,
+  RetryExhaustedError,
+  type RetryUntilOptions,
+} from './retryUntil/index.js';
+export { sequence, type Thunks } from './sequence/index.js';
 export { tap } from './tap/index.js';
+export { throttle } from './throttle/index.js';
+export { timeout } from './timeout/index.js';
 export { traverse } from './traverse/index.js';
+export { unary } from './unary/index.js';
 export { uncurry } from './uncurry/index.js';
+export { withTimeout, TimeoutError } from './withTimeout/index.js';
+export { wrap } from './wrap/index.js';

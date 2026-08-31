@@ -1,7 +1,10 @@
 export {};
 
 declare global {
-  interface FunctionConstructor {
-    all<T>(preds: ((x: T) => boolean)[]): (x: T) => boolean;
+  interface Function {
+    all<T>(
+      this: (x: T) => boolean,
+      ...preds: ((x: T) => boolean)[]
+    ): (x: T) => boolean;
   }
 }
