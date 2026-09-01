@@ -1,5 +1,6 @@
 import './after/install.js';
 import './all/install.js';
+import './andThen/install.js';
 import './atLeastOne/install.js';
 import './atMostOne/install.js';
 import './before/install.js';
@@ -24,6 +25,7 @@ import './not/install.js';
 import './once/install.js';
 import './onlyIf/install.js';
 import './or/install.js';
+import './parallel/install.js';
 import './partial/install.js';
 import './pipe/install.js';
 import './pipeAsync/install.js';

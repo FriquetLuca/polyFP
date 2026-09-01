@@ -1,5 +1,6 @@
 export { after } from './after/index.js';
 export { all } from './all/index.js';
+export { andThen } from './andThen/index.js';
 export { atLeastOne } from './atLeastOne/index.js';
 export { atMostOne } from './atMostOne/index.js';
 export { before } from './before/index.js';
@@ -24,6 +25,7 @@ export { not } from './not/index.js';
 export { once } from './once/index.js';
 export { onlyIf } from './onlyIf/index.js';
 export { or } from './or/index.js';
+export { parallel } from './parallel/index.js';
 export { partial } from './partial/index.js';
 export { pipe } from './pipe/index.js';
 export { pipeAsync } from './pipeAsync/index.js';
