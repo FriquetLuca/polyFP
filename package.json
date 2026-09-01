@@ -502,6 +502,11 @@
       "import": "./dist/esm/function/guardAsync/install.js",
       "require": "./dist/cjs/function/guardAsync/install.js"
     },
+    "./polyfill/function/ifElse": {
+      "types": "./dist/types/function/ifElse/install.d.ts",
+      "import": "./dist/esm/function/ifElse/install.js",
+      "require": "./dist/cjs/function/ifElse/install.js"
+    },
     "./polyfill/function/isFunction": {
       "types": "./dist/types/function/isFunction/install.d.ts",
       "import": "./dist/esm/function/isFunction/install.js",
@@ -516,6 +521,11 @@
       "types": "./dist/types/function/isPromiseLike/install.d.ts",
       "import": "./dist/esm/function/isPromiseLike/install.js",
       "require": "./dist/cjs/function/isPromiseLike/install.js"
+    },
+    "./polyfill/function/match": {
+      "types": "./dist/types/function/match/install.d.ts",
+      "import": "./dist/esm/function/match/install.js",
+      "require": "./dist/cjs/function/match/install.js"
     },
     "./polyfill/function/memoize": {
       "types": "./dist/types/function/memoize/install.d.ts",
@@ -541,6 +551,11 @@
       "types": "./dist/types/function/once/install.d.ts",
       "import": "./dist/esm/function/once/install.js",
       "require": "./dist/cjs/function/once/install.js"
+    },
+    "./polyfill/function/onlyIf": {
+      "types": "./dist/types/function/onlyIf/install.d.ts",
+      "import": "./dist/esm/function/onlyIf/install.js",
+      "require": "./dist/cjs/function/onlyIf/install.js"
     },
     "./polyfill/function/or": {
       "types": "./dist/types/function/or/install.d.ts",
