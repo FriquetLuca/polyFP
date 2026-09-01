@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [1.0.0] - 2026-09-01
 
 Remove duplacates functions, rename some and changes their definitions, add new structures.
+## [v1.0.0] - 2026-09-01
 
 ## [0.1.2] - 2026-08-02
 
