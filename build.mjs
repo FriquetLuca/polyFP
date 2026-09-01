@@ -14,7 +14,7 @@ async function build(entryPoints, bundle) {
     entryPoints,
     bundle,
     minify: true,
-    sourcemap: true,
+    sourcemap: false,
     target: 'es2023',
     external,
     logLevel: 'info',
