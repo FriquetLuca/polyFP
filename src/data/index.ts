@@ -30,7 +30,7 @@ export {
 } from './iterableSource.js';
 export { LinkedList } from './linkedList.js';
 export { LRUCache } from './lruCache.js';
-export { match } from './match.js';
+export { matchPredicate } from './matchPredicate.js';
 export { Matrix, type EigenResult, type ComplexNumber } from './matrix.js';
 export { MaxPriorityQueue } from './maxPriorityQueue.js';
 export { MinPriorityQueue } from './minPriorityQueue.js';

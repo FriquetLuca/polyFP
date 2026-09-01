@@ -1,6 +1,6 @@
 {
   "name": "polyfp",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "type": "module",
   "description": "A functional programming polyfill for typescript.",
   "license": "GPL",
