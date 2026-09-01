@@ -161,7 +161,7 @@ describe('schemaADT', () => {
 
     if (!res.isOk()) throw new Error('invalid test setup');
 
-    const out = Shape.match(res.value, {
+    const out = Shape.match(res.unwrap(), {
       circle: (c) => c.radius * 2,
       square: (s) => s.size * 4,
     });
@@ -180,7 +180,7 @@ describe('schemaADT', () => {
 
     if (!res.isOk()) throw new Error('invalid test setup');
 
-    expect(Shape.is(res.value, 'square')).toBe(true);
-    expect(Shape.is(res.value, 'circle')).toBe(false);
+    expect(Shape.is(res.unwrap(), 'square')).toBe(true);
+    expect(Shape.is(res.unwrap(), 'circle')).toBe(false);
   });
 });

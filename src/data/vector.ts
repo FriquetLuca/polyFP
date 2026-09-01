@@ -6,16 +6,19 @@ export class Vector {
     this.items = new Float32Array(args);
   }
   get x(): number {
-    return this.element(0);
+    return this.get(0);
   }
   get y(): number {
-    return this.element(1);
+    return this.get(1);
   }
   get z(): number {
-    return this.element(2);
+    return this.get(2);
   }
   get w(): number {
-    return this.element(3);
+    return this.get(3);
+  }
+  static fromArray(array: number[]) {
+    return new Vector(...array);
   }
   static get zero() {
     return new Vector(0, 0, 0);
@@ -44,7 +47,7 @@ export class Vector {
   static full(value: number, dimensions: number) {
     return new Vector(...new Array(dimensions).fill(value));
   }
-  element(index: number) {
+  get(index: number) {
     return index < this.items.length ? this.items[index] : 0;
   }
   dimensions() {
@@ -87,7 +90,7 @@ export class Vector {
       const length = Math.max(this.items.length, amount.items.length);
       this.resizeThis(length);
       for (let i = 0; i < length; i++) {
-        this.items[i] += amount.element(i);
+        this.items[i] += amount.get(i);
       }
     }
   }
@@ -106,7 +109,7 @@ export class Vector {
       const length = Math.max(this.items.length, amount.items.length);
       this.resizeThis(length);
       for (let i = 0; i < length; i++) {
-        this.items[i] -= amount.element(i);
+        this.items[i] -= amount.get(i);
       }
     }
   }
@@ -227,7 +230,7 @@ export class Vector {
     const a = this.resize(maxDim);
     const b = to.resize(maxDim);
     const top = a.items.map((v) => t - v);
-    const bottom = b.items.map((v, i) => v - a.element(i));
+    const bottom = b.items.map((v, i) => v - a.get(i));
     return new Vector(...top.map((v, i) => v / bottom[i]));
   }
   nlerp(to: Vector, t: number) {
@@ -314,7 +317,7 @@ export class Vector {
   same(vec: Vector, epsilon: number = Number.EPSILON): boolean {
     const length = Math.max(this.items.length, vec.items.length);
     for (let i = 0; i < length; i++) {
-      if (Math.abs(this.element(i) - vec.element(i)) > epsilon) {
+      if (Math.abs(this.get(i) - vec.get(i)) > epsilon) {
         return false;
       }
     }
@@ -327,7 +330,7 @@ export class Vector {
     const length = Math.max(this.items.length, vec.items.length);
     const result = new Array(length);
     for (let i = 0; i < length; i++) {
-      result[i] = fn(this.element(i), vec.element(i));
+      result[i] = fn(this.get(i), vec.get(i));
     }
     return new Vector(...result);
   }
@@ -339,7 +342,7 @@ export class Vector {
     const length = Math.max(this.items.length, vec.items.length);
     let result = defaultValue;
     for (let i = 0; i < length; i++) {
-      result = fn(result, this.element(i), vec.element(i));
+      result = fn(result, this.get(i), vec.get(i));
     }
     return result;
   }
@@ -348,7 +351,7 @@ export class Vector {
   }
   hadamardThis(vec: Vector) {
     for (let i = 0; i < this.items.length; i++) {
-      this.items[i] *= vec.element(i);
+      this.items[i] *= vec.get(i);
     }
   }
   divideElements(vec: Vector) {
@@ -356,7 +359,7 @@ export class Vector {
   }
   divideElementsThis(vec: Vector) {
     for (let i = 0; i < this.items.length; i++) {
-      const e = vec.element(i);
+      const e = vec.get(i);
       this.items[i] = e === 0 ? 0 : this.items[i] / e;
     }
   }
