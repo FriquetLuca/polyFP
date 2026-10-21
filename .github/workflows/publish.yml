@@ -8,13 +8,21 @@ on:
 
 permissions:
   contents: write
+  issues: write
   pull-requests: write
   id-token: write
 
 jobs:
-  release:
+  release-please:
     runs-on: ubuntu-latest
     steps:
+      - uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+
       - uses: actions/checkout@v6
         if: ${{ steps.release.outputs.release_created }}
 
