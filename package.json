@@ -37,7 +37,8 @@
     "test": "vitest run",
     "lint": "eslint .",
     "prepare": "husky",
-    "format": "prettier --write \"**/*.{js,ts,mjs,mts,json}\" --log-level silent"
+    "format": "prettier --write \"**/*.{js,ts,mjs,mts,json}\" --log-level silent",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
