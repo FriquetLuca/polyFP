@@ -45,7 +45,6 @@
     "@standard-schema/spec": "^1.1.0",
     "@types/node": "^24.19.2",
     "eslint": "^10.13.0",
-    "fast-glob": "^3.3.3",
     "globals": "^17.13.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
