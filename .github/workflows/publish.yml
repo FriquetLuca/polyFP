@@ -1,25 +1,41 @@
+
 name: Publish
+
 on:
   push:
-    tags:
-      - 'polyfp-v*'
-      - 'v*'
+    branches:
+      - master
 
 permissions:
+  contents: write
+  pull-requests: write
   id-token: write
-  contents: read
 
 jobs:
-  update-tag:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-node@v6
+        if: ${{ steps.release.outputs.release_created }}
+
+      - uses: actions/setup-node@v7
+        if: ${{ steps.release.outputs.release_created }}
         with:
           node-version: 24
-          registry-url: 'https://registry.npmjs.org'      
+          registry-url: https://registry.npmjs.org
+          package-manager-cache: false
+
       - run: npm ci
+        if: ${{ steps.release.outputs.release_created }}
+
       - run: npm run lint
+        if: ${{ steps.release.outputs.release_created }}
+
       - run: npm test
+        if: ${{ steps.release.outputs.release_created }}
+
       - run: npm run build
+        if: ${{ steps.release.outputs.release_created }}
+
       - run: npm publish
+        if: ${{ steps.release.outputs.release_created }}
