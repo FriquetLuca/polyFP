@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/FriquetLuca/polyFP/compare/polyfp-v1.0.4...polyfp-v1.0.5) (2026-10-21)
+
+
+### Bug Fixes
+
+* patch the publish and remove the useless merge PR ci ([10b377c](https://github.com/FriquetLuca/polyFP/commit/10b377c5c3e0b1b249393fb68a8329614a6151de))
+
 ## [1.0.4](https://github.com/FriquetLuca/polyFP/compare/polyfp-v1.0.3...polyfp-v1.0.4) (2026-10-21)
 
 
