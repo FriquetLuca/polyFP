@@ -5,4 +5,4 @@ export * from './function/index.js';
 export * from './math/index.js';
 export * from './object/index.js';
 export * from './string/index.js';
-export type * from './types';
+export type * from './types.js';

@@ -23,1086 +23,6 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
-  "types": "./dist/types/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/types/index.d.ts",
-      "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js"
-    },
-    "./data": {
-      "types": "./dist/types/data/index.d.ts",
-      "import": "./dist/esm/data/index.js",
-      "require": "./dist/cjs/data/index.js"
-    },
-    "./polyfill": {
-      "types": "./dist/types/install.d.ts",
-      "import": "./dist/esm/install.js",
-      "require": "./dist/cjs/install.js"
-    },
-    "./polyfill/array": {
-      "types": "./dist/types/array/install.d.ts",
-      "import": "./dist/esm/array/install.js",
-      "require": "./dist/cjs/array/install.js"
-    },
-    "./polyfill/array/aggregate": {
-      "types": "./dist/types/array/aggregate/install.d.ts",
-      "import": "./dist/esm/array/aggregate/install.js",
-      "require": "./dist/cjs/array/aggregate/install.js"
-    },
-    "./polyfill/array/avg": {
-      "types": "./dist/types/array/avg/install.d.ts",
-      "import": "./dist/esm/array/avg/install.js",
-      "require": "./dist/cjs/array/avg/install.js"
-    },
-    "./polyfill/array/avgAbsDevAroundMedian": {
-      "types": "./dist/types/array/avgAbsDevAroundMedian/install.d.ts",
-      "import": "./dist/esm/array/avgAbsDevAroundMedian/install.js",
-      "require": "./dist/cjs/array/avgAbsDevAroundMedian/install.js"
-    },
-    "./polyfill/array/batch": {
-      "types": "./dist/types/array/batch/install.d.ts",
-      "import": "./dist/esm/array/batch/install.js",
-      "require": "./dist/cjs/array/batch/install.js"
-    },
-    "./polyfill/array/cartesianProduct": {
-      "types": "./dist/types/array/cartesianProduct/install.d.ts",
-      "import": "./dist/esm/array/cartesianProduct/install.js",
-      "require": "./dist/cjs/array/cartesianProduct/install.js"
-    },
-    "./polyfill/array/chunk": {
-      "types": "./dist/types/array/chunk/install.d.ts",
-      "import": "./dist/esm/array/chunk/install.js",
-      "require": "./dist/cjs/array/chunk/install.js"
-    },
-    "./polyfill/array/chunkWhile": {
-      "types": "./dist/types/array/chunkWhile/install.d.ts",
-      "import": "./dist/esm/array/chunkWhile/install.js",
-      "require": "./dist/cjs/array/chunkWhile/install.js"
-    },
-    "./polyfill/array/cn": {
-      "types": "./dist/types/array/cn/install.d.ts",
-      "import": "./dist/esm/array/cn/install.js",
-      "require": "./dist/cjs/array/cn/install.js"
-    },
-    "./polyfill/array/countBy": {
-      "types": "./dist/types/array/countBy/install.d.ts",
-      "import": "./dist/esm/array/countBy/install.js",
-      "require": "./dist/cjs/array/countBy/install.js"
-    },
-    "./polyfill/array/crossJoin": {
-      "types": "./dist/types/array/crossJoin/install.d.ts",
-      "import": "./dist/esm/array/crossJoin/install.js",
-      "require": "./dist/cjs/array/crossJoin/install.js"
-    },
-    "./polyfill/array/cumulativeAverage": {
-      "types": "./dist/types/array/cumulativeAverage/install.d.ts",
-      "import": "./dist/esm/array/cumulativeAverage/install.js",
-      "require": "./dist/cjs/array/cumulativeAverage/install.js"
-    },
-    "./polyfill/array/difference": {
-      "types": "./dist/types/array/difference/install.d.ts",
-      "import": "./dist/esm/array/difference/install.js",
-      "require": "./dist/cjs/array/difference/install.js"
-    },
-    "./polyfill/array/exponentialMovingAverage": {
-      "types": "./dist/types/array/exponentialMovingAverage/install.d.ts",
-      "import": "./dist/esm/array/exponentialMovingAverage/install.js",
-      "require": "./dist/cjs/array/exponentialMovingAverage/install.js"
-    },
-    "./polyfill/array/filterAsync": {
-      "types": "./dist/types/array/filterAsync/install.d.ts",
-      "import": "./dist/esm/array/filterAsync/install.js",
-      "require": "./dist/cjs/array/filterAsync/install.js"
-    },
-    "./polyfill/array/filterMap": {
-      "types": "./dist/types/array/filterMap/install.d.ts",
-      "import": "./dist/esm/array/filterMap/install.js",
-      "require": "./dist/cjs/array/filterMap/install.js"
-    },
-    "./polyfill/array/forEachAsync": {
-      "types": "./dist/types/array/forEachAsync/install.d.ts",
-      "import": "./dist/esm/array/forEachAsync/install.js",
-      "require": "./dist/cjs/array/forEachAsync/install.js"
-    },
-    "./polyfill/array/forItems": {
-      "types": "./dist/types/array/forItems/install.d.ts",
-      "import": "./dist/esm/array/forItems/install.js",
-      "require": "./dist/cjs/array/forItems/install.js"
-    },
-    "./polyfill/array/forItemsReverse": {
-      "types": "./dist/types/array/forItemsReverse/install.d.ts",
-      "import": "./dist/esm/array/forItemsReverse/install.js",
-      "require": "./dist/cjs/array/forItemsReverse/install.js"
-    },
-    "./polyfill/array/fullJoin": {
-      "types": "./dist/types/array/fullJoin/install.d.ts",
-      "import": "./dist/esm/array/fullJoin/install.js",
-      "require": "./dist/cjs/array/fullJoin/install.js"
-    },
-    "./polyfill/array/generalizedMean": {
-      "types": "./dist/types/array/generalizedMean/install.d.ts",
-      "import": "./dist/esm/array/generalizedMean/install.js",
-      "require": "./dist/cjs/array/generalizedMean/install.js"
-    },
-    "./polyfill/array/geometricMean": {
-      "types": "./dist/types/array/geometricMean/install.d.ts",
-      "import": "./dist/esm/array/geometricMean/install.js",
-      "require": "./dist/cjs/array/geometricMean/install.js"
-    },
-    "./polyfill/array/groupBy": {
-      "types": "./dist/types/array/groupBy/install.d.ts",
-      "import": "./dist/esm/array/groupBy/install.js",
-      "require": "./dist/cjs/array/groupBy/install.js"
-    },
-    "./polyfill/array/harmonicMean": {
-      "types": "./dist/types/array/harmonicMean/install.d.ts",
-      "import": "./dist/esm/array/harmonicMean/install.js",
-      "require": "./dist/cjs/array/harmonicMean/install.js"
-    },
-    "./polyfill/array/innerJoin": {
-      "types": "./dist/types/array/innerJoin/install.d.ts",
-      "import": "./dist/esm/array/innerJoin/install.js",
-      "require": "./dist/cjs/array/innerJoin/install.js"
-    },
-    "./polyfill/array/intersection": {
-      "types": "./dist/types/array/intersection/install.d.ts",
-      "import": "./dist/esm/array/intersection/install.js",
-      "require": "./dist/cjs/array/intersection/install.js"
-    },
-    "./polyfill/array/leftJoin": {
-      "types": "./dist/types/array/leftJoin/install.d.ts",
-      "import": "./dist/esm/array/leftJoin/install.js",
-      "require": "./dist/cjs/array/leftJoin/install.js"
-    },
-    "./polyfill/array/mapAsync": {
-      "types": "./dist/types/array/mapAsync/install.d.ts",
-      "import": "./dist/esm/array/mapAsync/install.js",
-      "require": "./dist/cjs/array/mapAsync/install.js"
-    },
-    "./polyfill/array/mapAsyncSettled": {
-      "types": "./dist/types/array/mapAsyncSettled/install.d.ts",
-      "import": "./dist/esm/array/mapAsyncSettled/install.js",
-      "require": "./dist/cjs/array/mapAsyncSettled/install.js"
-    },
-    "./polyfill/array/max": {
-      "types": "./dist/types/array/max/install.d.ts",
-      "import": "./dist/esm/array/max/install.js",
-      "require": "./dist/cjs/array/max/install.js"
-    },
-    "./polyfill/array/meanAbsoluteDeviation": {
-      "types": "./dist/types/array/meanAbsoluteDeviation/install.d.ts",
-      "import": "./dist/esm/array/meanAbsoluteDeviation/install.js",
-      "require": "./dist/cjs/array/meanAbsoluteDeviation/install.js"
-    },
-    "./polyfill/array/median": {
-      "types": "./dist/types/array/median/install.d.ts",
-      "import": "./dist/esm/array/median/install.js",
-      "require": "./dist/cjs/array/median/install.js"
-    },
-    "./polyfill/array/medianAbsoluteDeviation": {
-      "types": "./dist/types/array/medianAbsoluteDeviation/install.d.ts",
-      "import": "./dist/esm/array/medianAbsoluteDeviation/install.js",
-      "require": "./dist/cjs/array/medianAbsoluteDeviation/install.js"
-    },
-    "./polyfill/array/medianAbsoluteDeviationNormalized": {
-      "types": "./dist/types/array/medianAbsoluteDeviationNormalized/install.d.ts",
-      "import": "./dist/esm/array/medianAbsoluteDeviationNormalized/install.js",
-      "require": "./dist/cjs/array/medianAbsoluteDeviationNormalized/install.js"
-    },
-    "./polyfill/array/min": {
-      "types": "./dist/types/array/min/install.d.ts",
-      "import": "./dist/esm/array/min/install.js",
-      "require": "./dist/cjs/array/min/install.js"
-    },
-    "./polyfill/array/mode": {
-      "types": "./dist/types/array/mode/install.d.ts",
-      "import": "./dist/esm/array/mode/install.js",
-      "require": "./dist/cjs/array/mode/install.js"
-    },
-    "./polyfill/array/move": {
-      "types": "./dist/types/array/move/install.d.ts",
-      "import": "./dist/esm/array/move/install.js",
-      "require": "./dist/cjs/array/move/install.js"
-    },
-    "./polyfill/array/nth": {
-      "types": "./dist/types/array/nth/install.d.ts",
-      "import": "./dist/esm/array/nth/install.js",
-      "require": "./dist/cjs/array/nth/install.js"
-    },
-    "./polyfill/array/orderBy": {
-      "types": "./dist/types/array/orderBy/install.d.ts",
-      "import": "./dist/esm/array/orderBy/install.js",
-      "require": "./dist/cjs/array/orderBy/install.js"
-    },
-    "./polyfill/array/partition": {
-      "types": "./dist/types/array/partition/install.d.ts",
-      "import": "./dist/esm/array/partition/install.js",
-      "require": "./dist/cjs/array/partition/install.js"
-    },
-    "./polyfill/array/pivot": {
-      "types": "./dist/types/array/pivot/install.d.ts",
-      "import": "./dist/esm/array/pivot/install.js",
-      "require": "./dist/cjs/array/pivot/install.js"
-    },
-    "./polyfill/array/pluck": {
-      "types": "./dist/types/array/pluck/install.d.ts",
-      "import": "./dist/esm/array/pluck/install.js",
-      "require": "./dist/cjs/array/pluck/install.js"
-    },
-    "./polyfill/array/pool": {
-      "types": "./dist/types/array/pool/install.d.ts",
-      "import": "./dist/esm/array/pool/install.js",
-      "require": "./dist/cjs/array/pool/install.js"
-    },
-    "./polyfill/array/product": {
-      "types": "./dist/types/array/product/install.d.ts",
-      "import": "./dist/esm/array/product/install.js",
-      "require": "./dist/cjs/array/product/install.js"
-    },
-    "./polyfill/array/project": {
-      "types": "./dist/types/array/project/install.d.ts",
-      "import": "./dist/esm/array/project/install.js",
-      "require": "./dist/cjs/array/project/install.js"
-    },
-    "./polyfill/array/quantile": {
-      "types": "./dist/types/array/quantile/install.d.ts",
-      "import": "./dist/esm/array/quantile/install.js",
-      "require": "./dist/cjs/array/quantile/install.js"
-    },
-    "./polyfill/array/query": {
-      "types": "./dist/types/array/query/install.d.ts",
-      "import": "./dist/esm/array/query/install.js",
-      "require": "./dist/cjs/array/query/install.js"
-    },
-    "./polyfill/array/range": {
-      "types": "./dist/types/array/range/install.d.ts",
-      "import": "./dist/esm/array/range/install.js",
-      "require": "./dist/cjs/array/range/install.js"
-    },
-    "./polyfill/array/reduceAsync": {
-      "types": "./dist/types/array/reduceAsync/install.d.ts",
-      "import": "./dist/esm/array/reduceAsync/install.js",
-      "require": "./dist/cjs/array/reduceAsync/install.js"
-    },
-    "./polyfill/array/rightJoin": {
-      "types": "./dist/types/array/rightJoin/install.d.ts",
-      "import": "./dist/esm/array/rightJoin/install.js",
-      "require": "./dist/cjs/array/rightJoin/install.js"
-    },
-    "./polyfill/array/rootMeanSquare": {
-      "types": "./dist/types/array/rootMeanSquare/install.d.ts",
-      "import": "./dist/esm/array/rootMeanSquare/install.js",
-      "require": "./dist/cjs/array/rootMeanSquare/install.js"
-    },
-    "./polyfill/array/sample": {
-      "types": "./dist/types/array/sample/install.d.ts",
-      "import": "./dist/esm/array/sample/install.js",
-      "require": "./dist/cjs/array/sample/install.js"
-    },
-    "./polyfill/array/sampleSize": {
-      "types": "./dist/types/array/sampleSize/install.d.ts",
-      "import": "./dist/esm/array/sampleSize/install.js",
-      "require": "./dist/cjs/array/sampleSize/install.js"
-    },
-    "./polyfill/array/shuffle": {
-      "types": "./dist/types/array/shuffle/install.d.ts",
-      "import": "./dist/esm/array/shuffle/install.js",
-      "require": "./dist/cjs/array/shuffle/install.js"
-    },
-    "./polyfill/array/simpleMovingAverage": {
-      "types": "./dist/types/array/simpleMovingAverage/install.d.ts",
-      "import": "./dist/esm/array/simpleMovingAverage/install.js",
-      "require": "./dist/cjs/array/simpleMovingAverage/install.js"
-    },
-    "./polyfill/array/standardDeviation": {
-      "types": "./dist/types/array/standardDeviation/install.d.ts",
-      "import": "./dist/esm/array/standardDeviation/install.js",
-      "require": "./dist/cjs/array/standardDeviation/install.js"
-    },
-    "./polyfill/array/sum": {
-      "types": "./dist/types/array/sum/install.d.ts",
-      "import": "./dist/esm/array/sum/install.js",
-      "require": "./dist/cjs/array/sum/install.js"
-    },
-    "./polyfill/array/swap": {
-      "types": "./dist/types/array/swap/install.d.ts",
-      "import": "./dist/esm/array/swap/install.js",
-      "require": "./dist/cjs/array/swap/install.js"
-    },
-    "./polyfill/array/unique": {
-      "types": "./dist/types/array/unique/install.d.ts",
-      "import": "./dist/esm/array/unique/install.js",
-      "require": "./dist/cjs/array/unique/install.js"
-    },
-    "./polyfill/array/unpivot": {
-      "types": "./dist/types/array/unpivot/install.d.ts",
-      "import": "./dist/esm/array/unpivot/install.js",
-      "require": "./dist/cjs/array/unpivot/install.js"
-    },
-    "./polyfill/array/unzip": {
-      "types": "./dist/types/array/unzip/install.d.ts",
-      "import": "./dist/esm/array/unzip/install.js",
-      "require": "./dist/cjs/array/unzip/install.js"
-    },
-    "./polyfill/array/variance": {
-      "types": "./dist/types/array/variance/install.d.ts",
-      "import": "./dist/esm/array/variance/install.js",
-      "require": "./dist/cjs/array/variance/install.js"
-    },
-    "./polyfill/array/weightedArithmeticMean": {
-      "types": "./dist/types/array/weightedArithmeticMean/install.d.ts",
-      "import": "./dist/esm/array/weightedArithmeticMean/install.js",
-      "require": "./dist/cjs/array/weightedArithmeticMean/install.js"
-    },
-    "./polyfill/array/weightedExponentialMovingAverage": {
-      "types": "./dist/types/array/weightedExponentialMovingAverage/install.d.ts",
-      "import": "./dist/esm/array/weightedExponentialMovingAverage/install.js",
-      "require": "./dist/cjs/array/weightedExponentialMovingAverage/install.js"
-    },
-    "./polyfill/array/weightedGeneralizedMean": {
-      "types": "./dist/types/array/weightedGeneralizedMean/install.d.ts",
-      "import": "./dist/esm/array/weightedGeneralizedMean/install.js",
-      "require": "./dist/cjs/array/weightedGeneralizedMean/install.js"
-    },
-    "./polyfill/array/weightedGeometricMean": {
-      "types": "./dist/types/array/weightedGeometricMean/install.d.ts",
-      "import": "./dist/esm/array/weightedGeometricMean/install.js",
-      "require": "./dist/cjs/array/weightedGeometricMean/install.js"
-    },
-    "./polyfill/array/weightedHarmonicMean": {
-      "types": "./dist/types/array/weightedHarmonicMean/install.d.ts",
-      "import": "./dist/esm/array/weightedHarmonicMean/install.js",
-      "require": "./dist/cjs/array/weightedHarmonicMean/install.js"
-    },
-    "./polyfill/array/weightedMovingAverage": {
-      "types": "./dist/types/array/weightedMovingAverage/install.d.ts",
-      "import": "./dist/esm/array/weightedMovingAverage/install.js",
-      "require": "./dist/cjs/array/weightedMovingAverage/install.js"
-    },
-    "./polyfill/array/weightedNormalizedMean": {
-      "types": "./dist/types/array/weightedNormalizedMean/install.d.ts",
-      "import": "./dist/esm/array/weightedNormalizedMean/install.js",
-      "require": "./dist/cjs/array/weightedNormalizedMean/install.js"
-    },
-    "./polyfill/array/weightedRootMeanSquare": {
-      "types": "./dist/types/array/weightedRootMeanSquare/install.d.ts",
-      "import": "./dist/esm/array/weightedRootMeanSquare/install.js",
-      "require": "./dist/cjs/array/weightedRootMeanSquare/install.js"
-    },
-    "./polyfill/array/window": {
-      "types": "./dist/types/array/window/install.d.ts",
-      "import": "./dist/esm/array/window/install.js",
-      "require": "./dist/cjs/array/window/install.js"
-    },
-    "./polyfill/array/xor": {
-      "types": "./dist/types/array/xor/install.d.ts",
-      "import": "./dist/esm/array/xor/install.js",
-      "require": "./dist/cjs/array/xor/install.js"
-    },
-    "./polyfill/array/zip": {
-      "types": "./dist/types/array/zip/install.d.ts",
-      "import": "./dist/esm/array/zip/install.js",
-      "require": "./dist/cjs/array/zip/install.js"
-    },
-    "./polyfill/array/zipWith": {
-      "types": "./dist/types/array/zipWith/install.d.ts",
-      "import": "./dist/esm/array/zipWith/install.js",
-      "require": "./dist/cjs/array/zipWith/install.js"
-    },
-    "./polyfill/date": {
-      "types": "./dist/types/date/install.d.ts",
-      "import": "./dist/esm/date/install.js",
-      "require": "./dist/cjs/date/install.js"
-    },
-    "./polyfill/date/isDate": {
-      "types": "./dist/types/date/isDate/install.d.ts",
-      "import": "./dist/esm/date/isDate/install.js",
-      "require": "./dist/cjs/date/isDate/install.js"
-    },
-    "./polyfill/date/isLeapYear": {
-      "types": "./dist/types/date/isLeapYear/install.d.ts",
-      "import": "./dist/esm/date/isLeapYear/install.js",
-      "require": "./dist/cjs/date/isLeapYear/install.js"
-    },
-    "./polyfill/function": {
-      "types": "./dist/types/function/install.d.ts",
-      "import": "./dist/esm/function/install.js",
-      "require": "./dist/cjs/function/install.js"
-    },
-    "./polyfill/function/after": {
-      "types": "./dist/types/function/after/install.d.ts",
-      "import": "./dist/esm/function/after/install.js",
-      "require": "./dist/cjs/function/after/install.js"
-    },
-    "./polyfill/function/all": {
-      "types": "./dist/types/function/all/install.d.ts",
-      "import": "./dist/esm/function/all/install.js",
-      "require": "./dist/cjs/function/all/install.js"
-    },
-    "./polyfill/function/andThen": {
-      "types": "./dist/types/function/andThen/install.d.ts",
-      "import": "./dist/esm/function/andThen/install.js",
-      "require": "./dist/cjs/function/andThen/install.js"
-    },
-    "./polyfill/function/atLeastOne": {
-      "types": "./dist/types/function/atLeastOne/install.d.ts",
-      "import": "./dist/esm/function/atLeastOne/install.js",
-      "require": "./dist/cjs/function/atLeastOne/install.js"
-    },
-    "./polyfill/function/atMostOne": {
-      "types": "./dist/types/function/atMostOne/install.d.ts",
-      "import": "./dist/esm/function/atMostOne/install.js",
-      "require": "./dist/cjs/function/atMostOne/install.js"
-    },
-    "./polyfill/function/before": {
-      "types": "./dist/types/function/before/install.d.ts",
-      "import": "./dist/esm/function/before/install.js",
-      "require": "./dist/cjs/function/before/install.js"
-    },
-    "./polyfill/function/bind": {
-      "types": "./dist/types/function/bind/install.d.ts",
-      "import": "./dist/esm/function/bind/install.js",
-      "require": "./dist/cjs/function/bind/install.js"
-    },
-    "./polyfill/function/constant": {
-      "types": "./dist/types/function/constant/install.d.ts",
-      "import": "./dist/esm/function/constant/install.js",
-      "require": "./dist/cjs/function/constant/install.js"
-    },
-    "./polyfill/function/curry": {
-      "types": "./dist/types/function/curry/install.d.ts",
-      "import": "./dist/esm/function/curry/install.js",
-      "require": "./dist/cjs/function/curry/install.js"
-    },
-    "./polyfill/function/debounce": {
-      "types": "./dist/types/function/debounce/install.d.ts",
-      "import": "./dist/esm/function/debounce/install.js",
-      "require": "./dist/cjs/function/debounce/install.js"
-    },
-    "./polyfill/function/exactlyN": {
-      "types": "./dist/types/function/exactlyN/install.d.ts",
-      "import": "./dist/esm/function/exactlyN/install.js",
-      "require": "./dist/cjs/function/exactlyN/install.js"
-    },
-    "./polyfill/function/exactlyOne": {
-      "types": "./dist/types/function/exactlyOne/install.d.ts",
-      "import": "./dist/esm/function/exactlyOne/install.js",
-      "require": "./dist/cjs/function/exactlyOne/install.js"
-    },
-    "./polyfill/function/flip": {
-      "types": "./dist/types/function/flip/install.d.ts",
-      "import": "./dist/esm/function/flip/install.js",
-      "require": "./dist/cjs/function/flip/install.js"
-    },
-    "./polyfill/function/guard": {
-      "types": "./dist/types/function/guard/install.d.ts",
-      "import": "./dist/esm/function/guard/install.js",
-      "require": "./dist/cjs/function/guard/install.js"
-    },
-    "./polyfill/function/guardAsync": {
-      "types": "./dist/types/function/guardAsync/install.d.ts",
-      "import": "./dist/esm/function/guardAsync/install.js",
-      "require": "./dist/cjs/function/guardAsync/install.js"
-    },
-    "./polyfill/function/ifElse": {
-      "types": "./dist/types/function/ifElse/install.d.ts",
-      "import": "./dist/esm/function/ifElse/install.js",
-      "require": "./dist/cjs/function/ifElse/install.js"
-    },
-    "./polyfill/function/isFunction": {
-      "types": "./dist/types/function/isFunction/install.d.ts",
-      "import": "./dist/esm/function/isFunction/install.js",
-      "require": "./dist/cjs/function/isFunction/install.js"
-    },
-    "./polyfill/function/isPromise": {
-      "types": "./dist/types/function/isPromise/install.d.ts",
-      "import": "./dist/esm/function/isPromise/install.js",
-      "require": "./dist/cjs/function/isPromise/install.js"
-    },
-    "./polyfill/function/isPromiseLike": {
-      "types": "./dist/types/function/isPromiseLike/install.d.ts",
-      "import": "./dist/esm/function/isPromiseLike/install.js",
-      "require": "./dist/cjs/function/isPromiseLike/install.js"
-    },
-    "./polyfill/function/match": {
-      "types": "./dist/types/function/match/install.d.ts",
-      "import": "./dist/esm/function/match/install.js",
-      "require": "./dist/cjs/function/match/install.js"
-    },
-    "./polyfill/function/memoize": {
-      "types": "./dist/types/function/memoize/install.d.ts",
-      "import": "./dist/esm/function/memoize/install.js",
-      "require": "./dist/cjs/function/memoize/install.js"
-    },
-    "./polyfill/function/memoizeAsync": {
-      "types": "./dist/types/function/memoizeAsync/install.d.ts",
-      "import": "./dist/esm/function/memoizeAsync/install.js",
-      "require": "./dist/cjs/function/memoizeAsync/install.js"
-    },
-    "./polyfill/function/noop": {
-      "types": "./dist/types/function/noop/install.d.ts",
-      "import": "./dist/esm/function/noop/install.js",
-      "require": "./dist/cjs/function/noop/install.js"
-    },
-    "./polyfill/function/not": {
-      "types": "./dist/types/function/not/install.d.ts",
-      "import": "./dist/esm/function/not/install.js",
-      "require": "./dist/cjs/function/not/install.js"
-    },
-    "./polyfill/function/once": {
-      "types": "./dist/types/function/once/install.d.ts",
-      "import": "./dist/esm/function/once/install.js",
-      "require": "./dist/cjs/function/once/install.js"
-    },
-    "./polyfill/function/onlyIf": {
-      "types": "./dist/types/function/onlyIf/install.d.ts",
-      "import": "./dist/esm/function/onlyIf/install.js",
-      "require": "./dist/cjs/function/onlyIf/install.js"
-    },
-    "./polyfill/function/or": {
-      "types": "./dist/types/function/or/install.d.ts",
-      "import": "./dist/esm/function/or/install.js",
-      "require": "./dist/cjs/function/or/install.js"
-    },
-    "./polyfill/function/parallel": {
-      "types": "./dist/types/function/parallel/install.d.ts",
-      "import": "./dist/esm/function/parallel/install.js",
-      "require": "./dist/cjs/function/parallel/install.js"
-    },
-    "./polyfill/function/partial": {
-      "types": "./dist/types/function/partial/install.d.ts",
-      "import": "./dist/esm/function/partial/install.js",
-      "require": "./dist/cjs/function/partial/install.js"
-    },
-    "./polyfill/function/pipe": {
-      "types": "./dist/types/function/pipe/install.d.ts",
-      "import": "./dist/esm/function/pipe/install.js",
-      "require": "./dist/cjs/function/pipe/install.js"
-    },
-    "./polyfill/function/pipeAsync": {
-      "types": "./dist/types/function/pipeAsync/install.d.ts",
-      "import": "./dist/esm/function/pipeAsync/install.js",
-      "require": "./dist/cjs/function/pipeAsync/install.js"
-    },
-    "./polyfill/function/repeat": {
-      "types": "./dist/types/function/repeat/install.d.ts",
-      "import": "./dist/esm/function/repeat/install.js",
-      "require": "./dist/cjs/function/repeat/install.js"
-    },
-    "./polyfill/function/retry": {
-      "types": "./dist/types/function/retry/install.d.ts",
-      "import": "./dist/esm/function/retry/install.js",
-      "require": "./dist/cjs/function/retry/install.js"
-    },
-    "./polyfill/function/retryUntil": {
-      "types": "./dist/types/function/retryUntil/install.d.ts",
-      "import": "./dist/esm/function/retryUntil/install.js",
-      "require": "./dist/cjs/function/retryUntil/install.js"
-    },
-    "./polyfill/function/sequence": {
-      "types": "./dist/types/function/sequence/install.d.ts",
-      "import": "./dist/esm/function/sequence/install.js",
-      "require": "./dist/cjs/function/sequence/install.js"
-    },
-    "./polyfill/function/tap": {
-      "types": "./dist/types/function/tap/install.d.ts",
-      "import": "./dist/esm/function/tap/install.js",
-      "require": "./dist/cjs/function/tap/install.js"
-    },
-    "./polyfill/function/throttle": {
-      "types": "./dist/types/function/throttle/install.d.ts",
-      "import": "./dist/esm/function/throttle/install.js",
-      "require": "./dist/cjs/function/throttle/install.js"
-    },
-    "./polyfill/function/timeout": {
-      "types": "./dist/types/function/timeout/install.d.ts",
-      "import": "./dist/esm/function/timeout/install.js",
-      "require": "./dist/cjs/function/timeout/install.js"
-    },
-    "./polyfill/function/traverse": {
-      "types": "./dist/types/function/traverse/install.d.ts",
-      "import": "./dist/esm/function/traverse/install.js",
-      "require": "./dist/cjs/function/traverse/install.js"
-    },
-    "./polyfill/function/unary": {
-      "types": "./dist/types/function/unary/install.d.ts",
-      "import": "./dist/esm/function/unary/install.js",
-      "require": "./dist/cjs/function/unary/install.js"
-    },
-    "./polyfill/function/uncurry": {
-      "types": "./dist/types/function/uncurry/install.d.ts",
-      "import": "./dist/esm/function/uncurry/install.js",
-      "require": "./dist/cjs/function/uncurry/install.js"
-    },
-    "./polyfill/function/withTimeout": {
-      "types": "./dist/types/function/withTimeout/install.d.ts",
-      "import": "./dist/esm/function/withTimeout/install.js",
-      "require": "./dist/cjs/function/withTimeout/install.js"
-    },
-    "./polyfill/function/wrap": {
-      "types": "./dist/types/function/wrap/install.d.ts",
-      "import": "./dist/esm/function/wrap/install.js",
-      "require": "./dist/cjs/function/wrap/install.js"
-    },
-    "./polyfill/math": {
-      "types": "./dist/types/math/install.d.ts",
-      "import": "./dist/esm/math/install.js",
-      "require": "./dist/cjs/math/install.js"
-    },
-    "./polyfill/math/approximately": {
-      "types": "./dist/types/math/approximately/install.d.ts",
-      "import": "./dist/esm/math/approximately/install.js",
-      "require": "./dist/cjs/math/approximately/install.js"
-    },
-    "./polyfill/math/between": {
-      "types": "./dist/types/math/between/install.d.ts",
-      "import": "./dist/esm/math/between/install.js",
-      "require": "./dist/cjs/math/between/install.js"
-    },
-    "./polyfill/math/betweenInclusive": {
-      "types": "./dist/types/math/betweenInclusive/install.d.ts",
-      "import": "./dist/esm/math/betweenInclusive/install.js",
-      "require": "./dist/cjs/math/betweenInclusive/install.js"
-    },
-    "./polyfill/math/clamp": {
-      "types": "./dist/types/math/clamp/install.d.ts",
-      "import": "./dist/esm/math/clamp/install.js",
-      "require": "./dist/cjs/math/clamp/install.js"
-    },
-    "./polyfill/math/clerp180": {
-      "types": "./dist/types/math/clerp180/install.d.ts",
-      "import": "./dist/esm/math/clerp180/install.js",
-      "require": "./dist/cjs/math/clerp180/install.js"
-    },
-    "./polyfill/math/deltaAngle": {
-      "types": "./dist/types/math/deltaAngle/install.d.ts",
-      "import": "./dist/esm/math/deltaAngle/install.js",
-      "require": "./dist/cjs/math/deltaAngle/install.js"
-    },
-    "./polyfill/math/erf": {
-      "types": "./dist/types/math/erf/install.d.ts",
-      "import": "./dist/esm/math/erf/install.js",
-      "require": "./dist/cjs/math/erf/install.js"
-    },
-    "./polyfill/math/erfc": {
-      "types": "./dist/types/math/erfc/install.d.ts",
-      "import": "./dist/esm/math/erfc/install.js",
-      "require": "./dist/cjs/math/erfc/install.js"
-    },
-    "./polyfill/math/erfcx": {
-      "types": "./dist/types/math/erfcx/install.d.ts",
-      "import": "./dist/esm/math/erfcx/install.js",
-      "require": "./dist/cjs/math/erfcx/install.js"
-    },
-    "./polyfill/math/frac": {
-      "types": "./dist/types/math/frac/install.d.ts",
-      "import": "./dist/esm/math/frac/install.js",
-      "require": "./dist/cjs/math/frac/install.js"
-    },
-    "./polyfill/math/gamma": {
-      "types": "./dist/types/math/gamma/install.d.ts",
-      "import": "./dist/esm/math/gamma/install.js",
-      "require": "./dist/cjs/math/gamma/install.js"
-    },
-    "./polyfill/math/gcd": {
-      "types": "./dist/types/math/gcd/install.d.ts",
-      "import": "./dist/esm/math/gcd/install.js",
-      "require": "./dist/cjs/math/gcd/install.js"
-    },
-    "./polyfill/math/inRange": {
-      "types": "./dist/types/math/inRange/install.d.ts",
-      "import": "./dist/esm/math/inRange/install.js",
-      "require": "./dist/cjs/math/inRange/install.js"
-    },
-    "./polyfill/math/invmod": {
-      "types": "./dist/types/math/invmod/install.d.ts",
-      "import": "./dist/esm/math/invmod/install.js",
-      "require": "./dist/cjs/math/invmod/install.js"
-    },
-    "./polyfill/math/isPrime": {
-      "types": "./dist/types/math/isPrime/install.d.ts",
-      "import": "./dist/esm/math/isPrime/install.js",
-      "require": "./dist/cjs/math/isPrime/install.js"
-    },
-    "./polyfill/math/lcm": {
-      "types": "./dist/types/math/lcm/install.d.ts",
-      "import": "./dist/esm/math/lcm/install.js",
-      "require": "./dist/cjs/math/lcm/install.js"
-    },
-    "./polyfill/math/lerp": {
-      "types": "./dist/types/math/lerp/install.d.ts",
-      "import": "./dist/esm/math/lerp/install.js",
-      "require": "./dist/cjs/math/lerp/install.js"
-    },
-    "./polyfill/math/lerpAngle": {
-      "types": "./dist/types/math/lerpAngle/install.d.ts",
-      "import": "./dist/esm/math/lerpAngle/install.js",
-      "require": "./dist/cjs/math/lerpAngle/install.js"
-    },
-    "./polyfill/math/mod": {
-      "types": "./dist/types/math/mod/install.d.ts",
-      "import": "./dist/esm/math/mod/install.js",
-      "require": "./dist/cjs/math/mod/install.js"
-    },
-    "./polyfill/math/moveTowards": {
-      "types": "./dist/types/math/moveTowards/install.d.ts",
-      "import": "./dist/esm/math/moveTowards/install.js",
-      "require": "./dist/cjs/math/moveTowards/install.js"
-    },
-    "./polyfill/math/moveTowardsAngle": {
-      "types": "./dist/types/math/moveTowardsAngle/install.d.ts",
-      "import": "./dist/esm/math/moveTowardsAngle/install.js",
-      "require": "./dist/cjs/math/moveTowardsAngle/install.js"
-    },
-    "./polyfill/math/pascalTriangle": {
-      "types": "./dist/types/math/pascalTriangle/install.d.ts",
-      "import": "./dist/esm/math/pascalTriangle/install.js",
-      "require": "./dist/cjs/math/pascalTriangle/install.js"
-    },
-    "./polyfill/math/randomInt": {
-      "types": "./dist/types/math/randomInt/install.d.ts",
-      "import": "./dist/esm/math/randomInt/install.js",
-      "require": "./dist/cjs/math/randomInt/install.js"
-    },
-    "./polyfill/math/randomIntInclusive": {
-      "types": "./dist/types/math/randomIntInclusive/install.d.ts",
-      "import": "./dist/esm/math/randomIntInclusive/install.js",
-      "require": "./dist/cjs/math/randomIntInclusive/install.js"
-    },
-    "./polyfill/math/remap": {
-      "types": "./dist/types/math/remap/install.d.ts",
-      "import": "./dist/esm/math/remap/install.js",
-      "require": "./dist/cjs/math/remap/install.js"
-    },
-    "./polyfill/math/repeat": {
-      "types": "./dist/types/math/repeat/install.d.ts",
-      "import": "./dist/esm/math/repeat/install.js",
-      "require": "./dist/cjs/math/repeat/install.js"
-    },
-    "./polyfill/math/roundToPointFive": {
-      "types": "./dist/types/math/roundToPointFive/install.d.ts",
-      "import": "./dist/esm/math/roundToPointFive/install.js",
-      "require": "./dist/cjs/math/roundToPointFive/install.js"
-    },
-    "./polyfill/math/saturate": {
-      "types": "./dist/types/math/saturate/install.d.ts",
-      "import": "./dist/esm/math/saturate/install.js",
-      "require": "./dist/cjs/math/saturate/install.js"
-    },
-    "./polyfill/math/segmentRounding": {
-      "types": "./dist/types/math/segmentRounding/install.d.ts",
-      "import": "./dist/esm/math/segmentRounding/install.js",
-      "require": "./dist/cjs/math/segmentRounding/install.js"
-    },
-    "./polyfill/math/toDegrees": {
-      "types": "./dist/types/math/toDegrees/install.d.ts",
-      "import": "./dist/esm/math/toDegrees/install.js",
-      "require": "./dist/cjs/math/toDegrees/install.js"
-    },
-    "./polyfill/math/toRadians": {
-      "types": "./dist/types/math/toRadians/install.d.ts",
-      "import": "./dist/esm/math/toRadians/install.js",
-      "require": "./dist/cjs/math/toRadians/install.js"
-    },
-    "./polyfill/math/unlerp": {
-      "types": "./dist/types/math/unlerp/install.d.ts",
-      "import": "./dist/esm/math/unlerp/install.js",
-      "require": "./dist/cjs/math/unlerp/install.js"
-    },
-    "./polyfill/math/xgcd": {
-      "types": "./dist/types/math/xgcd/install.d.ts",
-      "import": "./dist/esm/math/xgcd/install.js",
-      "require": "./dist/cjs/math/xgcd/install.js"
-    },
-    "./polyfill/object": {
-      "types": "./dist/types/object/install.d.ts",
-      "import": "./dist/esm/object/install.js",
-      "require": "./dist/cjs/object/install.js"
-    },
-    "./polyfill/object/chain": {
-      "types": "./dist/types/object/chain/install.d.ts",
-      "import": "./dist/esm/object/chain/install.js",
-      "require": "./dist/cjs/object/chain/install.js"
-    },
-    "./polyfill/object/clone": {
-      "types": "./dist/types/object/clone/install.d.ts",
-      "import": "./dist/esm/object/clone/install.js",
-      "require": "./dist/cjs/object/clone/install.js"
-    },
-    "./polyfill/object/deepFreeze": {
-      "types": "./dist/types/object/deepFreeze/install.d.ts",
-      "import": "./dist/esm/object/deepFreeze/install.js",
-      "require": "./dist/cjs/object/deepFreeze/install.js"
-    },
-    "./polyfill/object/deepMerge": {
-      "types": "./dist/types/object/deepMerge/install.d.ts",
-      "import": "./dist/esm/object/deepMerge/install.js",
-      "require": "./dist/cjs/object/deepMerge/install.js"
-    },
-    "./polyfill/object/deepUnfreeze": {
-      "types": "./dist/types/object/deepUnfreeze/install.d.ts",
-      "import": "./dist/esm/object/deepUnfreeze/install.js",
-      "require": "./dist/cjs/object/deepUnfreeze/install.js"
-    },
-    "./polyfill/object/getHash": {
-      "types": "./dist/types/object/getHash/install.d.ts",
-      "import": "./dist/esm/object/getHash/install.js",
-      "require": "./dist/cjs/object/getHash/install.js"
-    },
-    "./polyfill/object/invert": {
-      "types": "./dist/types/object/invert/install.d.ts",
-      "import": "./dist/esm/object/invert/install.js",
-      "require": "./dist/cjs/object/invert/install.js"
-    },
-    "./polyfill/object/isClass": {
-      "types": "./dist/types/object/isClass/install.d.ts",
-      "import": "./dist/esm/object/isClass/install.js",
-      "require": "./dist/cjs/object/isClass/install.js"
-    },
-    "./polyfill/object/isEqual": {
-      "types": "./dist/types/object/isEqual/install.d.ts",
-      "import": "./dist/esm/object/isEqual/install.js",
-      "require": "./dist/cjs/object/isEqual/install.js"
-    },
-    "./polyfill/object/isPlainObject": {
-      "types": "./dist/types/object/isPlainObject/install.d.ts",
-      "import": "./dist/esm/object/isPlainObject/install.js",
-      "require": "./dist/cjs/object/isPlainObject/install.js"
-    },
-    "./polyfill/object/omit": {
-      "types": "./dist/types/object/omit/install.d.ts",
-      "import": "./dist/esm/object/omit/install.js",
-      "require": "./dist/cjs/object/omit/install.js"
-    },
-    "./polyfill/object/pick": {
-      "types": "./dist/types/object/pick/install.d.ts",
-      "import": "./dist/esm/object/pick/install.js",
-      "require": "./dist/cjs/object/pick/install.js"
-    },
-    "./polyfill/object/renameKeys": {
-      "types": "./dist/types/object/renameKeys/install.d.ts",
-      "import": "./dist/esm/object/renameKeys/install.js",
-      "require": "./dist/cjs/object/renameKeys/install.js"
-    },
-    "./polyfill/object/select": {
-      "types": "./dist/types/object/select/install.d.ts",
-      "import": "./dist/esm/object/select/install.js",
-      "require": "./dist/cjs/object/select/install.js"
-    },
-    "./polyfill/object/shallowClone": {
-      "types": "./dist/types/object/shallowClone/install.d.ts",
-      "import": "./dist/esm/object/shallowClone/install.js",
-      "require": "./dist/cjs/object/shallowClone/install.js"
-    },
-    "./polyfill/string": {
-      "types": "./dist/types/string/install.d.ts",
-      "import": "./dist/esm/string/install.js",
-      "require": "./dist/cjs/string/install.js"
-    },
-    "./polyfill/string/abbreviate": {
-      "types": "./dist/types/string/abbreviate/install.d.ts",
-      "import": "./dist/esm/string/abbreviate/install.js",
-      "require": "./dist/cjs/string/abbreviate/install.js"
-    },
-    "./polyfill/string/camelCase": {
-      "types": "./dist/types/string/camelCase/install.d.ts",
-      "import": "./dist/esm/string/camelCase/install.js",
-      "require": "./dist/cjs/string/camelCase/install.js"
-    },
-    "./polyfill/string/constantCase": {
-      "types": "./dist/types/string/constantCase/install.d.ts",
-      "import": "./dist/esm/string/constantCase/install.js",
-      "require": "./dist/cjs/string/constantCase/install.js"
-    },
-    "./polyfill/string/dotCase": {
-      "types": "./dist/types/string/dotCase/install.d.ts",
-      "import": "./dist/esm/string/dotCase/install.js",
-      "require": "./dist/cjs/string/dotCase/install.js"
-    },
-    "./polyfill/string/escape": {
-      "types": "./dist/types/string/escape/install.d.ts",
-      "import": "./dist/esm/string/escape/install.js",
-      "require": "./dist/cjs/string/escape/install.js"
-    },
-    "./polyfill/string/hamming": {
-      "types": "./dist/types/string/hamming/install.d.ts",
-      "import": "./dist/esm/string/hamming/install.js",
-      "require": "./dist/cjs/string/hamming/install.js"
-    },
-    "./polyfill/string/initials": {
-      "types": "./dist/types/string/initials/install.d.ts",
-      "import": "./dist/esm/string/initials/install.js",
-      "require": "./dist/cjs/string/initials/install.js"
-    },
-    "./polyfill/string/isBlank": {
-      "types": "./dist/types/string/isBlank/install.d.ts",
-      "import": "./dist/esm/string/isBlank/install.js",
-      "require": "./dist/cjs/string/isBlank/install.js"
-    },
-    "./polyfill/string/isDateFormat": {
-      "types": "./dist/types/string/isDateFormat/install.d.ts",
-      "import": "./dist/esm/string/isDateFormat/install.js",
-      "require": "./dist/cjs/string/isDateFormat/install.js"
-    },
-    "./polyfill/string/isDuration": {
-      "types": "./dist/types/string/isDuration/install.d.ts",
-      "import": "./dist/esm/string/isDuration/install.js",
-      "require": "./dist/cjs/string/isDuration/install.js"
-    },
-    "./polyfill/string/isEmail": {
-      "types": "./dist/types/string/isEmail/install.d.ts",
-      "import": "./dist/esm/string/isEmail/install.js",
-      "require": "./dist/cjs/string/isEmail/install.js"
-    },
-    "./polyfill/string/isIPv4": {
-      "types": "./dist/types/string/isIPv4/install.d.ts",
-      "import": "./dist/esm/string/isIPv4/install.js",
-      "require": "./dist/cjs/string/isIPv4/install.js"
-    },
-    "./polyfill/string/isIPv6": {
-      "types": "./dist/types/string/isIPv6/install.d.ts",
-      "import": "./dist/esm/string/isIPv6/install.js",
-      "require": "./dist/cjs/string/isIPv6/install.js"
-    },
-    "./polyfill/string/isTime": {
-      "types": "./dist/types/string/isTime/install.d.ts",
-      "import": "./dist/esm/string/isTime/install.js",
-      "require": "./dist/cjs/string/isTime/install.js"
-    },
-    "./polyfill/string/isURL": {
-      "types": "./dist/types/string/isURL/install.d.ts",
-      "import": "./dist/esm/string/isURL/install.js",
-      "require": "./dist/cjs/string/isURL/install.js"
-    },
-    "./polyfill/string/isUUID": {
-      "types": "./dist/types/string/isUUID/install.d.ts",
-      "import": "./dist/esm/string/isUUID/install.js",
-      "require": "./dist/cjs/string/isUUID/install.js"
-    },
-    "./polyfill/string/iterate": {
-      "types": "./dist/types/string/iterate/install.d.ts",
-      "import": "./dist/esm/string/iterate/install.js",
-      "require": "./dist/cjs/string/iterate/install.js"
-    },
-    "./polyfill/string/jaro": {
-      "types": "./dist/types/string/jaro/install.d.ts",
-      "import": "./dist/esm/string/jaro/install.js",
-      "require": "./dist/cjs/string/jaro/install.js"
-    },
-    "./polyfill/string/jaroWinkler": {
-      "types": "./dist/types/string/jaroWinkler/install.d.ts",
-      "import": "./dist/esm/string/jaroWinkler/install.js",
-      "require": "./dist/cjs/string/jaroWinkler/install.js"
-    },
-    "./polyfill/string/kebabCase": {
-      "types": "./dist/types/string/kebabCase/install.d.ts",
-      "import": "./dist/esm/string/kebabCase/install.js",
-      "require": "./dist/cjs/string/kebabCase/install.js"
-    },
-    "./polyfill/string/levenshtein": {
-      "types": "./dist/types/string/levenshtein/install.d.ts",
-      "import": "./dist/esm/string/levenshtein/install.js",
-      "require": "./dist/cjs/string/levenshtein/install.js"
-    },
-    "./polyfill/string/lowerFirst": {
-      "types": "./dist/types/string/lowerFirst/install.d.ts",
-      "import": "./dist/esm/string/lowerFirst/install.js",
-      "require": "./dist/cjs/string/lowerFirst/install.js"
-    },
-    "./polyfill/string/moduleCase": {
-      "types": "./dist/types/string/moduleCase/install.d.ts",
-      "import": "./dist/esm/string/moduleCase/install.js",
-      "require": "./dist/cjs/string/moduleCase/install.js"
-    },
-    "./polyfill/string/noCase": {
-      "types": "./dist/types/string/noCase/install.d.ts",
-      "import": "./dist/esm/string/noCase/install.js",
-      "require": "./dist/cjs/string/noCase/install.js"
-    },
-    "./polyfill/string/pascalCase": {
-      "types": "./dist/types/string/pascalCase/install.d.ts",
-      "import": "./dist/esm/string/pascalCase/install.js",
-      "require": "./dist/cjs/string/pascalCase/install.js"
-    },
-    "./polyfill/string/randomStr": {
-      "types": "./dist/types/string/randomStr/install.d.ts",
-      "import": "./dist/esm/string/randomStr/install.js",
-      "require": "./dist/cjs/string/randomStr/install.js"
-    },
-    "./polyfill/string/reverse": {
-      "types": "./dist/types/string/reverse/install.d.ts",
-      "import": "./dist/esm/string/reverse/install.js",
-      "require": "./dist/cjs/string/reverse/install.js"
-    },
-    "./polyfill/string/sentenceCase": {
-      "types": "./dist/types/string/sentenceCase/install.d.ts",
-      "import": "./dist/esm/string/sentenceCase/install.js",
-      "require": "./dist/cjs/string/sentenceCase/install.js"
-    },
-    "./polyfill/string/slugify": {
-      "types": "./dist/types/string/slugify/install.d.ts",
-      "import": "./dist/esm/string/slugify/install.js",
-      "require": "./dist/cjs/string/slugify/install.js"
-    },
-    "./polyfill/string/snakeCase": {
-      "types": "./dist/types/string/snakeCase/install.d.ts",
-      "import": "./dist/esm/string/snakeCase/install.js",
-      "require": "./dist/cjs/string/snakeCase/install.js"
-    },
-    "./polyfill/string/stripIndent": {
-      "types": "./dist/types/string/stripIndent/install.d.ts",
-      "import": "./dist/esm/string/stripIndent/install.js",
-      "require": "./dist/cjs/string/stripIndent/install.js"
-    },
-    "./polyfill/string/swapCase": {
-      "types": "./dist/types/string/swapCase/install.d.ts",
-      "import": "./dist/esm/string/swapCase/install.js",
-      "require": "./dist/cjs/string/swapCase/install.js"
-    },
-    "./polyfill/string/textPosition": {
-      "types": "./dist/types/string/textPosition/install.d.ts",
-      "import": "./dist/esm/string/textPosition/install.js",
-      "require": "./dist/cjs/string/textPosition/install.js"
-    },
-    "./polyfill/string/titleCase": {
-      "types": "./dist/types/string/titleCase/install.d.ts",
-      "import": "./dist/esm/string/titleCase/install.js",
-      "require": "./dist/cjs/string/titleCase/install.js"
-    },
-    "./polyfill/string/toChars": {
-      "types": "./dist/types/string/toChars/install.d.ts",
-      "import": "./dist/esm/string/toChars/install.js",
-      "require": "./dist/cjs/string/toChars/install.js"
-    },
-    "./polyfill/string/trainCase": {
-      "types": "./dist/types/string/trainCase/install.d.ts",
-      "import": "./dist/esm/string/trainCase/install.js",
-      "require": "./dist/cjs/string/trainCase/install.js"
-    },
-    "./polyfill/string/truncate": {
-      "types": "./dist/types/string/truncate/install.d.ts",
-      "import": "./dist/esm/string/truncate/install.js",
-      "require": "./dist/cjs/string/truncate/install.js"
-    },
-    "./polyfill/string/unescape": {
-      "types": "./dist/types/string/unescape/install.d.ts",
-      "import": "./dist/esm/string/unescape/install.js",
-      "require": "./dist/cjs/string/unescape/install.js"
-    },
-    "./polyfill/string/upperFirst": {
-      "types": "./dist/types/string/upperFirst/install.d.ts",
-      "import": "./dist/esm/string/upperFirst/install.js",
-      "require": "./dist/cjs/string/upperFirst/install.js"
-    },
-    "./polyfill/string/words": {
-      "types": "./dist/types/string/words/install.d.ts",
-      "import": "./dist/esm/string/words/install.js",
-      "require": "./dist/cjs/string/words/install.js"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FriquetLuca/polyFP.git"
@@ -1112,7 +32,8 @@
   },
   "homepage": "https://github.com/FriquetLuca/polyFP",
   "scripts": {
-    "build": "(rm -rf dist) && node build.mjs && tsc --emitDeclarationOnly",
+    "clean": "node -e \"import('node:fs').then(fs => fs.rmSync('dist', { recursive: true, force: true }))\"",
+    "build": "npm run --silent clean && tsdown",
     "test": "vitest run",
     "lint": "eslint .",
     "prepare": "husky",
@@ -1121,22 +42,4231 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@standard-schema/spec": "^1.1.0",
-    "@types/node": "^26.3.0",
-    "esbuild": "0.28.1",
-    "eslint": "^10.6.0",
+    "@types/node": "^24.19.2",
+    "eslint": "^10.13.0",
     "fast-glob": "^3.3.3",
-    "globals": "^17.7.0",
+    "globals": "^17.13.0",
     "husky": "^9.1.7",
-    "lint-staged": "^17.0.8",
-    "prettier": "3.9.4",
+    "lint-staged": "^17.6.0",
+    "prettier": "3.9.10",
+    "tsdown": "^0.23.1",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.62.1",
-    "vitest": "^4.1.9",
-    "zod": "^4.4.3"
+    "typescript-eslint": "^8.72.0",
+    "vitest": "^5.0.5",
+    "zod": "^4.6.7"
   },
   "lint-staged": {
     "**/*.{js,ts,mjs,mts,json}": [
       "prettier --write"
     ]
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./array/aggregate": {
+      "import": {
+        "types": "./dist/array/aggregate/index.d.ts",
+        "default": "./dist/array/aggregate/index.js"
+      },
+      "require": {
+        "types": "./dist/array/aggregate/index.d.cts",
+        "default": "./dist/array/aggregate/index.cjs"
+      }
+    },
+    "./array/avg": {
+      "import": {
+        "types": "./dist/array/avg/index.d.ts",
+        "default": "./dist/array/avg/index.js"
+      },
+      "require": {
+        "types": "./dist/array/avg/index.d.cts",
+        "default": "./dist/array/avg/index.cjs"
+      }
+    },
+    "./array/avgAbsDevAroundMedian": {
+      "import": {
+        "types": "./dist/array/avgAbsDevAroundMedian/index.d.ts",
+        "default": "./dist/array/avgAbsDevAroundMedian/index.js"
+      },
+      "require": {
+        "types": "./dist/array/avgAbsDevAroundMedian/index.d.cts",
+        "default": "./dist/array/avgAbsDevAroundMedian/index.cjs"
+      }
+    },
+    "./array/batch": {
+      "import": {
+        "types": "./dist/array/batch/index.d.ts",
+        "default": "./dist/array/batch/index.js"
+      },
+      "require": {
+        "types": "./dist/array/batch/index.d.cts",
+        "default": "./dist/array/batch/index.cjs"
+      }
+    },
+    "./array/cartesianProduct": {
+      "import": {
+        "types": "./dist/array/cartesianProduct/index.d.ts",
+        "default": "./dist/array/cartesianProduct/index.js"
+      },
+      "require": {
+        "types": "./dist/array/cartesianProduct/index.d.cts",
+        "default": "./dist/array/cartesianProduct/index.cjs"
+      }
+    },
+    "./array/chunk": {
+      "import": {
+        "types": "./dist/array/chunk/index.d.ts",
+        "default": "./dist/array/chunk/index.js"
+      },
+      "require": {
+        "types": "./dist/array/chunk/index.d.cts",
+        "default": "./dist/array/chunk/index.cjs"
+      }
+    },
+    "./array/chunkWhile": {
+      "import": {
+        "types": "./dist/array/chunkWhile/index.d.ts",
+        "default": "./dist/array/chunkWhile/index.js"
+      },
+      "require": {
+        "types": "./dist/array/chunkWhile/index.d.cts",
+        "default": "./dist/array/chunkWhile/index.cjs"
+      }
+    },
+    "./array/cn": {
+      "import": {
+        "types": "./dist/array/cn/index.d.ts",
+        "default": "./dist/array/cn/index.js"
+      },
+      "require": {
+        "types": "./dist/array/cn/index.d.cts",
+        "default": "./dist/array/cn/index.cjs"
+      }
+    },
+    "./array/countBy": {
+      "import": {
+        "types": "./dist/array/countBy/index.d.ts",
+        "default": "./dist/array/countBy/index.js"
+      },
+      "require": {
+        "types": "./dist/array/countBy/index.d.cts",
+        "default": "./dist/array/countBy/index.cjs"
+      }
+    },
+    "./array/crossJoin": {
+      "import": {
+        "types": "./dist/array/crossJoin/index.d.ts",
+        "default": "./dist/array/crossJoin/index.js"
+      },
+      "require": {
+        "types": "./dist/array/crossJoin/index.d.cts",
+        "default": "./dist/array/crossJoin/index.cjs"
+      }
+    },
+    "./array/cumulativeAverage": {
+      "import": {
+        "types": "./dist/array/cumulativeAverage/index.d.ts",
+        "default": "./dist/array/cumulativeAverage/index.js"
+      },
+      "require": {
+        "types": "./dist/array/cumulativeAverage/index.d.cts",
+        "default": "./dist/array/cumulativeAverage/index.cjs"
+      }
+    },
+    "./array/difference": {
+      "import": {
+        "types": "./dist/array/difference/index.d.ts",
+        "default": "./dist/array/difference/index.js"
+      },
+      "require": {
+        "types": "./dist/array/difference/index.d.cts",
+        "default": "./dist/array/difference/index.cjs"
+      }
+    },
+    "./array/exponentialMovingAverage": {
+      "import": {
+        "types": "./dist/array/exponentialMovingAverage/index.d.ts",
+        "default": "./dist/array/exponentialMovingAverage/index.js"
+      },
+      "require": {
+        "types": "./dist/array/exponentialMovingAverage/index.d.cts",
+        "default": "./dist/array/exponentialMovingAverage/index.cjs"
+      }
+    },
+    "./array/filterAsync": {
+      "import": {
+        "types": "./dist/array/filterAsync/index.d.ts",
+        "default": "./dist/array/filterAsync/index.js"
+      },
+      "require": {
+        "types": "./dist/array/filterAsync/index.d.cts",
+        "default": "./dist/array/filterAsync/index.cjs"
+      }
+    },
+    "./array/filterMap": {
+      "import": {
+        "types": "./dist/array/filterMap/index.d.ts",
+        "default": "./dist/array/filterMap/index.js"
+      },
+      "require": {
+        "types": "./dist/array/filterMap/index.d.cts",
+        "default": "./dist/array/filterMap/index.cjs"
+      }
+    },
+    "./array/forEachAsync": {
+      "import": {
+        "types": "./dist/array/forEachAsync/index.d.ts",
+        "default": "./dist/array/forEachAsync/index.js"
+      },
+      "require": {
+        "types": "./dist/array/forEachAsync/index.d.cts",
+        "default": "./dist/array/forEachAsync/index.cjs"
+      }
+    },
+    "./array/forItems": {
+      "import": {
+        "types": "./dist/array/forItems/index.d.ts",
+        "default": "./dist/array/forItems/index.js"
+      },
+      "require": {
+        "types": "./dist/array/forItems/index.d.cts",
+        "default": "./dist/array/forItems/index.cjs"
+      }
+    },
+    "./array/forItemsReverse": {
+      "import": {
+        "types": "./dist/array/forItemsReverse/index.d.ts",
+        "default": "./dist/array/forItemsReverse/index.js"
+      },
+      "require": {
+        "types": "./dist/array/forItemsReverse/index.d.cts",
+        "default": "./dist/array/forItemsReverse/index.cjs"
+      }
+    },
+    "./array/fullJoin": {
+      "import": {
+        "types": "./dist/array/fullJoin/index.d.ts",
+        "default": "./dist/array/fullJoin/index.js"
+      },
+      "require": {
+        "types": "./dist/array/fullJoin/index.d.cts",
+        "default": "./dist/array/fullJoin/index.cjs"
+      }
+    },
+    "./array/generalizedMean": {
+      "import": {
+        "types": "./dist/array/generalizedMean/index.d.ts",
+        "default": "./dist/array/generalizedMean/index.js"
+      },
+      "require": {
+        "types": "./dist/array/generalizedMean/index.d.cts",
+        "default": "./dist/array/generalizedMean/index.cjs"
+      }
+    },
+    "./array/geometricMean": {
+      "import": {
+        "types": "./dist/array/geometricMean/index.d.ts",
+        "default": "./dist/array/geometricMean/index.js"
+      },
+      "require": {
+        "types": "./dist/array/geometricMean/index.d.cts",
+        "default": "./dist/array/geometricMean/index.cjs"
+      }
+    },
+    "./array/groupBy": {
+      "import": {
+        "types": "./dist/array/groupBy/index.d.ts",
+        "default": "./dist/array/groupBy/index.js"
+      },
+      "require": {
+        "types": "./dist/array/groupBy/index.d.cts",
+        "default": "./dist/array/groupBy/index.cjs"
+      }
+    },
+    "./array/harmonicMean": {
+      "import": {
+        "types": "./dist/array/harmonicMean/index.d.ts",
+        "default": "./dist/array/harmonicMean/index.js"
+      },
+      "require": {
+        "types": "./dist/array/harmonicMean/index.d.cts",
+        "default": "./dist/array/harmonicMean/index.cjs"
+      }
+    },
+    "./array/innerJoin": {
+      "import": {
+        "types": "./dist/array/innerJoin/index.d.ts",
+        "default": "./dist/array/innerJoin/index.js"
+      },
+      "require": {
+        "types": "./dist/array/innerJoin/index.d.cts",
+        "default": "./dist/array/innerJoin/index.cjs"
+      }
+    },
+    "./array/intersection": {
+      "import": {
+        "types": "./dist/array/intersection/index.d.ts",
+        "default": "./dist/array/intersection/index.js"
+      },
+      "require": {
+        "types": "./dist/array/intersection/index.d.cts",
+        "default": "./dist/array/intersection/index.cjs"
+      }
+    },
+    "./array/leftJoin": {
+      "import": {
+        "types": "./dist/array/leftJoin/index.d.ts",
+        "default": "./dist/array/leftJoin/index.js"
+      },
+      "require": {
+        "types": "./dist/array/leftJoin/index.d.cts",
+        "default": "./dist/array/leftJoin/index.cjs"
+      }
+    },
+    "./array/mapAsync": {
+      "import": {
+        "types": "./dist/array/mapAsync/index.d.ts",
+        "default": "./dist/array/mapAsync/index.js"
+      },
+      "require": {
+        "types": "./dist/array/mapAsync/index.d.cts",
+        "default": "./dist/array/mapAsync/index.cjs"
+      }
+    },
+    "./array/mapAsyncSettled": {
+      "import": {
+        "types": "./dist/array/mapAsyncSettled/index.d.ts",
+        "default": "./dist/array/mapAsyncSettled/index.js"
+      },
+      "require": {
+        "types": "./dist/array/mapAsyncSettled/index.d.cts",
+        "default": "./dist/array/mapAsyncSettled/index.cjs"
+      }
+    },
+    "./array/max": {
+      "import": {
+        "types": "./dist/array/max/index.d.ts",
+        "default": "./dist/array/max/index.js"
+      },
+      "require": {
+        "types": "./dist/array/max/index.d.cts",
+        "default": "./dist/array/max/index.cjs"
+      }
+    },
+    "./array/meanAbsoluteDeviation": {
+      "import": {
+        "types": "./dist/array/meanAbsoluteDeviation/index.d.ts",
+        "default": "./dist/array/meanAbsoluteDeviation/index.js"
+      },
+      "require": {
+        "types": "./dist/array/meanAbsoluteDeviation/index.d.cts",
+        "default": "./dist/array/meanAbsoluteDeviation/index.cjs"
+      }
+    },
+    "./array/median": {
+      "import": {
+        "types": "./dist/array/median/index.d.ts",
+        "default": "./dist/array/median/index.js"
+      },
+      "require": {
+        "types": "./dist/array/median/index.d.cts",
+        "default": "./dist/array/median/index.cjs"
+      }
+    },
+    "./array/medianAbsoluteDeviation": {
+      "import": {
+        "types": "./dist/array/medianAbsoluteDeviation/index.d.ts",
+        "default": "./dist/array/medianAbsoluteDeviation/index.js"
+      },
+      "require": {
+        "types": "./dist/array/medianAbsoluteDeviation/index.d.cts",
+        "default": "./dist/array/medianAbsoluteDeviation/index.cjs"
+      }
+    },
+    "./array/medianAbsoluteDeviationNormalized": {
+      "import": {
+        "types": "./dist/array/medianAbsoluteDeviationNormalized/index.d.ts",
+        "default": "./dist/array/medianAbsoluteDeviationNormalized/index.js"
+      },
+      "require": {
+        "types": "./dist/array/medianAbsoluteDeviationNormalized/index.d.cts",
+        "default": "./dist/array/medianAbsoluteDeviationNormalized/index.cjs"
+      }
+    },
+    "./array/min": {
+      "import": {
+        "types": "./dist/array/min/index.d.ts",
+        "default": "./dist/array/min/index.js"
+      },
+      "require": {
+        "types": "./dist/array/min/index.d.cts",
+        "default": "./dist/array/min/index.cjs"
+      }
+    },
+    "./array/mode": {
+      "import": {
+        "types": "./dist/array/mode/index.d.ts",
+        "default": "./dist/array/mode/index.js"
+      },
+      "require": {
+        "types": "./dist/array/mode/index.d.cts",
+        "default": "./dist/array/mode/index.cjs"
+      }
+    },
+    "./array/move": {
+      "import": {
+        "types": "./dist/array/move/index.d.ts",
+        "default": "./dist/array/move/index.js"
+      },
+      "require": {
+        "types": "./dist/array/move/index.d.cts",
+        "default": "./dist/array/move/index.cjs"
+      }
+    },
+    "./array/nth": {
+      "import": {
+        "types": "./dist/array/nth/index.d.ts",
+        "default": "./dist/array/nth/index.js"
+      },
+      "require": {
+        "types": "./dist/array/nth/index.d.cts",
+        "default": "./dist/array/nth/index.cjs"
+      }
+    },
+    "./array/orderBy": {
+      "import": {
+        "types": "./dist/array/orderBy/index.d.ts",
+        "default": "./dist/array/orderBy/index.js"
+      },
+      "require": {
+        "types": "./dist/array/orderBy/index.d.cts",
+        "default": "./dist/array/orderBy/index.cjs"
+      }
+    },
+    "./array/partition": {
+      "import": {
+        "types": "./dist/array/partition/index.d.ts",
+        "default": "./dist/array/partition/index.js"
+      },
+      "require": {
+        "types": "./dist/array/partition/index.d.cts",
+        "default": "./dist/array/partition/index.cjs"
+      }
+    },
+    "./array/pivot": {
+      "import": {
+        "types": "./dist/array/pivot/index.d.ts",
+        "default": "./dist/array/pivot/index.js"
+      },
+      "require": {
+        "types": "./dist/array/pivot/index.d.cts",
+        "default": "./dist/array/pivot/index.cjs"
+      }
+    },
+    "./array/pluck": {
+      "import": {
+        "types": "./dist/array/pluck/index.d.ts",
+        "default": "./dist/array/pluck/index.js"
+      },
+      "require": {
+        "types": "./dist/array/pluck/index.d.cts",
+        "default": "./dist/array/pluck/index.cjs"
+      }
+    },
+    "./array/pool": {
+      "import": {
+        "types": "./dist/array/pool/index.d.ts",
+        "default": "./dist/array/pool/index.js"
+      },
+      "require": {
+        "types": "./dist/array/pool/index.d.cts",
+        "default": "./dist/array/pool/index.cjs"
+      }
+    },
+    "./array/product": {
+      "import": {
+        "types": "./dist/array/product/index.d.ts",
+        "default": "./dist/array/product/index.js"
+      },
+      "require": {
+        "types": "./dist/array/product/index.d.cts",
+        "default": "./dist/array/product/index.cjs"
+      }
+    },
+    "./array/project": {
+      "import": {
+        "types": "./dist/array/project/index.d.ts",
+        "default": "./dist/array/project/index.js"
+      },
+      "require": {
+        "types": "./dist/array/project/index.d.cts",
+        "default": "./dist/array/project/index.cjs"
+      }
+    },
+    "./array/quantile": {
+      "import": {
+        "types": "./dist/array/quantile/index.d.ts",
+        "default": "./dist/array/quantile/index.js"
+      },
+      "require": {
+        "types": "./dist/array/quantile/index.d.cts",
+        "default": "./dist/array/quantile/index.cjs"
+      }
+    },
+    "./array/query": {
+      "import": {
+        "types": "./dist/array/query/index.d.ts",
+        "default": "./dist/array/query/index.js"
+      },
+      "require": {
+        "types": "./dist/array/query/index.d.cts",
+        "default": "./dist/array/query/index.cjs"
+      }
+    },
+    "./array/range": {
+      "import": {
+        "types": "./dist/array/range/index.d.ts",
+        "default": "./dist/array/range/index.js"
+      },
+      "require": {
+        "types": "./dist/array/range/index.d.cts",
+        "default": "./dist/array/range/index.cjs"
+      }
+    },
+    "./array/reduceAsync": {
+      "import": {
+        "types": "./dist/array/reduceAsync/index.d.ts",
+        "default": "./dist/array/reduceAsync/index.js"
+      },
+      "require": {
+        "types": "./dist/array/reduceAsync/index.d.cts",
+        "default": "./dist/array/reduceAsync/index.cjs"
+      }
+    },
+    "./array/rightJoin": {
+      "import": {
+        "types": "./dist/array/rightJoin/index.d.ts",
+        "default": "./dist/array/rightJoin/index.js"
+      },
+      "require": {
+        "types": "./dist/array/rightJoin/index.d.cts",
+        "default": "./dist/array/rightJoin/index.cjs"
+      }
+    },
+    "./array/rootMeanSquare": {
+      "import": {
+        "types": "./dist/array/rootMeanSquare/index.d.ts",
+        "default": "./dist/array/rootMeanSquare/index.js"
+      },
+      "require": {
+        "types": "./dist/array/rootMeanSquare/index.d.cts",
+        "default": "./dist/array/rootMeanSquare/index.cjs"
+      }
+    },
+    "./array/sample": {
+      "import": {
+        "types": "./dist/array/sample/index.d.ts",
+        "default": "./dist/array/sample/index.js"
+      },
+      "require": {
+        "types": "./dist/array/sample/index.d.cts",
+        "default": "./dist/array/sample/index.cjs"
+      }
+    },
+    "./array/sampleSize": {
+      "import": {
+        "types": "./dist/array/sampleSize/index.d.ts",
+        "default": "./dist/array/sampleSize/index.js"
+      },
+      "require": {
+        "types": "./dist/array/sampleSize/index.d.cts",
+        "default": "./dist/array/sampleSize/index.cjs"
+      }
+    },
+    "./array/shuffle": {
+      "import": {
+        "types": "./dist/array/shuffle/index.d.ts",
+        "default": "./dist/array/shuffle/index.js"
+      },
+      "require": {
+        "types": "./dist/array/shuffle/index.d.cts",
+        "default": "./dist/array/shuffle/index.cjs"
+      }
+    },
+    "./array/simpleMovingAverage": {
+      "import": {
+        "types": "./dist/array/simpleMovingAverage/index.d.ts",
+        "default": "./dist/array/simpleMovingAverage/index.js"
+      },
+      "require": {
+        "types": "./dist/array/simpleMovingAverage/index.d.cts",
+        "default": "./dist/array/simpleMovingAverage/index.cjs"
+      }
+    },
+    "./array/standardDeviation": {
+      "import": {
+        "types": "./dist/array/standardDeviation/index.d.ts",
+        "default": "./dist/array/standardDeviation/index.js"
+      },
+      "require": {
+        "types": "./dist/array/standardDeviation/index.d.cts",
+        "default": "./dist/array/standardDeviation/index.cjs"
+      }
+    },
+    "./array/sum": {
+      "import": {
+        "types": "./dist/array/sum/index.d.ts",
+        "default": "./dist/array/sum/index.js"
+      },
+      "require": {
+        "types": "./dist/array/sum/index.d.cts",
+        "default": "./dist/array/sum/index.cjs"
+      }
+    },
+    "./array/swap": {
+      "import": {
+        "types": "./dist/array/swap/index.d.ts",
+        "default": "./dist/array/swap/index.js"
+      },
+      "require": {
+        "types": "./dist/array/swap/index.d.cts",
+        "default": "./dist/array/swap/index.cjs"
+      }
+    },
+    "./array/unique": {
+      "import": {
+        "types": "./dist/array/unique/index.d.ts",
+        "default": "./dist/array/unique/index.js"
+      },
+      "require": {
+        "types": "./dist/array/unique/index.d.cts",
+        "default": "./dist/array/unique/index.cjs"
+      }
+    },
+    "./array/unpivot": {
+      "import": {
+        "types": "./dist/array/unpivot/index.d.ts",
+        "default": "./dist/array/unpivot/index.js"
+      },
+      "require": {
+        "types": "./dist/array/unpivot/index.d.cts",
+        "default": "./dist/array/unpivot/index.cjs"
+      }
+    },
+    "./array/unzip": {
+      "import": {
+        "types": "./dist/array/unzip/index.d.ts",
+        "default": "./dist/array/unzip/index.js"
+      },
+      "require": {
+        "types": "./dist/array/unzip/index.d.cts",
+        "default": "./dist/array/unzip/index.cjs"
+      }
+    },
+    "./array/variance": {
+      "import": {
+        "types": "./dist/array/variance/index.d.ts",
+        "default": "./dist/array/variance/index.js"
+      },
+      "require": {
+        "types": "./dist/array/variance/index.d.cts",
+        "default": "./dist/array/variance/index.cjs"
+      }
+    },
+    "./array/weightedArithmeticMean": {
+      "import": {
+        "types": "./dist/array/weightedArithmeticMean/index.d.ts",
+        "default": "./dist/array/weightedArithmeticMean/index.js"
+      },
+      "require": {
+        "types": "./dist/array/weightedArithmeticMean/index.d.cts",
+        "default": "./dist/array/weightedArithmeticMean/index.cjs"
+      }
+    },
+    "./array/weightedExponentialMovingAverage": {
+      "import": {
+        "types": "./dist/array/weightedExponentialMovingAverage/index.d.ts",
+        "default": "./dist/array/weightedExponentialMovingAverage/index.js"
+      },
+      "require": {
+        "types": "./dist/array/weightedExponentialMovingAverage/index.d.cts",
+        "default": "./dist/array/weightedExponentialMovingAverage/index.cjs"
+      }
+    },
+    "./array/weightedGeneralizedMean": {
+      "import": {
+        "types": "./dist/array/weightedGeneralizedMean/index.d.ts",
+        "default": "./dist/array/weightedGeneralizedMean/index.js"
+      },
+      "require": {
+        "types": "./dist/array/weightedGeneralizedMean/index.d.cts",
+        "default": "./dist/array/weightedGeneralizedMean/index.cjs"
+      }
+    },
+    "./array/weightedGeometricMean": {
+      "import": {
+        "types": "./dist/array/weightedGeometricMean/index.d.ts",
+        "default": "./dist/array/weightedGeometricMean/index.js"
+      },
+      "require": {
+        "types": "./dist/array/weightedGeometricMean/index.d.cts",
+        "default": "./dist/array/weightedGeometricMean/index.cjs"
+      }
+    },
+    "./array/weightedHarmonicMean": {
+      "import": {
+        "types": "./dist/array/weightedHarmonicMean/index.d.ts",
+        "default": "./dist/array/weightedHarmonicMean/index.js"
+      },
+      "require": {
+        "types": "./dist/array/weightedHarmonicMean/index.d.cts",
+        "default": "./dist/array/weightedHarmonicMean/index.cjs"
+      }
+    },
+    "./array/weightedMovingAverage": {
+      "import": {
+        "types": "./dist/array/weightedMovingAverage/index.d.ts",
+        "default": "./dist/array/weightedMovingAverage/index.js"
+      },
+      "require": {
+        "types": "./dist/array/weightedMovingAverage/index.d.cts",
+        "default": "./dist/array/weightedMovingAverage/index.cjs"
+      }
+    },
+    "./array/weightedNormalizedMean": {
+      "import": {
+        "types": "./dist/array/weightedNormalizedMean/index.d.ts",
+        "default": "./dist/array/weightedNormalizedMean/index.js"
+      },
+      "require": {
+        "types": "./dist/array/weightedNormalizedMean/index.d.cts",
+        "default": "./dist/array/weightedNormalizedMean/index.cjs"
+      }
+    },
+    "./array/weightedRootMeanSquare": {
+      "import": {
+        "types": "./dist/array/weightedRootMeanSquare/index.d.ts",
+        "default": "./dist/array/weightedRootMeanSquare/index.js"
+      },
+      "require": {
+        "types": "./dist/array/weightedRootMeanSquare/index.d.cts",
+        "default": "./dist/array/weightedRootMeanSquare/index.cjs"
+      }
+    },
+    "./array/window": {
+      "import": {
+        "types": "./dist/array/window/index.d.ts",
+        "default": "./dist/array/window/index.js"
+      },
+      "require": {
+        "types": "./dist/array/window/index.d.cts",
+        "default": "./dist/array/window/index.cjs"
+      }
+    },
+    "./array/xor": {
+      "import": {
+        "types": "./dist/array/xor/index.d.ts",
+        "default": "./dist/array/xor/index.js"
+      },
+      "require": {
+        "types": "./dist/array/xor/index.d.cts",
+        "default": "./dist/array/xor/index.cjs"
+      }
+    },
+    "./array/zip": {
+      "import": {
+        "types": "./dist/array/zip/index.d.ts",
+        "default": "./dist/array/zip/index.js"
+      },
+      "require": {
+        "types": "./dist/array/zip/index.d.cts",
+        "default": "./dist/array/zip/index.cjs"
+      }
+    },
+    "./array/zipWith": {
+      "import": {
+        "types": "./dist/array/zipWith/index.d.ts",
+        "default": "./dist/array/zipWith/index.js"
+      },
+      "require": {
+        "types": "./dist/array/zipWith/index.d.cts",
+        "default": "./dist/array/zipWith/index.cjs"
+      }
+    },
+    "./data": {
+      "import": {
+        "types": "./dist/data.d.ts",
+        "default": "./dist/data.js"
+      },
+      "require": {
+        "types": "./dist/data.d.cts",
+        "default": "./dist/data.cjs"
+      }
+    },
+    "./date/isDate": {
+      "import": {
+        "types": "./dist/date/isDate/index.d.ts",
+        "default": "./dist/date/isDate/index.js"
+      },
+      "require": {
+        "types": "./dist/date/isDate/index.d.cts",
+        "default": "./dist/date/isDate/index.cjs"
+      }
+    },
+    "./date/isLeapYear": {
+      "import": {
+        "types": "./dist/date/isLeapYear/index.d.ts",
+        "default": "./dist/date/isLeapYear/index.js"
+      },
+      "require": {
+        "types": "./dist/date/isLeapYear/index.d.cts",
+        "default": "./dist/date/isLeapYear/index.cjs"
+      }
+    },
+    "./function/after": {
+      "import": {
+        "types": "./dist/function/after/index.d.ts",
+        "default": "./dist/function/after/index.js"
+      },
+      "require": {
+        "types": "./dist/function/after/index.d.cts",
+        "default": "./dist/function/after/index.cjs"
+      }
+    },
+    "./function/all": {
+      "import": {
+        "types": "./dist/function/all/index.d.ts",
+        "default": "./dist/function/all/index.js"
+      },
+      "require": {
+        "types": "./dist/function/all/index.d.cts",
+        "default": "./dist/function/all/index.cjs"
+      }
+    },
+    "./function/andThen": {
+      "import": {
+        "types": "./dist/function/andThen/index.d.ts",
+        "default": "./dist/function/andThen/index.js"
+      },
+      "require": {
+        "types": "./dist/function/andThen/index.d.cts",
+        "default": "./dist/function/andThen/index.cjs"
+      }
+    },
+    "./function/atLeastOne": {
+      "import": {
+        "types": "./dist/function/atLeastOne/index.d.ts",
+        "default": "./dist/function/atLeastOne/index.js"
+      },
+      "require": {
+        "types": "./dist/function/atLeastOne/index.d.cts",
+        "default": "./dist/function/atLeastOne/index.cjs"
+      }
+    },
+    "./function/atMostOne": {
+      "import": {
+        "types": "./dist/function/atMostOne/index.d.ts",
+        "default": "./dist/function/atMostOne/index.js"
+      },
+      "require": {
+        "types": "./dist/function/atMostOne/index.d.cts",
+        "default": "./dist/function/atMostOne/index.cjs"
+      }
+    },
+    "./function/before": {
+      "import": {
+        "types": "./dist/function/before/index.d.ts",
+        "default": "./dist/function/before/index.js"
+      },
+      "require": {
+        "types": "./dist/function/before/index.d.cts",
+        "default": "./dist/function/before/index.cjs"
+      }
+    },
+    "./function/bind": {
+      "import": {
+        "types": "./dist/function/bind/index.d.ts",
+        "default": "./dist/function/bind/index.js"
+      },
+      "require": {
+        "types": "./dist/function/bind/index.d.cts",
+        "default": "./dist/function/bind/index.cjs"
+      }
+    },
+    "./function/constant": {
+      "import": {
+        "types": "./dist/function/constant/index.d.ts",
+        "default": "./dist/function/constant/index.js"
+      },
+      "require": {
+        "types": "./dist/function/constant/index.d.cts",
+        "default": "./dist/function/constant/index.cjs"
+      }
+    },
+    "./function/curry": {
+      "import": {
+        "types": "./dist/function/curry/index.d.ts",
+        "default": "./dist/function/curry/index.js"
+      },
+      "require": {
+        "types": "./dist/function/curry/index.d.cts",
+        "default": "./dist/function/curry/index.cjs"
+      }
+    },
+    "./function/debounce": {
+      "import": {
+        "types": "./dist/function/debounce/index.d.ts",
+        "default": "./dist/function/debounce/index.js"
+      },
+      "require": {
+        "types": "./dist/function/debounce/index.d.cts",
+        "default": "./dist/function/debounce/index.cjs"
+      }
+    },
+    "./function/exactlyN": {
+      "import": {
+        "types": "./dist/function/exactlyN/index.d.ts",
+        "default": "./dist/function/exactlyN/index.js"
+      },
+      "require": {
+        "types": "./dist/function/exactlyN/index.d.cts",
+        "default": "./dist/function/exactlyN/index.cjs"
+      }
+    },
+    "./function/exactlyOne": {
+      "import": {
+        "types": "./dist/function/exactlyOne/index.d.ts",
+        "default": "./dist/function/exactlyOne/index.js"
+      },
+      "require": {
+        "types": "./dist/function/exactlyOne/index.d.cts",
+        "default": "./dist/function/exactlyOne/index.cjs"
+      }
+    },
+    "./function/flip": {
+      "import": {
+        "types": "./dist/function/flip/index.d.ts",
+        "default": "./dist/function/flip/index.js"
+      },
+      "require": {
+        "types": "./dist/function/flip/index.d.cts",
+        "default": "./dist/function/flip/index.cjs"
+      }
+    },
+    "./function/guard": {
+      "import": {
+        "types": "./dist/function/guard/index.d.ts",
+        "default": "./dist/function/guard/index.js"
+      },
+      "require": {
+        "types": "./dist/function/guard/index.d.cts",
+        "default": "./dist/function/guard/index.cjs"
+      }
+    },
+    "./function/guardAsync": {
+      "import": {
+        "types": "./dist/function/guardAsync/index.d.ts",
+        "default": "./dist/function/guardAsync/index.js"
+      },
+      "require": {
+        "types": "./dist/function/guardAsync/index.d.cts",
+        "default": "./dist/function/guardAsync/index.cjs"
+      }
+    },
+    "./function/ifElse": {
+      "import": {
+        "types": "./dist/function/ifElse/index.d.ts",
+        "default": "./dist/function/ifElse/index.js"
+      },
+      "require": {
+        "types": "./dist/function/ifElse/index.d.cts",
+        "default": "./dist/function/ifElse/index.cjs"
+      }
+    },
+    "./function/isFunction": {
+      "import": {
+        "types": "./dist/function/isFunction/index.d.ts",
+        "default": "./dist/function/isFunction/index.js"
+      },
+      "require": {
+        "types": "./dist/function/isFunction/index.d.cts",
+        "default": "./dist/function/isFunction/index.cjs"
+      }
+    },
+    "./function/isPromise": {
+      "import": {
+        "types": "./dist/function/isPromise/index.d.ts",
+        "default": "./dist/function/isPromise/index.js"
+      },
+      "require": {
+        "types": "./dist/function/isPromise/index.d.cts",
+        "default": "./dist/function/isPromise/index.cjs"
+      }
+    },
+    "./function/isPromiseLike": {
+      "import": {
+        "types": "./dist/function/isPromiseLike/index.d.ts",
+        "default": "./dist/function/isPromiseLike/index.js"
+      },
+      "require": {
+        "types": "./dist/function/isPromiseLike/index.d.cts",
+        "default": "./dist/function/isPromiseLike/index.cjs"
+      }
+    },
+    "./function/match": {
+      "import": {
+        "types": "./dist/function/match/index.d.ts",
+        "default": "./dist/function/match/index.js"
+      },
+      "require": {
+        "types": "./dist/function/match/index.d.cts",
+        "default": "./dist/function/match/index.cjs"
+      }
+    },
+    "./function/memoize": {
+      "import": {
+        "types": "./dist/function/memoize/index.d.ts",
+        "default": "./dist/function/memoize/index.js"
+      },
+      "require": {
+        "types": "./dist/function/memoize/index.d.cts",
+        "default": "./dist/function/memoize/index.cjs"
+      }
+    },
+    "./function/memoizeAsync": {
+      "import": {
+        "types": "./dist/function/memoizeAsync/index.d.ts",
+        "default": "./dist/function/memoizeAsync/index.js"
+      },
+      "require": {
+        "types": "./dist/function/memoizeAsync/index.d.cts",
+        "default": "./dist/function/memoizeAsync/index.cjs"
+      }
+    },
+    "./function/noop": {
+      "import": {
+        "types": "./dist/function/noop/index.d.ts",
+        "default": "./dist/function/noop/index.js"
+      },
+      "require": {
+        "types": "./dist/function/noop/index.d.cts",
+        "default": "./dist/function/noop/index.cjs"
+      }
+    },
+    "./function/not": {
+      "import": {
+        "types": "./dist/function/not/index.d.ts",
+        "default": "./dist/function/not/index.js"
+      },
+      "require": {
+        "types": "./dist/function/not/index.d.cts",
+        "default": "./dist/function/not/index.cjs"
+      }
+    },
+    "./function/once": {
+      "import": {
+        "types": "./dist/function/once/index.d.ts",
+        "default": "./dist/function/once/index.js"
+      },
+      "require": {
+        "types": "./dist/function/once/index.d.cts",
+        "default": "./dist/function/once/index.cjs"
+      }
+    },
+    "./function/onlyIf": {
+      "import": {
+        "types": "./dist/function/onlyIf/index.d.ts",
+        "default": "./dist/function/onlyIf/index.js"
+      },
+      "require": {
+        "types": "./dist/function/onlyIf/index.d.cts",
+        "default": "./dist/function/onlyIf/index.cjs"
+      }
+    },
+    "./function/or": {
+      "import": {
+        "types": "./dist/function/or/index.d.ts",
+        "default": "./dist/function/or/index.js"
+      },
+      "require": {
+        "types": "./dist/function/or/index.d.cts",
+        "default": "./dist/function/or/index.cjs"
+      }
+    },
+    "./function/parallel": {
+      "import": {
+        "types": "./dist/function/parallel/index.d.ts",
+        "default": "./dist/function/parallel/index.js"
+      },
+      "require": {
+        "types": "./dist/function/parallel/index.d.cts",
+        "default": "./dist/function/parallel/index.cjs"
+      }
+    },
+    "./function/partial": {
+      "import": {
+        "types": "./dist/function/partial/index.d.ts",
+        "default": "./dist/function/partial/index.js"
+      },
+      "require": {
+        "types": "./dist/function/partial/index.d.cts",
+        "default": "./dist/function/partial/index.cjs"
+      }
+    },
+    "./function/pipe": {
+      "import": {
+        "types": "./dist/function/pipe/index.d.ts",
+        "default": "./dist/function/pipe/index.js"
+      },
+      "require": {
+        "types": "./dist/function/pipe/index.d.cts",
+        "default": "./dist/function/pipe/index.cjs"
+      }
+    },
+    "./function/pipeAsync": {
+      "import": {
+        "types": "./dist/function/pipeAsync/index.d.ts",
+        "default": "./dist/function/pipeAsync/index.js"
+      },
+      "require": {
+        "types": "./dist/function/pipeAsync/index.d.cts",
+        "default": "./dist/function/pipeAsync/index.cjs"
+      }
+    },
+    "./function/repeat": {
+      "import": {
+        "types": "./dist/function/repeat/index.d.ts",
+        "default": "./dist/function/repeat/index.js"
+      },
+      "require": {
+        "types": "./dist/function/repeat/index.d.cts",
+        "default": "./dist/function/repeat/index.cjs"
+      }
+    },
+    "./function/retry": {
+      "import": {
+        "types": "./dist/function/retry/index.d.ts",
+        "default": "./dist/function/retry/index.js"
+      },
+      "require": {
+        "types": "./dist/function/retry/index.d.cts",
+        "default": "./dist/function/retry/index.cjs"
+      }
+    },
+    "./function/retryUntil": {
+      "import": {
+        "types": "./dist/function/retryUntil/index.d.ts",
+        "default": "./dist/function/retryUntil/index.js"
+      },
+      "require": {
+        "types": "./dist/function/retryUntil/index.d.cts",
+        "default": "./dist/function/retryUntil/index.cjs"
+      }
+    },
+    "./function/sequence": {
+      "import": {
+        "types": "./dist/function/sequence/index.d.ts",
+        "default": "./dist/function/sequence/index.js"
+      },
+      "require": {
+        "types": "./dist/function/sequence/index.d.cts",
+        "default": "./dist/function/sequence/index.cjs"
+      }
+    },
+    "./function/tap": {
+      "import": {
+        "types": "./dist/function/tap/index.d.ts",
+        "default": "./dist/function/tap/index.js"
+      },
+      "require": {
+        "types": "./dist/function/tap/index.d.cts",
+        "default": "./dist/function/tap/index.cjs"
+      }
+    },
+    "./function/throttle": {
+      "import": {
+        "types": "./dist/function/throttle/index.d.ts",
+        "default": "./dist/function/throttle/index.js"
+      },
+      "require": {
+        "types": "./dist/function/throttle/index.d.cts",
+        "default": "./dist/function/throttle/index.cjs"
+      }
+    },
+    "./function/timeout": {
+      "import": {
+        "types": "./dist/function/timeout/index.d.ts",
+        "default": "./dist/function/timeout/index.js"
+      },
+      "require": {
+        "types": "./dist/function/timeout/index.d.cts",
+        "default": "./dist/function/timeout/index.cjs"
+      }
+    },
+    "./function/traverse": {
+      "import": {
+        "types": "./dist/function/traverse/index.d.ts",
+        "default": "./dist/function/traverse/index.js"
+      },
+      "require": {
+        "types": "./dist/function/traverse/index.d.cts",
+        "default": "./dist/function/traverse/index.cjs"
+      }
+    },
+    "./function/unary": {
+      "import": {
+        "types": "./dist/function/unary/index.d.ts",
+        "default": "./dist/function/unary/index.js"
+      },
+      "require": {
+        "types": "./dist/function/unary/index.d.cts",
+        "default": "./dist/function/unary/index.cjs"
+      }
+    },
+    "./function/uncurry": {
+      "import": {
+        "types": "./dist/function/uncurry/index.d.ts",
+        "default": "./dist/function/uncurry/index.js"
+      },
+      "require": {
+        "types": "./dist/function/uncurry/index.d.cts",
+        "default": "./dist/function/uncurry/index.cjs"
+      }
+    },
+    "./function/withTimeout": {
+      "import": {
+        "types": "./dist/function/withTimeout/index.d.ts",
+        "default": "./dist/function/withTimeout/index.js"
+      },
+      "require": {
+        "types": "./dist/function/withTimeout/index.d.cts",
+        "default": "./dist/function/withTimeout/index.cjs"
+      }
+    },
+    "./function/wrap": {
+      "import": {
+        "types": "./dist/function/wrap/index.d.ts",
+        "default": "./dist/function/wrap/index.js"
+      },
+      "require": {
+        "types": "./dist/function/wrap/index.d.cts",
+        "default": "./dist/function/wrap/index.cjs"
+      }
+    },
+    "./math/approximately": {
+      "import": {
+        "types": "./dist/math/approximately/index.d.ts",
+        "default": "./dist/math/approximately/index.js"
+      },
+      "require": {
+        "types": "./dist/math/approximately/index.d.cts",
+        "default": "./dist/math/approximately/index.cjs"
+      }
+    },
+    "./math/between": {
+      "import": {
+        "types": "./dist/math/between/index.d.ts",
+        "default": "./dist/math/between/index.js"
+      },
+      "require": {
+        "types": "./dist/math/between/index.d.cts",
+        "default": "./dist/math/between/index.cjs"
+      }
+    },
+    "./math/betweenInclusive": {
+      "import": {
+        "types": "./dist/math/betweenInclusive/index.d.ts",
+        "default": "./dist/math/betweenInclusive/index.js"
+      },
+      "require": {
+        "types": "./dist/math/betweenInclusive/index.d.cts",
+        "default": "./dist/math/betweenInclusive/index.cjs"
+      }
+    },
+    "./math/clamp": {
+      "import": {
+        "types": "./dist/math/clamp/index.d.ts",
+        "default": "./dist/math/clamp/index.js"
+      },
+      "require": {
+        "types": "./dist/math/clamp/index.d.cts",
+        "default": "./dist/math/clamp/index.cjs"
+      }
+    },
+    "./math/clerp180": {
+      "import": {
+        "types": "./dist/math/clerp180/index.d.ts",
+        "default": "./dist/math/clerp180/index.js"
+      },
+      "require": {
+        "types": "./dist/math/clerp180/index.d.cts",
+        "default": "./dist/math/clerp180/index.cjs"
+      }
+    },
+    "./math/deltaAngle": {
+      "import": {
+        "types": "./dist/math/deltaAngle/index.d.ts",
+        "default": "./dist/math/deltaAngle/index.js"
+      },
+      "require": {
+        "types": "./dist/math/deltaAngle/index.d.cts",
+        "default": "./dist/math/deltaAngle/index.cjs"
+      }
+    },
+    "./math/erf": {
+      "import": {
+        "types": "./dist/math/erf/index.d.ts",
+        "default": "./dist/math/erf/index.js"
+      },
+      "require": {
+        "types": "./dist/math/erf/index.d.cts",
+        "default": "./dist/math/erf/index.cjs"
+      }
+    },
+    "./math/erfc": {
+      "import": {
+        "types": "./dist/math/erfc/index.d.ts",
+        "default": "./dist/math/erfc/index.js"
+      },
+      "require": {
+        "types": "./dist/math/erfc/index.d.cts",
+        "default": "./dist/math/erfc/index.cjs"
+      }
+    },
+    "./math/erfcx": {
+      "import": {
+        "types": "./dist/math/erfcx/index.d.ts",
+        "default": "./dist/math/erfcx/index.js"
+      },
+      "require": {
+        "types": "./dist/math/erfcx/index.d.cts",
+        "default": "./dist/math/erfcx/index.cjs"
+      }
+    },
+    "./math/frac": {
+      "import": {
+        "types": "./dist/math/frac/index.d.ts",
+        "default": "./dist/math/frac/index.js"
+      },
+      "require": {
+        "types": "./dist/math/frac/index.d.cts",
+        "default": "./dist/math/frac/index.cjs"
+      }
+    },
+    "./math/gamma": {
+      "import": {
+        "types": "./dist/math/gamma/index.d.ts",
+        "default": "./dist/math/gamma/index.js"
+      },
+      "require": {
+        "types": "./dist/math/gamma/index.d.cts",
+        "default": "./dist/math/gamma/index.cjs"
+      }
+    },
+    "./math/gcd": {
+      "import": {
+        "types": "./dist/math/gcd/index.d.ts",
+        "default": "./dist/math/gcd/index.js"
+      },
+      "require": {
+        "types": "./dist/math/gcd/index.d.cts",
+        "default": "./dist/math/gcd/index.cjs"
+      }
+    },
+    "./math/inRange": {
+      "import": {
+        "types": "./dist/math/inRange/index.d.ts",
+        "default": "./dist/math/inRange/index.js"
+      },
+      "require": {
+        "types": "./dist/math/inRange/index.d.cts",
+        "default": "./dist/math/inRange/index.cjs"
+      }
+    },
+    "./math/invmod": {
+      "import": {
+        "types": "./dist/math/invmod/index.d.ts",
+        "default": "./dist/math/invmod/index.js"
+      },
+      "require": {
+        "types": "./dist/math/invmod/index.d.cts",
+        "default": "./dist/math/invmod/index.cjs"
+      }
+    },
+    "./math/isPrime": {
+      "import": {
+        "types": "./dist/math/isPrime/index.d.ts",
+        "default": "./dist/math/isPrime/index.js"
+      },
+      "require": {
+        "types": "./dist/math/isPrime/index.d.cts",
+        "default": "./dist/math/isPrime/index.cjs"
+      }
+    },
+    "./math/lcm": {
+      "import": {
+        "types": "./dist/math/lcm/index.d.ts",
+        "default": "./dist/math/lcm/index.js"
+      },
+      "require": {
+        "types": "./dist/math/lcm/index.d.cts",
+        "default": "./dist/math/lcm/index.cjs"
+      }
+    },
+    "./math/lerp": {
+      "import": {
+        "types": "./dist/math/lerp/index.d.ts",
+        "default": "./dist/math/lerp/index.js"
+      },
+      "require": {
+        "types": "./dist/math/lerp/index.d.cts",
+        "default": "./dist/math/lerp/index.cjs"
+      }
+    },
+    "./math/lerpAngle": {
+      "import": {
+        "types": "./dist/math/lerpAngle/index.d.ts",
+        "default": "./dist/math/lerpAngle/index.js"
+      },
+      "require": {
+        "types": "./dist/math/lerpAngle/index.d.cts",
+        "default": "./dist/math/lerpAngle/index.cjs"
+      }
+    },
+    "./math/mod": {
+      "import": {
+        "types": "./dist/math/mod/index.d.ts",
+        "default": "./dist/math/mod/index.js"
+      },
+      "require": {
+        "types": "./dist/math/mod/index.d.cts",
+        "default": "./dist/math/mod/index.cjs"
+      }
+    },
+    "./math/moveTowards": {
+      "import": {
+        "types": "./dist/math/moveTowards/index.d.ts",
+        "default": "./dist/math/moveTowards/index.js"
+      },
+      "require": {
+        "types": "./dist/math/moveTowards/index.d.cts",
+        "default": "./dist/math/moveTowards/index.cjs"
+      }
+    },
+    "./math/moveTowardsAngle": {
+      "import": {
+        "types": "./dist/math/moveTowardsAngle/index.d.ts",
+        "default": "./dist/math/moveTowardsAngle/index.js"
+      },
+      "require": {
+        "types": "./dist/math/moveTowardsAngle/index.d.cts",
+        "default": "./dist/math/moveTowardsAngle/index.cjs"
+      }
+    },
+    "./math/pascalTriangle": {
+      "import": {
+        "types": "./dist/math/pascalTriangle/index.d.ts",
+        "default": "./dist/math/pascalTriangle/index.js"
+      },
+      "require": {
+        "types": "./dist/math/pascalTriangle/index.d.cts",
+        "default": "./dist/math/pascalTriangle/index.cjs"
+      }
+    },
+    "./math/randomInt": {
+      "import": {
+        "types": "./dist/math/randomInt/index.d.ts",
+        "default": "./dist/math/randomInt/index.js"
+      },
+      "require": {
+        "types": "./dist/math/randomInt/index.d.cts",
+        "default": "./dist/math/randomInt/index.cjs"
+      }
+    },
+    "./math/randomIntInclusive": {
+      "import": {
+        "types": "./dist/math/randomIntInclusive/index.d.ts",
+        "default": "./dist/math/randomIntInclusive/index.js"
+      },
+      "require": {
+        "types": "./dist/math/randomIntInclusive/index.d.cts",
+        "default": "./dist/math/randomIntInclusive/index.cjs"
+      }
+    },
+    "./math/remap": {
+      "import": {
+        "types": "./dist/math/remap/index.d.ts",
+        "default": "./dist/math/remap/index.js"
+      },
+      "require": {
+        "types": "./dist/math/remap/index.d.cts",
+        "default": "./dist/math/remap/index.cjs"
+      }
+    },
+    "./math/repeat": {
+      "import": {
+        "types": "./dist/math/repeat/index.d.ts",
+        "default": "./dist/math/repeat/index.js"
+      },
+      "require": {
+        "types": "./dist/math/repeat/index.d.cts",
+        "default": "./dist/math/repeat/index.cjs"
+      }
+    },
+    "./math/roundToPointFive": {
+      "import": {
+        "types": "./dist/math/roundToPointFive/index.d.ts",
+        "default": "./dist/math/roundToPointFive/index.js"
+      },
+      "require": {
+        "types": "./dist/math/roundToPointFive/index.d.cts",
+        "default": "./dist/math/roundToPointFive/index.cjs"
+      }
+    },
+    "./math/saturate": {
+      "import": {
+        "types": "./dist/math/saturate/index.d.ts",
+        "default": "./dist/math/saturate/index.js"
+      },
+      "require": {
+        "types": "./dist/math/saturate/index.d.cts",
+        "default": "./dist/math/saturate/index.cjs"
+      }
+    },
+    "./math/segmentRounding": {
+      "import": {
+        "types": "./dist/math/segmentRounding/index.d.ts",
+        "default": "./dist/math/segmentRounding/index.js"
+      },
+      "require": {
+        "types": "./dist/math/segmentRounding/index.d.cts",
+        "default": "./dist/math/segmentRounding/index.cjs"
+      }
+    },
+    "./math/toDegrees": {
+      "import": {
+        "types": "./dist/math/toDegrees/index.d.ts",
+        "default": "./dist/math/toDegrees/index.js"
+      },
+      "require": {
+        "types": "./dist/math/toDegrees/index.d.cts",
+        "default": "./dist/math/toDegrees/index.cjs"
+      }
+    },
+    "./math/toRadians": {
+      "import": {
+        "types": "./dist/math/toRadians/index.d.ts",
+        "default": "./dist/math/toRadians/index.js"
+      },
+      "require": {
+        "types": "./dist/math/toRadians/index.d.cts",
+        "default": "./dist/math/toRadians/index.cjs"
+      }
+    },
+    "./math/unlerp": {
+      "import": {
+        "types": "./dist/math/unlerp/index.d.ts",
+        "default": "./dist/math/unlerp/index.js"
+      },
+      "require": {
+        "types": "./dist/math/unlerp/index.d.cts",
+        "default": "./dist/math/unlerp/index.cjs"
+      }
+    },
+    "./math/xgcd": {
+      "import": {
+        "types": "./dist/math/xgcd/index.d.ts",
+        "default": "./dist/math/xgcd/index.js"
+      },
+      "require": {
+        "types": "./dist/math/xgcd/index.d.cts",
+        "default": "./dist/math/xgcd/index.cjs"
+      }
+    },
+    "./object/chain": {
+      "import": {
+        "types": "./dist/object/chain/index.d.ts",
+        "default": "./dist/object/chain/index.js"
+      },
+      "require": {
+        "types": "./dist/object/chain/index.d.cts",
+        "default": "./dist/object/chain/index.cjs"
+      }
+    },
+    "./object/clone": {
+      "import": {
+        "types": "./dist/object/clone/index.d.ts",
+        "default": "./dist/object/clone/index.js"
+      },
+      "require": {
+        "types": "./dist/object/clone/index.d.cts",
+        "default": "./dist/object/clone/index.cjs"
+      }
+    },
+    "./object/deepFreeze": {
+      "import": {
+        "types": "./dist/object/deepFreeze/index.d.ts",
+        "default": "./dist/object/deepFreeze/index.js"
+      },
+      "require": {
+        "types": "./dist/object/deepFreeze/index.d.cts",
+        "default": "./dist/object/deepFreeze/index.cjs"
+      }
+    },
+    "./object/deepMerge": {
+      "import": {
+        "types": "./dist/object/deepMerge/index.d.ts",
+        "default": "./dist/object/deepMerge/index.js"
+      },
+      "require": {
+        "types": "./dist/object/deepMerge/index.d.cts",
+        "default": "./dist/object/deepMerge/index.cjs"
+      }
+    },
+    "./object/deepUnfreeze": {
+      "import": {
+        "types": "./dist/object/deepUnfreeze/index.d.ts",
+        "default": "./dist/object/deepUnfreeze/index.js"
+      },
+      "require": {
+        "types": "./dist/object/deepUnfreeze/index.d.cts",
+        "default": "./dist/object/deepUnfreeze/index.cjs"
+      }
+    },
+    "./object/getHash": {
+      "import": {
+        "types": "./dist/object/getHash/index.d.ts",
+        "default": "./dist/object/getHash/index.js"
+      },
+      "require": {
+        "types": "./dist/object/getHash/index.d.cts",
+        "default": "./dist/object/getHash/index.cjs"
+      }
+    },
+    "./object/invert": {
+      "import": {
+        "types": "./dist/object/invert/index.d.ts",
+        "default": "./dist/object/invert/index.js"
+      },
+      "require": {
+        "types": "./dist/object/invert/index.d.cts",
+        "default": "./dist/object/invert/index.cjs"
+      }
+    },
+    "./object/isClass": {
+      "import": {
+        "types": "./dist/object/isClass/index.d.ts",
+        "default": "./dist/object/isClass/index.js"
+      },
+      "require": {
+        "types": "./dist/object/isClass/index.d.cts",
+        "default": "./dist/object/isClass/index.cjs"
+      }
+    },
+    "./object/isEqual": {
+      "import": {
+        "types": "./dist/object/isEqual/index.d.ts",
+        "default": "./dist/object/isEqual/index.js"
+      },
+      "require": {
+        "types": "./dist/object/isEqual/index.d.cts",
+        "default": "./dist/object/isEqual/index.cjs"
+      }
+    },
+    "./object/isPlainObject": {
+      "import": {
+        "types": "./dist/object/isPlainObject/index.d.ts",
+        "default": "./dist/object/isPlainObject/index.js"
+      },
+      "require": {
+        "types": "./dist/object/isPlainObject/index.d.cts",
+        "default": "./dist/object/isPlainObject/index.cjs"
+      }
+    },
+    "./object/omit": {
+      "import": {
+        "types": "./dist/object/omit/index.d.ts",
+        "default": "./dist/object/omit/index.js"
+      },
+      "require": {
+        "types": "./dist/object/omit/index.d.cts",
+        "default": "./dist/object/omit/index.cjs"
+      }
+    },
+    "./object/pick": {
+      "import": {
+        "types": "./dist/object/pick/index.d.ts",
+        "default": "./dist/object/pick/index.js"
+      },
+      "require": {
+        "types": "./dist/object/pick/index.d.cts",
+        "default": "./dist/object/pick/index.cjs"
+      }
+    },
+    "./object/renameKeys": {
+      "import": {
+        "types": "./dist/object/renameKeys/index.d.ts",
+        "default": "./dist/object/renameKeys/index.js"
+      },
+      "require": {
+        "types": "./dist/object/renameKeys/index.d.cts",
+        "default": "./dist/object/renameKeys/index.cjs"
+      }
+    },
+    "./object/select": {
+      "import": {
+        "types": "./dist/object/select/index.d.ts",
+        "default": "./dist/object/select/index.js"
+      },
+      "require": {
+        "types": "./dist/object/select/index.d.cts",
+        "default": "./dist/object/select/index.cjs"
+      }
+    },
+    "./object/shallowClone": {
+      "import": {
+        "types": "./dist/object/shallowClone/index.d.ts",
+        "default": "./dist/object/shallowClone/index.js"
+      },
+      "require": {
+        "types": "./dist/object/shallowClone/index.d.cts",
+        "default": "./dist/object/shallowClone/index.cjs"
+      }
+    },
+    "./polyfill/array/aggregate/install": {
+      "import": {
+        "types": "./dist/polyfill/array/aggregate/install.d.ts",
+        "default": "./dist/polyfill/array/aggregate/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/aggregate/install.d.cts",
+        "default": "./dist/polyfill/array/aggregate/install.cjs"
+      }
+    },
+    "./polyfill/array/avg/install": {
+      "import": {
+        "types": "./dist/polyfill/array/avg/install.d.ts",
+        "default": "./dist/polyfill/array/avg/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/avg/install.d.cts",
+        "default": "./dist/polyfill/array/avg/install.cjs"
+      }
+    },
+    "./polyfill/array/avgAbsDevAroundMedian/install": {
+      "import": {
+        "types": "./dist/polyfill/array/avgAbsDevAroundMedian/install.d.ts",
+        "default": "./dist/polyfill/array/avgAbsDevAroundMedian/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/avgAbsDevAroundMedian/install.d.cts",
+        "default": "./dist/polyfill/array/avgAbsDevAroundMedian/install.cjs"
+      }
+    },
+    "./polyfill/array/batch/install": {
+      "import": {
+        "types": "./dist/polyfill/array/batch/install.d.ts",
+        "default": "./dist/polyfill/array/batch/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/batch/install.d.cts",
+        "default": "./dist/polyfill/array/batch/install.cjs"
+      }
+    },
+    "./polyfill/array/cartesianProduct/install": {
+      "import": {
+        "types": "./dist/polyfill/array/cartesianProduct/install.d.ts",
+        "default": "./dist/polyfill/array/cartesianProduct/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/cartesianProduct/install.d.cts",
+        "default": "./dist/polyfill/array/cartesianProduct/install.cjs"
+      }
+    },
+    "./polyfill/array/chunk/install": {
+      "import": {
+        "types": "./dist/polyfill/array/chunk/install.d.ts",
+        "default": "./dist/polyfill/array/chunk/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/chunk/install.d.cts",
+        "default": "./dist/polyfill/array/chunk/install.cjs"
+      }
+    },
+    "./polyfill/array/chunkWhile/install": {
+      "import": {
+        "types": "./dist/polyfill/array/chunkWhile/install.d.ts",
+        "default": "./dist/polyfill/array/chunkWhile/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/chunkWhile/install.d.cts",
+        "default": "./dist/polyfill/array/chunkWhile/install.cjs"
+      }
+    },
+    "./polyfill/array/cn/install": {
+      "import": {
+        "types": "./dist/polyfill/array/cn/install.d.ts",
+        "default": "./dist/polyfill/array/cn/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/cn/install.d.cts",
+        "default": "./dist/polyfill/array/cn/install.cjs"
+      }
+    },
+    "./polyfill/array/countBy/install": {
+      "import": {
+        "types": "./dist/polyfill/array/countBy/install.d.ts",
+        "default": "./dist/polyfill/array/countBy/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/countBy/install.d.cts",
+        "default": "./dist/polyfill/array/countBy/install.cjs"
+      }
+    },
+    "./polyfill/array/crossJoin/install": {
+      "import": {
+        "types": "./dist/polyfill/array/crossJoin/install.d.ts",
+        "default": "./dist/polyfill/array/crossJoin/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/crossJoin/install.d.cts",
+        "default": "./dist/polyfill/array/crossJoin/install.cjs"
+      }
+    },
+    "./polyfill/array/cumulativeAverage/install": {
+      "import": {
+        "types": "./dist/polyfill/array/cumulativeAverage/install.d.ts",
+        "default": "./dist/polyfill/array/cumulativeAverage/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/cumulativeAverage/install.d.cts",
+        "default": "./dist/polyfill/array/cumulativeAverage/install.cjs"
+      }
+    },
+    "./polyfill/array/difference/install": {
+      "import": {
+        "types": "./dist/polyfill/array/difference/install.d.ts",
+        "default": "./dist/polyfill/array/difference/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/difference/install.d.cts",
+        "default": "./dist/polyfill/array/difference/install.cjs"
+      }
+    },
+    "./polyfill/array/exponentialMovingAverage/install": {
+      "import": {
+        "types": "./dist/polyfill/array/exponentialMovingAverage/install.d.ts",
+        "default": "./dist/polyfill/array/exponentialMovingAverage/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/exponentialMovingAverage/install.d.cts",
+        "default": "./dist/polyfill/array/exponentialMovingAverage/install.cjs"
+      }
+    },
+    "./polyfill/array/filterAsync/install": {
+      "import": {
+        "types": "./dist/polyfill/array/filterAsync/install.d.ts",
+        "default": "./dist/polyfill/array/filterAsync/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/filterAsync/install.d.cts",
+        "default": "./dist/polyfill/array/filterAsync/install.cjs"
+      }
+    },
+    "./polyfill/array/filterMap/install": {
+      "import": {
+        "types": "./dist/polyfill/array/filterMap/install.d.ts",
+        "default": "./dist/polyfill/array/filterMap/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/filterMap/install.d.cts",
+        "default": "./dist/polyfill/array/filterMap/install.cjs"
+      }
+    },
+    "./polyfill/array/forEachAsync/install": {
+      "import": {
+        "types": "./dist/polyfill/array/forEachAsync/install.d.ts",
+        "default": "./dist/polyfill/array/forEachAsync/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/forEachAsync/install.d.cts",
+        "default": "./dist/polyfill/array/forEachAsync/install.cjs"
+      }
+    },
+    "./polyfill/array/forItems/install": {
+      "import": {
+        "types": "./dist/polyfill/array/forItems/install.d.ts",
+        "default": "./dist/polyfill/array/forItems/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/forItems/install.d.cts",
+        "default": "./dist/polyfill/array/forItems/install.cjs"
+      }
+    },
+    "./polyfill/array/forItemsReverse/install": {
+      "import": {
+        "types": "./dist/polyfill/array/forItemsReverse/install.d.ts",
+        "default": "./dist/polyfill/array/forItemsReverse/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/forItemsReverse/install.d.cts",
+        "default": "./dist/polyfill/array/forItemsReverse/install.cjs"
+      }
+    },
+    "./polyfill/array/fullJoin/install": {
+      "import": {
+        "types": "./dist/polyfill/array/fullJoin/install.d.ts",
+        "default": "./dist/polyfill/array/fullJoin/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/fullJoin/install.d.cts",
+        "default": "./dist/polyfill/array/fullJoin/install.cjs"
+      }
+    },
+    "./polyfill/array/generalizedMean/install": {
+      "import": {
+        "types": "./dist/polyfill/array/generalizedMean/install.d.ts",
+        "default": "./dist/polyfill/array/generalizedMean/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/generalizedMean/install.d.cts",
+        "default": "./dist/polyfill/array/generalizedMean/install.cjs"
+      }
+    },
+    "./polyfill/array/geometricMean/install": {
+      "import": {
+        "types": "./dist/polyfill/array/geometricMean/install.d.ts",
+        "default": "./dist/polyfill/array/geometricMean/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/geometricMean/install.d.cts",
+        "default": "./dist/polyfill/array/geometricMean/install.cjs"
+      }
+    },
+    "./polyfill/array/groupBy/install": {
+      "import": {
+        "types": "./dist/polyfill/array/groupBy/install.d.ts",
+        "default": "./dist/polyfill/array/groupBy/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/groupBy/install.d.cts",
+        "default": "./dist/polyfill/array/groupBy/install.cjs"
+      }
+    },
+    "./polyfill/array/harmonicMean/install": {
+      "import": {
+        "types": "./dist/polyfill/array/harmonicMean/install.d.ts",
+        "default": "./dist/polyfill/array/harmonicMean/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/harmonicMean/install.d.cts",
+        "default": "./dist/polyfill/array/harmonicMean/install.cjs"
+      }
+    },
+    "./polyfill/array/innerJoin/install": {
+      "import": {
+        "types": "./dist/polyfill/array/innerJoin/install.d.ts",
+        "default": "./dist/polyfill/array/innerJoin/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/innerJoin/install.d.cts",
+        "default": "./dist/polyfill/array/innerJoin/install.cjs"
+      }
+    },
+    "./polyfill/array/install": {
+      "import": {
+        "types": "./dist/polyfill/array/install.d.ts",
+        "default": "./dist/polyfill/array/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/install.d.cts",
+        "default": "./dist/polyfill/array/install.cjs"
+      }
+    },
+    "./polyfill/array/intersection/install": {
+      "import": {
+        "types": "./dist/polyfill/array/intersection/install.d.ts",
+        "default": "./dist/polyfill/array/intersection/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/intersection/install.d.cts",
+        "default": "./dist/polyfill/array/intersection/install.cjs"
+      }
+    },
+    "./polyfill/array/leftJoin/install": {
+      "import": {
+        "types": "./dist/polyfill/array/leftJoin/install.d.ts",
+        "default": "./dist/polyfill/array/leftJoin/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/leftJoin/install.d.cts",
+        "default": "./dist/polyfill/array/leftJoin/install.cjs"
+      }
+    },
+    "./polyfill/array/mapAsync/install": {
+      "import": {
+        "types": "./dist/polyfill/array/mapAsync/install.d.ts",
+        "default": "./dist/polyfill/array/mapAsync/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/mapAsync/install.d.cts",
+        "default": "./dist/polyfill/array/mapAsync/install.cjs"
+      }
+    },
+    "./polyfill/array/mapAsyncSettled/install": {
+      "import": {
+        "types": "./dist/polyfill/array/mapAsyncSettled/install.d.ts",
+        "default": "./dist/polyfill/array/mapAsyncSettled/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/mapAsyncSettled/install.d.cts",
+        "default": "./dist/polyfill/array/mapAsyncSettled/install.cjs"
+      }
+    },
+    "./polyfill/array/max/install": {
+      "import": {
+        "types": "./dist/polyfill/array/max/install.d.ts",
+        "default": "./dist/polyfill/array/max/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/max/install.d.cts",
+        "default": "./dist/polyfill/array/max/install.cjs"
+      }
+    },
+    "./polyfill/array/meanAbsoluteDeviation/install": {
+      "import": {
+        "types": "./dist/polyfill/array/meanAbsoluteDeviation/install.d.ts",
+        "default": "./dist/polyfill/array/meanAbsoluteDeviation/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/meanAbsoluteDeviation/install.d.cts",
+        "default": "./dist/polyfill/array/meanAbsoluteDeviation/install.cjs"
+      }
+    },
+    "./polyfill/array/median/install": {
+      "import": {
+        "types": "./dist/polyfill/array/median/install.d.ts",
+        "default": "./dist/polyfill/array/median/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/median/install.d.cts",
+        "default": "./dist/polyfill/array/median/install.cjs"
+      }
+    },
+    "./polyfill/array/medianAbsoluteDeviation/install": {
+      "import": {
+        "types": "./dist/polyfill/array/medianAbsoluteDeviation/install.d.ts",
+        "default": "./dist/polyfill/array/medianAbsoluteDeviation/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/medianAbsoluteDeviation/install.d.cts",
+        "default": "./dist/polyfill/array/medianAbsoluteDeviation/install.cjs"
+      }
+    },
+    "./polyfill/array/medianAbsoluteDeviationNormalized/install": {
+      "import": {
+        "types": "./dist/polyfill/array/medianAbsoluteDeviationNormalized/install.d.ts",
+        "default": "./dist/polyfill/array/medianAbsoluteDeviationNormalized/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/medianAbsoluteDeviationNormalized/install.d.cts",
+        "default": "./dist/polyfill/array/medianAbsoluteDeviationNormalized/install.cjs"
+      }
+    },
+    "./polyfill/array/min/install": {
+      "import": {
+        "types": "./dist/polyfill/array/min/install.d.ts",
+        "default": "./dist/polyfill/array/min/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/min/install.d.cts",
+        "default": "./dist/polyfill/array/min/install.cjs"
+      }
+    },
+    "./polyfill/array/mode/install": {
+      "import": {
+        "types": "./dist/polyfill/array/mode/install.d.ts",
+        "default": "./dist/polyfill/array/mode/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/mode/install.d.cts",
+        "default": "./dist/polyfill/array/mode/install.cjs"
+      }
+    },
+    "./polyfill/array/move/install": {
+      "import": {
+        "types": "./dist/polyfill/array/move/install.d.ts",
+        "default": "./dist/polyfill/array/move/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/move/install.d.cts",
+        "default": "./dist/polyfill/array/move/install.cjs"
+      }
+    },
+    "./polyfill/array/nth/install": {
+      "import": {
+        "types": "./dist/polyfill/array/nth/install.d.ts",
+        "default": "./dist/polyfill/array/nth/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/nth/install.d.cts",
+        "default": "./dist/polyfill/array/nth/install.cjs"
+      }
+    },
+    "./polyfill/array/orderBy/install": {
+      "import": {
+        "types": "./dist/polyfill/array/orderBy/install.d.ts",
+        "default": "./dist/polyfill/array/orderBy/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/orderBy/install.d.cts",
+        "default": "./dist/polyfill/array/orderBy/install.cjs"
+      }
+    },
+    "./polyfill/array/partition/install": {
+      "import": {
+        "types": "./dist/polyfill/array/partition/install.d.ts",
+        "default": "./dist/polyfill/array/partition/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/partition/install.d.cts",
+        "default": "./dist/polyfill/array/partition/install.cjs"
+      }
+    },
+    "./polyfill/array/pivot/install": {
+      "import": {
+        "types": "./dist/polyfill/array/pivot/install.d.ts",
+        "default": "./dist/polyfill/array/pivot/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/pivot/install.d.cts",
+        "default": "./dist/polyfill/array/pivot/install.cjs"
+      }
+    },
+    "./polyfill/array/pluck/install": {
+      "import": {
+        "types": "./dist/polyfill/array/pluck/install.d.ts",
+        "default": "./dist/polyfill/array/pluck/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/pluck/install.d.cts",
+        "default": "./dist/polyfill/array/pluck/install.cjs"
+      }
+    },
+    "./polyfill/array/pool/install": {
+      "import": {
+        "types": "./dist/polyfill/array/pool/install.d.ts",
+        "default": "./dist/polyfill/array/pool/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/pool/install.d.cts",
+        "default": "./dist/polyfill/array/pool/install.cjs"
+      }
+    },
+    "./polyfill/array/product/install": {
+      "import": {
+        "types": "./dist/polyfill/array/product/install.d.ts",
+        "default": "./dist/polyfill/array/product/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/product/install.d.cts",
+        "default": "./dist/polyfill/array/product/install.cjs"
+      }
+    },
+    "./polyfill/array/project/install": {
+      "import": {
+        "types": "./dist/polyfill/array/project/install.d.ts",
+        "default": "./dist/polyfill/array/project/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/project/install.d.cts",
+        "default": "./dist/polyfill/array/project/install.cjs"
+      }
+    },
+    "./polyfill/array/quantile/install": {
+      "import": {
+        "types": "./dist/polyfill/array/quantile/install.d.ts",
+        "default": "./dist/polyfill/array/quantile/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/quantile/install.d.cts",
+        "default": "./dist/polyfill/array/quantile/install.cjs"
+      }
+    },
+    "./polyfill/array/query/install": {
+      "import": {
+        "types": "./dist/polyfill/array/query/install.d.ts",
+        "default": "./dist/polyfill/array/query/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/query/install.d.cts",
+        "default": "./dist/polyfill/array/query/install.cjs"
+      }
+    },
+    "./polyfill/array/range/install": {
+      "import": {
+        "types": "./dist/polyfill/array/range/install.d.ts",
+        "default": "./dist/polyfill/array/range/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/range/install.d.cts",
+        "default": "./dist/polyfill/array/range/install.cjs"
+      }
+    },
+    "./polyfill/array/reduceAsync/install": {
+      "import": {
+        "types": "./dist/polyfill/array/reduceAsync/install.d.ts",
+        "default": "./dist/polyfill/array/reduceAsync/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/reduceAsync/install.d.cts",
+        "default": "./dist/polyfill/array/reduceAsync/install.cjs"
+      }
+    },
+    "./polyfill/array/rightJoin/install": {
+      "import": {
+        "types": "./dist/polyfill/array/rightJoin/install.d.ts",
+        "default": "./dist/polyfill/array/rightJoin/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/rightJoin/install.d.cts",
+        "default": "./dist/polyfill/array/rightJoin/install.cjs"
+      }
+    },
+    "./polyfill/array/rootMeanSquare/install": {
+      "import": {
+        "types": "./dist/polyfill/array/rootMeanSquare/install.d.ts",
+        "default": "./dist/polyfill/array/rootMeanSquare/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/rootMeanSquare/install.d.cts",
+        "default": "./dist/polyfill/array/rootMeanSquare/install.cjs"
+      }
+    },
+    "./polyfill/array/sample/install": {
+      "import": {
+        "types": "./dist/polyfill/array/sample/install.d.ts",
+        "default": "./dist/polyfill/array/sample/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/sample/install.d.cts",
+        "default": "./dist/polyfill/array/sample/install.cjs"
+      }
+    },
+    "./polyfill/array/sampleSize/install": {
+      "import": {
+        "types": "./dist/polyfill/array/sampleSize/install.d.ts",
+        "default": "./dist/polyfill/array/sampleSize/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/sampleSize/install.d.cts",
+        "default": "./dist/polyfill/array/sampleSize/install.cjs"
+      }
+    },
+    "./polyfill/array/shuffle/install": {
+      "import": {
+        "types": "./dist/polyfill/array/shuffle/install.d.ts",
+        "default": "./dist/polyfill/array/shuffle/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/shuffle/install.d.cts",
+        "default": "./dist/polyfill/array/shuffle/install.cjs"
+      }
+    },
+    "./polyfill/array/simpleMovingAverage/install": {
+      "import": {
+        "types": "./dist/polyfill/array/simpleMovingAverage/install.d.ts",
+        "default": "./dist/polyfill/array/simpleMovingAverage/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/simpleMovingAverage/install.d.cts",
+        "default": "./dist/polyfill/array/simpleMovingAverage/install.cjs"
+      }
+    },
+    "./polyfill/array/standardDeviation/install": {
+      "import": {
+        "types": "./dist/polyfill/array/standardDeviation/install.d.ts",
+        "default": "./dist/polyfill/array/standardDeviation/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/standardDeviation/install.d.cts",
+        "default": "./dist/polyfill/array/standardDeviation/install.cjs"
+      }
+    },
+    "./polyfill/array/sum/install": {
+      "import": {
+        "types": "./dist/polyfill/array/sum/install.d.ts",
+        "default": "./dist/polyfill/array/sum/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/sum/install.d.cts",
+        "default": "./dist/polyfill/array/sum/install.cjs"
+      }
+    },
+    "./polyfill/array/swap/install": {
+      "import": {
+        "types": "./dist/polyfill/array/swap/install.d.ts",
+        "default": "./dist/polyfill/array/swap/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/swap/install.d.cts",
+        "default": "./dist/polyfill/array/swap/install.cjs"
+      }
+    },
+    "./polyfill/array/unique/install": {
+      "import": {
+        "types": "./dist/polyfill/array/unique/install.d.ts",
+        "default": "./dist/polyfill/array/unique/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/unique/install.d.cts",
+        "default": "./dist/polyfill/array/unique/install.cjs"
+      }
+    },
+    "./polyfill/array/unpivot/install": {
+      "import": {
+        "types": "./dist/polyfill/array/unpivot/install.d.ts",
+        "default": "./dist/polyfill/array/unpivot/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/unpivot/install.d.cts",
+        "default": "./dist/polyfill/array/unpivot/install.cjs"
+      }
+    },
+    "./polyfill/array/unzip/install": {
+      "import": {
+        "types": "./dist/polyfill/array/unzip/install.d.ts",
+        "default": "./dist/polyfill/array/unzip/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/unzip/install.d.cts",
+        "default": "./dist/polyfill/array/unzip/install.cjs"
+      }
+    },
+    "./polyfill/array/variance/install": {
+      "import": {
+        "types": "./dist/polyfill/array/variance/install.d.ts",
+        "default": "./dist/polyfill/array/variance/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/variance/install.d.cts",
+        "default": "./dist/polyfill/array/variance/install.cjs"
+      }
+    },
+    "./polyfill/array/weightedArithmeticMean/install": {
+      "import": {
+        "types": "./dist/polyfill/array/weightedArithmeticMean/install.d.ts",
+        "default": "./dist/polyfill/array/weightedArithmeticMean/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/weightedArithmeticMean/install.d.cts",
+        "default": "./dist/polyfill/array/weightedArithmeticMean/install.cjs"
+      }
+    },
+    "./polyfill/array/weightedExponentialMovingAverage/install": {
+      "import": {
+        "types": "./dist/polyfill/array/weightedExponentialMovingAverage/install.d.ts",
+        "default": "./dist/polyfill/array/weightedExponentialMovingAverage/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/weightedExponentialMovingAverage/install.d.cts",
+        "default": "./dist/polyfill/array/weightedExponentialMovingAverage/install.cjs"
+      }
+    },
+    "./polyfill/array/weightedGeneralizedMean/install": {
+      "import": {
+        "types": "./dist/polyfill/array/weightedGeneralizedMean/install.d.ts",
+        "default": "./dist/polyfill/array/weightedGeneralizedMean/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/weightedGeneralizedMean/install.d.cts",
+        "default": "./dist/polyfill/array/weightedGeneralizedMean/install.cjs"
+      }
+    },
+    "./polyfill/array/weightedGeometricMean/install": {
+      "import": {
+        "types": "./dist/polyfill/array/weightedGeometricMean/install.d.ts",
+        "default": "./dist/polyfill/array/weightedGeometricMean/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/weightedGeometricMean/install.d.cts",
+        "default": "./dist/polyfill/array/weightedGeometricMean/install.cjs"
+      }
+    },
+    "./polyfill/array/weightedHarmonicMean/install": {
+      "import": {
+        "types": "./dist/polyfill/array/weightedHarmonicMean/install.d.ts",
+        "default": "./dist/polyfill/array/weightedHarmonicMean/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/weightedHarmonicMean/install.d.cts",
+        "default": "./dist/polyfill/array/weightedHarmonicMean/install.cjs"
+      }
+    },
+    "./polyfill/array/weightedMovingAverage/install": {
+      "import": {
+        "types": "./dist/polyfill/array/weightedMovingAverage/install.d.ts",
+        "default": "./dist/polyfill/array/weightedMovingAverage/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/weightedMovingAverage/install.d.cts",
+        "default": "./dist/polyfill/array/weightedMovingAverage/install.cjs"
+      }
+    },
+    "./polyfill/array/weightedNormalizedMean/install": {
+      "import": {
+        "types": "./dist/polyfill/array/weightedNormalizedMean/install.d.ts",
+        "default": "./dist/polyfill/array/weightedNormalizedMean/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/weightedNormalizedMean/install.d.cts",
+        "default": "./dist/polyfill/array/weightedNormalizedMean/install.cjs"
+      }
+    },
+    "./polyfill/array/weightedRootMeanSquare/install": {
+      "import": {
+        "types": "./dist/polyfill/array/weightedRootMeanSquare/install.d.ts",
+        "default": "./dist/polyfill/array/weightedRootMeanSquare/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/weightedRootMeanSquare/install.d.cts",
+        "default": "./dist/polyfill/array/weightedRootMeanSquare/install.cjs"
+      }
+    },
+    "./polyfill/array/window/install": {
+      "import": {
+        "types": "./dist/polyfill/array/window/install.d.ts",
+        "default": "./dist/polyfill/array/window/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/window/install.d.cts",
+        "default": "./dist/polyfill/array/window/install.cjs"
+      }
+    },
+    "./polyfill/array/xor/install": {
+      "import": {
+        "types": "./dist/polyfill/array/xor/install.d.ts",
+        "default": "./dist/polyfill/array/xor/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/xor/install.d.cts",
+        "default": "./dist/polyfill/array/xor/install.cjs"
+      }
+    },
+    "./polyfill/array/zip/install": {
+      "import": {
+        "types": "./dist/polyfill/array/zip/install.d.ts",
+        "default": "./dist/polyfill/array/zip/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/zip/install.d.cts",
+        "default": "./dist/polyfill/array/zip/install.cjs"
+      }
+    },
+    "./polyfill/array/zipWith/install": {
+      "import": {
+        "types": "./dist/polyfill/array/zipWith/install.d.ts",
+        "default": "./dist/polyfill/array/zipWith/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/array/zipWith/install.d.cts",
+        "default": "./dist/polyfill/array/zipWith/install.cjs"
+      }
+    },
+    "./polyfill/date/install": {
+      "import": {
+        "types": "./dist/polyfill/date/install.d.ts",
+        "default": "./dist/polyfill/date/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/date/install.d.cts",
+        "default": "./dist/polyfill/date/install.cjs"
+      }
+    },
+    "./polyfill/date/isDate/install": {
+      "import": {
+        "types": "./dist/polyfill/date/isDate/install.d.ts",
+        "default": "./dist/polyfill/date/isDate/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/date/isDate/install.d.cts",
+        "default": "./dist/polyfill/date/isDate/install.cjs"
+      }
+    },
+    "./polyfill/date/isLeapYear/install": {
+      "import": {
+        "types": "./dist/polyfill/date/isLeapYear/install.d.ts",
+        "default": "./dist/polyfill/date/isLeapYear/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/date/isLeapYear/install.d.cts",
+        "default": "./dist/polyfill/date/isLeapYear/install.cjs"
+      }
+    },
+    "./polyfill/function/after/install": {
+      "import": {
+        "types": "./dist/polyfill/function/after/install.d.ts",
+        "default": "./dist/polyfill/function/after/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/after/install.d.cts",
+        "default": "./dist/polyfill/function/after/install.cjs"
+      }
+    },
+    "./polyfill/function/all/install": {
+      "import": {
+        "types": "./dist/polyfill/function/all/install.d.ts",
+        "default": "./dist/polyfill/function/all/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/all/install.d.cts",
+        "default": "./dist/polyfill/function/all/install.cjs"
+      }
+    },
+    "./polyfill/function/andThen/install": {
+      "import": {
+        "types": "./dist/polyfill/function/andThen/install.d.ts",
+        "default": "./dist/polyfill/function/andThen/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/andThen/install.d.cts",
+        "default": "./dist/polyfill/function/andThen/install.cjs"
+      }
+    },
+    "./polyfill/function/atLeastOne/install": {
+      "import": {
+        "types": "./dist/polyfill/function/atLeastOne/install.d.ts",
+        "default": "./dist/polyfill/function/atLeastOne/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/atLeastOne/install.d.cts",
+        "default": "./dist/polyfill/function/atLeastOne/install.cjs"
+      }
+    },
+    "./polyfill/function/atMostOne/install": {
+      "import": {
+        "types": "./dist/polyfill/function/atMostOne/install.d.ts",
+        "default": "./dist/polyfill/function/atMostOne/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/atMostOne/install.d.cts",
+        "default": "./dist/polyfill/function/atMostOne/install.cjs"
+      }
+    },
+    "./polyfill/function/before/install": {
+      "import": {
+        "types": "./dist/polyfill/function/before/install.d.ts",
+        "default": "./dist/polyfill/function/before/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/before/install.d.cts",
+        "default": "./dist/polyfill/function/before/install.cjs"
+      }
+    },
+    "./polyfill/function/bind/install": {
+      "import": {
+        "types": "./dist/polyfill/function/bind/install.d.ts",
+        "default": "./dist/polyfill/function/bind/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/bind/install.d.cts",
+        "default": "./dist/polyfill/function/bind/install.cjs"
+      }
+    },
+    "./polyfill/function/constant/install": {
+      "import": {
+        "types": "./dist/polyfill/function/constant/install.d.ts",
+        "default": "./dist/polyfill/function/constant/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/constant/install.d.cts",
+        "default": "./dist/polyfill/function/constant/install.cjs"
+      }
+    },
+    "./polyfill/function/curry/install": {
+      "import": {
+        "types": "./dist/polyfill/function/curry/install.d.ts",
+        "default": "./dist/polyfill/function/curry/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/curry/install.d.cts",
+        "default": "./dist/polyfill/function/curry/install.cjs"
+      }
+    },
+    "./polyfill/function/debounce/install": {
+      "import": {
+        "types": "./dist/polyfill/function/debounce/install.d.ts",
+        "default": "./dist/polyfill/function/debounce/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/debounce/install.d.cts",
+        "default": "./dist/polyfill/function/debounce/install.cjs"
+      }
+    },
+    "./polyfill/function/exactlyN/install": {
+      "import": {
+        "types": "./dist/polyfill/function/exactlyN/install.d.ts",
+        "default": "./dist/polyfill/function/exactlyN/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/exactlyN/install.d.cts",
+        "default": "./dist/polyfill/function/exactlyN/install.cjs"
+      }
+    },
+    "./polyfill/function/exactlyOne/install": {
+      "import": {
+        "types": "./dist/polyfill/function/exactlyOne/install.d.ts",
+        "default": "./dist/polyfill/function/exactlyOne/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/exactlyOne/install.d.cts",
+        "default": "./dist/polyfill/function/exactlyOne/install.cjs"
+      }
+    },
+    "./polyfill/function/flip/install": {
+      "import": {
+        "types": "./dist/polyfill/function/flip/install.d.ts",
+        "default": "./dist/polyfill/function/flip/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/flip/install.d.cts",
+        "default": "./dist/polyfill/function/flip/install.cjs"
+      }
+    },
+    "./polyfill/function/guard/install": {
+      "import": {
+        "types": "./dist/polyfill/function/guard/install.d.ts",
+        "default": "./dist/polyfill/function/guard/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/guard/install.d.cts",
+        "default": "./dist/polyfill/function/guard/install.cjs"
+      }
+    },
+    "./polyfill/function/guardAsync/install": {
+      "import": {
+        "types": "./dist/polyfill/function/guardAsync/install.d.ts",
+        "default": "./dist/polyfill/function/guardAsync/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/guardAsync/install.d.cts",
+        "default": "./dist/polyfill/function/guardAsync/install.cjs"
+      }
+    },
+    "./polyfill/function/ifElse/install": {
+      "import": {
+        "types": "./dist/polyfill/function/ifElse/install.d.ts",
+        "default": "./dist/polyfill/function/ifElse/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/ifElse/install.d.cts",
+        "default": "./dist/polyfill/function/ifElse/install.cjs"
+      }
+    },
+    "./polyfill/function/install": {
+      "import": {
+        "types": "./dist/polyfill/function/install.d.ts",
+        "default": "./dist/polyfill/function/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/install.d.cts",
+        "default": "./dist/polyfill/function/install.cjs"
+      }
+    },
+    "./polyfill/function/isFunction/install": {
+      "import": {
+        "types": "./dist/polyfill/function/isFunction/install.d.ts",
+        "default": "./dist/polyfill/function/isFunction/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/isFunction/install.d.cts",
+        "default": "./dist/polyfill/function/isFunction/install.cjs"
+      }
+    },
+    "./polyfill/function/isPromise/install": {
+      "import": {
+        "types": "./dist/polyfill/function/isPromise/install.d.ts",
+        "default": "./dist/polyfill/function/isPromise/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/isPromise/install.d.cts",
+        "default": "./dist/polyfill/function/isPromise/install.cjs"
+      }
+    },
+    "./polyfill/function/isPromiseLike/install": {
+      "import": {
+        "types": "./dist/polyfill/function/isPromiseLike/install.d.ts",
+        "default": "./dist/polyfill/function/isPromiseLike/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/isPromiseLike/install.d.cts",
+        "default": "./dist/polyfill/function/isPromiseLike/install.cjs"
+      }
+    },
+    "./polyfill/function/match/install": {
+      "import": {
+        "types": "./dist/polyfill/function/match/install.d.ts",
+        "default": "./dist/polyfill/function/match/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/match/install.d.cts",
+        "default": "./dist/polyfill/function/match/install.cjs"
+      }
+    },
+    "./polyfill/function/memoize/install": {
+      "import": {
+        "types": "./dist/polyfill/function/memoize/install.d.ts",
+        "default": "./dist/polyfill/function/memoize/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/memoize/install.d.cts",
+        "default": "./dist/polyfill/function/memoize/install.cjs"
+      }
+    },
+    "./polyfill/function/memoizeAsync/install": {
+      "import": {
+        "types": "./dist/polyfill/function/memoizeAsync/install.d.ts",
+        "default": "./dist/polyfill/function/memoizeAsync/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/memoizeAsync/install.d.cts",
+        "default": "./dist/polyfill/function/memoizeAsync/install.cjs"
+      }
+    },
+    "./polyfill/function/noop/install": {
+      "import": {
+        "types": "./dist/polyfill/function/noop/install.d.ts",
+        "default": "./dist/polyfill/function/noop/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/noop/install.d.cts",
+        "default": "./dist/polyfill/function/noop/install.cjs"
+      }
+    },
+    "./polyfill/function/not/install": {
+      "import": {
+        "types": "./dist/polyfill/function/not/install.d.ts",
+        "default": "./dist/polyfill/function/not/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/not/install.d.cts",
+        "default": "./dist/polyfill/function/not/install.cjs"
+      }
+    },
+    "./polyfill/function/once/install": {
+      "import": {
+        "types": "./dist/polyfill/function/once/install.d.ts",
+        "default": "./dist/polyfill/function/once/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/once/install.d.cts",
+        "default": "./dist/polyfill/function/once/install.cjs"
+      }
+    },
+    "./polyfill/function/onlyIf/install": {
+      "import": {
+        "types": "./dist/polyfill/function/onlyIf/install.d.ts",
+        "default": "./dist/polyfill/function/onlyIf/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/onlyIf/install.d.cts",
+        "default": "./dist/polyfill/function/onlyIf/install.cjs"
+      }
+    },
+    "./polyfill/function/or/install": {
+      "import": {
+        "types": "./dist/polyfill/function/or/install.d.ts",
+        "default": "./dist/polyfill/function/or/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/or/install.d.cts",
+        "default": "./dist/polyfill/function/or/install.cjs"
+      }
+    },
+    "./polyfill/function/parallel/install": {
+      "import": {
+        "types": "./dist/polyfill/function/parallel/install.d.ts",
+        "default": "./dist/polyfill/function/parallel/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/parallel/install.d.cts",
+        "default": "./dist/polyfill/function/parallel/install.cjs"
+      }
+    },
+    "./polyfill/function/partial/install": {
+      "import": {
+        "types": "./dist/polyfill/function/partial/install.d.ts",
+        "default": "./dist/polyfill/function/partial/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/partial/install.d.cts",
+        "default": "./dist/polyfill/function/partial/install.cjs"
+      }
+    },
+    "./polyfill/function/pipe/install": {
+      "import": {
+        "types": "./dist/polyfill/function/pipe/install.d.ts",
+        "default": "./dist/polyfill/function/pipe/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/pipe/install.d.cts",
+        "default": "./dist/polyfill/function/pipe/install.cjs"
+      }
+    },
+    "./polyfill/function/pipeAsync/install": {
+      "import": {
+        "types": "./dist/polyfill/function/pipeAsync/install.d.ts",
+        "default": "./dist/polyfill/function/pipeAsync/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/pipeAsync/install.d.cts",
+        "default": "./dist/polyfill/function/pipeAsync/install.cjs"
+      }
+    },
+    "./polyfill/function/repeat/install": {
+      "import": {
+        "types": "./dist/polyfill/function/repeat/install.d.ts",
+        "default": "./dist/polyfill/function/repeat/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/repeat/install.d.cts",
+        "default": "./dist/polyfill/function/repeat/install.cjs"
+      }
+    },
+    "./polyfill/function/retry/install": {
+      "import": {
+        "types": "./dist/polyfill/function/retry/install.d.ts",
+        "default": "./dist/polyfill/function/retry/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/retry/install.d.cts",
+        "default": "./dist/polyfill/function/retry/install.cjs"
+      }
+    },
+    "./polyfill/function/retryUntil/install": {
+      "import": {
+        "types": "./dist/polyfill/function/retryUntil/install.d.ts",
+        "default": "./dist/polyfill/function/retryUntil/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/retryUntil/install.d.cts",
+        "default": "./dist/polyfill/function/retryUntil/install.cjs"
+      }
+    },
+    "./polyfill/function/sequence/install": {
+      "import": {
+        "types": "./dist/polyfill/function/sequence/install.d.ts",
+        "default": "./dist/polyfill/function/sequence/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/sequence/install.d.cts",
+        "default": "./dist/polyfill/function/sequence/install.cjs"
+      }
+    },
+    "./polyfill/function/tap/install": {
+      "import": {
+        "types": "./dist/polyfill/function/tap/install.d.ts",
+        "default": "./dist/polyfill/function/tap/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/tap/install.d.cts",
+        "default": "./dist/polyfill/function/tap/install.cjs"
+      }
+    },
+    "./polyfill/function/throttle/install": {
+      "import": {
+        "types": "./dist/polyfill/function/throttle/install.d.ts",
+        "default": "./dist/polyfill/function/throttle/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/throttle/install.d.cts",
+        "default": "./dist/polyfill/function/throttle/install.cjs"
+      }
+    },
+    "./polyfill/function/timeout/install": {
+      "import": {
+        "types": "./dist/polyfill/function/timeout/install.d.ts",
+        "default": "./dist/polyfill/function/timeout/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/timeout/install.d.cts",
+        "default": "./dist/polyfill/function/timeout/install.cjs"
+      }
+    },
+    "./polyfill/function/traverse/install": {
+      "import": {
+        "types": "./dist/polyfill/function/traverse/install.d.ts",
+        "default": "./dist/polyfill/function/traverse/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/traverse/install.d.cts",
+        "default": "./dist/polyfill/function/traverse/install.cjs"
+      }
+    },
+    "./polyfill/function/unary/install": {
+      "import": {
+        "types": "./dist/polyfill/function/unary/install.d.ts",
+        "default": "./dist/polyfill/function/unary/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/unary/install.d.cts",
+        "default": "./dist/polyfill/function/unary/install.cjs"
+      }
+    },
+    "./polyfill/function/uncurry/install": {
+      "import": {
+        "types": "./dist/polyfill/function/uncurry/install.d.ts",
+        "default": "./dist/polyfill/function/uncurry/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/uncurry/install.d.cts",
+        "default": "./dist/polyfill/function/uncurry/install.cjs"
+      }
+    },
+    "./polyfill/function/withTimeout/install": {
+      "import": {
+        "types": "./dist/polyfill/function/withTimeout/install.d.ts",
+        "default": "./dist/polyfill/function/withTimeout/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/withTimeout/install.d.cts",
+        "default": "./dist/polyfill/function/withTimeout/install.cjs"
+      }
+    },
+    "./polyfill/function/wrap/install": {
+      "import": {
+        "types": "./dist/polyfill/function/wrap/install.d.ts",
+        "default": "./dist/polyfill/function/wrap/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/function/wrap/install.d.cts",
+        "default": "./dist/polyfill/function/wrap/install.cjs"
+      }
+    },
+    "./polyfill/math/approximately/install": {
+      "import": {
+        "types": "./dist/polyfill/math/approximately/install.d.ts",
+        "default": "./dist/polyfill/math/approximately/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/approximately/install.d.cts",
+        "default": "./dist/polyfill/math/approximately/install.cjs"
+      }
+    },
+    "./polyfill/math/between/install": {
+      "import": {
+        "types": "./dist/polyfill/math/between/install.d.ts",
+        "default": "./dist/polyfill/math/between/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/between/install.d.cts",
+        "default": "./dist/polyfill/math/between/install.cjs"
+      }
+    },
+    "./polyfill/math/betweenInclusive/install": {
+      "import": {
+        "types": "./dist/polyfill/math/betweenInclusive/install.d.ts",
+        "default": "./dist/polyfill/math/betweenInclusive/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/betweenInclusive/install.d.cts",
+        "default": "./dist/polyfill/math/betweenInclusive/install.cjs"
+      }
+    },
+    "./polyfill/math/clamp/install": {
+      "import": {
+        "types": "./dist/polyfill/math/clamp/install.d.ts",
+        "default": "./dist/polyfill/math/clamp/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/clamp/install.d.cts",
+        "default": "./dist/polyfill/math/clamp/install.cjs"
+      }
+    },
+    "./polyfill/math/clerp180/install": {
+      "import": {
+        "types": "./dist/polyfill/math/clerp180/install.d.ts",
+        "default": "./dist/polyfill/math/clerp180/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/clerp180/install.d.cts",
+        "default": "./dist/polyfill/math/clerp180/install.cjs"
+      }
+    },
+    "./polyfill/math/deltaAngle/install": {
+      "import": {
+        "types": "./dist/polyfill/math/deltaAngle/install.d.ts",
+        "default": "./dist/polyfill/math/deltaAngle/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/deltaAngle/install.d.cts",
+        "default": "./dist/polyfill/math/deltaAngle/install.cjs"
+      }
+    },
+    "./polyfill/math/erf/install": {
+      "import": {
+        "types": "./dist/polyfill/math/erf/install.d.ts",
+        "default": "./dist/polyfill/math/erf/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/erf/install.d.cts",
+        "default": "./dist/polyfill/math/erf/install.cjs"
+      }
+    },
+    "./polyfill/math/erfc/install": {
+      "import": {
+        "types": "./dist/polyfill/math/erfc/install.d.ts",
+        "default": "./dist/polyfill/math/erfc/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/erfc/install.d.cts",
+        "default": "./dist/polyfill/math/erfc/install.cjs"
+      }
+    },
+    "./polyfill/math/erfcx/install": {
+      "import": {
+        "types": "./dist/polyfill/math/erfcx/install.d.ts",
+        "default": "./dist/polyfill/math/erfcx/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/erfcx/install.d.cts",
+        "default": "./dist/polyfill/math/erfcx/install.cjs"
+      }
+    },
+    "./polyfill/math/frac/install": {
+      "import": {
+        "types": "./dist/polyfill/math/frac/install.d.ts",
+        "default": "./dist/polyfill/math/frac/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/frac/install.d.cts",
+        "default": "./dist/polyfill/math/frac/install.cjs"
+      }
+    },
+    "./polyfill/math/gamma/install": {
+      "import": {
+        "types": "./dist/polyfill/math/gamma/install.d.ts",
+        "default": "./dist/polyfill/math/gamma/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/gamma/install.d.cts",
+        "default": "./dist/polyfill/math/gamma/install.cjs"
+      }
+    },
+    "./polyfill/math/gcd/install": {
+      "import": {
+        "types": "./dist/polyfill/math/gcd/install.d.ts",
+        "default": "./dist/polyfill/math/gcd/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/gcd/install.d.cts",
+        "default": "./dist/polyfill/math/gcd/install.cjs"
+      }
+    },
+    "./polyfill/math/inRange/install": {
+      "import": {
+        "types": "./dist/polyfill/math/inRange/install.d.ts",
+        "default": "./dist/polyfill/math/inRange/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/inRange/install.d.cts",
+        "default": "./dist/polyfill/math/inRange/install.cjs"
+      }
+    },
+    "./polyfill/math/install": {
+      "import": {
+        "types": "./dist/polyfill/math/install.d.ts",
+        "default": "./dist/polyfill/math/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/install.d.cts",
+        "default": "./dist/polyfill/math/install.cjs"
+      }
+    },
+    "./polyfill/math/invmod/install": {
+      "import": {
+        "types": "./dist/polyfill/math/invmod/install.d.ts",
+        "default": "./dist/polyfill/math/invmod/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/invmod/install.d.cts",
+        "default": "./dist/polyfill/math/invmod/install.cjs"
+      }
+    },
+    "./polyfill/math/isPrime/install": {
+      "import": {
+        "types": "./dist/polyfill/math/isPrime/install.d.ts",
+        "default": "./dist/polyfill/math/isPrime/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/isPrime/install.d.cts",
+        "default": "./dist/polyfill/math/isPrime/install.cjs"
+      }
+    },
+    "./polyfill/math/lcm/install": {
+      "import": {
+        "types": "./dist/polyfill/math/lcm/install.d.ts",
+        "default": "./dist/polyfill/math/lcm/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/lcm/install.d.cts",
+        "default": "./dist/polyfill/math/lcm/install.cjs"
+      }
+    },
+    "./polyfill/math/lerp/install": {
+      "import": {
+        "types": "./dist/polyfill/math/lerp/install.d.ts",
+        "default": "./dist/polyfill/math/lerp/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/lerp/install.d.cts",
+        "default": "./dist/polyfill/math/lerp/install.cjs"
+      }
+    },
+    "./polyfill/math/lerpAngle/install": {
+      "import": {
+        "types": "./dist/polyfill/math/lerpAngle/install.d.ts",
+        "default": "./dist/polyfill/math/lerpAngle/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/lerpAngle/install.d.cts",
+        "default": "./dist/polyfill/math/lerpAngle/install.cjs"
+      }
+    },
+    "./polyfill/math/mod/install": {
+      "import": {
+        "types": "./dist/polyfill/math/mod/install.d.ts",
+        "default": "./dist/polyfill/math/mod/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/mod/install.d.cts",
+        "default": "./dist/polyfill/math/mod/install.cjs"
+      }
+    },
+    "./polyfill/math/moveTowards/install": {
+      "import": {
+        "types": "./dist/polyfill/math/moveTowards/install.d.ts",
+        "default": "./dist/polyfill/math/moveTowards/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/moveTowards/install.d.cts",
+        "default": "./dist/polyfill/math/moveTowards/install.cjs"
+      }
+    },
+    "./polyfill/math/moveTowardsAngle/install": {
+      "import": {
+        "types": "./dist/polyfill/math/moveTowardsAngle/install.d.ts",
+        "default": "./dist/polyfill/math/moveTowardsAngle/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/moveTowardsAngle/install.d.cts",
+        "default": "./dist/polyfill/math/moveTowardsAngle/install.cjs"
+      }
+    },
+    "./polyfill/math/pascalTriangle/install": {
+      "import": {
+        "types": "./dist/polyfill/math/pascalTriangle/install.d.ts",
+        "default": "./dist/polyfill/math/pascalTriangle/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/pascalTriangle/install.d.cts",
+        "default": "./dist/polyfill/math/pascalTriangle/install.cjs"
+      }
+    },
+    "./polyfill/math/randomInt/install": {
+      "import": {
+        "types": "./dist/polyfill/math/randomInt/install.d.ts",
+        "default": "./dist/polyfill/math/randomInt/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/randomInt/install.d.cts",
+        "default": "./dist/polyfill/math/randomInt/install.cjs"
+      }
+    },
+    "./polyfill/math/randomIntInclusive/install": {
+      "import": {
+        "types": "./dist/polyfill/math/randomIntInclusive/install.d.ts",
+        "default": "./dist/polyfill/math/randomIntInclusive/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/randomIntInclusive/install.d.cts",
+        "default": "./dist/polyfill/math/randomIntInclusive/install.cjs"
+      }
+    },
+    "./polyfill/math/remap/install": {
+      "import": {
+        "types": "./dist/polyfill/math/remap/install.d.ts",
+        "default": "./dist/polyfill/math/remap/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/remap/install.d.cts",
+        "default": "./dist/polyfill/math/remap/install.cjs"
+      }
+    },
+    "./polyfill/math/repeat/install": {
+      "import": {
+        "types": "./dist/polyfill/math/repeat/install.d.ts",
+        "default": "./dist/polyfill/math/repeat/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/repeat/install.d.cts",
+        "default": "./dist/polyfill/math/repeat/install.cjs"
+      }
+    },
+    "./polyfill/math/roundToPointFive/install": {
+      "import": {
+        "types": "./dist/polyfill/math/roundToPointFive/install.d.ts",
+        "default": "./dist/polyfill/math/roundToPointFive/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/roundToPointFive/install.d.cts",
+        "default": "./dist/polyfill/math/roundToPointFive/install.cjs"
+      }
+    },
+    "./polyfill/math/saturate/install": {
+      "import": {
+        "types": "./dist/polyfill/math/saturate/install.d.ts",
+        "default": "./dist/polyfill/math/saturate/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/saturate/install.d.cts",
+        "default": "./dist/polyfill/math/saturate/install.cjs"
+      }
+    },
+    "./polyfill/math/segmentRounding/install": {
+      "import": {
+        "types": "./dist/polyfill/math/segmentRounding/install.d.ts",
+        "default": "./dist/polyfill/math/segmentRounding/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/segmentRounding/install.d.cts",
+        "default": "./dist/polyfill/math/segmentRounding/install.cjs"
+      }
+    },
+    "./polyfill/math/toDegrees/install": {
+      "import": {
+        "types": "./dist/polyfill/math/toDegrees/install.d.ts",
+        "default": "./dist/polyfill/math/toDegrees/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/toDegrees/install.d.cts",
+        "default": "./dist/polyfill/math/toDegrees/install.cjs"
+      }
+    },
+    "./polyfill/math/toRadians/install": {
+      "import": {
+        "types": "./dist/polyfill/math/toRadians/install.d.ts",
+        "default": "./dist/polyfill/math/toRadians/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/toRadians/install.d.cts",
+        "default": "./dist/polyfill/math/toRadians/install.cjs"
+      }
+    },
+    "./polyfill/math/unlerp/install": {
+      "import": {
+        "types": "./dist/polyfill/math/unlerp/install.d.ts",
+        "default": "./dist/polyfill/math/unlerp/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/unlerp/install.d.cts",
+        "default": "./dist/polyfill/math/unlerp/install.cjs"
+      }
+    },
+    "./polyfill/math/xgcd/install": {
+      "import": {
+        "types": "./dist/polyfill/math/xgcd/install.d.ts",
+        "default": "./dist/polyfill/math/xgcd/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/math/xgcd/install.d.cts",
+        "default": "./dist/polyfill/math/xgcd/install.cjs"
+      }
+    },
+    "./polyfill/object/chain/install": {
+      "import": {
+        "types": "./dist/polyfill/object/chain/install.d.ts",
+        "default": "./dist/polyfill/object/chain/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/object/chain/install.d.cts",
+        "default": "./dist/polyfill/object/chain/install.cjs"
+      }
+    },
+    "./polyfill/object/clone/install": {
+      "import": {
+        "types": "./dist/polyfill/object/clone/install.d.ts",
+        "default": "./dist/polyfill/object/clone/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/object/clone/install.d.cts",
+        "default": "./dist/polyfill/object/clone/install.cjs"
+      }
+    },
+    "./polyfill/object/deepFreeze/install": {
+      "import": {
+        "types": "./dist/polyfill/object/deepFreeze/install.d.ts",
+        "default": "./dist/polyfill/object/deepFreeze/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/object/deepFreeze/install.d.cts",
+        "default": "./dist/polyfill/object/deepFreeze/install.cjs"
+      }
+    },
+    "./polyfill/object/deepMerge/install": {
+      "import": {
+        "types": "./dist/polyfill/object/deepMerge/install.d.ts",
+        "default": "./dist/polyfill/object/deepMerge/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/object/deepMerge/install.d.cts",
+        "default": "./dist/polyfill/object/deepMerge/install.cjs"
+      }
+    },
+    "./polyfill/object/deepUnfreeze/install": {
+      "import": {
+        "types": "./dist/polyfill/object/deepUnfreeze/install.d.ts",
+        "default": "./dist/polyfill/object/deepUnfreeze/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/object/deepUnfreeze/install.d.cts",
+        "default": "./dist/polyfill/object/deepUnfreeze/install.cjs"
+      }
+    },
+    "./polyfill/object/getHash/install": {
+      "import": {
+        "types": "./dist/polyfill/object/getHash/install.d.ts",
+        "default": "./dist/polyfill/object/getHash/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/object/getHash/install.d.cts",
+        "default": "./dist/polyfill/object/getHash/install.cjs"
+      }
+    },
+    "./polyfill/object/install": {
+      "import": {
+        "types": "./dist/polyfill/object/install.d.ts",
+        "default": "./dist/polyfill/object/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/object/install.d.cts",
+        "default": "./dist/polyfill/object/install.cjs"
+      }
+    },
+    "./polyfill/object/invert/install": {
+      "import": {
+        "types": "./dist/polyfill/object/invert/install.d.ts",
+        "default": "./dist/polyfill/object/invert/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/object/invert/install.d.cts",
+        "default": "./dist/polyfill/object/invert/install.cjs"
+      }
+    },
+    "./polyfill/object/isClass/install": {
+      "import": {
+        "types": "./dist/polyfill/object/isClass/install.d.ts",
+        "default": "./dist/polyfill/object/isClass/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/object/isClass/install.d.cts",
+        "default": "./dist/polyfill/object/isClass/install.cjs"
+      }
+    },
+    "./polyfill/object/isEqual/install": {
+      "import": {
+        "types": "./dist/polyfill/object/isEqual/install.d.ts",
+        "default": "./dist/polyfill/object/isEqual/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/object/isEqual/install.d.cts",
+        "default": "./dist/polyfill/object/isEqual/install.cjs"
+      }
+    },
+    "./polyfill/object/isPlainObject/install": {
+      "import": {
+        "types": "./dist/polyfill/object/isPlainObject/install.d.ts",
+        "default": "./dist/polyfill/object/isPlainObject/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/object/isPlainObject/install.d.cts",
+        "default": "./dist/polyfill/object/isPlainObject/install.cjs"
+      }
+    },
+    "./polyfill/object/omit/install": {
+      "import": {
+        "types": "./dist/polyfill/object/omit/install.d.ts",
+        "default": "./dist/polyfill/object/omit/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/object/omit/install.d.cts",
+        "default": "./dist/polyfill/object/omit/install.cjs"
+      }
+    },
+    "./polyfill/object/pick/install": {
+      "import": {
+        "types": "./dist/polyfill/object/pick/install.d.ts",
+        "default": "./dist/polyfill/object/pick/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/object/pick/install.d.cts",
+        "default": "./dist/polyfill/object/pick/install.cjs"
+      }
+    },
+    "./polyfill/object/renameKeys/install": {
+      "import": {
+        "types": "./dist/polyfill/object/renameKeys/install.d.ts",
+        "default": "./dist/polyfill/object/renameKeys/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/object/renameKeys/install.d.cts",
+        "default": "./dist/polyfill/object/renameKeys/install.cjs"
+      }
+    },
+    "./polyfill/object/select/install": {
+      "import": {
+        "types": "./dist/polyfill/object/select/install.d.ts",
+        "default": "./dist/polyfill/object/select/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/object/select/install.d.cts",
+        "default": "./dist/polyfill/object/select/install.cjs"
+      }
+    },
+    "./polyfill/object/shallowClone/install": {
+      "import": {
+        "types": "./dist/polyfill/object/shallowClone/install.d.ts",
+        "default": "./dist/polyfill/object/shallowClone/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/object/shallowClone/install.d.cts",
+        "default": "./dist/polyfill/object/shallowClone/install.cjs"
+      }
+    },
+    "./polyfill/string/abbreviate/install": {
+      "import": {
+        "types": "./dist/polyfill/string/abbreviate/install.d.ts",
+        "default": "./dist/polyfill/string/abbreviate/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/abbreviate/install.d.cts",
+        "default": "./dist/polyfill/string/abbreviate/install.cjs"
+      }
+    },
+    "./polyfill/string/camelCase/install": {
+      "import": {
+        "types": "./dist/polyfill/string/camelCase/install.d.ts",
+        "default": "./dist/polyfill/string/camelCase/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/camelCase/install.d.cts",
+        "default": "./dist/polyfill/string/camelCase/install.cjs"
+      }
+    },
+    "./polyfill/string/constantCase/install": {
+      "import": {
+        "types": "./dist/polyfill/string/constantCase/install.d.ts",
+        "default": "./dist/polyfill/string/constantCase/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/constantCase/install.d.cts",
+        "default": "./dist/polyfill/string/constantCase/install.cjs"
+      }
+    },
+    "./polyfill/string/dotCase/install": {
+      "import": {
+        "types": "./dist/polyfill/string/dotCase/install.d.ts",
+        "default": "./dist/polyfill/string/dotCase/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/dotCase/install.d.cts",
+        "default": "./dist/polyfill/string/dotCase/install.cjs"
+      }
+    },
+    "./polyfill/string/escape/install": {
+      "import": {
+        "types": "./dist/polyfill/string/escape/install.d.ts",
+        "default": "./dist/polyfill/string/escape/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/escape/install.d.cts",
+        "default": "./dist/polyfill/string/escape/install.cjs"
+      }
+    },
+    "./polyfill/string/hamming/install": {
+      "import": {
+        "types": "./dist/polyfill/string/hamming/install.d.ts",
+        "default": "./dist/polyfill/string/hamming/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/hamming/install.d.cts",
+        "default": "./dist/polyfill/string/hamming/install.cjs"
+      }
+    },
+    "./polyfill/string/initials/install": {
+      "import": {
+        "types": "./dist/polyfill/string/initials/install.d.ts",
+        "default": "./dist/polyfill/string/initials/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/initials/install.d.cts",
+        "default": "./dist/polyfill/string/initials/install.cjs"
+      }
+    },
+    "./polyfill/string/install": {
+      "import": {
+        "types": "./dist/polyfill/string/install.d.ts",
+        "default": "./dist/polyfill/string/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/install.d.cts",
+        "default": "./dist/polyfill/string/install.cjs"
+      }
+    },
+    "./polyfill/string/isBlank/install": {
+      "import": {
+        "types": "./dist/polyfill/string/isBlank/install.d.ts",
+        "default": "./dist/polyfill/string/isBlank/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/isBlank/install.d.cts",
+        "default": "./dist/polyfill/string/isBlank/install.cjs"
+      }
+    },
+    "./polyfill/string/isDateFormat/install": {
+      "import": {
+        "types": "./dist/polyfill/string/isDateFormat/install.d.ts",
+        "default": "./dist/polyfill/string/isDateFormat/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/isDateFormat/install.d.cts",
+        "default": "./dist/polyfill/string/isDateFormat/install.cjs"
+      }
+    },
+    "./polyfill/string/isDuration/install": {
+      "import": {
+        "types": "./dist/polyfill/string/isDuration/install.d.ts",
+        "default": "./dist/polyfill/string/isDuration/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/isDuration/install.d.cts",
+        "default": "./dist/polyfill/string/isDuration/install.cjs"
+      }
+    },
+    "./polyfill/string/isEmail/install": {
+      "import": {
+        "types": "./dist/polyfill/string/isEmail/install.d.ts",
+        "default": "./dist/polyfill/string/isEmail/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/isEmail/install.d.cts",
+        "default": "./dist/polyfill/string/isEmail/install.cjs"
+      }
+    },
+    "./polyfill/string/isIPv4/install": {
+      "import": {
+        "types": "./dist/polyfill/string/isIPv4/install.d.ts",
+        "default": "./dist/polyfill/string/isIPv4/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/isIPv4/install.d.cts",
+        "default": "./dist/polyfill/string/isIPv4/install.cjs"
+      }
+    },
+    "./polyfill/string/isIPv6/install": {
+      "import": {
+        "types": "./dist/polyfill/string/isIPv6/install.d.ts",
+        "default": "./dist/polyfill/string/isIPv6/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/isIPv6/install.d.cts",
+        "default": "./dist/polyfill/string/isIPv6/install.cjs"
+      }
+    },
+    "./polyfill/string/isTime/install": {
+      "import": {
+        "types": "./dist/polyfill/string/isTime/install.d.ts",
+        "default": "./dist/polyfill/string/isTime/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/isTime/install.d.cts",
+        "default": "./dist/polyfill/string/isTime/install.cjs"
+      }
+    },
+    "./polyfill/string/isURL/install": {
+      "import": {
+        "types": "./dist/polyfill/string/isURL/install.d.ts",
+        "default": "./dist/polyfill/string/isURL/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/isURL/install.d.cts",
+        "default": "./dist/polyfill/string/isURL/install.cjs"
+      }
+    },
+    "./polyfill/string/isUUID/install": {
+      "import": {
+        "types": "./dist/polyfill/string/isUUID/install.d.ts",
+        "default": "./dist/polyfill/string/isUUID/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/isUUID/install.d.cts",
+        "default": "./dist/polyfill/string/isUUID/install.cjs"
+      }
+    },
+    "./polyfill/string/iterate/install": {
+      "import": {
+        "types": "./dist/polyfill/string/iterate/install.d.ts",
+        "default": "./dist/polyfill/string/iterate/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/iterate/install.d.cts",
+        "default": "./dist/polyfill/string/iterate/install.cjs"
+      }
+    },
+    "./polyfill/string/jaro/install": {
+      "import": {
+        "types": "./dist/polyfill/string/jaro/install.d.ts",
+        "default": "./dist/polyfill/string/jaro/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/jaro/install.d.cts",
+        "default": "./dist/polyfill/string/jaro/install.cjs"
+      }
+    },
+    "./polyfill/string/jaroWinkler/install": {
+      "import": {
+        "types": "./dist/polyfill/string/jaroWinkler/install.d.ts",
+        "default": "./dist/polyfill/string/jaroWinkler/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/jaroWinkler/install.d.cts",
+        "default": "./dist/polyfill/string/jaroWinkler/install.cjs"
+      }
+    },
+    "./polyfill/string/kebabCase/install": {
+      "import": {
+        "types": "./dist/polyfill/string/kebabCase/install.d.ts",
+        "default": "./dist/polyfill/string/kebabCase/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/kebabCase/install.d.cts",
+        "default": "./dist/polyfill/string/kebabCase/install.cjs"
+      }
+    },
+    "./polyfill/string/levenshtein/install": {
+      "import": {
+        "types": "./dist/polyfill/string/levenshtein/install.d.ts",
+        "default": "./dist/polyfill/string/levenshtein/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/levenshtein/install.d.cts",
+        "default": "./dist/polyfill/string/levenshtein/install.cjs"
+      }
+    },
+    "./polyfill/string/lowerFirst/install": {
+      "import": {
+        "types": "./dist/polyfill/string/lowerFirst/install.d.ts",
+        "default": "./dist/polyfill/string/lowerFirst/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/lowerFirst/install.d.cts",
+        "default": "./dist/polyfill/string/lowerFirst/install.cjs"
+      }
+    },
+    "./polyfill/string/moduleCase/install": {
+      "import": {
+        "types": "./dist/polyfill/string/moduleCase/install.d.ts",
+        "default": "./dist/polyfill/string/moduleCase/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/moduleCase/install.d.cts",
+        "default": "./dist/polyfill/string/moduleCase/install.cjs"
+      }
+    },
+    "./polyfill/string/noCase/install": {
+      "import": {
+        "types": "./dist/polyfill/string/noCase/install.d.ts",
+        "default": "./dist/polyfill/string/noCase/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/noCase/install.d.cts",
+        "default": "./dist/polyfill/string/noCase/install.cjs"
+      }
+    },
+    "./polyfill/string/pascalCase/install": {
+      "import": {
+        "types": "./dist/polyfill/string/pascalCase/install.d.ts",
+        "default": "./dist/polyfill/string/pascalCase/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/pascalCase/install.d.cts",
+        "default": "./dist/polyfill/string/pascalCase/install.cjs"
+      }
+    },
+    "./polyfill/string/randomStr/install": {
+      "import": {
+        "types": "./dist/polyfill/string/randomStr/install.d.ts",
+        "default": "./dist/polyfill/string/randomStr/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/randomStr/install.d.cts",
+        "default": "./dist/polyfill/string/randomStr/install.cjs"
+      }
+    },
+    "./polyfill/string/reverse/install": {
+      "import": {
+        "types": "./dist/polyfill/string/reverse/install.d.ts",
+        "default": "./dist/polyfill/string/reverse/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/reverse/install.d.cts",
+        "default": "./dist/polyfill/string/reverse/install.cjs"
+      }
+    },
+    "./polyfill/string/sentenceCase/install": {
+      "import": {
+        "types": "./dist/polyfill/string/sentenceCase/install.d.ts",
+        "default": "./dist/polyfill/string/sentenceCase/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/sentenceCase/install.d.cts",
+        "default": "./dist/polyfill/string/sentenceCase/install.cjs"
+      }
+    },
+    "./polyfill/string/slugify/install": {
+      "import": {
+        "types": "./dist/polyfill/string/slugify/install.d.ts",
+        "default": "./dist/polyfill/string/slugify/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/slugify/install.d.cts",
+        "default": "./dist/polyfill/string/slugify/install.cjs"
+      }
+    },
+    "./polyfill/string/snakeCase/install": {
+      "import": {
+        "types": "./dist/polyfill/string/snakeCase/install.d.ts",
+        "default": "./dist/polyfill/string/snakeCase/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/snakeCase/install.d.cts",
+        "default": "./dist/polyfill/string/snakeCase/install.cjs"
+      }
+    },
+    "./polyfill/string/stripIndent/install": {
+      "import": {
+        "types": "./dist/polyfill/string/stripIndent/install.d.ts",
+        "default": "./dist/polyfill/string/stripIndent/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/stripIndent/install.d.cts",
+        "default": "./dist/polyfill/string/stripIndent/install.cjs"
+      }
+    },
+    "./polyfill/string/swapCase/install": {
+      "import": {
+        "types": "./dist/polyfill/string/swapCase/install.d.ts",
+        "default": "./dist/polyfill/string/swapCase/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/swapCase/install.d.cts",
+        "default": "./dist/polyfill/string/swapCase/install.cjs"
+      }
+    },
+    "./polyfill/string/textPosition/install": {
+      "import": {
+        "types": "./dist/polyfill/string/textPosition/install.d.ts",
+        "default": "./dist/polyfill/string/textPosition/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/textPosition/install.d.cts",
+        "default": "./dist/polyfill/string/textPosition/install.cjs"
+      }
+    },
+    "./polyfill/string/titleCase/install": {
+      "import": {
+        "types": "./dist/polyfill/string/titleCase/install.d.ts",
+        "default": "./dist/polyfill/string/titleCase/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/titleCase/install.d.cts",
+        "default": "./dist/polyfill/string/titleCase/install.cjs"
+      }
+    },
+    "./polyfill/string/toChars/install": {
+      "import": {
+        "types": "./dist/polyfill/string/toChars/install.d.ts",
+        "default": "./dist/polyfill/string/toChars/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/toChars/install.d.cts",
+        "default": "./dist/polyfill/string/toChars/install.cjs"
+      }
+    },
+    "./polyfill/string/trainCase/install": {
+      "import": {
+        "types": "./dist/polyfill/string/trainCase/install.d.ts",
+        "default": "./dist/polyfill/string/trainCase/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/trainCase/install.d.cts",
+        "default": "./dist/polyfill/string/trainCase/install.cjs"
+      }
+    },
+    "./polyfill/string/truncate/install": {
+      "import": {
+        "types": "./dist/polyfill/string/truncate/install.d.ts",
+        "default": "./dist/polyfill/string/truncate/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/truncate/install.d.cts",
+        "default": "./dist/polyfill/string/truncate/install.cjs"
+      }
+    },
+    "./polyfill/string/unescape/install": {
+      "import": {
+        "types": "./dist/polyfill/string/unescape/install.d.ts",
+        "default": "./dist/polyfill/string/unescape/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/unescape/install.d.cts",
+        "default": "./dist/polyfill/string/unescape/install.cjs"
+      }
+    },
+    "./polyfill/string/upperFirst/install": {
+      "import": {
+        "types": "./dist/polyfill/string/upperFirst/install.d.ts",
+        "default": "./dist/polyfill/string/upperFirst/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/upperFirst/install.d.cts",
+        "default": "./dist/polyfill/string/upperFirst/install.cjs"
+      }
+    },
+    "./polyfill/string/words/install": {
+      "import": {
+        "types": "./dist/polyfill/string/words/install.d.ts",
+        "default": "./dist/polyfill/string/words/install.js"
+      },
+      "require": {
+        "types": "./dist/polyfill/string/words/install.d.cts",
+        "default": "./dist/polyfill/string/words/install.cjs"
+      }
+    },
+    "./string/abbreviate": {
+      "import": {
+        "types": "./dist/string/abbreviate/index.d.ts",
+        "default": "./dist/string/abbreviate/index.js"
+      },
+      "require": {
+        "types": "./dist/string/abbreviate/index.d.cts",
+        "default": "./dist/string/abbreviate/index.cjs"
+      }
+    },
+    "./string/camelCase": {
+      "import": {
+        "types": "./dist/string/camelCase/index.d.ts",
+        "default": "./dist/string/camelCase/index.js"
+      },
+      "require": {
+        "types": "./dist/string/camelCase/index.d.cts",
+        "default": "./dist/string/camelCase/index.cjs"
+      }
+    },
+    "./string/constantCase": {
+      "import": {
+        "types": "./dist/string/constantCase/index.d.ts",
+        "default": "./dist/string/constantCase/index.js"
+      },
+      "require": {
+        "types": "./dist/string/constantCase/index.d.cts",
+        "default": "./dist/string/constantCase/index.cjs"
+      }
+    },
+    "./string/dotCase": {
+      "import": {
+        "types": "./dist/string/dotCase/index.d.ts",
+        "default": "./dist/string/dotCase/index.js"
+      },
+      "require": {
+        "types": "./dist/string/dotCase/index.d.cts",
+        "default": "./dist/string/dotCase/index.cjs"
+      }
+    },
+    "./string/escape": {
+      "import": {
+        "types": "./dist/string/escape/index.d.ts",
+        "default": "./dist/string/escape/index.js"
+      },
+      "require": {
+        "types": "./dist/string/escape/index.d.cts",
+        "default": "./dist/string/escape/index.cjs"
+      }
+    },
+    "./string/hamming": {
+      "import": {
+        "types": "./dist/string/hamming/index.d.ts",
+        "default": "./dist/string/hamming/index.js"
+      },
+      "require": {
+        "types": "./dist/string/hamming/index.d.cts",
+        "default": "./dist/string/hamming/index.cjs"
+      }
+    },
+    "./string/initials": {
+      "import": {
+        "types": "./dist/string/initials/index.d.ts",
+        "default": "./dist/string/initials/index.js"
+      },
+      "require": {
+        "types": "./dist/string/initials/index.d.cts",
+        "default": "./dist/string/initials/index.cjs"
+      }
+    },
+    "./string/isBlank": {
+      "import": {
+        "types": "./dist/string/isBlank/index.d.ts",
+        "default": "./dist/string/isBlank/index.js"
+      },
+      "require": {
+        "types": "./dist/string/isBlank/index.d.cts",
+        "default": "./dist/string/isBlank/index.cjs"
+      }
+    },
+    "./string/isDateFormat": {
+      "import": {
+        "types": "./dist/string/isDateFormat/index.d.ts",
+        "default": "./dist/string/isDateFormat/index.js"
+      },
+      "require": {
+        "types": "./dist/string/isDateFormat/index.d.cts",
+        "default": "./dist/string/isDateFormat/index.cjs"
+      }
+    },
+    "./string/isDuration": {
+      "import": {
+        "types": "./dist/string/isDuration/index.d.ts",
+        "default": "./dist/string/isDuration/index.js"
+      },
+      "require": {
+        "types": "./dist/string/isDuration/index.d.cts",
+        "default": "./dist/string/isDuration/index.cjs"
+      }
+    },
+    "./string/isEmail": {
+      "import": {
+        "types": "./dist/string/isEmail/index.d.ts",
+        "default": "./dist/string/isEmail/index.js"
+      },
+      "require": {
+        "types": "./dist/string/isEmail/index.d.cts",
+        "default": "./dist/string/isEmail/index.cjs"
+      }
+    },
+    "./string/isIPv4": {
+      "import": {
+        "types": "./dist/string/isIPv4/index.d.ts",
+        "default": "./dist/string/isIPv4/index.js"
+      },
+      "require": {
+        "types": "./dist/string/isIPv4/index.d.cts",
+        "default": "./dist/string/isIPv4/index.cjs"
+      }
+    },
+    "./string/isIPv6": {
+      "import": {
+        "types": "./dist/string/isIPv6/index.d.ts",
+        "default": "./dist/string/isIPv6/index.js"
+      },
+      "require": {
+        "types": "./dist/string/isIPv6/index.d.cts",
+        "default": "./dist/string/isIPv6/index.cjs"
+      }
+    },
+    "./string/isTime": {
+      "import": {
+        "types": "./dist/string/isTime/index.d.ts",
+        "default": "./dist/string/isTime/index.js"
+      },
+      "require": {
+        "types": "./dist/string/isTime/index.d.cts",
+        "default": "./dist/string/isTime/index.cjs"
+      }
+    },
+    "./string/isURL": {
+      "import": {
+        "types": "./dist/string/isURL/index.d.ts",
+        "default": "./dist/string/isURL/index.js"
+      },
+      "require": {
+        "types": "./dist/string/isURL/index.d.cts",
+        "default": "./dist/string/isURL/index.cjs"
+      }
+    },
+    "./string/isUUID": {
+      "import": {
+        "types": "./dist/string/isUUID/index.d.ts",
+        "default": "./dist/string/isUUID/index.js"
+      },
+      "require": {
+        "types": "./dist/string/isUUID/index.d.cts",
+        "default": "./dist/string/isUUID/index.cjs"
+      }
+    },
+    "./string/iterate": {
+      "import": {
+        "types": "./dist/string/iterate/index.d.ts",
+        "default": "./dist/string/iterate/index.js"
+      },
+      "require": {
+        "types": "./dist/string/iterate/index.d.cts",
+        "default": "./dist/string/iterate/index.cjs"
+      }
+    },
+    "./string/jaro": {
+      "import": {
+        "types": "./dist/string/jaro/index.d.ts",
+        "default": "./dist/string/jaro/index.js"
+      },
+      "require": {
+        "types": "./dist/string/jaro/index.d.cts",
+        "default": "./dist/string/jaro/index.cjs"
+      }
+    },
+    "./string/jaroWinkler": {
+      "import": {
+        "types": "./dist/string/jaroWinkler/index.d.ts",
+        "default": "./dist/string/jaroWinkler/index.js"
+      },
+      "require": {
+        "types": "./dist/string/jaroWinkler/index.d.cts",
+        "default": "./dist/string/jaroWinkler/index.cjs"
+      }
+    },
+    "./string/kebabCase": {
+      "import": {
+        "types": "./dist/string/kebabCase/index.d.ts",
+        "default": "./dist/string/kebabCase/index.js"
+      },
+      "require": {
+        "types": "./dist/string/kebabCase/index.d.cts",
+        "default": "./dist/string/kebabCase/index.cjs"
+      }
+    },
+    "./string/levenshtein": {
+      "import": {
+        "types": "./dist/string/levenshtein/index.d.ts",
+        "default": "./dist/string/levenshtein/index.js"
+      },
+      "require": {
+        "types": "./dist/string/levenshtein/index.d.cts",
+        "default": "./dist/string/levenshtein/index.cjs"
+      }
+    },
+    "./string/lowerFirst": {
+      "import": {
+        "types": "./dist/string/lowerFirst/index.d.ts",
+        "default": "./dist/string/lowerFirst/index.js"
+      },
+      "require": {
+        "types": "./dist/string/lowerFirst/index.d.cts",
+        "default": "./dist/string/lowerFirst/index.cjs"
+      }
+    },
+    "./string/moduleCase": {
+      "import": {
+        "types": "./dist/string/moduleCase/index.d.ts",
+        "default": "./dist/string/moduleCase/index.js"
+      },
+      "require": {
+        "types": "./dist/string/moduleCase/index.d.cts",
+        "default": "./dist/string/moduleCase/index.cjs"
+      }
+    },
+    "./string/noCase": {
+      "import": {
+        "types": "./dist/string/noCase/index.d.ts",
+        "default": "./dist/string/noCase/index.js"
+      },
+      "require": {
+        "types": "./dist/string/noCase/index.d.cts",
+        "default": "./dist/string/noCase/index.cjs"
+      }
+    },
+    "./string/pascalCase": {
+      "import": {
+        "types": "./dist/string/pascalCase/index.d.ts",
+        "default": "./dist/string/pascalCase/index.js"
+      },
+      "require": {
+        "types": "./dist/string/pascalCase/index.d.cts",
+        "default": "./dist/string/pascalCase/index.cjs"
+      }
+    },
+    "./string/randomStr": {
+      "import": {
+        "types": "./dist/string/randomStr/index.d.ts",
+        "default": "./dist/string/randomStr/index.js"
+      },
+      "require": {
+        "types": "./dist/string/randomStr/index.d.cts",
+        "default": "./dist/string/randomStr/index.cjs"
+      }
+    },
+    "./string/reverse": {
+      "import": {
+        "types": "./dist/string/reverse/index.d.ts",
+        "default": "./dist/string/reverse/index.js"
+      },
+      "require": {
+        "types": "./dist/string/reverse/index.d.cts",
+        "default": "./dist/string/reverse/index.cjs"
+      }
+    },
+    "./string/sentenceCase": {
+      "import": {
+        "types": "./dist/string/sentenceCase/index.d.ts",
+        "default": "./dist/string/sentenceCase/index.js"
+      },
+      "require": {
+        "types": "./dist/string/sentenceCase/index.d.cts",
+        "default": "./dist/string/sentenceCase/index.cjs"
+      }
+    },
+    "./string/slugify": {
+      "import": {
+        "types": "./dist/string/slugify/index.d.ts",
+        "default": "./dist/string/slugify/index.js"
+      },
+      "require": {
+        "types": "./dist/string/slugify/index.d.cts",
+        "default": "./dist/string/slugify/index.cjs"
+      }
+    },
+    "./string/snakeCase": {
+      "import": {
+        "types": "./dist/string/snakeCase/index.d.ts",
+        "default": "./dist/string/snakeCase/index.js"
+      },
+      "require": {
+        "types": "./dist/string/snakeCase/index.d.cts",
+        "default": "./dist/string/snakeCase/index.cjs"
+      }
+    },
+    "./string/stripIndent": {
+      "import": {
+        "types": "./dist/string/stripIndent/index.d.ts",
+        "default": "./dist/string/stripIndent/index.js"
+      },
+      "require": {
+        "types": "./dist/string/stripIndent/index.d.cts",
+        "default": "./dist/string/stripIndent/index.cjs"
+      }
+    },
+    "./string/swapCase": {
+      "import": {
+        "types": "./dist/string/swapCase/index.d.ts",
+        "default": "./dist/string/swapCase/index.js"
+      },
+      "require": {
+        "types": "./dist/string/swapCase/index.d.cts",
+        "default": "./dist/string/swapCase/index.cjs"
+      }
+    },
+    "./string/textPosition": {
+      "import": {
+        "types": "./dist/string/textPosition/index.d.ts",
+        "default": "./dist/string/textPosition/index.js"
+      },
+      "require": {
+        "types": "./dist/string/textPosition/index.d.cts",
+        "default": "./dist/string/textPosition/index.cjs"
+      }
+    },
+    "./string/titleCase": {
+      "import": {
+        "types": "./dist/string/titleCase/index.d.ts",
+        "default": "./dist/string/titleCase/index.js"
+      },
+      "require": {
+        "types": "./dist/string/titleCase/index.d.cts",
+        "default": "./dist/string/titleCase/index.cjs"
+      }
+    },
+    "./string/toChars": {
+      "import": {
+        "types": "./dist/string/toChars/index.d.ts",
+        "default": "./dist/string/toChars/index.js"
+      },
+      "require": {
+        "types": "./dist/string/toChars/index.d.cts",
+        "default": "./dist/string/toChars/index.cjs"
+      }
+    },
+    "./string/trainCase": {
+      "import": {
+        "types": "./dist/string/trainCase/index.d.ts",
+        "default": "./dist/string/trainCase/index.js"
+      },
+      "require": {
+        "types": "./dist/string/trainCase/index.d.cts",
+        "default": "./dist/string/trainCase/index.cjs"
+      }
+    },
+    "./string/truncate": {
+      "import": {
+        "types": "./dist/string/truncate/index.d.ts",
+        "default": "./dist/string/truncate/index.js"
+      },
+      "require": {
+        "types": "./dist/string/truncate/index.d.cts",
+        "default": "./dist/string/truncate/index.cjs"
+      }
+    },
+    "./string/unescape": {
+      "import": {
+        "types": "./dist/string/unescape/index.d.ts",
+        "default": "./dist/string/unescape/index.js"
+      },
+      "require": {
+        "types": "./dist/string/unescape/index.d.cts",
+        "default": "./dist/string/unescape/index.cjs"
+      }
+    },
+    "./string/upperFirst": {
+      "import": {
+        "types": "./dist/string/upperFirst/index.d.ts",
+        "default": "./dist/string/upperFirst/index.js"
+      },
+      "require": {
+        "types": "./dist/string/upperFirst/index.d.cts",
+        "default": "./dist/string/upperFirst/index.cjs"
+      }
+    },
+    "./string/words": {
+      "import": {
+        "types": "./dist/string/words/index.d.ts",
+        "default": "./dist/string/words/index.js"
+      },
+      "require": {
+        "types": "./dist/string/words/index.d.cts",
+        "default": "./dist/string/words/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "inlinedDependencies": {
+    "@standard-schema/spec": "1.1.0"
   }
 }
