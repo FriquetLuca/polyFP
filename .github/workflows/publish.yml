@@ -2,7 +2,7 @@ name: Tag Changelog Update
 on:
   push:
     tags:
-      - 'v*'
+      - 'polyfp-v*'
 
 jobs:
   update-tag:
