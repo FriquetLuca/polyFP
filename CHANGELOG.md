@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/FriquetLuca/polyFP/compare/polyfp-v1.0.2...polyfp-v1.0.3) (2026-10-21)
+
+
+### Bug Fixes
+
+* patch the publish tag ([3aa641a](https://github.com/FriquetLuca/polyFP/commit/3aa641a242fede0ad1fbad59b97f55449eff66be))
+
 ## [1.0.2](https://github.com/FriquetLuca/polyFP/compare/polyfp-v1.0.1...polyfp-v1.0.2) (2026-10-21)
 
 
